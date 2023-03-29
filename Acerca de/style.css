@@ -1,0 +1,340 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Oxygen&display=swap');
+@import url('https://fonts.cdnfonts.com/css/avenir');
+
+                
+body{
+background-color: white;
+}
+
+/*
+----Barra de navegación e intro
+*/
+
+
+video{
+    position:absolute;
+    top:0;
+    width: 100%;
+    height: 1200px;
+    object-fit: cover;
+   /* opacity: 0.8; */
+   background-size: cover;
+   z-index: -1;
+   /* left: -15%; */
+
+}
+
+.navbar{
+  background-color:black;
+    display: grid;
+    grid-auto-rows:max-content;
+    font-size: 20px;
+    font-weight: 900;
+    color: #fffbf6;
+
+}
+
+
+.nav-link:hover{
+    border-radius: 20px;
+    background-color:#fffbf6;
+    color: black;
+}
+
+
+.nav-link{
+    color:#fffbf6;
+    display: inline-block;
+    list-style: none;
+    margin:10px 30px;
+  border-radius:20px
+}
+
+.navbar-toggler{
+    color:#fffbf6;
+
+}
+
+.navbar-toggler:hover{
+    color: #ace6e0;
+
+}
+
+
+.intro{
+    color: #fffbf6;
+    display: grid;
+    max-width: auto;
+    height: 1000px;
+    grid-auto-rows:max-content; 
+    align-content: top;
+    text-align: center;
+    color: #fffbf6;
+    margin-left: 10%;
+    margin-right: 10%;
+  margin-bottom:200px;
+  margin-top:100px;
+  gap:2em;
+  
+}
+
+
+
+.punchLine{
+    text-decoration: solid;
+    font-size: 9em; 
+    animation-name: intro;
+}
+
+@keyframes intro{
+     
+    
+}
+
+.punchLine2{
+    font-size: 5em;
+}
+
+.punchLineComplement{
+    font-size: 2em;
+}
+
+/*
+----Barra de navegación e intro
+*/
+#h1Profile{
+  font-family: 'Open Sans';
+}
+#h3Profile{
+  font-family: 'Avenir';
+}
+
+
+.profile_img{
+    width: 15rem;
+    height: 15rem;
+    outline: 15px outset #ace6e0;
+    outline-offset: 0px;
+}
+.profile__name {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.5rem;
+    line-height: 1;
+}
+
+
+.profile__title {
+  font-family: 'Oxygen', sans-serif;
+    font-size: .875rem;
+    letter-spacing: .05em;
+    line-height: 1.25;
+    text-transform: uppercase
+}
+
+.profile__linkedin {
+    --tw-border-opacity: 1;
+    --tw-text-opacity: 1;
+    border-color: rgba(141, 143, 142, var(--tw-border-opacity));
+    border-top-width: 1px;
+    font-family: 'Oxygen', sans-serif;
+    font-size: 1rem;
+    font-weight: 600;
+    line-height: 1.5rem;
+    width: 240px
+}
+
+
+
+
+
+/*
+--------- CARDS ----------
+*/
+
+.card {
+    margin-top: 2em;
+    padding: 1.5em 0.5em 0.5em;
+    text-align: center ;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+    border-radius: 2em !important;
+    background: rgba(255, 255, 255, .3)!important;
+    -webkit-backdrop-filter: blur(5px)!important;
+    backdrop-filter: blur(5px)!important;
+    border: 1.5px solid rgba(209, 213, 219, 0.3)!important;
+  }
+  .card img {
+    
+    width: 10em;
+    height: 10em;
+    border-radius: 50%;
+    margin: 0 auto;
+    
+    object-fit: cover!important;
+     overflow: hidden!important;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  }
+  .card .card-title {
+    font-weight: 700;
+    font-size: 1.5em;
+  }
+  .card .btn {
+    border-radius: 2em;
+    background-color: teal;
+    color: #ffffff;
+    padding: 0.5em 1.5em;
+  }
+  .card .btn:hover {
+    background-color: rgba(0, 128, 128, 0.7);
+    color: #ffffff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  }
+  /*
+--------- CARDS ----------
+*/
+
+
+/*
+---- Animacion fondo
+*/ 
+.body-bg {
+background: rgb(255,255,255);
+background: radial-gradient(circle, rgba(255,255,255,1) 0%, rgba(0,0,0,1) 25%);
+    background-size: 400% 400%;
+
+    -webkit-animation: AnimationName 30s ease infinite;
+    -moz-animation: AnimationName 30s ease infinite;
+    animation: AnimationName 30s ease infinite;
+}
+
+@-webkit-keyframes AnimationName {
+    0%{background-position:0% 51%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 51%}
+}
+@-moz-keyframes AnimationName {
+    0%{background-position:0% 51%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 51%}
+}
+@keyframes AnimationName {
+    0%{background-position:0% 51%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 51%}
+}
+/*
+---- Animacion fondo
+*/ 
+
+
+
+
+
+/* Footer */
+  .contenedor1{
+    display: flex;
+    max-width: 1400px;
+    justify-content: space-between;
+    margin: 0 auto;
+    margin-top: 100px;
+    
+} 
+ 
+
+  
+  .empresa{
+    display: flex;
+    
+  }
+  
+  .trabajemos-juntos{
+    max-width: 33%;
+    text-align: center;
+    margin-right: 200px; 
+  }
+  
+  .hablanos{
+    max-width: 33%;
+    text-align: center;
+    margin-right: 200px; 
+    
+  }
+  
+  .sede{
+    max-width: 33%;
+    margin-right: 100px; 
+    text-align: center;
+    
+   
+  }
+
+  .copyright{
+    
+    margin-top: 200px;
+    text-align: center;
+    color: #000000;
+    margin-right: 1rem;
+  }
+
+
+
+
+@media screen and (max-width: 350px) {
+    .contenedor1{
+        display: flex;
+        flex-direction: column;
+        margin: 0 auto;
+        color: #ffffff;
+        max-width: 800px;
+        justify-content: space-around;
+        align-items: center;
+        margin-top: 100px;
+        
+      }
+      .empresa{
+        display: flex;
+        
+      }
+      
+      .trabajemos-juntos{
+        max-width: 200px;
+        text-align: center;
+        margin-right: 10px; 
+        margin-top: 20px;
+        color: black;
+      }
+      
+      .hablanos{
+        max-width: 200px;
+        text-align: center;
+        margin-right: 10px;
+        margin-top: 20px; 
+        color: black;
+      }
+      
+      .sede{
+        max-width: 200px;
+        text-align: center;
+        margin-right: 10px; 
+        margin-top: 20px;
+        color: black;
+      }
+    
+      .copyright{
+    text-align: center;
+    
+      }
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
