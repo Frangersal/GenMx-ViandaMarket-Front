@@ -15,60 +15,62 @@
 </head>
 
 <body>
-    <main class="container">
+
+    
+    <main class="container-fluid">
+
         <div class="row">
-            <div class="col-12 bg-primary">
-                <h1>Contacto</h1>
-            </div>
-        </div><!-- row -->
-        <div class="row">
-            <div class="col-md-6 bg-success">
-                <p>
-                    Mapa
-                </p>
+
+            <div class="col-12  center contenedor-titulo">
+                <h1 class="titulo">Contáctanos</h1>
             </div>
 
-            <div class="col-md-6 bg-warning">
+        </div><!-- row -->
+
+        <div class="row">
+
+            <div class="col-md-6   center bg-azuloscuro">
+                <iframe class="mapa"
+                    src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d485.4875475475178!2d-106.4535459051831!3d23.246224487120433!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1sAv.%20Camar%C3%B3n%20Sabalo%201500%2C%20Col.%20Gaviotas%3B%20frente%20a%20Camino%20al%20Mar.!5e0!3m2!1ses!2smx!4v1681157624973!5m2!1ses!2smx"
+                    allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+                </iframe>
+            </div>
+
+            <div class="col-md-6  bg-azuloscuro">
                 <form action="" method="post">
                     <div class="mb-3">
                         <!--
                         <label for="exampleFormControlInput1" class="form-label">Email address</label>
                         -->
-                        <input type="text" class="form-control" id="name"
-                            placeholder="Nombre">
-                    </div>
-                    
-                    <div class="mb-3">
-                        <!--
-                        <label for="exampleFormControlInput1" class="form-label">Email address</label>
-                        -->
-                        <input type="email" class="form-control" id="email"
-                            placeholder="Correo Electronico">
+                        <input type="text" class="form-control" id="name" placeholder="Nombre">
                     </div>
 
                     <div class="mb-3">
                         <!--
                         <label for="exampleFormControlInput1" class="form-label">Email address</label>
                         -->
-                        <input type="text" class="form-control" id="telefono"
-                            placeholder="Telefono">
+                        <input type="email" class="form-control" id="email" placeholder="Correo Electronico">
+                    </div>
+
+                    <div class="mb-3">
+                        <!--
+                        <label for="exampleFormControlInput1" class="form-label">Email address</label>
+                        -->
+                        <input type="text" class="form-control" id="telefono" placeholder="Telefono">
                     </div>
 
                     <div class="mb-3">
                         <!--
                         <label for="exampleFormControlTextarea1" class="form-label">Example textarea</label>
                         -->
-                        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Mensaje"></textarea>
-                    </div> 
+                        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"
+                            placeholder="Mensaje"></textarea>
+                    </div>
                     <input type="submit" class="btn btn-primary" value="Enviar">
                 </form>
             </div>
         </div><!-- row -->
 
-        <!-- CARDS ROW -->
-        <div class="row" id="row">
-
-        </div><!-- row -->
     </main>
 
 

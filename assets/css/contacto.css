@@ -9,6 +9,7 @@ background-color: white;
 /*
 ----Barra de navegación e intro
 */
+
 .center {
   display: flex;
   align-items: center;
@@ -17,6 +18,34 @@ background-color: white;
 /*
 Zona de trabajo Fran INICIO
 */
+@font-face {
+    font-family: MADEmirage;
+    src: url(../font/MADE\ Mirage\ Regular.otf);
+}
+@font-face {
+    font-family: dreamyEyes;
+    src: url(../font/dreamy-eyes.ttf);
+}
+.contenedor-titulo{
+
+    height:154px; 
+}
+.titulo{
+    
+    font-family: MADEmirage;
+    font-size: 128px;
+    color: #B81C00;
+}
+.bg-azuloscuro{
+    background-color: #232222;
+}
+.mapa{
+    width:415px;
+    height:430px;
+    border:0;
+    margin-top: 54px;
+    margin-bottom: 54px;
+}
 /*
 Zona de trabajo Fran FIN
 */
