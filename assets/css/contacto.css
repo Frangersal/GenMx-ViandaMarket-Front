@@ -1,0 +1,22 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Oxygen&display=swap');
+@import url('https://fonts.cdnfonts.com/css/avenir');
+
+                
+body{
+background-color: white;
+}
+
+/*
+----Barra de navegación e intro
+*/
+.center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+/*
+Zona de trabajo Fran INICIO
+*/
+/*
+Zona de trabajo Fran FIN
+*/
