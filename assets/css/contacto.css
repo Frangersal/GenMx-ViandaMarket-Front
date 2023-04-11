@@ -18,6 +18,10 @@ background-color: white;
 /*
 Zona de trabajo Fran INICIO
 */
+.btn-rojo{
+ background-color: #B81C00!important;
+ border-color: #B81C00!important;
+}
 @font-face {
     font-family: MADEmirage;
     src: url(../font/MADE\ Mirage\ Regular.otf);
@@ -51,9 +55,36 @@ Zona de trabajo Fran INICIO
     /* height: 471px; */
 }
 .info-contacto{
+    display: inline-flex;
     
     width: 351px!important;
-    height: 60px!important;
+    height: 70px!important;
+}
+.icono{ 
+    width:  60px!important;
+    height: 70px!important;
+
+}
+
+.izquierda-centro {
+    display: flex;
+    align-items: center;
+    justify-content: left;
+  }
+.info{ 
+    width:  291px!important;
+    height: 70px!important;
+ font-family: dreamyEyes;
+ color: #fff;
+}
+.img-icon{
+    
+    width:  30px!important;
+    height: 30px!important;
+}
+.linea-baja{
+    border-bottom: #fff solid 1px;
+    margin-bottom: 27px;
 }
 /*
 Zona de trabajo Fran FIN
