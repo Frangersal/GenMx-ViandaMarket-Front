@@ -48,7 +48,12 @@ Zona de trabajo Fran INICIO
 }
 .formulario{
     width: 351px;
-    height: 471px;
+    /* height: 471px; */
+}
+.info-contacto{
+    
+    width: 351px!important;
+    height: 60px!important;
 }
 /*
 Zona de trabajo Fran FIN
