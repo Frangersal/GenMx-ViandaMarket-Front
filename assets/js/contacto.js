@@ -87,3 +87,21 @@ contact[4].addEventListener('click', (e) => {
     (isActive === true) ? sendEmail() : ' ';
 
 })
+
+//Footer responsive ocultar por defecto menu desplegable en resoluciones por debajo de 500
+window.addEventListener('resize', function() {
+  if (window.innerWidth < 500) {
+    document.getElementById('productos').classList.remove('show');
+  }
+});
+
+window.addEventListener('resize', function() {
+  if (window.innerWidth < 500) {
+    document.getElementById('acerca').classList.remove('show');
+  }
+});
+window.addEventListener('resize', function() {
+  if (window.innerWidth < 500) {
+    document.getElementById('contacto').classList.remove('show');
+  }
+});
