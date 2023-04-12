@@ -9,9 +9,7 @@ background-color: white;
 /*
 ----Barra de navegación e intro
 */
-.margen-main{
-    margin-top: 135px;
-}
+
 .header {
     background-color: #FCF7F1;
     display:grid;
@@ -169,14 +167,32 @@ Zona de trabajo Fran INICIO
 }
 .contenedor-titulo{
 
-    height:154px; 
+    height:154px;  
+    margin-top: 10%!important;
+    margin-bottom: 2%!important;
 }
 .titulo{
     
     font-family: MADEmirage;
-    font-size: 11vw; 
+    font-size: 900%; 
     color: #B81C00;
 }
+@media (max-width: 784px) {
+    .titulo{
+    
+        font-family: MADEmirage;
+        font-size: 500%; 
+        color: #B81C00;
+    }
+  }
+@media (max-width: 475px) {
+    .titulo{
+    
+        font-family: MADEmirage;
+        font-size: 200%; 
+        color: #B81C00;
+    }
+  }
 .bg-azuloscuro{
     background-color: #232222;
 }
