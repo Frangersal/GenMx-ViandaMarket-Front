@@ -157,6 +157,7 @@ Zona de trabajo Fran INICIO
 .btn-rojo{
  background-color: #B81C00!important;
  border-color: #B81C00!important;
+ margin-bottom: 10px;
 }
 @font-face {
     font-family: MADEmirage;
