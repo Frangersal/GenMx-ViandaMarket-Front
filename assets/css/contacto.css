@@ -24,23 +24,23 @@ background-color: white;
     }
     
     .blockSearch{
-        margin-left: 40%;
-        margin: 5%;
+        height: 3vw;
+        margin: 3%;
     }
     
     .blockSearch span{
         font-size: 1.2vw;
         background-color: white;
-        height: 100%;
         padding: 0.3vw;
         position: relative;
         cursor: pointer;
         z-index: 1;
     
     }
+
     
     #miCuenta{
-       margin-top: 15%;
+       margin-top: 11%;
        margin-left: 60%;
         font-size:1.5vw;
         text-decoration: solid;
@@ -48,13 +48,15 @@ background-color: white;
     
     
     .searchBar{
+        border-radius: 2%;
+        margin-left: 20%;
         height: 2vw;
         width: 25vw;
     
     }
     
     #shoppingCart{
-        margin-top: 15%;
+        margin-top: 12%;
         margin-right: 80%;
        text-align: center;
         font-size: 2vw;
@@ -100,6 +102,28 @@ background-color: white;
 
     }
     
+    #VMlogo2{
+        margin-right: 2%;
+        width: 35vw;
+        
+    }
+
+    #menuHambu{
+
+        margin-left: 25%;
+        color:rgba(173, 48, 25, 1);
+    }
+
+    #menuHambuLinea{
+        font-size: 4vw;
+        color: rgba(173, 48, 25, 1);
+    }
+
+    #shoppingCart2{
+        margin-right: 10%;
+        font-size: 3vw;
+        color: rgba(173, 48, 25, 1);
+    }
 
  @media (max-width:800px){
     .headerCel{
@@ -116,9 +140,6 @@ background-color: white;
         display: none;
     }
  }  
-    
-
-
 
 
 /*
