@@ -173,7 +173,7 @@ Zona de trabajo Fran INICIO
 .titulo{
     
     font-family: MADEmirage;
-    font-size: 128px;
+    font-size: 11vw; 
     color: #B81C00;
 }
 .bg-azuloscuro{
@@ -225,3 +225,107 @@ Zona de trabajo Fran INICIO
 /*
 Zona de trabajo Fran FIN
 */
+
+/* Footer */
+
+@font-face {
+    font-family: Mirage-medium;
+    src: url("../font/MADE\ Mirage\ Regular.otf") 
+}
+
+@font-face {
+    font-family: Mirage-bold;
+    src: url("../font/MADE-Mirage-Bold.otf") 
+}
+
+
+/* :::::Pie de Pagina */
+.pie-pagina{
+    width: 100%;
+    background-color: #fcf7f1;
+}
+
+.icono{
+    text-decoration: none;
+    font-size: 1.6rem;
+    color: #9D251D;
+}
+
+.enlaces a {
+    margin-top: 1rem;
+    margin-left: 1rem;
+    padding: 0;
+    
+  }
+  .enlaces .icono {
+    margin: 0 5px;
+  }
+.encabezadof {
+    font-size: 2rem;
+    font-family: Mirage-bold;
+    color: rgb(0, 0, 0);
+}
+.itemfooter{
+    font-family: Mirage-medium;
+    text-decoration: none;
+    font-size: 1.2rem;
+
+}
+.copy{
+ margin-top: 2rem;
+
+ background-color: #232222;
+ color: #fcf7f1;
+ max-height: 8rem;
+}
+
+.copytexto{
+    font-family: Mirage-medium;
+    text-decoration: none;
+}
+
+
+@media only screen and (min-width: 501px) {
+    .collapse {
+      display: none;
+    }
+    
+  }
+  
+  @media screen and (min-width: 501px) {
+    .encabezadof{
+      pointer-events: none;
+
+}
+    .fa-sort-down {
+     display: none !important;
+  }
+    
+}
+@media screen and (max-width: 500px){
+    .imagenlogo{
+      display: none ;
+    } 
+ 
+        .container .col-md-2,
+        .container .col-md-3,
+        .container .col-md-4 {
+        border-bottom: 1px solid #9D251D;
+        padding-bottom: 10px;
+        margin-bottom: 10px;
+        }
+
+   
+     .fa-sort-down {
+        display: inline;
+        color:#9D251D;
+        
+     }
+
+    .icono{
+        font-size: 2.5rem;
+       
+    }
+  }
+
+ 
