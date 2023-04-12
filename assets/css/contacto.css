@@ -9,7 +9,9 @@ background-color: white;
 /*
 ----Barra de navegación e intro
 */
-
+.margen-main{
+    margin-top: 135px;
+}
 .header {
     background-color: #FCF7F1;
     display:grid;
