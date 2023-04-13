@@ -366,14 +366,14 @@ Zona de trabajo Fran FIN
 }
 
 
-@media only screen and (min-width: 501px) {
+@media only screen and (min-width: 768px) {
     .collapse {
       display: none;
     }
     
   }
   
-  @media screen and (min-width: 501px) {
+  @media screen and (min-width: 768px) {
     .encabezadof{
       pointer-events: none;
 }
@@ -381,12 +381,9 @@ Zona de trabajo Fran FIN
     
 }
 
-  @media only screen and (min-width: 501px) {
-    .collapse {
-      display: none;
-    }
   
-  }
+  
+ 
   @media only screen and (min-width: 768px) {
     .imagenlogo {
       width: 12rem;
@@ -409,16 +406,43 @@ Zona de trabajo Fran FIN
         right: 3.3rem
        }
     }
-     
+    
+  
 
-   .icono{
-    font-size: 1.5rem;
+    @media only screen and (max-width: 450px) {
+        .imagenlogo {
+         display: none;
+        }
+        .encabezadof {
+            font-size: 1.3rem;
+            font-family: Mirage-bold;
+            color: #84A3B7;
+        }
+        .itemfooter{
+            font-family: Mirage-medium;
+            text-decoration: none;
+            font-size: .810rem;
+        
+        }
+        .icono{
+            font-size: 1.8rem!important;
+        }
+       
+        @media only screen and (max-width: 449px) {
+            .enlaces {
+            margin-right: 7rem;
+            }
+            }
+                }
+
+        .icono{
+        font-size: 2rem;
    
-}
-.enlaces .icono {
-    margin: 0 .90rem;
-  }
-  @media screen and (max-width: 500px){
+            }
+        .enlaces .icono {
+            margin: 0 .8rem;
+                }
+  @media screen and (max-width: 767px){
    
         .icono{
             font-size: 2rem;
@@ -439,7 +463,12 @@ Zona de trabajo Fran FIN
                   font-size: 2.6rem;
                  
               }
-    }
+              .enlaces {
+                position: relative;
+                Left: 3.3rem
+               }
+            }
+    
     @media only screen and (min-width: 1024px) {
         
         .itemfooter{
@@ -462,7 +491,7 @@ Zona de trabajo Fran FIN
           }
           }
 
-  @media only screen and (min-width: 1025px) {
+  @media only screen and (min-width: 1200px) {
     .imagenlogo {
       width:25rem;
       display: flex;
