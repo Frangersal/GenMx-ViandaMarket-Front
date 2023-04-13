@@ -70,7 +70,7 @@ background-color: white;
           
     }
     .navbar{
-        background-color:rgba(35, 34, 34, 1);
+        background-color:#84A3B7;
         display: flex;
         align-items: center;
 
@@ -153,8 +153,8 @@ background-color: white;
 Zona de trabajo Fran INICIO
 */
 .btn-rojo{
- background-color: #B81C00!important;
- border-color: #B81C00!important;
+ background-color: #84A3B7!important;
+ border-color: #84A3B7!important;
  margin-bottom: 10px;
 }
 @font-face {
@@ -167,38 +167,36 @@ Zona de trabajo Fran INICIO
 }
 .contenedor-titulo{
 
+    background-color: #B81C00;
     height:154px;  
     margin-top: 10%!important;
-    margin-bottom: 2%!important;
 }
 .titulo{
     
     font-family: MADEmirage;
-    font-size: 900%; 
-    color: #B81C00;
+    font-size: 500%; 
+    color: #fff;
+    margin-top: 6%;
 }
 @media (max-width: 784px) {
     .titulo{
     
         font-family: MADEmirage;
-        font-size: 500%; 
-        color: #B81C00;
+        font-size: 500%;  
     }
   }
   @media (max-width: 475px) {
       .titulo{
       
           font-family: MADEmirage;
-          font-size: 300%; 
-          color: #B81C00;
+          font-size: 300%;  
       }
     }
 @media (max-width: 370px) {
     .titulo{
     
         font-family: MADEmirage;
-        font-size: 200%; 
-        color: #B81C00;
+        font-size: 200%;  
     }
   }
 .bg-azuloscuro{
@@ -228,11 +226,11 @@ Zona de trabajo Fran INICIO
     display: inline-flex;
     
     width: 351px!important;
-    height: 70px!important;
+    height: 60px!important;
 }
 .icono{ 
     width:  60px!important;
-    height: 70px!important;
+    height: 60px!important;
 
 }
 
@@ -243,18 +241,30 @@ Zona de trabajo Fran INICIO
   }
 .info{ 
     width:  291px!important;
-    height: 70px!important;
+    height: 60px!important;
  font-family: dreamyEyes;
  color: #fff;
 }
 .img-icon{
-    
+    color: yellow!important;
     width:  30px!important;
     height: 30px!important;
 }
 .linea-baja{
     border-bottom: #fff solid 1px;
     margin-bottom: 27px;
+}
+.input-box-VM{
+    height: 25px!important;
+    width: 100%;
+}
+.inputs-VM{
+    height: 25px!important;
+    width: 100%!important;
+}
+
+.text-VM{
+    width: 100%!important;
 }
 /*
 Zona de trabajo Fran FIN
