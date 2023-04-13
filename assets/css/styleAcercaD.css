@@ -1,0 +1,348 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Oxygen&display=swap');
+@import url('https://fonts.cdnfonts.com/css/avenir');
+
+
+/* Inicio Header */
+
+/* * {background: linear-gradient(0deg, rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)), radial-gradient(50% 50% at 50% 50%, #FFFFFF 0%, rgba(255, 255, 255, 0) 100%); } */
+.bg-plano {
+
+}
+.bg-degradado { 
+    background: rgb(79,79,79);
+    background: radial-gradient(circle, rgba(79,79,79,1) 0%, rgba(0,0,0,1) 59%);
+}
+.bg-gradient2{
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)), radial-gradient(50% 50% at 50% 50%, #FFFFFF 0%, rgba(255, 255, 255, 0) 100%);
+}
+@font-face {
+    font-family: Tommy;
+    src: url(../../assets/Fonts/MADE\ TOMMY\ Regular_PERSONAL\ USE.otf); 
+}
+
+.intro {
+    font-family: Tommy, serif;
+    font-style: normal;
+    color: rgba(255, 255, 255, 1);
+    display: grid, flex;
+    height: 40vw;
+    align-items: center;
+    text-align: center;
+    margin-top: 10%;
+    margin-bottom: 10%;
+
+}
+
+.tituloPrimero {
+    font-size: 7vw;
+}
+
+.tituloSegundo {
+    font-size: 3vw;
+    margin: 10%;
+    margin-top: 5%;
+}
+
+.colorAmarillo {
+    color: rgba(232, 212, 47, 1);
+}
+
+.colorVerde {
+    color: rgba(31, 152, 150, 1);
+}
+
+.colorAzul {
+    color: rgba(89, 161, 194, 1);
+
+}
+
+.colorMorado {
+    color: rgba(182, 78, 155, 1);
+
+}
+
+/* Final de Header */
+
+/* FIN CSS de la seccion [header] hecha por [caro] */
+/* Inicio CSS de la seccion [cards] hecha por [angel] */
+.textCard {
+    font-size: 1.2rem;
+}
+
+.textCardDescription {
+    font-size: 0.8rem;
+}
+.bg-card{
+    background-color: #ffffff00!important;
+    border-color: #ffffff00!important;
+}
+.circle {
+    /*border-color: #404040 #1f9896 #1f9896 #404040;*/
+    /*border-bottom-color: #1f9896;*/
+    /*border-bottom-width: 20px;*/
+    /*border-left-color: #1f9896;*/
+    /*border-left-width: 20px;*/
+
+    /*border-style: solid;*/
+    /*border-width: 20px;*/
+    border:19px solid transparent;
+    /*
+    background:url(./src/img/Untitled.png) center/100% 100% border-box;
+    */
+}
+.auraMoy{
+    background:url(./src/img/aura/auraMoises.png) center/100% 100% border-box;
+}
+.auraCaro{
+    background:url(./src/img/aura/auraCaro.png) center/100% 100% border-box;
+
+}
+.auraMaG{
+    background:url(./src/img/aura/auraMariano.png) center/100% 100% border-box;
+
+}
+.auraDom{
+    background:url(./src/img/aura/auraDominica.png) center/100% 100% border-box;
+
+}
+.auraAnd{
+    background:url(./src/img/aura/auraAndrea.png) center/100% 100% border-box;
+
+}
+.auraFrn{
+    background:url(./src/img/aura/auraFrancisco.png) center/100% 100% border-box;
+
+}
+.auraJua{
+    background:url(./src/img/aura/auraJuan.png) center/100% 100% border-box;
+
+}
+.auraFel{
+    background:url(./src/img/aura/auraFelix.png) center/100% 100% border-box;
+
+}
+
+  
+/* FIN CSS de la seccion [cards] hecha por [angel] */
+/* Inicio CSS de la seccion [carrousel] hecha por [moy] */
+.contamos{
+  font-family: Tommy;
+  font-size: 5vw;
+  text-align: center;
+  color: rgba(255, 255, 255, 1);
+
+
+}
+
+.imagen-carrusel {
+    object-fit: cover;
+    height: 500px; /* ajusta la altura según lo que necesites */
+  }
+  
+/* FIN CSS de la seccion [carrousel] hecha por [moy] */
+/* Inicio CSS de la seccion [footer] hecha por [mariano] */
+
+ .encabezadofooter  {
+    color: rgba(31, 152, 150, 1);
+    font-size: 2.9rem;
+    font-family: Tommy;
+  }
+
+  .text-reset{
+    text-decoration: none;
+    font-size: 1.6rem;
+  }
+
+  .textofooter{
+    font-family: Tommy;
+    color: rgba(255, 255, 255, 1);
+    font-size: 1.6rem;
+  }
+
+
+
+.bi-map{
+    color: rgba(232, 212, 47, 1);
+    font-size: x-large;
+    font-size: 2rem;
+}
+
+.bi-envelope{
+    color: rgba(232, 212, 47, 1);
+    font-size: x-large;
+    font-size: 2rem;
+}
+
+@media only screen and (max-width: 1199px) {
+    .encabezadofooter  {
+        color: rgba(31, 152, 150, 1);
+        font-size: 2rem;
+        font-family: Tommy;
+      }
+    .bi-map{
+        color: rgba(232, 212, 47, 1);
+        font-size: 1.4rem;
+    }
+    
+    .bi-envelope{
+        color: rgba(232, 212, 47, 1);
+        font-size: 1.4rem;
+    } 
+    
+    .invisible {
+        display: block;
+    }
+    .text-reset{
+        font-size: 1.2rem;
+    }
+    
+    .textofooter{
+        font-size:  1.2rem;
+    }
+    }
+    
+
+
+
+
+
+@media only screen and (max-width: 1024px) {
+    .encabezadofooter  {
+        color: rgba(31, 152, 150, 1);
+        font-size: 2rem;
+        font-family: Tommy;
+      }
+.bi-map{
+    color: rgba(232, 212, 47, 1);
+    font-size: 1.4rem;
+}
+
+.bi-envelope{
+    color: rgba(232, 212, 47, 1);
+    font-size: 1.4rem;
+} 
+
+.invisible {
+    display: block;
+}
+.text-reset{
+    font-size: 1.2rem;
+}
+
+.textofooter{
+    font-size:  1.2rem;
+}
+}
+
+
+
+
+@media only screen and (min-width: 768px) {
+    .encabezadofooter{
+        font-size: 1.2rem;
+    }
+    .bi-map{
+        color: rgba(232, 212, 47, 1);
+        font-size:1.4rem;
+    }
+    
+    .bi-envelope{
+        color: rgba(232, 212, 47, 1);
+        font-size:1.5rem;
+    }
+  
+    .text-reset{
+        font-size:.8665rem;
+    }
+
+    .textofooter{
+        font-size:.7rem;
+    }
+    .invisible {
+        display: block;
+    }
+}
+
+  
+@media only screen and (max-width: 320px ) {
+ 
+.bi-map{
+    color: rgba(232, 212, 47, 1);
+    font-size: 1.2rem;
+}
+
+.bi-envelope{
+    color: rgba(232, 212, 47, 1);
+    font-size: 1.2rem;
+}
+
+.invisible {
+    display: none;
+}
+.encabezadofooter{
+    font-size: 1.4rem;
+}
+.text-reset{
+    font-size:.8665rem;
+}
+
+.textofooter{
+    font-size:.9rem;
+}
+}
+
+@media only screen and (max-width: 360px ) {
+
+.bi-map{
+    color: rgba(232, 212, 47, 1);
+    font-size: x-large;
+}
+
+.bi-envelope{
+    color: rgba(232, 212, 47, 1);
+    font-size: x-large;
+}
+.invisible {
+    display: none;
+}
+}
+
+@media only screen and (max-width: 375px ) {
+
+.bi-map{
+    color: rgba(232, 212, 47, 1);
+    font-size: x-large;
+}
+
+.bi-envelope{
+    color: rgba(232, 212, 47, 1);
+    font-size: x-large;
+}
+.invisible {
+    display: none;
+}
+
+
+}
+
+@media only screen and (max-width: 425px ) {
+
+.bi-map{
+    color: rgba(232, 212, 47, 1);
+    font-size: x-large;
+}
+
+.bi-envelope{
+    color: rgba(232, 212, 47, 1);
+    font-size: x-large;
+}
+
+.invisible {
+    display: none;
+}
+
+}
+
+
+
+/* FIN CSS de la seccion [footer] hecha por [mariano] */
