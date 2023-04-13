@@ -167,6 +167,20 @@ background-color: white;
 /*
 Zona de trabajo Fran INICIO
 */
+.center-nav{
+    display: flex!important;
+    align-items: center!important;
+    justify-content: center!important;
+}
+.navbar {
+    max-height: 41px;
+}
+.barraMenu{
+    margin: 0!important;
+    padding: 0!important; 
+    max-height: 41px!important;
+    font-size: 1rem;
+}
 @font-face {
     font-family: MADEmirage;
     src: url(../font/MADE\ Mirage\ Regular.otf);
@@ -187,7 +201,7 @@ font-family: dreamyEyes;
 .contenedor-titulo{
 
     background-color: #B81C00;
-    height:154px;  
+    height:114px;  
     margin-top: 10%!important;
 }
 .titulo{
@@ -195,13 +209,17 @@ font-family: dreamyEyes;
     font-family: MADEmirage;
     font-size: 500%; 
     color: #fff;
-    margin-top: 9%;
+    margin-top: 4%;
 }
 @media (max-width: 784px) {
     .titulo{
     
         font-family: MADEmirage;
         font-size: 500%;  
+    }
+    .contenedor-titulo{
+  
+        margin-top: 7%!important;
     }
   }
   @media (max-width: 625px) {
@@ -243,10 +261,35 @@ font-family: dreamyEyes;
         margin-top: 54px;
         margin-bottom: 54px;
     }
-  }
+}
+
+@media (max-width: 380px) {
+    .mapa{
+        width:300px;
+        height:370x;
+        border:0;
+        margin-top: 54px;
+        margin-bottom: 54px;
+    }
+}
 .formulario{
     width: 351px;
     /* height: 471px; */
+}
+
+
+@media (max-width: 380px) {
+    .formulario{
+        width:300px;
+        /* height: 471px; */
+    }
+    
+    .info-contacto{
+        display: inline-flex;
+        
+        width: 300px!important;
+        height: 60px!important;
+    }
 }
 .info-contacto{
     display: inline-flex;
