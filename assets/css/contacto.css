@@ -152,11 +152,6 @@ background-color: white;
 /*
 Zona de trabajo Fran INICIO
 */
-.btn-rojo{
- background-color: #84A3B7!important;
- border-color: #84A3B7!important;
- margin-bottom: 10px;
-}
 @font-face {
     font-family: MADEmirage;
     src: url(../font/MADE\ Mirage\ Regular.otf);
@@ -164,6 +159,15 @@ Zona de trabajo Fran INICIO
 @font-face {
     font-family: dreamyEyes;
     src: url(../font/dreamy-eyes.ttf);
+}
+.btn-rojo{
+ background-color: #84A3B7!important;
+ border-color: #84A3B7!important;
+ margin-bottom: 10px;
+ width: 191.83px;
+height: 55px;
+font-size: 24px!important;
+font-family: dreamyEyes;
 }
 .contenedor-titulo{
 
