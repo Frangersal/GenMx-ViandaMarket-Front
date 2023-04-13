@@ -14,6 +14,7 @@ const regexPhone = /^(?:(?:\+|00)52)?\s*\(?(?:(?:(?:1|2|3|4|5|6|7|8|9)\d{1,2})|8
 
 // ? Functions
 const invalid = (num, msj) => {
+    isComplete[num] = false;
     let alert = `   
     <div class="toast align-items-center text-white border-0 mb-2" style="background-color:#fbf0da;" role="alert" aria-live="assertive" aria-atomic="true">
   <div class="d-flex">
@@ -44,7 +45,7 @@ const sendEmail = () => {
         To: "johnangelmx@outlook.com",
         From: "johnangelmx@outlook.com",
         Subject: "Atencion a Cliente desde Contacto Vianda",
-        Body: `Nombre del Cliente:${contact[0].value.trim()} <br> Cliente con numero: ${contact[2].value.trim()}<br>Con Email:${contact[1].value.trim()}<br>${contact[3].value.trim()}`
+        Body: `Nombre del Cliente: ${contact[0].value.trim()} <br> Cliente con numero: ${contact[2].value.trim()}<br>Con Email: ${contact[1].value.trim()}<br>Mensaje: ${contact[3].value.trim()}`
     }).then(message => {
         let alert = `<div class="toast align-items-center text-white bg-primary border-0" role="alert" aria-live="assertive" aria-atomic="true">
             <div class="d-flex">
@@ -74,34 +75,39 @@ const sendEmail = () => {
 contact[4].addEventListener('click', (e) => {
     e.preventDefault();
     contact[5].innerHTML = "";
-    (regexName.exec(contact[0].value.trim())) ? valid(0) : invalid(0, `Invalid Name`);
-    (regexEmail.exec(contact[1].value.trim())) ? valid(1) : invalid(1, `Invalid Email`);
-    (regexPhone.exec(contact[2].value.trim())) ? valid(2) : invalid(2, `Invalid Phone`);
-    (regexMsj.exec(contact[3].value.trim())) ? valid(3) : invalid(3, `Invalid Menssage`);
+    (regexName.exec(contact[0].value.trim())) ? valid(0): invalid(0, `Nombre inválido, por favor vuelva a intentarlo.`);
+    (regexEmail.exec(contact[1].value.trim())) ? valid(1): invalid(1, `Email inválido, por favor vuelva a intentarlo.`);
+    (regexPhone.exec(contact[2].value.trim())) ? valid(2): invalid(2, `Teléfono inválido, por favor vuelva a intentarlo.`);
+    (regexMsj.exec(contact[3].value.trim())) ? valid(3): invalid(3, `Mensaje inválido, por favor vuelva a intentarlo.`);
 
-    let isActive;
-    isComplete = isComplete.map(e => {
-        isActive = (e);
-    });
+    let isActive = false;
 
-    (isActive === true) ? sendEmail() : ' ';
+    for (const boolean of isComplete) {
+        if (boolean) {
+            isActive = true
+        } else {
+            isActive = false
+            break;
+        }
+    }
+    (isActive === true) ? sendEmail(): ' ';
 
 })
 
 //Footer responsive ocultar por defecto menu desplegable en resoluciones por debajo de 500
-window.addEventListener('resize', function() {
-  if (window.innerWidth < 500) {
-    document.getElementById('productos').classList.remove('show');
-  }
+window.addEventListener('resize', function () {
+    if (window.innerWidth < 500) {
+        document.getElementById('productos').classList.remove('show');
+    }
 });
 
-window.addEventListener('resize', function() {
-  if (window.innerWidth < 500) {
-    document.getElementById('acerca').classList.remove('show');
-  }
+window.addEventListener('resize', function () {
+    if (window.innerWidth < 500) {
+        document.getElementById('acerca').classList.remove('show');
+    }
 });
-window.addEventListener('resize', function() {
-  if (window.innerWidth < 500) {
-    document.getElementById('contacto').classList.remove('show');
-  }
+window.addEventListener('resize', function () {
+    if (window.innerWidth < 500) {
+        document.getElementById('contacto').classList.remove('show');
+    }
 });
