@@ -10,50 +10,49 @@ background-color: white;
 ----Barra de navegación e intro
 */
 
-.headerLogoIconos {
-    height: 4vw;
+.headerDestokIcono {
     background-color: #FCF7F1;
     display:grid;
     grid-auto-flow: column;
-    /* grid-template-columns: 2fr 1fr; */
+    grid-template-columns: 2fr 1fr;
     align-content: center;
+    height: 5vw;
+    
     
     }
-
  .iconos{
     display:grid;
     grid-auto-flow: column;
-    grid-template-columns: 15vw 15vw 15vw;
-    margin-left: auto;
-    margin-right: 5%;
     
  }
 
  #lupa{
-    font-size: 1vw;
+    margin-top: 7%;
+    font-size: 1.2vw;
     color: rgba(132, 163, 183, 1);
+    
  }
     
     #VMlogo{
-        display: static;
-        margin-top: 6%;
-        margin-left: 30%;
-        width: 8vw;
+        margin-left: 20%;
+        margin-top: 2%;
+        width: 10vw;
     }
     
 
 .dropdownBuscador{
-    margin-top: 1.7vw;
-    margin-left: 20vw;
+    margin-top: 1.4vw;
+    margin-left: 115%;
+    margin-right: 20%;
 }
     
     #miCuenta{
         background-color: rgba(132, 163, 183, 1);
         color: rgba(252, 247, 241, 1);
-       margin-top: 17%;
-       margin-bottom: 14%;
-       margin-left: 60%;
-        font-size:1vw;
+       margin-top: 15%;
+       margin-bottom: 18%;
+       margin-left: 50%;
+        font-size:1.1vw;
         text-decoration: solid;
         text-align: center;
        border-radius: 30px;
@@ -64,10 +63,10 @@ background-color: white;
     
     #shoppingCart{
         background-color:rgba(132, 163, 183, 1) ;
-        margin-top: 17%;
+        margin-top: 20%;
         margin-left: 5%;
-        margin-right: 60%;
-        margin-bottom: 15%;
+        margin-right: 50%;
+        margin-bottom: 25%;
        text-align: center;
         font-size: 1vw;
      color:rgba(252, 247, 241, 1);
@@ -80,28 +79,36 @@ background-color: white;
         display: grid;
           
     }
-    .navbar-Destok{
-        height: 3vw;
+    .navbar{
+        font-size: 10vw;
         background-color:rgba(132, 163, 183, 1);
-        display: flex;
+        display: grid;
         text-align: center;
     }
     
     header nav ul{
-        margin-top: 0.5%;
-        margin-right: 2vw;
-        margin-left: 4vw ;
+        margin-top: 1%;
+        margin-right: 0vw;
+        margin-left: 5vw ;
         list-style: none;
         cursor: pointer;
-        font-size: 1.2vw;
+        font-size: 1.5vw;
         color: rgba(252, 247, 241, 1);
         display: grid;
         grid-auto-flow: column;
         grid-auto-columns: max-content;
         gap:8vw;
-        text-align: center;
+        text-align: justify;
 
     }
+
+    .headerDestok .barraMenu{
+        font-size: 1vw;
+        cursor: pointer;
+        margin-left: 3%;
+
+    }
+
     
    header nav ol li{
     text-align:center;   
@@ -115,8 +122,7 @@ background-color: white;
 
     }
 
-    .navbar-nav{
-        
+    .navbar-nav{ 
         font-size: 4.5vw;
         gap:0.1vw;
     }
@@ -149,9 +155,6 @@ background-color: white;
         border-radius: 30px;
     }
 
-    .copytexto{
-        font-size: 0.7rem;
-    }
  @media (max-width:800px){
     .headerCel{
         display:block;
@@ -159,7 +162,7 @@ background-color: white;
  }
 
  @media (max-width:800px){
-    .headerLogoIconos{
+    .header{
         display:none;
     }
 
