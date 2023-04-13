@@ -18,50 +18,52 @@ background-color: white;
     align-content: center;
     
     }
+ .iconos{
+    display:grid;
+    grid-auto-flow: column;
+    
+ }
+
+ #lupa{
+    color: rgba(132, 163, 183, 1);
+ }
     
     #VMlogo{
         width: 25vw;
     }
     
-    .blockSearch{
-        height: 3vw;
-        margin: 3%;
-    }
-    
-    .blockSearch span{
-        font-size: 1.2vw;
-        background-color: white;
-        padding: 0.3vw;
-        position: relative;
-        cursor: pointer;
-        z-index: 1;
-    
-    }
 
+.dropdownBuscador{
+    margin-top: 10%;
+    margin-left: 140%;
+}
     
     #miCuenta{
-       margin-top: 11%;
+        background-color: rgba(132, 163, 183, 1);
+        color: rgba(252, 247, 241, 1);
+       margin-top: 10%;
+       margin-bottom: 7%;
        margin-left: 60%;
-        font-size:1.5vw;
+        font-size:1.9vw;
         text-decoration: solid;
+        text-align: center;
+       border-radius: 30px;
     }
     
     
-    .searchBar{
-        border-radius: 2%;
-        margin-left: 20%;
-        height: 2vw;
-        width: 25vw;
-    
-    }
+
     
     #shoppingCart{
+        background-color:rgba(132, 163, 183, 1) ;
         margin-top: 12%;
-        margin-right: 80%;
+        margin-left: 5%;
+        margin-right: 60%;
+        margin-bottom: 10%;
        text-align: center;
         font-size: 2vw;
-     color: rgba(35, 34, 34, 1);
+     color:rgba(252, 247, 241, 1);
      position:right;
+     border-radius: 30px;
     
     }
     
@@ -70,15 +72,15 @@ background-color: white;
           
     }
     .navbar{
-        background-color:#84A3B7;
+        background-color:rgba(132, 163, 183, 1);
         display: flex;
-        align-items: center;
-
+        text-align: center;
     }
     
     header nav ul{
-        margin-right: 10vw;
-        margin-left: 10vw ;
+        margin-top: 1%;
+        margin-right: 3vw;
+        margin-left: 3vw ;
         list-style: none;
         cursor: pointer;
         font-size: 1.5vw;
@@ -87,6 +89,7 @@ background-color: white;
         grid-auto-flow: column;
         grid-auto-columns: max-content;
         gap:8vw;
+        text-align: center;
 
     }
     
@@ -101,6 +104,16 @@ background-color: white;
         list-style: none;
 
     }
+
+    .navbar-nav{
+        
+        font-size: 4.5vw;
+        gap:0.1vw;
+    }
+
+    .offcanvas-header{
+        background-color: #FCF7F1;
+    }
     
     #VMlogo2{
         margin-right: 2%;
@@ -111,18 +124,19 @@ background-color: white;
     #menuHambu{
 
         margin-left: 25%;
-        color:rgba(173, 48, 25, 1);
+        color:rgba(132, 163, 183, 1);
     }
 
     #menuHambuLinea{
         font-size: 4vw;
-        color: rgba(173, 48, 25, 1);
+        color: rgba(132, 163, 183, 1);
     }
 
     #shoppingCart2{
         margin-right: 10%;
-        font-size: 3vw;
-        color: rgba(173, 48, 25, 1);
+        font-size: 3.5vw;
+        color: rgba(132, 163, 183, 1);
+        border-radius: 30px;
     }
 
  @media (max-width:800px){
@@ -140,6 +154,7 @@ background-color: white;
         display: none;
     }
  }  
+    
 /*
 ----Barra de navegación e intro
 */
