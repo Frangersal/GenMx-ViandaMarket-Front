@@ -86,6 +86,7 @@ background-color: white;
         text-align: center;
     }
     
+    
     header nav ul{
         margin-top: 1%;
         margin-right: 0vw;
@@ -155,6 +156,9 @@ background-color: white;
         border-radius: 30px;
     }
 
+    .copytexto{
+        font-size: 0.7rem;
+    }
  @media (max-width:800px){
     .headerCel{
         display:block;
@@ -187,9 +191,18 @@ Zona de trabajo Fran INICIO
     display: flex!important;
     align-items: center!important;
     justify-content: center!important;
+} 
+@media only screen and (min-width: 800px) {
+    .navbar {
+        max-height: 41px;
+    }
+    
 }
-.navbar {
-    max-height: 41px;
+@media only screen and (max-width: 799px) {
+    .navbar {
+        max-height: 100px;
+    }
+    
 }
 .barraMenu{
     margin: 0!important;
@@ -231,7 +244,9 @@ font-family: dreamyEyes;
     .titulo{
     
         font-family: MADEmirage;
-        font-size: 500%;  
+        font-size: 400%;  
+        
+    margin-top: 9%;
     }
     .contenedor-titulo{
   
@@ -242,7 +257,7 @@ font-family: dreamyEyes;
       .titulo{
       
           font-family: MADEmirage;
-          font-size: 400%;  
+          font-size: 300%;  
       }
     }
   @media (max-width: 500px) {
@@ -250,6 +265,7 @@ font-family: dreamyEyes;
       
           font-family: MADEmirage;
           font-size: 300%;  
+          margin-top: 11%;
       }
     }
 @media (max-width: 370px) {
@@ -314,7 +330,7 @@ font-family: dreamyEyes;
     height: 60px!important;
 }
 .icono{ 
-    width:  60px!important;
+    width:  40px!important;
     height: 60px!important;
 
 }
@@ -327,8 +343,11 @@ font-family: dreamyEyes;
 .info{ 
     width:  291px!important;
     height: 60px!important;
- font-family: dreamyEyes;
- color: #fff;
+    font-family: dreamyEyes;
+    color: #fff; 
+    line-height: 18px;
+    letter-spacing: 1.8px;
+    text-align: justify;
 }
 .img-icon{
     color: yellow!important;
@@ -401,7 +420,7 @@ Zona de trabajo Fran FIN
 
 }
 .copy{
- margin-top: 2rem;
+ margin-top: .2rem;
 
  background-color: #232222;
  color: #fcf7f1;
@@ -422,14 +441,16 @@ Zona de trabajo Fran FIN
 }
 
 
+
+
 @media only screen and (min-width: 768px) {
     .collapse {
       display: none;
     }
     
-  }
+}
   
-  @media screen and (min-width: 768px) {
+@media screen and (min-width: 768px) {
     .encabezadof{
       pointer-events: none;
 }
