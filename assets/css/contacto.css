@@ -139,6 +139,9 @@ background-color: white;
         border-radius: 30px;
     }
 
+    .copytexto{
+        font-size: 0.7rem;
+    }
  @media (max-width:800px){
     .headerCel{
         display:block;
@@ -348,6 +351,7 @@ Zona de trabajo Fran FIN
 .copytexto{
     font-family: Mirage-medium;
     text-decoration: none;
+    
 }
 .imagenlogo{
     display: block;
@@ -397,8 +401,10 @@ Zona de trabajo Fran FIN
         position: relative;
         right: 3.3rem
        }
-  }
-  .icono{
+    }
+     
+
+   .icono{
     font-size: 1.5rem;
    
 }
