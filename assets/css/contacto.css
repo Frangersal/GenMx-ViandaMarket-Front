@@ -140,7 +140,7 @@ background-color: white;
     }
 
     .copytexto{
-        font-size: 0.7rem;
+        font-size: 0.88rem;
     }
  @media (max-width:800px){
     .headerCel{
@@ -388,7 +388,7 @@ Zona de trabajo Fran FIN
 
 }
 .copy{
- margin-top: 2rem;
+ margin-top: .2rem;
 
  background-color: #232222;
  color: #fcf7f1;
