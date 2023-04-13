@@ -195,7 +195,7 @@ font-family: dreamyEyes;
     font-family: MADEmirage;
     font-size: 500%; 
     color: #fff;
-    margin-top: 6%;
+    margin-top: 9%;
 }
 @media (max-width: 784px) {
     .titulo{
@@ -204,7 +204,14 @@ font-family: dreamyEyes;
         font-size: 500%;  
     }
   }
-  @media (max-width: 475px) {
+  @media (max-width: 625px) {
+      .titulo{
+      
+          font-family: MADEmirage;
+          font-size: 400%;  
+      }
+    }
+  @media (max-width: 500px) {
       .titulo{
       
           font-family: MADEmirage;
