@@ -282,22 +282,22 @@ Zona de trabajo Fran FIN
 .icono{
     text-decoration: none;
     font-size: 1.6rem;
-    color: #9D251D;
+    color: #84A3B7;
 }
 
 .enlaces a {
     margin-top: 1rem;
-    margin-left: 1rem;
+  
     padding: 0;
     
   }
   .enlaces .icono {
-    margin: 0 5px;
+    margin: 0 1rem;
   }
 .encabezadof {
     font-size: 2rem;
     font-family: Mirage-bold;
-    color: rgb(0, 0, 0);
+    color: #84A3B7;
 }
 .itemfooter{
     font-family: Mirage-medium;
@@ -312,6 +312,9 @@ Zona de trabajo Fran FIN
  color: #fcf7f1;
  max-height: 8rem;
 }
+.collapse{
+    line-height:2rem
+}
 
 .copytexto{
     font-family: Mirage-medium;
@@ -319,10 +322,9 @@ Zona de trabajo Fran FIN
 }
 .imagenlogo{
     display: block;
+    width: 20rem;
 }
-.imageneiconos {
-    display: block;
- }  
+
 
 @media only screen and (min-width: 501px) {
     .collapse {
@@ -334,66 +336,115 @@ Zona de trabajo Fran FIN
   @media screen and (min-width: 501px) {
     .encabezadof{
       pointer-events: none;
-
 }
-    .fa-sort-down {
-     display: none !important;
-  }
+
     
 }
-@media screen and (max-width: 500px){
-    .imagenlogo{
-      display: none ;
-    } 
- 
-        .container .col-md-2,
-        .container .col-md-3,
-        .container .col-md-4 {
-        border-bottom: 1px solid #9D251D;
-        padding-bottom: 10px;
-        margin-bottom: 10px;
-        }
 
-   
-     .fa-sort-down {
-        display: inline;
-        color:#9D251D;
-        
-     }
-
-    .icono{
-        font-size: 2.5rem;
-       
-    }
-  }
-  
   @media only screen and (min-width: 501px) {
     .collapse {
       display: none;
     }
-    
+  
   }
   @media only screen and (min-width: 768px) {
     .imagenlogo {
-      width: 180px;
-      display: flex;
-      justify-content: flex-start;
+      width: 12rem;
+     position: relative;
+     right: 50px;
     }
-  }
-    @media only screen and (min-width: 1024px) {
-        .imagenlogo {
-          width: 230px;
-          display: flex;
-          justify-content: flex-start;
-        }
+    .encabezadof {
+        font-size: 1.3rem;
+        font-family: Mirage-bold;
+        color: #84A3B7;
+    }
+    .itemfooter{
+        font-family: Mirage-medium;
+        text-decoration: none;
+        font-size: .810rem;
     
+    }
+    .enlaces {
+        position: relative;
+        right: 3.3rem
+       }
   }
+  .icono{
+    font-size: 1.5rem;
+   
+}
+.enlaces .icono {
+    margin: 0 .90rem;
+  }
+  @media screen and (max-width: 500px){
+   
+        .icono{
+            font-size: 2rem;
+           
+        }
+        .imagenlogo{
+            display: none ;
+          } 
+       
+              .container .col-md-2,
+              .container .col-md-3,
+              .container .col-md-4 {
+              border-bottom: 1px solid #84A3B7;
+              padding-bottom: 10px;
+              margin-bottom: 10px;
+              }
+              .icono{
+                  font-size: 2.6rem;
+                 
+              }
+    }
+    @media only screen and (min-width: 1024px) {
+        
+        .itemfooter{
+            font-family: Mirage-medium;
+            text-decoration: none;
+            font-size: 1.1rem;
+        
+        }
+        .imagenlogo {
+            width:16rem;
+            display: flex;
+            justify-content: flex-start;
+          }
+          .icono{
+            font-size: 1.7rem;
+           
+        }
+        .enlaces .icono {
+            margin: 0 1.3rem;
+          }
+          }
 
   @media only screen and (min-width: 1025px) {
     .imagenlogo {
-      width: 300px;
+      width:25rem;
       display: flex;
       justify-content: flex-start;
     }
-
-}
+    .encabezadof {
+        font-size: 2rem;
+        font-family: Mirage-bold;
+        color: #84A3B7;
+    }
+    .itemfooter{
+        font-family: Mirage-medium;
+        text-decoration: none;
+        font-size: 1rem;
+    
+    }
+    .icono{
+        font-size: 2rem;
+       
+    }
+    .enlaces {
+        position: relative;
+        right: 0rem
+       }
+        
+      }
+   
