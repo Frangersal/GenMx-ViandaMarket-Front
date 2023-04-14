@@ -680,4 +680,12 @@ Zona de trabajo Fran FIN
        }
         
       }
-   
+   /* ****************** Animations ***************** */
+
+footer a {
+    transition: all 0.3s;
+}
+
+footer a:hover {
+    transform: scale(1.5);
+}
