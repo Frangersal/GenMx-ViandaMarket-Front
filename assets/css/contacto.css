@@ -574,7 +574,7 @@ font-size: 1.6rem;
                     font-size: 1.8rem !important;
                 }
     }
-       
+        }
         @media only screen and (max-width: 360px) {
             .imagenlogo {
              display: none;
@@ -730,7 +730,7 @@ font-size: 1.6rem;
         }
         .enlaces {
             position: relative;
-           left: 6rem !important; 
+           left: 4rem !important; 
            }
           
         }
