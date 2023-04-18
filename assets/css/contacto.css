@@ -458,7 +458,7 @@ justify-content: center;
 Zona de trabajo Fran FIN
 */
 
-/* Footer */
+/* :::::Pie de Pagina */
 
 @font-face {
     font-family: Mirage-medium;
@@ -471,7 +471,7 @@ Zona de trabajo Fran FIN
 }
 
 
-/* :::::Pie de Pagina */
+
 .pie-pagina{
     width: 100%;
     background-color: #fcf7f1;
@@ -523,40 +523,162 @@ Zona de trabajo Fran FIN
     display: block;
     width: 20rem;
 }
+     
 
+.icono{
+font-size: 1.6rem;
 
+    }
+.enlaces .icono {
+    margin: 0 .8rem;
+}
+    @media only screen and (max-width: 320px) {
+        .imagenlogo {
+         display: none;
+        }
+        .encabezadof {
+            font-size: 1.3rem;
+            font-family: Mirage-bold;
+            color: #84A3B7;
+        }
+        .itemfooter{
+            font-family: Mirage-medium;
+            text-decoration: none;
+            font-size: .810rem;
+        
+        }
+        .icono{
+            font-size: 1.8rem;
+        }
+        .encabezadof {
+            font-size: 3.3rem;
+            font-family: Mirage-bold;
+            color: #84A3B7;
+        }
+        .enlaces{
+           padding-right:2em ;
+          
+           }
+           .enlaces .icono {
+            margin: 0 .4rem !important;
+            padding-left: .2rem;
+            padding-right: .12rem;
+                }
 
-  @media only screen and (min-width: 768px) {
-    .collapse {
-        display: none;
-      }
-      .encabezadof{
-          pointer-events: none;
+                .encabezadof {
+                    font-size: 1.3rem !important;
+                    font-family: Mirage-bold;
+                    color: #84A3B7;
+                }
+                .icono{
+                    font-size: 1.8rem !important;
+                }
     }
-    .imagenlogo {
-      width: 12rem;
-     position: relative;
-     right: 50px;
-    }
-    .encabezadof {
-        font-size: 1.3rem;
-        font-family: Mirage-bold;
-        color: #84A3B7;
-    }
-    .itemfooter{
-        font-family: Mirage-medium;
-        text-decoration: none;
-        font-size: .810rem;
+       
+        @media only screen and (max-width: 360px) {
+            .imagenlogo {
+             display: none;
+            }
+            .encabezadof {
+                font-size: 1.3rem;
+                font-family: Mirage-bold;
+                color: #84A3B7;
+            }
+            .itemfooter{
+                font-family: Mirage-medium;
+                text-decoration: none;
+                font-size: .810rem;
+            
+            }
+            .icono{
+                font-size: 1.8rem;
+            }
+            .encabezadof {
+                font-size: 3.3rem;
+                font-family: Mirage-bold;
+                color: #84A3B7;
+            }
+            .enlaces{
+               padding-right:2em ;
+              
+               }
+               .enlaces .icono {
+                margin: 0 .8rem ;
+                padding-left: .2rem;
+                padding-right: .12rem;
+                    }
+
+                    .encabezadof {
+                        font-size: 1.3rem !important;
+                        font-family: Mirage-bold;
+                        color: #84A3B7;
+                    }
+                    .icono{
+                        font-size: 1.8rem !important;
+                    }
+        }
+        @media only screen and (max-width: 400px) {
+            .imagenlogo {
+             display: none;
+            }
+            .encabezadof {
+                font-size: 1.3rem;
+                font-family: Mirage-bold;
+                color: #84A3B7;
+            }
+            .itemfooter{
+                font-family: Mirage-medium;
+                text-decoration: none;
+                font-size: .810rem;
+            
+            }
+            .icono{
+                font-size: 1.8rem !important;
+            }
+            .encabezadof {
+                font-size: 1.3rem !important;
+                font-family: Mirage-bold;
+                color: #84A3B7;
+            }
+          
+               .enlaces .icono {
+                margin: 0 .2em;
+                    }
+                    
+        }
     
-    }
-    .enlaces {
-        position: relative;
-        right: 3.3rem
-       }
-  
+    @media only screen and (max-width: 420px) {
+        .imagenlogo {
+         display: none;
+        }
+        .encabezadof {
+            font-size: 1.3rem;
+            font-family: Mirage-bold;
+            color: #84A3B7;
+        }
+        .itemfooter{
+            font-family: Mirage-medium;
+            text-decoration: none;
+            font-size: .810rem;
+        
+        }
+        .icono{
+            font-size: 1.8rem;
+        }
+        .encabezadof {
+            font-size: 3.3rem ;
+            font-family: Mirage-bold;
+            color: #84A3B7;
+        }
+        .enlaces{
+            padding-right: 10rem;
+          
+           }
+           .enlaces .icono {
+            margin: 0 .4em;
+                }
     }
     
-  
 
     @media only screen and (max-width: 450px) {
         .imagenlogo {
@@ -574,24 +696,100 @@ Zona de trabajo Fran FIN
         
         }
         .icono{
-            font-size: 1.8rem!important;
+            font-size: 1.8rem ;
         }
-       
-        @media only screen and (max-width: 449px) {
-            .enlaces {
-            margin-right: 7rem;
-            }
-            }
-                }
-
+        .encabezadof {
+            font-size: 1.3rem;
+            font-family: Mirage-bold;
+            color: #84A3B7;
+        }
+        .enlaces {
+            position: relative;
+           left: 4.7rem !important; 
+           }
+      
+         
+    }
+    @media only screen and (max-width: 502px) {
+        .imagenlogo {
+         display: none;
+        }
+        .encabezadof {
+            font-size: 2.3rem;
+            font-family: Mirage-bold;
+            color: #84A3B7;
+        }
+        .itemfooter{
+            font-family: Mirage-medium;
+            text-decoration: none;
+            font-size: .810rem;
+        
+        }
         .icono{
-        font-size: 1.6rem;
-   
+            font-size: 2.6rem;
+        }
+        .enlaces {
+            position: relative;
+           left: 4rem !important; 
+           }
+          
+        }
+
+    @media only screen and (max-width: 525px) {
+        .imagenlogo {
+         display: none;
+        }
+        .encabezadof {
+            font-size: 2.3rem;
+            font-family: Mirage-bold;
+            color: #84A3B7;
+        }
+        .itemfooter{
+            font-family: Mirage-medium;
+            text-decoration: none;
+            font-size: .810rem;
+        
+        }
+        .icono{
+            font-size: 2.6rem;
+        }
+        .enlaces {
+            position: relative;
+           left: 6.5rem 
+           }
+          
+        }
+        @media only screen and (max-width: 581px) {
+            .imagenlogo {
+             display: none;
             }
-        .enlaces .icono {
-            margin: 0 .8rem;
-                }
+            .encabezadof {
+                font-size: 2.3rem;
+                font-family: Mirage-bold;
+                color: #84A3B7;
+            }
+            .itemfooter{
+                font-family: Mirage-medium;
+                text-decoration: none;
+                font-size: .810rem;
+            
+            }
+            .icono{
+                font-size: 2.6rem;
+            }
+            .enlaces {
+                position: relative;
+               left: 6.5rem 
+               }
+              
+            }
+        
+    
+
   @media screen and (max-width: 767px){
+
+
+
    
         .icono{
             font-size: 2rem;
@@ -614,9 +812,40 @@ Zona de trabajo Fran FIN
               }
               .enlaces {
                 position: relative;
-                Left: 3.3rem
+                Left: 6.3rem
                }
             }
+
+            @media only screen and (min-width: 768px) {
+                .encabezadof{
+                    pointer-events: none;
+                 }
+              .collapse {
+                display: none;
+                 }
+              
+                .imagenlogo {
+                  width: 12rem;
+                 position: relative;
+                 right: 50px;
+                }
+                .encabezadof {
+                    font-size: 1.3rem;
+                    font-family: Mirage-bold;
+                    color: #84A3B7;
+                }
+                .itemfooter{
+                    font-family: Mirage-medium;
+                    text-decoration: none;
+                    font-size: .810rem;
+                
+                }
+                .enlaces {
+                    position: relative;
+                    right: 3.3rem
+                   }
+              
+                }
     
     @media only screen and (min-width: 1024px) {
         
