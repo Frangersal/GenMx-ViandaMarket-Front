@@ -334,7 +334,7 @@ font-family: dreamyEyes;
   } */
 .bg-azuloscuro{
     background-color: #232222;
-    max-height: 700px;
+    max-height: 649px;
 }
 .col-md-6{
     /* margin-right: 10%;
@@ -346,7 +346,13 @@ grid-auto-rows: max-content;
 justify-content: center;
 
 }
-
+.mapa-container {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
 .mapa{
     position: relative;
    justify-content: center;
