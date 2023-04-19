@@ -1,0 +1,233 @@
+[
+  {
+    "corte": "Ribeye",
+    "marca": "Kagura",
+    "calidad": "A5",
+    "origen": "Japon",
+    "precio": 5750,
+    "imagen": "https://asset.cloudinary.com/dfqznh5nf/9a741e280bfa5e2e11da9dbfb3f84e40",
+    "descripcion": "El preferido de muchos por su gran sabor y suavidad. El Rib-Eye es un corte que abarca la parte superior de la costilla y la carne incluida en ambos lados de la misma. Este corte va desde la costilla 5 a la 12."
+  },
+  {
+    "corte": "New Yrok",
+    "marca": "Kagura",
+    "calidad": "A5",
+    "origen": "Japon",
+    "precio": 5750,
+    "imagen": "https://asset.cloudinary.com/dfqznh5nf/9a741e280bfa5e2e11da9dbfb3f84e40",
+    "descripcion": "El preferido de muchos por su gran sabor y suavidad. El Rib-Eye es un corte que abarca la parte superior de la costilla y la carne incluida en ambos lados de la misma. Este corte va desde la costilla 5 a la 12."
+  },
+  {
+    "corte": "Ribeye",
+    "marca": "Stone Axe",
+    "calidad": "9+",
+    "origen": "Australia",
+    "precio": 3850,
+    "imagen": "https://asset.cloudinary.com/dfqznh5nf/9a741e280bfa5e2e11da9dbfb3f84e40",
+    "descripcion": "El preferido de muchos por su gran sabor y suavidad. El Rib-Eye es un corte que abarca la parte superior de la costilla y la carne incluida en ambos lados de la misma. Este corte va desde la costilla 5 a la 12."
+  },
+  {
+    "corte": "New York",
+    "marca": "Stone Axe",
+    "calidad": "9+",
+    "origen": "Australia",
+    "precio": 3790,
+    "imagen": "https://asset.cloudinary.com/dfqznh5nf/9a741e280bfa5e2e11da9dbfb3f84e40",
+    "descripcion": "El preferido de muchos por su gran sabor y suavidad. El Rib-Eye es un corte que abarca la parte superior de la costilla y la carne incluida en ambos lados de la misma. Este corte va desde la costilla 5 a la 12."
+  },
+  {
+    "corte": "Porterhouse",
+    "marca": "Stone Axe",
+    "calidad": "9+",
+    "origen": "Australia",
+    "precio": 3990,
+    "imagen": "https://asset.cloudinary.com/dfqznh5nf/9a741e280bfa5e2e11da9dbfb3f84e40",
+    "descripcion": "El preferido de muchos por su gran sabor y suavidad. El Rib-Eye es un corte que abarca la parte superior de la costilla y la carne incluida en ambos lados de la misma. Este corte va desde la costilla 5 a la 12."
+  },
+  {
+    "corte": "T-Bone",
+    "marca": "Stone Axe",
+    "calidad": "9+",
+    "origen": "Australia",
+    "precio": 3950,
+    "imagen": "https://asset.cloudinary.com/dfqznh5nf/9a741e280bfa5e2e11da9dbfb3f84e40",
+    "descripcion": "El preferido de muchos por su gran sabor y suavidad. El Rib-Eye es un corte que abarca la parte superior de la costilla y la carne incluida en ambos lados de la misma. Este corte va desde la costilla 5 a la 12."
+  },
+  {
+    "corte": "Diezmillo",
+    "marca": "Stone Axe",
+    "calidad": "9+",
+    "origen": "Australia",
+    "precio": 1320,
+    "imagen": "https://asset.cloudinary.com/dfqznh5nf/9a741e280bfa5e2e11da9dbfb3f84e40",
+    "descripcion": "El preferido de muchos por su gran sabor y suavidad. El Rib-Eye es un corte que abarca la parte superior de la costilla y la carne incluida en ambos lados de la misma. Este corte va desde la costilla 5 a la 12."
+  },
+  {
+    "corte": "Ribeye",
+    "marca": "Margaret River",
+    "calidad": "8-9",
+    "origen": "Australia",
+    "precio": 3170,
+    "imagen": "https://asset.cloudinary.com/dfqznh5nf/9a741e280bfa5e2e11da9dbfb3f84e40",
+    "descripcion": "El preferido de muchos por su gran sabor y suavidad. El Rib-Eye es un corte que abarca la parte superior de la costilla y la carne incluida en ambos lados de la misma. Este corte va desde la costilla 5 a la 12."
+  },
+  {
+    "corte": "New York",
+    "marca": "Margaret River",
+    "calidad": "8-9",
+    "origen": "Australia",
+    "precio": 3150,
+    "imagen": "https://asset.cloudinary.com/dfqznh5nf/9a741e280bfa5e2e11da9dbfb3f84e40",
+    "descripcion": "El preferido de muchos por su gran sabor y suavidad. El Rib-Eye es un corte que abarca la parte superior de la costilla y la carne incluida en ambos lados de la misma. Este corte va desde la costilla 5 a la 12."
+  },
+  {
+    "corte": "Porterhouse",
+    "marca": "Margaret River",
+    "calidad": "8-9",
+    "origen": "Australia",
+    "precio": 3500,
+    "imagen": "https://asset.cloudinary.com/dfqznh5nf/9a741e280bfa5e2e11da9dbfb3f84e40",
+    "descripcion": "El preferido de muchos por su gran sabor y suavidad. El Rib-Eye es un corte que abarca la parte superior de la costilla y la carne incluida en ambos lados de la misma. Este corte va desde la costilla 5 a la 12."
+  },
+  {
+    "corte": "T-Bone",
+    "marca": "Margaret River",
+    "calidad": "8-9",
+    "origen": "Australia",
+    "precio": 3450,
+    "imagen": "https://asset.cloudinary.com/dfqznh5nf/9a741e280bfa5e2e11da9dbfb3f84e40",
+    "descripcion": "El preferido de muchos por su gran sabor y suavidad. El Rib-Eye es un corte que abarca la parte superior de la costilla y la carne incluida en ambos lados de la misma. Este corte va desde la costilla 5 a la 12."
+  },
+  {
+    "corte": "Tomahawk",
+    "marca": "Margaret River",
+    "calidad": "8-9",
+    "origen": "Australia",
+    "precio": 3250,
+    "imagen": "https://asset.cloudinary.com/dfqznh5nf/9a741e280bfa5e2e11da9dbfb3f84e40",
+    "descripcion": "El preferido de muchos por su gran sabor y suavidad. El Rib-Eye es un corte que abarca la parte superior de la costilla y la carne incluida en ambos lados de la misma. Este corte va desde la costilla 5 a la 12."
+  },
+  {
+    "corte": "Picana",
+    "marca": "Margaret River",
+    "calidad": "8-9",
+    "origen": "Australia",
+    "precio": 1700,
+    "imagen": "https://asset.cloudinary.com/dfqznh5nf/9a741e280bfa5e2e11da9dbfb3f84e40",
+    "descripcion": "El preferido de muchos por su gran sabor y suavidad. El Rib-Eye es un corte que abarca la parte superior de la costilla y la carne incluida en ambos lados de la misma. Este corte va desde la costilla 5 a la 12."
+  },
+  {
+    "corte": "Short Ribs Boneless",
+    "marca": "Margaret River",
+    "calidad": "8-9",
+    "origen": "Australia",
+    "precio": 2750,
+    "imagen": "https://asset.cloudinary.com/dfqznh5nf/9a741e280bfa5e2e11da9dbfb3f84e40",
+    "descripcion": "El preferido de muchos por su gran sabor y suavidad. El Rib-Eye es un corte que abarca la parte superior de la costilla y la carne incluida en ambos lados de la misma. Este corte va desde la costilla 5 a la 12."
+  },
+  {
+    "corte": "Sirloin",
+    "marca": "Margaret River",
+    "calidad": "8-9",
+    "origen": "Australia",
+    "precio": 1130,
+    "imagen": "https://asset.cloudinary.com/dfqznh5nf/9a741e280bfa5e2e11da9dbfb3f84e40",
+    "descripcion": "El preferido de muchos por su gran sabor y suavidad. El Rib-Eye es un corte que abarca la parte superior de la costilla y la carne incluida en ambos lados de la misma. Este corte va desde la costilla 5 a la 12."
+  },
+  {
+    "corte": "Diezmillo",
+    "marca": "Margaret River",
+    "calidad": "8-9",
+    "origen": "Australia",
+    "precio": 2230,
+    "imagen": "https://asset.cloudinary.com/dfqznh5nf/9a741e280bfa5e2e11da9dbfb3f84e40",
+    "descripcion": "El preferido de muchos por su gran sabor y suavidad. El Rib-Eye es un corte que abarca la parte superior de la costilla y la carne incluida en ambos lados de la misma. Este corte va desde la costilla 5 a la 12."
+  },
+  {
+    "corte": "Ribeye",
+    "marca": "Excel \/ CAB",
+    "calidad": "Prime",
+    "origen": "USA \/ Canada",
+    "precio": 1250,
+    "imagen": "https://asset.cloudinary.com/dfqznh5nf/9a741e280bfa5e2e11da9dbfb3f84e40",
+    "descripcion": "El preferido de muchos por su gran sabor y suavidad. El Rib-Eye es un corte que abarca la parte superior de la costilla y la carne incluida en ambos lados de la misma. Este corte va desde la costilla 5 a la 12."
+  },
+  {
+    "corte": "New York",
+    "marca": "Excel \/ CAB",
+    "calidad": "Prime",
+    "origen": "USA \/ Canada",
+    "precio": 1160,
+    "imagen": "https://asset.cloudinary.com/dfqznh5nf/9a741e280bfa5e2e11da9dbfb3f84e40",
+    "descripcion": "El preferido de muchos por su gran sabor y suavidad. El Rib-Eye es un corte que abarca la parte superior de la costilla y la carne incluida en ambos lados de la misma. Este corte va desde la costilla 5 a la 12."
+  },
+  {
+    "corte": "Porterhouse",
+    "marca": "Excel \/ CAB",
+    "calidad": "Prime",
+    "origen": "USA \/ Canada",
+    "precio": 790,
+    "imagen": "https://asset.cloudinary.com/dfqznh5nf/9a741e280bfa5e2e11da9dbfb3f84e40",
+    "descripcion": "El preferido de muchos por su gran sabor y suavidad. El Rib-Eye es un corte que abarca la parte superior de la costilla y la carne incluida en ambos lados de la misma. Este corte va desde la costilla 5 a la 12."
+  },
+  {
+    "corte": "T-Bone",
+    "marca": "Excel \/ CAB",
+    "calidad": "Prime",
+    "origen": "USA \/ Canada",
+    "precio": 470,
+    "imagen": "https://asset.cloudinary.com/dfqznh5nf/9a741e280bfa5e2e11da9dbfb3f84e40",
+    "descripcion": "El preferido de muchos por su gran sabor y suavidad. El Rib-Eye es un corte que abarca la parte superior de la costilla y la carne incluida en ambos lados de la misma. Este corte va desde la costilla 5 a la 12."
+  },
+  {
+    "corte": "Picana",
+    "marca": "Sterling Silver",
+    "calidad": "High Choice",
+    "origen": "USA \/ Canada",
+    "precio": 500,
+    "imagen": "https://asset.cloudinary.com/dfqznh5nf/9a741e280bfa5e2e11da9dbfb3f84e40",
+    "descripcion": "El preferido de muchos por su gran sabor y suavidad. El Rib-Eye es un corte que abarca la parte superior de la costilla y la carne incluida en ambos lados de la misma. Este corte va desde la costilla 5 a la 12."
+  },
+  {
+    "corte": "Short Ribs",
+    "marca": "Sterling Silver",
+    "calidad": "High Choice",
+    "origen": "USA \/ Canada",
+    "precio": 720,
+    "imagen": "https://asset.cloudinary.com/dfqznh5nf/9a741e280bfa5e2e11da9dbfb3f84e40",
+    "descripcion": "El preferido de muchos por su gran sabor y suavidad. El Rib-Eye es un corte que abarca la parte superior de la costilla y la carne incluida en ambos lados de la misma. Este corte va desde la costilla 5 a la 12."
+  },
+  {
+    "corte": "Vacio Argentino",
+    "marca": "Sterling Silver",
+    "calidad": "High Choice",
+    "origen": "USA \/ Canada",
+    "precio": 750,
+    "imagen": "https://asset.cloudinary.com/dfqznh5nf/9a741e280bfa5e2e11da9dbfb3f84e40",
+    "descripcion": "El preferido de muchos por su gran sabor y suavidad. El Rib-Eye es un corte que abarca la parte superior de la costilla y la carne incluida en ambos lados de la misma. Este corte va desde la costilla 5 a la 12."
+  },
+  {
+    "corte": "Ribeye",
+    "calidad": "Tipo \"High Choice\"",
+    "origen": "Mexico",
+    "precio": 698,
+    "imagen": "https://asset.cloudinary.com/dfqznh5nf/9a741e280bfa5e2e11da9dbfb3f84e40",
+    "descripcion": "El preferido de muchos por su gran sabor y suavidad. El Rib-Eye es un corte que abarca la parte superior de la costilla y la carne incluida en ambos lados de la misma. Este corte va desde la costilla 5 a la 12."
+  },
+  {
+    "corte": "New York",
+    "calidad": "Tipo \"High Choice\"",
+    "origen": "Mexico",
+    "precio": 456,
+    "imagen": "https://asset.cloudinary.com/dfqznh5nf/9a741e280bfa5e2e11da9dbfb3f84e40",
+    "descripcion": "El preferido de muchos por su gran sabor y suavidad. El Rib-Eye es un corte que abarca la parte superior de la costilla y la carne incluida en ambos lados de la misma. Este corte va desde la costilla 5 a la 12."
+  },
+  {
+    "corte": "Picana",
+    "calidad": "Tipo \"High Choice\"",
+    "origen": "Mexico",
+    "precio": 367,
+    "imagen": "https://asset.cloudinary.com/dfqznh5nf/9a741e280bfa5e2e11da9dbfb3f84e40",
+    "descripcion": "El preferido de muchos por su gran sabor y suavidad. El Rib-Eye es un corte que abarca la parte superior de la costilla y la carne incluida en ambos lados de la misma. Este corte va desde la costilla 5 a la 12."
+  }
+]
