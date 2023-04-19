@@ -7,20 +7,25 @@ function loadFooter() {
     });
 }
 
+loadFooter();
+
 window.addEventListener('resize', function () {
   if (window.innerWidth < 767) {
       document.getElementById('productos').classList.remove('show');
+      fetch("./footer.html")
   }
 });
 
 window.addEventListener('resize', function () {
   if (window.innerWidth < 767) {
       document.getElementById('acerca').classList.remove('show');
+      fetch("./footer.html")
   }
 });
 window.addEventListener('resize', function () {
   if (window.innerWidth < 767) {
       document.getElementById('contacto').classList.remove('show');
+      fetch("./footer.html")
   }
 });
 
