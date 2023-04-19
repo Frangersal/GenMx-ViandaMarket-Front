@@ -46,6 +46,4 @@ Agregar los siguientes scripts para el correcto funcionamiento del footer antes 
         </div>
     </footer>
 
-    Para definir el lugar que ocupara el  header
-3. Tomar en cuenta que lo primero que se agregue despues de esto puede irse detras del header, por lo que es importante ajustar
-ese primer cuadro para que respete el header
+    Para definir el lugar que ocupara el  footer

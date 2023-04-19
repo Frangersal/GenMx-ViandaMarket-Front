@@ -24,4 +24,3 @@ window.addEventListener('resize', function () {
   }
 });
 
-loadFooter();
