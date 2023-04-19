@@ -42,7 +42,7 @@ Agregar los siguientes scripts para el correcto funcionamiento del footer antes 
 2. Despues antes del cierre del body que es donde se pone el footer semanticamente:
     <footer>
 
-        <div class="headerQuick">
+        <div class="footer">
         </div>
     </footer>
 
