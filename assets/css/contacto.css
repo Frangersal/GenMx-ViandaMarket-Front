@@ -223,6 +223,12 @@ background-color: white;
 /*
 Zona de trabajo Fran INICIO
 */
+
+.center {
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+}
 /* .center-nav{
     display: flex!important;
     align-items: center!important;
@@ -255,7 +261,7 @@ Zona de trabajo Fran INICIO
     src: url(../font/dreamy-eyes.ttf);
 }
 
-.btn-rojo{
+.btn-celeste{ 
  background-color: #84A3B7!important;
  border-color: #84A3B7!important;
  margin-bottom: 10px;
@@ -264,25 +270,26 @@ height: 55px;
 font-size: 24px!important;
 font-family: dreamyEyes;
 }
-.row1{
+.rowUno{
+    margin-top: 1rem!important;
     display: grid;
     width: auto;
     grid-template-rows: max-content;
     text-align: center;
     background-color: #B81C00;
     height:7vw;  
-    margin-top: 7%!important;
+    margin-top: 7.5vw!important;
 }
 .titulo{
     
     font-family: MADEmirage;
     font-size: 5VW; 
     color: #fff;
-    margin-top: 1%;
+    margin-top: 1%!important;
 }
 
 @media (max-width:800px){
-    .row1{
+    .rowUno{
         height:18vw;
         margin-top: 100%;
     }
@@ -327,6 +334,7 @@ font-family: dreamyEyes;
   } */
 .bg-azuloscuro{
     background-color: #232222;
+    max-height: 700px;
 }
 .col-md-6{
     /* margin-right: 10%;
@@ -342,44 +350,22 @@ justify-content: center;
 .mapa{
     position: relative;
    justify-content: center;
-    width:35VW;
+    width:350px;
     height:50vw;
+    max-height: 480px;
     border:0;
-    /* margin-right: 25%; */
-    margin-left:10%;
+    /* margin-right: 25%; */ 
     /* margin-bottom: 54px;*/
 }
 
-/*@media (max-width: 450px) {
-    .mapa{
-        width:370px;
-        height:370x;
-        border:0;
-        margin-top: 54px;
-        margin-bottom: 54px;
-    }
-}
-
-@media (max-width: 380px) {
-    .mapa{
-        width:300px;
-        height:370x;
-        border:0;
-        margin-top: 54px;
-        margin-bottom: 54px;
-    }
-}
 .formulario{
-    width: 351px;
-    /* height: 471px; 
-}*/
-
-
-@media (max-width: 380px) {
-    .formulario{
-        width:300px;
-        /* height: 471px; */
-    }
+    width:350px; 
+}
+form{
+    
+    width:100%; 
+}
+@media (max-width: 380px) { 
     
     .info-contacto{
         display: inline-flex;
@@ -429,30 +415,32 @@ justify-content: center;
     border-bottom: #fff solid 1px;
     margin-bottom: 27px;
 }
+.conjunto-inputs{
+    width: 100%;
+    padding-bottom: 55px!important;
+}
+
+@media (max-width: 873px) { 
+    .conjunto-inputs{
+        padding-bottom: 80px!important;
+    }
+}
 .input-box-VM{
     height: 25px!important;
     width: 40vw;
 }
 .inputs-VM{
     height: 25px!important;
-    width: 40vw;
+    width: 350px!important;
 }
 
-@media (max-width: 760px) {
-    .input-box-VM{
-        width: 80%;
-    }
-
-    .inputs-VM{
-        width: 80%;
-    }
 
 
-
-}
 
 .text-VM{
-    width: 100%!important;
+    width: 350px!important;
+    height: 86px!important;
+    
 } 
 /*
 Zona de trabajo Fran FIN
