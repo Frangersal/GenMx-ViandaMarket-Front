@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Oxygen&display=swap');
+@import url('https://fonts.cdnfonts.com/css/avenir');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@600&display=swap');
+
+
+@font-face {
+    font-family: MADEmirage;
+    src: url(../font/MADE\ Mirage\ Regular.otf);
+}
+
+@font-face {
+    font-family: Josefin;
+    src: url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@1,500&family=Raleway:wght@600&display=swap');
+}
+
+.title{
+    margin-top: 5vw;
+    height: 19vw;
+    background-color: rgba(184, 28, 0, 1);
+}
+
+.title h1{
+    font-family: MADEmirage;
+    color: rgba(252, 247, 241, 1);
+    padding-top: 11%;
+    text-align: center;
+    font-size: 6vw;
+}
+
+.text1{
+    padding: 5%;
+    justify-content: center;
+    text-align: justify;
+    font-family: Josefin;
+}
+
+.text1 h3{
+    font-size: 3vw;
+}
+
+@media (min-width:800px){
+    .title{
+        height: 11vw;
+    }
+
+    .title h1{
+        padding-top: 3%;
+
+    }
+}
+
+.faq{
+    list-style: none;
+    max-width: 97vw;
+    margin-left: 5%;
+    margin-right: 15%;
+}
+
+.faq li{
+    /* background-color: rgba(252, 247, 241, 1); */
+    border-bottom: 2px rgba(132, 163, 183, 1) solid;
+}
+
+.faq li:first-child{
+    border-top: 2px rgba(132, 163, 183, 1) solid;
+}
+
+.question{
+    color:  rgba(132, 163, 183, 1);
+    font-size: 2.5vw;
+    font-family: Mademirage;
+    text-decoration: solid;
+    padding: 1vw 0;
+    cursor: pointer;
+    border-left:1vw transparent solid;
+}
+
+.question:hover,
+.question:hover .arrow{
+    border-left-color: rgba(42, 46, 58, 1);
+
+}
+
+.arrow{
+    display: inline-block;
+    margin: 0 0.5em;
+    width:0;
+    height: 0;
+    border-top: 1vw solid transparent;
+    border-left: 1vw solid  rgba(132, 163, 183, 1);
+    border-bottom: 1vw solid transparent;
+    transition: 0.3s;
+}
+
+
+
+.faq p{
+    font-family: Josefin;
+    font-size: 2vw;
+}
+
+.answer{
+    overflow: hidden;
+    height: 0;
+    padding: 0 1em 0 3.3em;
+}
+
+.answer-opened{
+    padding: 1em 1em 2em 3.3em;
+    height: initial;
+
+}
+
+.arrow-rotated{
+    transform: rotate(90deg);
+}
+
+
+
+
+
+
+
+
