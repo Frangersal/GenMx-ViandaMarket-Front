@@ -153,18 +153,7 @@
     color: #000000;
 }
 
-.card-3 {
-    font-family: 'Josefin Sans';
-    src: url(./Josefin_Sans/JosefinSans-Light.ttf);
-    font-style: normal;
-    font-weight: 300;
-    font-size: 20px;
-    line-height: 20px;
-    color: #000000;
-    position: absolute;
-    width: 140.38px;
-    height: 35.84px;
-}
+
 
 .btn-primary {
     position: absolute;
