@@ -334,7 +334,7 @@ font-family: dreamyEyes;
   } */
 .bg-azuloscuro{
     background-color: #232222;
-    max-height: 649px;
+    /*max-height: 649px;*/
     padding: 30px!important;
 }
 .col-md-6{
@@ -777,7 +777,8 @@ font-size: 1.6rem;
               }
               .enlaces {
                 position: relative;
-                Left: 6.3rem
+                width: 16rem;
+                Left: 7rem;
                }
             }
 
