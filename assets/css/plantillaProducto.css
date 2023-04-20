@@ -2,7 +2,7 @@
     height: 12vw;
 }
 
-.producto{
+.productoCarne{
     margin: 5%;
     align-items: center;
     display: grid;
@@ -44,7 +44,7 @@
         height: 20vw;
     }
 
-    .producto{
+    .productoCarne{
         grid-template-columns: 1fr;
         grid-template-rows: max-content 1fr;
         gap:3em;

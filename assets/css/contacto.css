@@ -36,7 +36,7 @@ background-color: white;
  #lupa{
     margin-top: 7%;
     font-size: 1.2vw;
-    color: rgba(132, 163, 183, 1);
+    color: rgba(42, 46, 58, 1);
     
  }
     
@@ -54,7 +54,7 @@ background-color: white;
 }
     
     #miCuenta{
-        background-color: rgba(132, 163, 183, 1);
+        background-color: rgba(42, 46, 58, 1);
         color: rgba(252, 247, 241, 1);
        margin-top: 15%;
        margin-bottom: 18%;
@@ -69,7 +69,7 @@ background-color: white;
 
     
     #shoppingCart{
-        background-color:rgba(132, 163, 183, 1) ;
+        background-color:rgba(42, 46, 58, 1) ;
         margin-top: 20%;
         margin-left: 5%;
         margin-right: 50%;
@@ -87,7 +87,7 @@ background-color: white;
           
     }
     .navbar{
-        background-color:rgba(132, 163, 183, 1);
+        background-color:rgba(42, 46, 58, 1);
         display: grid;
         text-align: center;
         height: 3.5vw;
@@ -95,7 +95,7 @@ background-color: white;
     
     
     header nav ul{
-        background-color: #84A3B7;
+        background-color:rgba(42, 46, 58, 1);
         /* margin-top: 1%; */
         margin-right: 0vw;
         margin-left: 5vw ;
@@ -160,12 +160,12 @@ background-color: white;
         margin-top:4vw;
         margin-bottom: 1vw;
         margin-left: 40%;
-        color:rgba(132, 163, 183, 1);
+        color:rgba(42, 46, 58, 1);
     }
 
     #menuHambuLinea{
         font-size: 4vw;
-        color: rgba(132, 163, 183, 1);
+        color: rgba(42, 46, 58, 1);
     }
 
     .navbar-toggler{
@@ -183,7 +183,7 @@ background-color: white;
         margin-right: 10%;
         margin-left: 3%;
         font-size: 4vw;
-        color: rgba(132, 163, 183, 1);
+        color: rgba(42, 46, 58, 1);
         border-radius: 30px;
     }
 
