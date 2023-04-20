@@ -270,49 +270,22 @@ function foreachProductos(producto) {
         producto = JSON.parse(localStorage.getItem("producto"));
         //Por cada JSON del arreglo producto ejecutar la siguiente funcion
         producto.forEach(r => {
-            let row =
+            let row = 
                 `
-            <div class="col-md-4">
-                <div class="card carta mt-2 mb-2" id="card" style="width: auto;">
-                    <img src="${r.imagen}" class="card-img-top carta-imagen" id="card-img-top" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title carta-titulo" id="card-title">${r.corte}</h5>
-                        <b class="carta-categoria" id="card-category">Categoria - ${r.calidad}</b>
-                        <p class="card-text carta-texto" id="card-text">${r.descripcion}</p>
-                        <h5 class="card-title" id="card-price">$${r.precio}</h5>
-                        
-                        <button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#staticBackdrop_${r.id}">
-                        Más info
-                        </button>
+                <div class="col-md-4">
+                    <div class="col-3 col-md col-sm col-lg col-xl mb-2" style="width: 20vw;>
+                        <div class="card" style="border: none;">
+                            <img src="${r.imagen}" class="card-img-top" >
+                            <div class="card-body" style="text-align: left;">
+                                <h4 class="card-1">${r.corte}</h4>
+                                <h6 class="card-2">Kagura</h6>
+                                <h6 class="card-2">${r.calidad}</h6>
+                                <h6>Japón</h6>
+                                <button type="button" class="btn-primary">${r.precio}</button>
+                            </div>
+                        </div>
                     </div>
-                </div>
-            </div>
-
-            <!-- Button trigger modal -->
-            
-            <!-- Modal -->
-            <div class="modal fade" id="staticBackdrop_${r.id}" data-bs-backdrop="static" data-bs-keyboard="false" 
-            tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
-                <div class="modal-dialog">
-                <div class="modal-content">
-                    <div class="modal-header">
-                    <h1 class="modal-title fs-5" id="staticBackdropLabel">${r.title}</h1>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                    </div>
-                    <div class="modal-body">
-                    ${r.description}
-                    </div>
-                    
-                    <div class="modal-body">
-                    <h5  >$${r.price}</h5> 
-                    </div>
-                    <div class="modal-footer">
-                    <button type="button" class="btn btn-warning" data-bs-dismiss="modal">Close</button>
-                        
-                    </div>
-                </div>
-                </div>
-            </div>
+                </div>           
 
             `;
             cuerpoRows.insertAdjacentHTML("beforeend", row);

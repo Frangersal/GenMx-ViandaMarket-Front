@@ -1,25 +1,47 @@
-.carta-imagen {
-    height: 15rem !important;
-    max-width: 12rem !important;
+.titulo{
+    
+    font-family: MADEmirage;
+    font-size: 4VW; 
+    color: #fff;
+    margin-top: 1%!important;
 }
 
-.carta-titulo {
-    /*overflow-y: scroll !important;*/
-    max-height: 50px !important;
-    margin: 0 0 2rem 0 !important;
+.rowUno{
+    margin-top: 1rem!important;
+    display: grid;
+    width: auto;
+    grid-template-rows: max-content;
+    text-align: center;
+    background-color: #B81C00;
+    height:7vw;  
+    margin-top: 7.5vw!important;
 }
 
-.carta-categoria {
-    margin: 0 0 2rem 0 !important;
+
+.card-img-top{
+
+    width: auto;
+    grid-template-rows: max-content;
+    height:17vw;  
 }
 
-.carta-texto {
-    overflow-y: scroll !important;
-
-    max-height: 70px !important;
+.card-1 {
+    font-family: 'Josefin Sans';
+    src: url(./Josefin_Sans/JosefinSans-Bold.ttf);
+    font-style: normal;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 32px;
+    color: #000000;
 
 }
 
-.carta {
-    height: 35rem !important;
+.card-2 {
+    font-family: 'Josefin Sans';
+    src: url(./Josefin_Sans/JosefinSans-Medium.ttf);
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 20px;
+    color: #000000;
 }
