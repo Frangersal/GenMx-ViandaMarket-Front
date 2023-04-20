@@ -1,0 +1,22 @@
+#left {
+    background-color: #2A2E3A;
+    color: white;
+}
+
+#rigth {
+    background-color: white;
+}
+
+.imgBeef {
+    width: 15em;
+    margin-top: 3em;
+}
+
+.btn-secondary {
+    background-color: #2A2E3A;
+}
+
+.icon-back {
+    width: 3em;
+    cursor: pointer;
+}

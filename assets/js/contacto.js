@@ -76,7 +76,7 @@ contact[4].addEventListener('click', (e) => {
     e.preventDefault();
     contact[5].innerHTML = "";
     (regexName.exec(contact[0].value.trim())) ? valid(0): invalid(0, `Nombre inválido, por favor vuelva a intentarlo.`);
-    (regexEmail.exec(contact[1].value.trim())) ? valid(1): invalid(1, `Email inválido, por favor vuelva a intentarlo.`);
+    (regexEmail.exec(contact[1].value.trim())) ? valid(1): invalid(1, `Correo Electrónico, inválido, por favor vuelva a intentarlo.`);
     (regexPhone.exec(contact[2].value.trim())) ? valid(2): invalid(2, `Teléfono inválido, por favor vuelva a intentarlo.`);
     (regexMsj.exec(contact[3].value.trim())) ? valid(3): invalid(3, `Mensaje inválido, por favor vuelva a intentarlo.`);
 

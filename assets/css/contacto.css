@@ -36,7 +36,7 @@ background-color: white;
  #lupa{
     margin-top: 7%;
     font-size: 1.2vw;
-    color: rgba(132, 163, 183, 1);
+    color: rgba(42, 46, 58, 1);
     
  }
     
@@ -54,7 +54,7 @@ background-color: white;
 }
     
     #miCuenta{
-        background-color: rgba(132, 163, 183, 1);
+        background-color: rgba(42, 46, 58, 1);
         color: rgba(252, 247, 241, 1);
        margin-top: 15%;
        margin-bottom: 18%;
@@ -69,7 +69,7 @@ background-color: white;
 
     
     #shoppingCart{
-        background-color:rgba(132, 163, 183, 1) ;
+        background-color:rgba(42, 46, 58, 1) ;
         margin-top: 20%;
         margin-left: 5%;
         margin-right: 50%;
@@ -87,7 +87,7 @@ background-color: white;
           
     }
     .navbar{
-        background-color:rgba(132, 163, 183, 1);
+        background-color:rgba(42, 46, 58, 1);
         display: grid;
         text-align: center;
         height: 3.5vw;
@@ -95,7 +95,7 @@ background-color: white;
     
     
     header nav ul{
-        background-color: #84A3B7;
+        background-color:rgba(42, 46, 58, 1);
         /* margin-top: 1%; */
         margin-right: 0vw;
         margin-left: 5vw ;
@@ -160,12 +160,12 @@ background-color: white;
         margin-top:4vw;
         margin-bottom: 1vw;
         margin-left: 40%;
-        color:rgba(132, 163, 183, 1);
+        color:rgba(42, 46, 58, 1);
     }
 
     #menuHambuLinea{
         font-size: 4vw;
-        color: rgba(132, 163, 183, 1);
+        color: rgba(42, 46, 58, 1);
     }
 
     .navbar-toggler{
@@ -183,7 +183,7 @@ background-color: white;
         margin-right: 10%;
         margin-left: 3%;
         font-size: 4vw;
-        color: rgba(132, 163, 183, 1);
+        color: rgba(42, 46, 58, 1);
         border-radius: 30px;
     }
 
@@ -223,6 +223,12 @@ background-color: white;
 /*
 Zona de trabajo Fran INICIO
 */
+
+.center {
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+}
 /* .center-nav{
     display: flex!important;
     align-items: center!important;
@@ -255,7 +261,7 @@ Zona de trabajo Fran INICIO
     src: url(../font/dreamy-eyes.ttf);
 }
 
-.btn-rojo{
+.btn-celeste{ 
  background-color: #84A3B7!important;
  border-color: #84A3B7!important;
  margin-bottom: 10px;
@@ -264,25 +270,26 @@ height: 55px;
 font-size: 24px!important;
 font-family: dreamyEyes;
 }
-.row1{
+.rowUno{
+    margin-top: 1rem!important;
     display: grid;
     width: auto;
     grid-template-rows: max-content;
     text-align: center;
     background-color: #B81C00;
     height:7vw;  
-    margin-top: 7%!important;
+    margin-top: 7.5vw!important;
 }
 .titulo{
     
     font-family: MADEmirage;
     font-size: 5VW; 
     color: #fff;
-    margin-top: 1%;
+    margin-top: 1%!important;
 }
 
 @media (max-width:800px){
-    .row1{
+    .rowUno{
         height:18vw;
         margin-top: 100%;
     }
@@ -327,6 +334,8 @@ font-family: dreamyEyes;
   } */
 .bg-azuloscuro{
     background-color: #232222;
+    /*max-height: 649px;*/
+    padding: 30px!important;
 }
 .col-md-6{
     /* margin-right: 10%;
@@ -338,48 +347,33 @@ grid-auto-rows: max-content;
 justify-content: center;
 
 }
-
+.mapa-container {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 30px!important;
+  }
 .mapa{
     position: relative;
    justify-content: center;
-    width:35VW;
+    width:350px;
     height:50vw;
+    max-height: 480px;
     border:0;
-    /* margin-right: 25%; */
-    margin-left:10%;
+    /* margin-right: 25%; */ 
     /* margin-bottom: 54px;*/
 }
 
-/*@media (max-width: 450px) {
-    .mapa{
-        width:370px;
-        height:370x;
-        border:0;
-        margin-top: 54px;
-        margin-bottom: 54px;
-    }
-}
-
-@media (max-width: 380px) {
-    .mapa{
-        width:300px;
-        height:370x;
-        border:0;
-        margin-top: 54px;
-        margin-bottom: 54px;
-    }
-}
 .formulario{
-    width: 351px;
-    /* height: 471px; 
-}*/
-
-
-@media (max-width: 380px) {
-    .formulario{
-        width:300px;
-        /* height: 471px; */
-    }
+    width:350px; 
+}
+form{
+    
+    width:100%; 
+}
+@media (max-width: 380px) { 
     
     .info-contacto{
         display: inline-flex;
@@ -429,30 +423,31 @@ justify-content: center;
     border-bottom: #fff solid 1px;
     margin-bottom: 27px;
 }
+.conjunto-inputs{
+    width: 100%;
+    padding-bottom: 55px!important;
+}
+
+@media (max-width: 873px) { 
+    .conjunto-inputs{
+        padding-bottom: 80px!important;
+    }
+}
 .input-box-VM{
     height: 25px!important;
-    width: 40vw;
 }
 .inputs-VM{
     height: 25px!important;
-    width: 40vw;
+    width: 350px!important;
 }
 
-@media (max-width: 760px) {
-    .input-box-VM{
-        width: 80%;
-    }
-
-    .inputs-VM{
-        width: 80%;
-    }
 
 
-
-}
 
 .text-VM{
-    width: 100%!important;
+    width: 350px!important;
+    height: 86px!important;
+    
 } 
 /*
 Zona de trabajo Fran FIN
@@ -782,7 +777,8 @@ font-size: 1.6rem;
               }
               .enlaces {
                 position: relative;
-                Left: 6.3rem
+                width: 16rem;
+                Left: 7rem;
                }
             }
 

@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Oxygen&display=swap');
+@import url('https://fonts.cdnfonts.com/css/avenir');
+
+                
+
+.rowUno{
+    margin-top: 1rem!important;
+    display: grid;
+    width: auto;
+    grid-template-rows: max-content;
+    text-align: center;
+    background-color: #B81C00;
+    height:7vw;  
+    margin-top: 7.5vw!important;
+}
+
+.titulo{
+    
+    font-family: MADEmirage;
+    font-size: 5VW; 
+    color: #fff;
+    margin-top: 1%!important;
+}
+
+@media (max-width:800px){
+    .rowUno{
+        height:18vw;
+        margin-top: 100%;
+    }
+    .titulo{
+        margin-top: 11%;
+    }
+}
+.mensaje{
+    /*position: absolute;*/ 
+    
+    font-family: dreamyEyes;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 36px;
+    line-height: 36px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: #FCF7F1;
+    letter-spacing: 2px;
+    margin: 2rem;
+}
+@media (max-width:768px){
+    .mensaje{ 
+         
+        line-height: 20px;
+        font-size: 25px;
+        letter-spacing: 1px; 
+        margin: 1rem;
+    }
+}
+.bg-azuloscuro{
+    background-color: #232222;
+    max-height: 649px;
+}
+
+.center {
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+}
+
+.formulario{
+    width:350px; 
+}
+
+.conjunto-inputs{
+    width: 100%;
+    padding-bottom: 55px!important;
+}
+
+@media (max-width: 873px) { 
+    .conjunto-inputs{
+        padding-bottom: 80px!important;
+    }
+}
+
+
+.input-box-VM{
+    height: 25px!important;
+    width: 40vw;
+}
+.inputs-VM{
+    height: 25px!important;
+    width: 350px!important;
+}  
+
+.text-VM{
+    width: 350px!important;
+    height: 86px!important;
+    
+} 
+.btn-celeste{ 
+    background-color: #84A3B7!important;
+    border-color: #84A3B7!important;
+    margin-bottom: 10px;
+    width: 191.83px;
+   height: 55px;
+   font-size: 24px!important;
+   font-family: dreamyEyes;
+   }

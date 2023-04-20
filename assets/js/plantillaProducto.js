@@ -11,7 +11,7 @@ let jsonRapido=
         descripcion:"El preferido de muchos por su gran sabor y suavidad. El Rib-Eye es un corte que abarca la parte superior de la costilla y la carne incluida en ambos lados de la misma."
     }];
 
-    let producto = document.getElementsByClassName("producto");
+    let productoCarne = document.getElementsByClassName("productoCarne");
 
 
     window.addEventListener("load", function (event){
@@ -48,7 +48,7 @@ let jsonRapido=
     
                 </div>`;
             
-                    producto[0].insertAdjacentHTML("beforeend", card);
+                    productoCarne[0].insertAdjacentHTML("beforeend", card);
 
 
             });
