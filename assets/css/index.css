@@ -108,10 +108,7 @@
 
 
 /*Responsive */
-.container {
-    display: flex;
-    justify-content: space-between;
-}
+
 
 
 .carousel-inner img {
@@ -155,7 +152,7 @@
 
 
 
-.btn-primary {
+#botonindex{
     position: absolute;
     width: 121px;
     height: 41px;
