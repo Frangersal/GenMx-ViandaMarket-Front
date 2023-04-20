@@ -334,7 +334,8 @@ font-family: dreamyEyes;
   } */
 .bg-azuloscuro{
     background-color: #232222;
-    max-height: 649px;
+    /*max-height: 649px;*/
+    padding: 30px!important;
 }
 .col-md-6{
     /* margin-right: 10%;
@@ -352,6 +353,7 @@ justify-content: center;
     display: flex;
     align-items: center;
     justify-content: center;
+    padding-top: 30px!important;
   }
 .mapa{
     position: relative;
@@ -433,7 +435,6 @@ form{
 }
 .input-box-VM{
     height: 25px!important;
-    width: 40vw;
 }
 .inputs-VM{
     height: 25px!important;
@@ -776,7 +777,8 @@ font-size: 1.6rem;
               }
               .enlaces {
                 position: relative;
-                Left: 6.3rem
+                width: 16rem;
+                Left: 7rem;
                }
             }
 
