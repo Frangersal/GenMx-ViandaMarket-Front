@@ -1,3 +1,151 @@
 .fixheader{
-    height: 15vw;
+    height: 6.4vw;
 }
+
+@font-face {
+    font-family: MADEmirage;
+    src: url(../font/MADE\ Mirage\ Regular.otf);
+}
+
+@font-face {
+    font-family: Mirage-bold;
+    src: url("../font/MADE-Mirage-Bold.otf") 
+}
+@import url('https://fonts.cdnfonts.com/css/josefin-sans%27');
+
+
+.rowUno{
+    margin-top: 1rem;
+    display: grid;
+    width: auto;
+    grid-template-rows: max-content;
+    background-color: #B81C00;
+    margin-bottom: 0rem;
+  
+}
+.titulo{
+    
+    font-family: MADEmirage;
+    font-size: 6VW; 
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 10vw;
+    /* agregar media query para mobile */
+ 
+}
+
+.titulo4{
+    margin-top: 3rem;
+    display: grid;
+    width: auto;
+    grid-template-rows: max-content;
+    margin-bottom: 3rem;
+    color: black;
+    font-family: Mirage-bold;
+    font-size: 2VW; 
+    
+}
+input.form-control {
+    width: 100%;
+    height: 4rem;
+  }
+
+  button {
+    display: block;
+    margin: 0 auto;
+  }
+
+ 
+
+ .fondoform{
+    background-image: url(../img/Carnes/carne-fondo2.jpg);
+    background-size:  cover;
+    background-repeat: repeat;
+    background-position:  left center;
+   
+ }
+
+.contenedorform{
+    padding: 5rem;
+    background-color: rgba(254, 255, 255, 0.664);
+    border-radius: 3%;
+}
+
+.contenedorform1{
+    padding: 3rem;
+   
+    border-radius: 3%;
+}
+.textoform2{
+    font-size: 1vw;
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: bold;
+    text-align: center;
+}
+input::placeholder {
+    font-size: .8vw;
+  }
+  #btnClear, #btnAgregar{
+    background-color: #B81C00;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 1vw;
+    border-color: #B81C00;
+  }
+  #btnClear:hover, #btnAgregar:hover {
+    background-color: #2A2E3A;
+    border-color: #2A2E3A;
+  }
+
+ 
+ @media screen and (max-width:320px) {
+    .fixheader{
+        height: 18vw;
+    }
+    .form-control {
+        width: 16rem !important;
+    
+    }
+
+    .titulo{
+        font-family: MADEmirage;
+        font-size: 9VW; 
+        color: #fff;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-left: 2vw;
+        /* agregar media query para mobile */
+    }
+    .contenedorform{
+        padding: 0rem 1rem 1rem 1rem;
+        background-color: rgba(254, 255, 255, 0.664);
+        border-radius: 3%;
+    }
+
+    .textoform2{
+        font-size: 8vw;
+        font-family: 'Josefin Sans', sans-serif;
+        font-weight: bold;
+        text-align: center;
+    }
+
+    
+.titulo4{
+   
+    display: grid;
+    width: auto;
+    grid-template-rows: max-content;
+    margin-bottom: 3rem;
+    color: black;
+    font-family: Mirage-bold;
+    font-size: 6VW; 
+    
+}
+
+input::placeholder {
+    font-size: 5vw;
+  }
+    }
+
