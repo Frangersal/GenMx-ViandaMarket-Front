@@ -1,4 +1,6 @@
 /* ----Cuerpo de Inicio---- Trabaja Andy */
+@import url('https://fonts.cdnfonts.com/css/josefin-sans%27');
+
 .center {
     display: flex;
     align-items: center;
@@ -130,8 +132,9 @@
 
 
 .card-1 {
-    font-family: 'Josefin Sans';
-    src: url(./Josefin_Sans/JosefinSans-Bold.ttf);
+
+    font-family: 'Josefin Sans', sans-serif;
+    
     font-style: normal;
     font-weight: 700;
     font-size: 32px;
@@ -141,8 +144,8 @@
 }
 
 .card-2 {
-    font-family: 'Josefin Sans';
-    src: url(./Josefin_Sans/JosefinSans-Medium.ttf);
+    font-family: 'Josefin Sans', sans-serif;
+    
     font-style: normal;
     font-weight: 500;
     font-size: 20px;
@@ -153,6 +156,16 @@
 
 
 #botonindex{
+      width: 121px;
+    height: 41px;
+    background: #20465F;
+    color: white;
+    font-family: 'Josefin Sans';
+    font-style: normal;
+    font-size: 16px;
+    border-radius: 10px;
+}
+.btn-primary{
     position: absolute;
     width: 121px;
     height: 41px;
@@ -163,7 +176,6 @@
     font-size: 16px;
     border-radius: 10px;
 }
-
 .terminos {
     display: flex;
     max-width: 100%;
