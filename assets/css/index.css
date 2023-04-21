@@ -1,9 +1,5 @@
 /* ----Cuerpo de Inicio---- Trabaja Andy */
 
- @import url('https://fonts.cdnfonts.com/css/josefin-sans?styles=19769,19766,19772,19773,19767,19768,19770,19771,19764,19765');
-
-                
-
 .center {
     display: flex;
     align-items: center;
@@ -120,7 +116,9 @@
 
 
 .card-1 {
+
     font-family: 'Josefin Sans', sans-serif;
+    
     font-style: normal;
     font-weight: 700;
     font-size: 32px;
@@ -131,6 +129,7 @@
 
 .card-2 {
     font-family: 'Josefin Sans', sans-serif;
+    
     font-style: normal;
     font-weight: 500;
     font-size: 20px;
