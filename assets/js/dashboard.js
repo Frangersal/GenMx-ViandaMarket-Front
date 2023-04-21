@@ -36,20 +36,29 @@ const regexNombre = /^[a-zA-Z_-]{3,20}$/,
     // ? Functions
 function addProductos() {
     console.log(productos);
-    let addProductos = `{
-        "corte" : ${formDash[0].value},
-        "marca" : "${formDash[1].value}",
-        "calidad" : "${formDash[2].value}",
-        "origen" :  "${formDash[3].value}",
-        "gramos" :  "${formDash[4].value}",
-        "precio" :  "${formDash[5].value}",
-        "imagen" :  "${formDash[6].value}"
-        "descripcion" : "${formDash[7].value}"
-        }`;
-
+    
+            let addProductos = {
+                "corte": `${formDash[0].value}`,
+                "marca": `${formDash[1].value}`,
+                "calidad": `${formDash[2].value}`,
+                "origen": `${formDash[3].value}`,
+                "gramos": parseInt(formDash[4].value),
+                "precio": parseInt(formDash[5].value),
+                "imagen": `${formDash[6].value}`,
+                "descripcion": `${formDash[7].value}`
+            };
+       
 
 productos.push (addProductos);
 console.log(productos);
+formDash.forEach(element => {
+    if (element.id =="btnAgregar"){
+        
+    }else {
+        element.value = "";
+    }
+    
+});
 };
 
 
