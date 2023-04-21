@@ -1,10 +1,12 @@
-import { productos } from "./productos.json.js";
+import {
+    productos
+} from "./productos.json.js";
 let formDash = document.querySelectorAll('.form-dash');
 
-    formDash.forEach(element => {
-        console.log(element);
-        
-    }); 
+formDash.forEach(element => {
+    console.log(element);
+
+});
 
 //* Trae cada elemento de que coincida con formDash
 // position 0:Nombre //No vacio, no numeros, minimo 3 letras
@@ -18,7 +20,7 @@ let formDash = document.querySelectorAll('.form-dash');
 //position 8: divalert
 //position 9: btnAgregar
 //position 10: btnClear
-let isComplete = [false, false, false, false, false, false, false,false];
+let isComplete = [false, false, false, false, false, false, false, false];
 let btnClear = document.getElementById("btnClear");
 //* isComplete: declara la variable como boleana al inicio para regresar un true o false si esta bien el regax o no.
 
@@ -27,38 +29,38 @@ const regexNombre = /^[a-zA-Z_-]{3,20}$/,
     regexMarca = /^[a-zA-Z0-9_-]{3,20}$/,
     regexCalidad = /^[a-zA-Z0-9_-]{3,20}$/,
     regexOrigen = /^[a-zA-Z0-9_-]{3,20}$/,
-    regexGramos =/^(\$)?(?=[1-9]\d*)([0-9]+(\.[0-9]+)?)/,
-    regexPrecio =/^(\$)?(?=[1-9]\d*)([0-9]+(\.[0-9]+)?)/,
+    regexGramos = /^(\$)?(?=[1-9]\d*)([0-9]+(\.[0-9]+)?)/,
+    regexPrecio = /^(\$)?(?=[1-9]\d*)([0-9]+(\.[0-9]+)?)/,
     regexFoto = /^(https?|ftp):\/\/[^\s/$.?#].[^\s]*$/,
     regexDescripcion = /^[a-zA-Z0-9_-]{3,20}$/;
 
 
-    // ? Functions
+// ? Functions
 function addProductos() {
     console.log(productos);
-    
-            let addProductos = {
-                "corte": `${formDash[0].value}`,
-                "marca": `${formDash[1].value}`,
-                "calidad": `${formDash[2].value}`,
-                "origen": `${formDash[3].value}`,
-                "gramos": parseInt(formDash[4].value),
-                "precio": parseInt(formDash[5].value),
-                "imagen": `${formDash[6].value}`,
-                "descripcion": `${formDash[7].value}`
-            };
-       
 
-productos.push (addProductos);
-console.log(productos);
-formDash.forEach(element => {
-    if (element.id =="btnAgregar"){
-        
-    }else {
-        element.value = "";
-    }
-    
-});
+    let addProductos = {
+        "corte": `${formDash[0].value}`,
+        "marca": `${formDash[1].value}`,
+        "calidad": `${formDash[2].value}`,
+        "origen": `${formDash[3].value}`,
+        "gramos": parseInt(formDash[4].value),
+        "precio": parseInt(formDash[5].value),
+        "imagen": `${formDash[6].value}`,
+        "descripcion": `${formDash[7].value}`
+    };
+
+
+    productos.push(addProductos);
+    console.log(productos);
+    formDash.forEach(element => {
+        if (element.id == "btnAgregar") {
+
+        } else {
+            element.value = "";
+        }
+
+    });
 };
 
 
@@ -103,9 +105,9 @@ formDash[9].addEventListener('click', (e) => {
     (regexDescripcion.exec(formDash[7].value.trim())) ? valid(7): invalid(7, `Descripcion inválido, por favor vuelva a intentarlo.`);
 
 
-     let isActive = false;
+    let isActive = false;
 
-     for (const boolean of isComplete) {
+    for (const boolean of isComplete) {
         if (boolean) {
             isActive = true
         } else {
@@ -117,17 +119,17 @@ formDash[9].addEventListener('click', (e) => {
 
 });
 
-btnClear.addEventListener("click", function(event){
+btnClear.addEventListener("click", function (event) {
     event.preventDefault();
     formDash.forEach(element => {
-        if (element.id =="btnAgregar"){
-            
-        }else {
+        if (element.id == "btnAgregar") {
+
+        } else {
             element.value = "";
         }
-        
+
     });
-   
+
 
 }); //btnClear
 
@@ -136,3 +138,36 @@ console.log(productos);
 
 
 
+// ? boton para cargar imagenes en cloudinary
+// *****************JAVASCRIPT*********************
+// const cloudName = '"TU_NOMBRE_DE_CLOUDINARY";
+// const unsignedUploadPreset = "TU_PRESET_SIN_FIRMAR";
+// const fileInput = document.getElementById('fileInput');
+// const uploadBtn = document.getElementById('uploadBtn');
+
+// uploadBtn.addEventListener('click', (e) => {
+//     e.preventDefault();
+//     const file = fileInput.files[0];
+//     const formData = new FormData();
+//     formData.append('file', file);
+//     formData.append('upload_preset', unsignedUploadPreset);
+//     formData.append('cloud_name', cloudName);
+
+//     fetch(`https://api.cloudinary.com/v1_1/${cloudName}/upload`, {
+//             method: 'POST',
+//             body: formData
+//         })
+//         .then(response => response.json())
+//         .then(data => console.log(data))
+//         .catch(error => console.error(error));
+// });
+// *****************HTML*********************
+// 
+//      <form>
+//          <input type="file" id="fileInput">
+//          <button type="submit" id="uploadBtn">Subir imagen</button>
+//       </form> */
+// *****************Notas*********************
+// Nota: Asegúrate de reemplazar "TU_NOMBRE_DE_CLOUDINARY" y "TU_PRESET_SIN_FIRMAR" con tus propios valores. 
+// Para crear un preset firmado, debes ir al panel de control de Cloudinary, seleccionar la pestaña "Settings" y luego "Upload". 
+// En la sección de "Upload presets", puedes crear un nuevo preset y seleccionar la opción "Unsigned" para que no requiera autenticación.
