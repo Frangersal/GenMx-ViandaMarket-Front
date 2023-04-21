@@ -1,4 +1,4 @@
-/* ----Cuerpo de Inicio---- Trabaja Andy */
+/* ----Cuerpo de Inicio---- Trabaja Andy */              
 
 .center {
     display: flex;
@@ -116,9 +116,7 @@
 
 
 .card-1 {
-
     font-family: 'Josefin Sans', sans-serif;
-    
     font-style: normal;
     font-weight: 700;
     font-size: 32px;
@@ -129,7 +127,6 @@
 
 .card-2 {
     font-family: 'Josefin Sans', sans-serif;
-    
     font-style: normal;
     font-weight: 500;
     font-size: 20px;
