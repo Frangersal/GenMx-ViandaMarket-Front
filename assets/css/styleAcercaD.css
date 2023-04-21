@@ -1,6 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Oxygen&display=swap');
 @import url('https://fonts.cdnfonts.com/css/avenir');
 
+.center {
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+}
 
 /* Inicio Header */
 
@@ -65,12 +70,19 @@
 
 /* FIN CSS de la seccion [header] hecha por [caro] */
 /* Inicio CSS de la seccion [cards] hecha por [angel] */
-.textCard {
-    font-size: 1.2rem;
+.img-foto{
+    max-height: 200px;
+}
+.textCardNombre {
+    font-size: 22px;
+}
+.textCardPuesto {
+    font-size: 18px;
 }
 
 .textCardDescription {
-    font-size: 0.8rem;
+    font-size: 16px;
+    height: 100px;
 }
 .bg-card{
     background-color: #ffffff00!important;
@@ -85,43 +97,45 @@
 
     /*border-style: solid;*/
     /*border-width: 20px;*/
-    border:19px solid transparent;
+    border:12px solid transparent;
     /*
     background:url(./src/img/Untitled.png) center/100% 100% border-box;
     */
 }
 .auraMoy{
-    background:url(./src/img/aura/auraMoises.png) center/100% 100% border-box;
+    background:url(../img/aura/auraMoises.png) center/100% 100% border-box; 
 }
 .auraCaro{
-    background:url(./src/img/aura/auraCaro.png) center/100% 100% border-box;
+    background:url(../img/aura/auraCaro.png) center/100% 100% border-box;
 
 }
 .auraMaG{
-    background:url(./src/img/aura/auraMariano.png) center/100% 100% border-box;
+    background:url(../img/aura/auraMariano.png) center/100% 100% border-box;
 
 }
 .auraDom{
-    background:url(./src/img/aura/auraDominica.png) center/100% 100% border-box;
+    background:url(../img/aura/auraDominica.png) center/100% 100% border-box;
 
 }
 .auraAnd{
-    background:url(./src/img/aura/auraAndrea.png) center/100% 100% border-box;
+    background:url(../img/aura/auraAndrea.png) center/100% 100% border-box;
 
 }
 .auraFrn{
-    background:url(./src/img/aura/auraFrancisco.png) center/100% 100% border-box;
+    background:url(../img/aura/auraFrancisco.png) center/100% 100% border-box;
 
 }
 .auraJua{
-    background:url(./src/img/aura/auraJuan.png) center/100% 100% border-box;
+    background:url(../img/aura/auraJuan.png) center/100% 100% border-box;
 
 }
 .auraFel{
-    background:url(./src/img/aura/auraFelix.png) center/100% 100% border-box;
+    background:url(../img/aura/auraFelix.png) center/100% 100% border-box;
 
 }
-
+a{
+    text-decoration: none;
+}
   
 /* FIN CSS de la seccion [cards] hecha por [angel] */
 /* Inicio CSS de la seccion [carrousel] hecha por [moy] */
