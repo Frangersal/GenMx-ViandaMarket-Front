@@ -1,4 +1,9 @@
 /* ----Cuerpo de Inicio---- Trabaja Andy */
+
+ @import url('https://fonts.cdnfonts.com/css/josefin-sans?styles=19769,19766,19772,19773,19767,19768,19770,19771,19764,19765');
+
+                
+
 .center {
     display: flex;
     align-items: center;
@@ -37,21 +42,6 @@
     }
 }
 
-
-
-.somos {
-    width: 961px;
-    height: 176px;
-    font-family: 'Josefin Sans';
-    font-style: normal;
-    font-weight: 300;
-    font-size: 24px;
-    line-height: 100%;
-    text-align: center;
-    letter-spacing: -0.32px;
-    color: #000000;
-
-}
 
 /* Segundo Carrusel */
 @keyframes scroll {
@@ -130,8 +120,7 @@
 
 
 .card-1 {
-    font-family: 'Josefin Sans';
-    src: url(./Josefin_Sans/JosefinSans-Bold.ttf);
+    font-family: 'Josefin Sans', sans-serif;
     font-style: normal;
     font-weight: 700;
     font-size: 32px;
@@ -141,8 +130,7 @@
 }
 
 .card-2 {
-    font-family: 'Josefin Sans';
-    src: url(./Josefin_Sans/JosefinSans-Medium.ttf);
+    font-family: 'Josefin Sans', sans-serif;
     font-style: normal;
     font-weight: 500;
     font-size: 20px;
@@ -152,8 +140,8 @@
 
 
 
-#botonindex{
-      width: 121px;
+#botonindex {
+    width: 121px;
     height: 41px;
     background: #20465F;
     color: white;
@@ -162,7 +150,8 @@
     font-size: 16px;
     border-radius: 10px;
 }
-.btn-primary{
+
+.btn-primary {
     position: absolute;
     width: 121px;
     height: 41px;
@@ -173,40 +162,146 @@
     font-size: 16px;
     border-radius: 10px;
 }
-.terminos {
-    display: flex;
-    max-width: 100%;
-    height: 400px
-}
 
-.coccion {
-    margin: auto;
-    text-align: center;
-    font-family: 'Josefin Sans';
-    src: url(./Josefin_Sans/JosefinSans-Bold.ttf);
-    font-style: normal;
-    font-weight: 400;
-    font-size: 36px;
-    line-height: 100%;
-    letter-spacing: -0.32px;
-    color: #000000;
-}
 
-.somos2 {
-    margin: auto;
-    width: 961px;
-    height: 176px;
-    font-family: 'Josefin Sans';
-    font-style: normal;
-    font-weight: 300;
-    font-size: 24px;
-    line-height: 100%;
-    text-align: left;
-    letter-spacing: -0.32px;
-    color: #000000;
 
-}
 
-.card_bandera{
+.card_bandera {
     filter: drop-shadow(0px 4px 6px rgba(0, 0, 0, 0.5));
 }
+
+/*----Cards Marcas----*/
+html{
+    font-size: 62.5%;
+    overflow-x: hidden;
+ }
+  
+ .container{
+    max-width: 1200px;
+    margin:0 auto;
+    padding:3rem 2rem;
+ }
+ 
+
+ /*Acomodo horizontal de cards*/
+ .container .products-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+    gap:2rem;
+ }
+ /*---Se repite para .product y .product-g----*/
+ .container .products-container .product{
+    text-align: center;
+    padding:3rem 2rem;
+    background: #fff;
+    box-shadow: 0 .5rem 1rem rgba(0,0,0,.1);   
+    cursor: pointer;
+ }/*1*/
+ .container .products-container .product-g{
+    text-align: center;
+    padding:3rem 2rem;
+    background: #fff;
+    box-shadow: 0 .5rem 1rem rgba(0,0,0,.1);   
+    cursor: pointer;
+ }/*2*/
+ 
+ .container .products-container .product-g:hover{
+    outline: .2rem solid #222;
+    outline-offset: 0;
+ }/*1*/
+
+ .container .products-container .product:hover{
+    outline: .2rem solid #222;
+    outline-offset: 0;
+ }/*2*/
+ 
+ .container .products-container .product img{
+    height: 8rem;
+ }/*1*/
+ 
+ .container .products-container .product-g  img{
+    height: 6rem;
+ }/*2*/
+
+ .container .products-container .product:hover img{
+    transform: scale(.9);
+ }/*1*/
+
+
+ .container .products-container .product-g:hover img{
+    transform: scale(.9);
+ }/*2*/
+
+ 
+ 
+ 
+ .products-preview{
+    position: fixed;
+    top:0; left:0;
+    min-height: 100vh;
+    width: 100%;
+    background: rgba(0,0,0,.8);
+    display: none;
+    align-items: center;
+    justify-content: center;
+ }
+ 
+ .products-preview .preview{
+    display: none;
+    padding:2rem;
+    text-align: center;
+    background: #fff;
+    position: relative;
+    margin:2rem;
+    width: 40rem;
+ }
+ 
+ .products-preview .preview.active{
+    display: inline-block;
+ }
+ /*imagen interna de cards*/
+ .products-preview .preview img{
+    height: 15rem;
+ }
+  /*tache para salir de cards*/
+ .products-preview .preview .fa-times{
+    position: absolute;
+    top:1rem; right:1.5rem;
+    cursor: pointer;
+    color:#444;
+    font-size: 4rem;
+ }
+
+ .products-preview .preview .fa-times:hover{
+    transform: rotate(90deg);
+ }
+ 
+  /*descripción de cards*/
+ .products-preview .preview p{
+    line-height: 1.5;
+    padding:1rem 0;
+    font-size: 1.6rem;
+    color:#777;
+ }
+ 
+ 
+ 
+ @media (max-width:991px){
+ 
+  
+ 
+ }
+ 
+ @media (max-width:768px){
+ 
+    .products-preview .preview img{
+       height: 25rem;
+    }
+ 
+ }
+ 
+ @media (max-width:450px){
+ 
+  
+ }
+

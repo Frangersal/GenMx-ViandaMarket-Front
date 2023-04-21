@@ -283,6 +283,9 @@ function foreachProductos(producto) {
                         
                         <button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#staticBackdrop_${r.id}">
                         Más info
+
+      
+      
                         </button>
                     </div>
                 </div>
@@ -313,8 +316,9 @@ function foreachProductos(producto) {
                 </div>
                 </div>
             </div>
+            `
 
-            `;
+           ;
             cuerpoRows.insertAdjacentHTML("beforeend", row);
         });//producto.forEach
     }//if 
