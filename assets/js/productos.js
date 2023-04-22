@@ -324,3 +324,25 @@ function foreachProductos(producto) {
     }//if 
 }//foreachProductos 
 //foreachProductos(producto);
+let masInfo = document.getElementById("masInfo");
+        masInfo.addEventListener("click", function(event){
+            console.log(masInfo.length);
+        });
+
+    
+
+        //      let prodIndividual = {"corte": `${image.value}`,
+        //                          "marca": `${marca.value}`,
+        //                          "calidad": `${calidad.value}`,
+        //                          "origen": `${origen[3].value}`,
+        //                          "gramos": parseInt(gramos.value),
+        //                          "precio": parseInt(precio.value),
+        //                          "imagen": `${imagen.value}`,
+        //                          "descripcion": `${descripcion.value}`
+
+        //                     };
+
+
+        //  localStorage.setItem("prodSeleccionado", prodIndividual);
+
+       // }); // traer info de la card
