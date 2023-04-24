@@ -294,7 +294,7 @@ input::placeholder {
                             display: flex;
                             align-items: center;
                             justify-content: center;
-                            margin-left: 2vw;
+                            margin-left: 6vw;
                             /* agregar media query para mobile */
                         }
                         .contenedorform{
@@ -338,21 +338,18 @@ input::placeholder {
                         }
                         @media screen and (min-width:768px) {
                             .fixheader{
-                                height: 12vw !important;
+                                height: 12vw;
                             }
                             .form-control {
                                 width: 12rem ;
                             
                             }
-                        
+                            .rowUno{
+                               display: none;
+                            }
+                              
                             .titulo{
-                                font-family: MADEmirage;
-                                font-size: 7VW !important; 
-                                color: #fff;
-                                display: flex;
-                                align-items: center;
-                                justify-content: center;
-                                margin-left: 15vw !important;
+                                display: none;
                                 /* agregar media query para mobile */
                             }
                             .contenedorform{
@@ -394,11 +391,65 @@ input::placeholder {
                               }
                         
                             }
-                      
+                            @media screen and (max-width:768px) {
+                                .fixheader{
+                                    height: 12vw;
+                                }
+                                .form-control {
+                                    width: 12rem ;
+                                
+                                }
+                                .rowUno{
+                                   display: none;
+                                }
+                                  
+                                .titulo{
+                                    display: none;
+                                    /* agregar media query para mobile */
+                                }
+                                .contenedorform{
+                                    padding: 0rem 1rem 1rem 1rem;
+                                    background-color: rgba(254, 255, 255, 0.664);
+                                    border-radius: 3%;
+                                }
+                            
+                                .textoform2{
+                                    font-size: 2vw;
+                                    font-family: 'Josefin Sans', sans-serif;
+                                    font-weight: bold;
+                                    text-align: left;
+                                }
+                            
+                                
+                            .titulo4{
+                               
+                                display: grid;
+                                width: auto;
+                                grid-template-rows: max-content;
+                                margin-bottom: 3rem;
+                                color: black;
+                                font-family: Mirage-bold;
+                                font-size: 4VW; 
+                                
+                            }
+                            
+                            input::placeholder {
+                                font-size: 1.3vw;
+                              }
+                                
+                            
+                                #btnClear, #btnAgregar{
+                                    background-color: #B81C00;
+                                    font-family: 'Josefin Sans', sans-serif;
+                                    font-size: 2vw;
+                                    border-color: #B81C00;
+                                  }
+                            
+                                }
                         
             @media screen and (min-width:1024px) {
                 .fixheader{
-                    height: 6vw !important;
+                    height: 6vw ;
                 }
                 .form-control {
                     width: 12rem ;
@@ -456,7 +507,7 @@ input::placeholder {
                 }
                 @media screen and (min-width:1025px) {
                     .fixheader{
-                        height: 6vw !important;
+                        height: 6.2vw !important;
                     }
                     .form-control {
                         width: 12rem ;
@@ -465,7 +516,7 @@ input::placeholder {
                 
                     .titulo{
                         font-family: MADEmirage;
-                        font-size: 2VW !important; 
+                        font-size: 6VW !important; 
                         color: #fff;
                         display: flex;
                         align-items: center;
