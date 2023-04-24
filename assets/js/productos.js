@@ -280,8 +280,8 @@ function foreachProductos(producto) {
                                 <h4 class="card-1">${r.corte}</h4>
                                 <h6 class="card-2">Kagura</h6>
                                 <h6 class="card-2">${r.calidad}</h6>
-                                <h6>Japón</h6>
-                                <button type="button" class="btn-primary">${r.precio}</button>
+                                <h6>${r.origen}</h6>
+                                <button type="button" class="btn-primary">Ver más</button>
                             </div>
                         </div>
                     </div>
