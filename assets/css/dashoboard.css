@@ -454,4 +454,62 @@ input::placeholder {
                   }
             
                 }
-          
+                @media screen and (min-width:1025px) {
+                    .fixheader{
+                        height: 6vw !important;
+                    }
+                    .form-control {
+                        width: 12rem ;
+                    
+                    }
+                
+                    .titulo{
+                        font-family: MADEmirage;
+                        font-size: 2VW !important; 
+                        color: #fff;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        margin-left: 15vw !important;
+                        /* agregar media query para mobile */
+                    }
+                    .contenedorform{
+                        padding: 0rem 1rem 1rem 1rem;
+                        background-color: rgba(254, 255, 255, 0.664);
+                        border-radius: 3%;
+                    }
+                
+                    .textoform2{
+                        font-size: 1.3vw;
+                        font-family: 'Josefin Sans', sans-serif;
+                        font-weight: bold;
+                        text-align: center;
+                    }
+                
+                    
+                .titulo4{
+                   
+                    display: grid;
+                    width: auto;
+                    grid-template-rows: max-content;
+                    margin-bottom: 3rem;
+                    color: black;
+                    font-family: Mirage-bold;
+                    font-size: 3VW !important; 
+                    
+                }
+                
+                input::placeholder {
+                    font-size: 1vw;
+                  }
+                    
+                
+                    #btnClear, #btnAgregar{
+                        background-color: #B81C00;
+                        font-family: 'Josefin Sans', sans-serif;
+                        font-size: 1vw;
+                        border-color: #B81C00;
+                      }
+                
+                    }
+              
