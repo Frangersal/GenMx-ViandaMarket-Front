@@ -99,53 +99,468 @@ input::placeholder {
   }
 
  
- @media screen and (max-width:320px) {
-    .fixheader{
-        height: 18vw;
-    }
-    .form-control {
-        width: 16rem !important;
+
+
+    @media screen and (max-width:320px) {
+        .fixheader{
+            height: 18vw !important;
+        }
+        .form-control {
+            width: 16rem ;
+        
+        }
     
-    }
-
-    .titulo{
-        font-family: MADEmirage;
-        font-size: 9VW; 
-        color: #fff;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        margin-left: 2vw;
-        /* agregar media query para mobile */
-    }
-    .contenedorform{
-        padding: 0rem 1rem 1rem 1rem;
-        background-color: rgba(254, 255, 255, 0.664);
-        border-radius: 3%;
-    }
-
-    .textoform2{
-        font-size: 8vw;
-        font-family: 'Josefin Sans', sans-serif;
-        font-weight: bold;
-        text-align: center;
-    }
-
+        .titulo{
+            font-family: MADEmirage;
+            font-size: 9VW !important; 
+            color: #fff;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-left: 2vw;
+            /* agregar media query para mobile */
+        }
+        .contenedorform{
+            padding: 0rem 1rem 1rem 1rem;
+            background-color: rgba(254, 255, 255, 0.664);
+            border-radius: 3%;
+        }
     
-.titulo4{
-   
-    display: grid;
-    width: auto;
-    grid-template-rows: max-content;
-    margin-bottom: 3rem;
-    color: black;
-    font-family: Mirage-bold;
-    font-size: 6VW; 
+        .textoform2{
+            font-size: 8vw !important;
+            font-family: 'Josefin Sans', sans-serif;
+            font-weight: bold;
+            text-align: center !important;
+        }
     
-}
-
-input::placeholder {
-    font-size: 5vw;
-  }
+        
+    .titulo4{
+       
+        display: grid;
+        width: auto;
+        grid-template-rows: max-content;
+        margin-bottom: 3rem;
+        color: black;
+        font-family: Mirage-bold;
+        font-size: 6VW; 
+        
     }
+    
+    input::placeholder {
+        font-size: 5vw !important;
+      }
+        
+    
+        #btnClear, #btnAgregar{
+            background-color: #B81C00;
+            font-family: 'Josefin Sans', sans-serif;
+            font-size: 3vw;
+            border-color: #B81C00;
+          }
+    
+        }
+        @media screen and (max-width:375px) {
+            .fixheader{
+                height: 18vw !important;
+            }
+            .form-control {
+                width: 19rem ;
+            
+            }
+        
+            .titulo{
+                font-family: MADEmirage;
+                font-size: 9VW; 
+                color: #fff;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                margin-left: 2vw;
+                /* agregar media query para mobile */
+            }
+            .contenedorform{
+                padding: 0rem 1rem 1rem 1rem;
+                background-color: rgba(254, 255, 255, 0.664);
+                border-radius: 3%;
+            }
+        
+            .textoform2{
+                font-size: 8vw;
+                font-family: 'Josefin Sans', sans-serif;
+                font-weight: bold;
+                text-align: center;
+            }
+        
+            
+        .titulo4{
+           
+            display: grid;
+            width: auto;
+            grid-template-rows: max-content;
+            margin-bottom: 3rem;
+            color: black;
+            font-family: Mirage-bold;
+            font-size: 6VW; 
+            
+        }
+        
+        input::placeholder {
+            font-size: 5vw;
+          }
+            
+        
+            #btnClear, #btnAgregar{
+                background-color: #B81C00;
+                font-family: 'Josefin Sans', sans-serif;
+                font-size: 3vw !important;
+                border-color: #B81C00;
+              }
+        
+            }
+        
 
+                @media screen and (max-width:375px) {
+                    .fixheader{
+                        height: 20vw !important;
+                    }
+                    .form-control {
+                        width: 19rem;
+                    
+                    }
+                
+                    .titulo{
+                        font-family: MADEmirage;
+                        font-size: 9VW !important; 
+                        color: #fff;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        margin-left: 0vw !important;
+                        /* agregar media query para mobile */
+                    }
+                    .contenedorform{
+                        padding: 0rem 1rem 1rem 1rem;
+                        background-color: rgba(254, 255, 255, 0.664);
+                        border-radius: 3%;
+                    }
+                
+                    .textoform2{
+                        font-size: 8vw !important;
+                        font-family: 'Josefin Sans', sans-serif;
+                        font-weight: bold;
+                        text-align: center !important;
+                    }
+                
+                    
+                .titulo4{
+                   
+                    display: grid;
+                    width: auto;
+                    grid-template-rows: max-content;
+                    margin-bottom: 3rem;
+                    color: black;
+                    font-family: Mirage-bold;
+                    font-size: 6VW; 
+                    
+                }
+                
+                input::placeholder {
+                    font-size: 5vw !important;
+                  }
+                    
+                
+                    #btnClear, #btnAgregar{
+                        background-color: #B81C00;
+                        font-family: 'Josefin Sans', sans-serif;
+                        font-size: 3vw;
+                        border-color: #B81C00;
+                      }
+                
+                    }
+
+                    @media screen and (max-width:425px) {
+                        .fixheader{
+                            height: 18vw;
+                        }
+                        .form-control {
+                            width: 20rem;
+                        
+                        }
+                    
+                        .titulo{
+                            font-family: MADEmirage;
+                            font-size: 9VW !important; 
+                            color: #fff;
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                            margin-left: 6vw;
+                            /* agregar media query para mobile */
+                        }
+                        .contenedorform{
+                            padding: 0rem 1rem 1rem 1rem;
+                            background-color: rgba(254, 255, 255, 0.664);
+                            border-radius: 3%;
+                        }
+                    
+                        .textoform2{
+                            font-size: 8vw !important;
+                            font-family: 'Josefin Sans', sans-serif;
+                            font-weight: bold;
+                            text-align: center;
+                        }
+                    
+                        
+                    .titulo4{
+                       
+                        display: grid;
+                        width: auto;
+                        grid-template-rows: max-content;
+                        margin-bottom: 3rem;
+                        color: black;
+                        font-family: Mirage-bold;
+                        font-size: 6VW !important; 
+                        
+                    }
+                    
+                    input::placeholder {
+                        font-size: 5vw !important;
+                      }
+                        
+                    
+                        #btnClear, #btnAgregar{
+                            background-color: #B81C00;
+                            font-family: 'Josefin Sans', sans-serif;
+                            font-size: 3vw;
+                            border-color: #B81C00;
+                          }
+                    
+                        }
+                        @media screen and (min-width:768px) {
+                            .fixheader{
+                                height: 12vw;
+                            }
+                            .form-control {
+                                width: 12rem ;
+                            
+                            }
+                            .rowUno{
+                               display: none;
+                            }
+                              
+                            .titulo{
+                                display: none;
+                                /* agregar media query para mobile */
+                            }
+                            .contenedorform{
+                                padding: 0rem 1rem 1rem 1rem;
+                                background-color: rgba(254, 255, 255, 0.664);
+                                border-radius: 3%;
+                            }
+                        
+                            .textoform2{
+                                font-size: 2vw;
+                                font-family: 'Josefin Sans', sans-serif;
+                                font-weight: bold;
+                                text-align: left;
+                            }
+                        
+                            
+                        .titulo4{
+                           
+                            display: grid;
+                            width: auto;
+                            grid-template-rows: max-content;
+                            margin-bottom: 3rem;
+                            color: black;
+                            font-family: Mirage-bold;
+                            font-size: 4VW; 
+                            
+                        }
+                        
+                        input::placeholder {
+                            font-size: 1.3vw;
+                          }
+                            
+                        
+                            #btnClear, #btnAgregar{
+                                background-color: #B81C00;
+                                font-family: 'Josefin Sans', sans-serif;
+                                font-size: 2vw;
+                                border-color: #B81C00;
+                              }
+                        
+                            }
+                            @media screen and (max-width:768px) {
+                                .fixheader{
+                                    height: 12vw;
+                                }
+                                .form-control {
+                                    width: 12rem ;
+                                
+                                }
+                                .rowUno{
+                                   display: none;
+                                }
+                                  
+                                .titulo{
+                                    display: none;
+                                    /* agregar media query para mobile */
+                                }
+                                .contenedorform{
+                                    padding: 0rem 1rem 1rem 1rem;
+                                    background-color: rgba(254, 255, 255, 0.664);
+                                    border-radius: 3%;
+                                }
+                            
+                                .textoform2{
+                                    font-size: 2vw;
+                                    font-family: 'Josefin Sans', sans-serif;
+                                    font-weight: bold;
+                                    text-align: left;
+                                }
+                            
+                                
+                            .titulo4{
+                               
+                                display: grid;
+                                width: auto;
+                                grid-template-rows: max-content;
+                                margin-bottom: 3rem;
+                                color: black;
+                                font-family: Mirage-bold;
+                                font-size: 4VW; 
+                                
+                            }
+                            
+                            input::placeholder {
+                                font-size: 1.3vw;
+                              }
+                                
+                            
+                                #btnClear, #btnAgregar{
+                                    background-color: #B81C00;
+                                    font-family: 'Josefin Sans', sans-serif;
+                                    font-size: 2vw;
+                                    border-color: #B81C00;
+                                  }
+                            
+                                }
+                        
+            @media screen and (min-width:1024px) {
+                .fixheader{
+                    height: 6vw ;
+                }
+                .form-control {
+                    width: 12rem ;
+                
+                }
+            
+                .titulo{
+                    font-family: MADEmirage;
+                    font-size: 7VW !important; 
+                    color: #fff;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    margin-left: 15vw !important;
+                    /* agregar media query para mobile */
+                }
+                .contenedorform{
+                    padding: 0rem 1rem 1rem 1rem;
+                    background-color: rgba(254, 255, 255, 0.664);
+                    border-radius: 3%;
+                }
+            
+                .textoform2{
+                    font-size: 2vw;
+                    font-family: 'Josefin Sans', sans-serif;
+                    font-weight: bold;
+                    text-align: left;
+                }
+            
+                
+            .titulo4{
+               
+                display: grid;
+                width: auto;
+                grid-template-rows: max-content;
+                margin-bottom: 3rem;
+                color: black;
+                font-family: Mirage-bold;
+                font-size: 4VW; 
+                
+            }
+            
+            input::placeholder {
+                font-size: 1.3vw;
+              }
+                
+            
+                #btnClear, #btnAgregar{
+                    background-color: #B81C00;
+                    font-family: 'Josefin Sans', sans-serif;
+                    font-size: 2vw;
+                    border-color: #B81C00;
+                  }
+            
+                }
+                @media screen and (min-width:1025px) {
+                    .fixheader{
+                        height: 6.2vw !important;
+                    }
+                    .form-control {
+                        width: 12rem ;
+                    
+                    }
+                
+                    .titulo{
+                        font-family: MADEmirage;
+                        font-size: 6VW !important; 
+                        color: #fff;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        margin-left: 15vw !important;
+                        /* agregar media query para mobile */
+                    }
+                    .contenedorform{
+                        padding: 0rem 1rem 1rem 1rem;
+                        background-color: rgba(254, 255, 255, 0.664);
+                        border-radius: 3%;
+                    }
+                
+                    .textoform2{
+                        font-size: 1.3vw;
+                        font-family: 'Josefin Sans', sans-serif;
+                        font-weight: bold;
+                        text-align: center;
+                    }
+                
+                    
+                .titulo4{
+                   
+                    display: grid;
+                    width: auto;
+                    grid-template-rows: max-content;
+                    margin-bottom: 3rem;
+                    color: black;
+                    font-family: Mirage-bold;
+                    font-size: 3VW !important; 
+                    
+                }
+                
+                input::placeholder {
+                    font-size: 1vw;
+                  }
+                    
+                
+                    #btnClear, #btnAgregar{
+                        background-color: #B81C00;
+                        font-family: 'Josefin Sans', sans-serif;
+                        font-size: 1vw;
+                        border-color: #B81C00;
+                      }
+                
+                    }
+              
