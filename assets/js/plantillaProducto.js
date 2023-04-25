@@ -280,7 +280,7 @@ let producto = [
                  <img src=${selProd.imagen} alt="" class="imagen" width="200vw">
                  </div>
                  <div class="productoTexto">
-                     <h1>${selProd.cortdatos}</h1>
+                     <h1>${selProd.corte}</h1>
                      <h2>${selProd.marca}</h2>
                      <h3>${selProd.calidad}</h3>
                      <h3>${selProd.origen}</h3>

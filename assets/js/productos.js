@@ -307,7 +307,7 @@ function foreachProductos(producto) {
                         <p class="card-text carta-texto" id="card-text">${r.descripcion}</p>
                         <h5 class="card-title" id="card-price">$${r.precio}</h5>
                         
-                        <a href="/plantillaProducto.js"><button  id="btnProducto_${r.id} "type="button" class="btn btn-success btnProducto" >
+                        <a href="./plantillaProductos.html"><button  id="btnProducto_${r.id} "type="button" class="btn btn-success btnProducto" >
                         Más info </button> </a>
                     </div>
                 </div>
