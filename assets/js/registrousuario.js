@@ -47,13 +47,11 @@ const isValid = (num) => {
 };
 const saveUser = () => {
     let newUser = {
-        "User": {
-            "id": (new Date().valueOf()),
-            "nombre": `${inputRegister[0].value}`,
-            "apellidos": `${inputRegister[1].value}`,
-            "email": `${inputRegister[2].value}`,
-            "contrasena": `${inputRegister[4].value}`
-        }
+        "id": (new Date().valueOf()),
+        "nombre": `${inputRegister[0].value}`,
+        "apellidos": `${inputRegister[1].value}`,
+        "email": `${inputRegister[2].value}`,
+        "contrasena": `${inputRegister[4].value}`
     };
     addUser(newUser);
 }
