@@ -136,3 +136,37 @@ console.log(productos);
 
 
 
+
+// ? boton para cargar imagenes en cloudinary
+// *****************JAVASCRIPT*********************
+// const cloudName = '"TU_NOMBRE_DE_CLOUDINARY";
+// const unsignedUploadPreset = "TU_PRESET_SIN_FIRMAR";
+// const fileInput = document.getElementById('fileInput');
+// const uploadBtn = document.getElementById('uploadBtn');
+
+// uploadBtn.addEventListener('click', (e) => {
+//     e.preventDefault();
+//     const file = fileInput.files[0];
+//     const formData = new FormData();
+//     formData.append('file', file);
+//     formData.append('upload_preset', unsignedUploadPreset);
+//     formData.append('cloud_name', cloudName);
+
+//     fetch(`https://api.cloudinary.com/v1_1/${cloudName}/upload`, {
+//             method: 'POST',
+//             body: formData
+//         })
+//         .then(response => response.json())
+//         .then(data => console.log(data))
+//         .catch(error => console.error(error));
+// });
+// *****************HTML*********************
+// 
+//      <form>
+//          <input type="file" id="fileInput">
+//          <button type="submit" id="uploadBtn">Subir imagen</button>
+//       </form> */
+// *****************Notas*********************
+// Nota: Asegúrate de reemplazar "TU_NOMBRE_DE_CLOUDINARY" y "TU_PRESET_SIN_FIRMAR" con tus propios valores. 
+// Para crear un preset firmado, debes ir al panel de control de Cloudinary, seleccionar la pestaña "Settings" y luego "Upload". 
+// En la sección de "Upload presets", puedes crear un nuevo preset y seleccionar la opción "Unsigned" para que no requiera autenticación.
