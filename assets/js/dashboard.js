@@ -153,6 +153,21 @@ console.log(productos);
 //     formData.append('upload_preset', unsignedUploadPreset);
 //     formData.append('cloud_name', cloudName);
 
+// ? boton para cargar imagenes en cloudinary
+// *****************JAVASCRIPT*********************
+// const cloudName = '"TU_NOMBRE_DE_CLOUDINARY";
+// const unsignedUploadPreset = "TU_PRESET_SIN_FIRMAR";
+// const fileInput = document.getElementById('fileInput');
+// const uploadBtn = document.getElementById('uploadBtn');
+
+// uploadBtn.addEventListener('click', (e) => {
+//     e.preventDefault();
+//     const file = fileInput.files[0];
+//     const formData = new FormData();
+//     formData.append('file', file);
+//     formData.append('upload_preset', unsignedUploadPreset);
+//     formData.append('cloud_name', cloudName);
+
 //     fetch(`https://api.cloudinary.com/v1_1/${cloudName}/upload`, {
 //             method: 'POST',
 //             body: formData
