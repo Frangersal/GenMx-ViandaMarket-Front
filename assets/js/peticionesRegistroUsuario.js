@@ -56,13 +56,18 @@ export const addUser = async (newUser) => {
         // Verificar si existingData.record.User es un array
         if (Array.isArray(existingData.record.User)) {
             // Agregar el nuevo usuario al array User
-            const newUserRecord = {User: [...existingData.record.User, newUser]};
+            const newUserRecord = {
+                User: [...existingData.record.User, newUser]
+            };
 
             // Actualizar el archivo JSONBin con los datos nuevos
             const updateResponse = await fetch(`https://api.jsonbin.io/v3/b/${BIN_ID}`, {
-                method: 'PUT', headers: {
-                    'Content-Type': 'application/json', 'X-Master-Key': API_KEY
-                }, body: JSON.stringify(newUserRecord)
+                method: 'PUT',
+                headers: {
+                    'Content-Type': 'application/json',
+                    'X-Master-Key': API_KEY
+                },
+                body: JSON.stringify(newUserRecord)
             });
 
             const updateData = await updateResponse.json();
@@ -74,8 +79,3 @@ export const addUser = async (newUser) => {
         console.error(error);
     }
 };
-
-
-
-
-
