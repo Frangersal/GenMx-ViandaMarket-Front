@@ -40,7 +40,7 @@ let producto = [
         "descripcion": "El preferido de muchos por su gran sabor y suavidad. El Rib-Eye es un corte que abarca la parte superior de la costilla y la carne incluida en ambos lados de la misma. Este corte va desde la costilla 5 a la 12."
     },
     {
-        "id": 5,
+        "id": "5",
         "corte": "Porterhouse",
         "marca": "Stone Axe",
         "calidad": "9+",
@@ -50,7 +50,7 @@ let producto = [
         "descripcion": "El preferido de muchos por su gran sabor y suavidad. El Rib-Eye es un corte que abarca la parte superior de la costilla y la carne incluida en ambos lados de la misma. Este corte va desde la costilla 5 a la 12."
     },
     {
-        "id": 6,
+        "id": "6",
         "corte": "T-Bone",
         "marca": "Stone Axe",
         "calidad": "9+",
@@ -60,7 +60,7 @@ let producto = [
         "descripcion": "El preferido de muchos por su gran sabor y suavidad. El Rib-Eye es un corte que abarca la parte superior de la costilla y la carne incluida en ambos lados de la misma. Este corte va desde la costilla 5 a la 12."
     },
     {
-        "id": 6,
+        "id": "7",
         "corte": "Diezmillo",
         "marca": "Stone Axe",
         "calidad": "9+",
@@ -70,7 +70,7 @@ let producto = [
         "descripcion": "El preferido de muchos por su gran sabor y suavidad. El Rib-Eye es un corte que abarca la parte superior de la costilla y la carne incluida en ambos lados de la misma. Este corte va desde la costilla 5 a la 12."
     },
     {
-        "id": 7,
+        "id": "8",
         "corte": "Ribeye",
         "marca": "Margaret River",
         "calidad": "8-9",
@@ -80,7 +80,7 @@ let producto = [
         "descripcion": "El preferido de muchos por su gran sabor y suavidad. El Rib-Eye es un corte que abarca la parte superior de la costilla y la carne incluida en ambos lados de la misma. Este corte va desde la costilla 5 a la 12."
     },
     {
-        "id": 8,
+        "id": "9",
         "corte": "New York",
         "marca": "Margaret River",
         "calidad": "8-9",
@@ -90,7 +90,7 @@ let producto = [
         "descripcion": "El preferido de muchos por su gran sabor y suavidad. El Rib-Eye es un corte que abarca la parte superior de la costilla y la carne incluida en ambos lados de la misma. Este corte va desde la costilla 5 a la 12."
     },
     {
-        "id": 9,
+        "id": "10",
         "corte": "Porterhouse",
         "marca": "Margaret River",
         "calidad": "8-9",
@@ -100,7 +100,7 @@ let producto = [
         "descripcion": "El preferido de muchos por su gran sabor y suavidad. El Rib-Eye es un corte que abarca la parte superior de la costilla y la carne incluida en ambos lados de la misma. Este corte va desde la costilla 5 a la 12."
     },
     {
-        "id": 10,
+        "id": "11",
         "corte": "T-Bone",
         "marca": "Margaret River",
         "calidad": "8-9",
@@ -110,7 +110,7 @@ let producto = [
         "descripcion": "El preferido de muchos por su gran sabor y suavidad. El Rib-Eye es un corte que abarca la parte superior de la costilla y la carne incluida en ambos lados de la misma. Este corte va desde la costilla 5 a la 12."
     },
     {
-        "id": 11,
+        "id": "12",
         "corte": "Tomahawk",
         "marca": "Margaret River",
         "calidad": "8-9",
@@ -120,7 +120,7 @@ let producto = [
         "descripcion": "El preferido de muchos por su gran sabor y suavidad. El Rib-Eye es un corte que abarca la parte superior de la costilla y la carne incluida en ambos lados de la misma. Este corte va desde la costilla 5 a la 12."
     },
     {
-        "id": 12,
+        "id": "13",
         "corte": "Picana",
         "marca": "Margaret River",
         "calidad": "8-9",
@@ -130,7 +130,7 @@ let producto = [
         "descripcion": "El preferido de muchos por su gran sabor y suavidad. El Rib-Eye es un corte que abarca la parte superior de la costilla y la carne incluida en ambos lados de la misma. Este corte va desde la costilla 5 a la 12."
     },
     {
-        "id": 13,
+        "id": "14",
         "corte": "Short Ribs Boneless",
         "marca": "Margaret River",
         "calidad": "8-9",
@@ -140,7 +140,7 @@ let producto = [
         "descripcion": "El preferido de muchos por su gran sabor y suavidad. El Rib-Eye es un corte que abarca la parte superior de la costilla y la carne incluida en ambos lados de la misma. Este corte va desde la costilla 5 a la 12."
     },
     {
-        "id": 14,
+        "id": "15",
         "corte": "Sirloin",
         "marca": "Margaret River",
         "calidad": "8-9",
@@ -150,7 +150,7 @@ let producto = [
         "descripcion": "El preferido de muchos por su gran sabor y suavidad. El Rib-Eye es un corte que abarca la parte superior de la costilla y la carne incluida en ambos lados de la misma. Este corte va desde la costilla 5 a la 12."
     },
     {
-        "id": 15,
+        "id": "16",
         "corte": "Diezmillo",
         "marca": "Margaret River",
         "calidad": "8-9",
@@ -160,7 +160,7 @@ let producto = [
         "descripcion": "El preferido de muchos por su gran sabor y suavidad. El Rib-Eye es un corte que abarca la parte superior de la costilla y la carne incluida en ambos lados de la misma. Este corte va desde la costilla 5 a la 12."
     },
     {
-        "id": 16,
+        "id": "17",
         "corte": "Ribeye",
         "marca": "Excel \/ CAB",
         "calidad": "Prime",
@@ -170,7 +170,7 @@ let producto = [
         "descripcion": "El preferido de muchos por su gran sabor y suavidad. El Rib-Eye es un corte que abarca la parte superior de la costilla y la carne incluida en ambos lados de la misma. Este corte va desde la costilla 5 a la 12."
     },
     {
-        "id": 17,
+        "id": "18",
         "corte": "New York",
         "marca": "Excel \/ CAB",
         "calidad": "Prime",
@@ -180,7 +180,7 @@ let producto = [
         "descripcion": "El preferido de muchos por su gran sabor y suavidad. El Rib-Eye es un corte que abarca la parte superior de la costilla y la carne incluida en ambos lados de la misma. Este corte va desde la costilla 5 a la 12."
     },
     {
-        "id": 18,
+        "id": "19",
         "corte": "Porterhouse",
         "marca": "Excel \/ CAB",
         "calidad": "Prime",
@@ -190,7 +190,7 @@ let producto = [
         "descripcion": "El preferido de muchos por su gran sabor y suavidad. El Rib-Eye es un corte que abarca la parte superior de la costilla y la carne incluida en ambos lados de la misma. Este corte va desde la costilla 5 a la 12."
     },
     {
-        "id": 19,
+        "id": "20",
         "corte": "T-Bone",
         "marca": "Excel \/ CAB",
         "calidad": "Prime",
@@ -200,7 +200,7 @@ let producto = [
         "descripcion": "El preferido de muchos por su gran sabor y suavidad. El Rib-Eye es un corte que abarca la parte superior de la costilla y la carne incluida en ambos lados de la misma. Este corte va desde la costilla 5 a la 12."
     },
     {
-        "id": 20,
+        "id": "21",
         "corte": "Picana",
         "marca": "Sterling Silver",
         "calidad": "High Choice",
@@ -210,7 +210,7 @@ let producto = [
         "descripcion": "El preferido de muchos por su gran sabor y suavidad. El Rib-Eye es un corte que abarca la parte superior de la costilla y la carne incluida en ambos lados de la misma. Este corte va desde la costilla 5 a la 12."
     },
     {
-        "id": 21,
+        "id": "22",
         "corte": "Short Ribs",
         "marca": "Sterling Silver",
         "calidad": "High Choice",
@@ -220,7 +220,7 @@ let producto = [
         "descripcion": "El preferido de muchos por su gran sabor y suavidad. El Rib-Eye es un corte que abarca la parte superior de la costilla y la carne incluida en ambos lados de la misma. Este corte va desde la costilla 5 a la 12."
     },
     {
-        "id": 21,
+        "id": "23",
         "corte": "Vacio Argentino",
         "marca": "Sterling Silver",
         "calidad": "High Choice",
@@ -230,7 +230,7 @@ let producto = [
         "descripcion": "El preferido de muchos por su gran sabor y suavidad. El Rib-Eye es un corte que abarca la parte superior de la costilla y la carne incluida en ambos lados de la misma. Este corte va desde la costilla 5 a la 12."
     },
     {
-        "id": 22,
+        "id": "24",
         "corte": "Ribeye",
         "calidad": "Tipo \"High Choice\"",
         "origen": "Mexico",
@@ -239,7 +239,7 @@ let producto = [
         "descripcion": "El preferido de muchos por su gran sabor y suavidad. El Rib-Eye es un corte que abarca la parte superior de la costilla y la carne incluida en ambos lados de la misma. Este corte va desde la costilla 5 a la 12."
     },
     {
-        "id": 23,
+        "id": "25",
         "corte": "New York",
         "calidad": "Tipo \"High Choice\"",
         "origen": "Mexico",
@@ -248,7 +248,7 @@ let producto = [
         "descripcion": "El preferido de muchos por su gran sabor y suavidad. El Rib-Eye es un corte que abarca la parte superior de la costilla y la carne incluida en ambos lados de la misma. Este corte va desde la costilla 5 a la 12."
     },
     {
-        "id": 24,
+        "id": "26",
         "corte": "Picana",
         "calidad": "Tipo \"High Choice\"",
         "origen": "Mexico",
@@ -256,7 +256,7 @@ let producto = [
         "imagen": "https://res.cloudinary.com/dfqznh5nf/image/upload/c_pad,b_auto:predominant,fl_preserve_transparency/v1681924551/pptjdpewxf5bnunl9hs9.jpg?_s=public-apps",
         "descripcion": "El preferido de muchos por su gran sabor y suavidad. El Rib-Eye es un corte que abarca la parte superior de la costilla y la carne incluida en ambos lados de la misma. Este corte va desde la costilla 5 a la 12."
     }
-];
+  ];
 
 const { default: info2 } = await import("./../json/productos.json", {
     assert: {
@@ -307,7 +307,7 @@ function foreachProductos(producto) {
                         <p class="card-text carta-texto" id="card-text">${r.descripcion}</p>
                         <h5 class="card-title" id="card-price">$${r.precio}</h5>
                         
-                        <a href="./plantillaProductos.html"><button  id="btnProducto_${r.id} "type="button" class="btn btn-success btnProducto" >
+                        <a href="./plantillaProducto.html"><button  id="btnProducto_${r.id} "type="button" class="btn btn-success btnProducto" >
                         Más info </button> </a>
                     </div>
                 </div>
