@@ -1,0 +1,101 @@
+.fixheader {
+    height: 6.4vw;
+}
+
+@font-face {
+    font-family: MADEmirage;
+    src: url(../font/MADE\ Mirage\ Regular.otf);
+}
+
+@font-face {
+    font-family: Mirage-bold;
+    src: url("../font/MADE-Mirage-Bold.otf")
+}
+
+@import url('https://fonts.cdnfonts.com/css/josefin-sans%27');
+
+
+
+
+#Titulo1 {
+    display: grid;
+    width: auto;
+    grid-template-rows: max-content;
+    margin-bottom: 2rem;
+    color: black;
+    font-size: 2rem;
+    margin-top: 2rem;
+    font-family: 'Josefin Sans', sans-serif;
+}
+#Titulo2 {
+    display: grid;
+    width: auto;
+    grid-template-rows: max-content;
+    margin-bottom: 2rem;
+    color: black;
+    font-size: 1.2rem;
+    margin-top: 2rem;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+input.form-control {
+    width: 100%;
+    height: 2em;
+    border-radius: 1em;
+    font-size: .8rem;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+
+}
+
+button {
+    display: block;
+    margin: 0 auto;
+}
+
+
+
+.fondoform {
+    background-image: url(/assets/img/Carnes/fondo\ inicio.jpg);
+    background-size: cover;
+    background-repeat: repeat;
+    background-position: left center;
+
+}
+
+.contenedorform {
+    width: 393px;
+    height: 463px;
+    background: rgba(217, 217, 217, 0.69);
+    backdrop-filter: blur(3px);
+    border-radius: 16px;
+}
+
+.contenedorform1 {
+    padding: 3rem;
+    border-radius: 10px;
+}
+
+.textoform2 {
+    font-size: 1vw;
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: bold;
+    text-align: center;
+}
+
+input::placeholder {
+    font-size: .8vw;
+}
+
+#btnClear,
+#btnAgregar {
+    background-color: #B81C00;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 1vw;
+    border-color: #B81C00;
+}
+
+#btnClear:hover,
+#btnAgregar:hover {
+    background-color: #2A2E3A;
+    border-color: #2A2E3A;
+}
