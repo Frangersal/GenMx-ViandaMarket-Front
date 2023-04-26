@@ -148,7 +148,7 @@
 }
 
 .btn-primary {
-    position: absolute;
+ 
     width: 121px;
     height: 41px;
     background: #20465F;
@@ -167,10 +167,8 @@
 }
 
 /*----Cards Marcas----*/
-html{
-    font-size: 62.5%;
-    overflow-x: hidden;
- }
+
+ 
   
  .container{
     max-width: 1200px;
@@ -184,6 +182,7 @@ html{
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
     gap:2rem;
+ 
  }
  /*---Se repite para .product y .product-g----*/
  .container .products-container .product{
@@ -192,6 +191,8 @@ html{
     background: #fff;
     box-shadow: 0 .5rem 1rem rgba(0,0,0,.1);   
     cursor: pointer;
+    font-size: 62.5%;
+    overflow-x: hidden;
  }/*1*/
  .container .products-container .product-g{
     text-align: center;
@@ -199,6 +200,8 @@ html{
     background: #fff;
     box-shadow: 0 .5rem 1rem rgba(0,0,0,.1);   
     cursor: pointer;
+    font-size: 62.5%;
+    overflow-x: hidden;
  }/*2*/
  
  .container .products-container .product-g:hover{
@@ -226,7 +229,7 @@ html{
 
  .container .products-container .product-g:hover img{
     transform: scale(.9);
- }/*2*/
+ }
 
  
  
@@ -257,7 +260,7 @@ html{
  }
  /*imagen interna de cards*/
  .products-preview .preview img{
-    height: 15rem;
+    height: 8rem;
  }
   /*tache para salir de cards*/
  .products-preview .preview .fa-times{
@@ -265,7 +268,7 @@ html{
     top:1rem; right:1.5rem;
     cursor: pointer;
     color:#444;
-    font-size: 4rem;
+    font-size: 2rem;
  }
 
  .products-preview .preview .fa-times:hover{
@@ -276,7 +279,7 @@ html{
  .products-preview .preview p{
     line-height: 1.5;
     padding:1rem 0;
-    font-size: 1.6rem;
+    font-size: 1rem;
     color:#777;
  }
  
