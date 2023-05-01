@@ -1,22 +1,44 @@
-#left {
+
+.left {
     background-color: #2A2E3A;
     color: white;
 }
 
-#rigth {
-    background-color: white;
+.left img {
+    height: 10rem;
 }
 
-.imgBeef {
-    width: 15em;
-    margin-top: 3em;
+.image {
+    display: flex;
+    justify-content: center;
 }
 
-.btn-secondary {
+.image img {
+    width: 30rem;
+    margin-bottom: 1rem;
+}
+
+.imagePaypal {
+    display: flex;
+    justify-content: center;
+}
+
+.imagePaypal img {
+    width: 20rem;
+}
+
+ul {
+    list-style: none;
+}
+
+button.btn {
     background-color: #2A2E3A;
+    color: white;
 }
 
-.icon-back {
-    width: 3em;
-    cursor: pointer;
+a svg {
+    width: 2rem;
+    display: flex;
+    margin-left: 4em;
+    margin-top: 5em;
 }
