@@ -45,3 +45,12 @@
     line-height: 20px;
     color: #000000;
 }
+
+.btnProducto{
+    width: 121px;
+    height: 41px;
+    font-family: 'Josefin Sans';
+    font-style: normal;
+    font-size: 16px;
+    border-radius: 10px;
+}

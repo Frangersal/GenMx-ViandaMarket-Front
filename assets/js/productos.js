@@ -292,16 +292,15 @@ function foreachProductos(producto) {
         producto.forEach(r => {
             let row = 
                 `
-            <div class="col-md-4">
-                <div class="card carta mt-2 mb-2" id="card" style="width: auto;">
-                    <img src="${r.imagen}" class="card-img-top carta-imagen" id="card-img-top" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title carta-titulo" id="card-title">${r.corte}</h5>
-                        <b class="carta-categoria" id="card-category">Categoría - ${r.calidad}</b>
-                        <p class="card-text carta-texto" id="card-text">${r.origen}</p>
-                        <h5 class="card-title" id="card-price">$${r.precio}</h5>
-                        
-                        <a href="./plantillaProducto.html"><button  id="btnProducto_${r.id} "type="button" class="btn btn-success btnProducto" >
+                <div class="col-4">
+                <div class="card" style="border: none;">
+                  <img src="${r.imagen}" class="card-img-top">
+                  <div class="card-body" style="text-align: left;">
+                    <h4 class="card-1">${r.corte}</h4>
+                    <h6 class="card-2">${r.marca}</h6>
+                    <h6 class="card-2">${r.calidad}</h6>
+                    <h6 class="card-2">${r.origen}</h6>
+                        <a href="./plantillaProducto.html"><button  id="btnProducto_${r.id} "type="button" class="btnProducto" style="background-color: #20465F; color: white;">
                         Más info </button> </a>
                     </div>
                 </div>
