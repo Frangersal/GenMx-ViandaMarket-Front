@@ -23,7 +23,7 @@
     grid-template-rows: max-content;
     margin-bottom: 2rem;
     color: black;
-    font-size: 2rem;
+    font-size: 2.25rem;
     margin-top: 2rem;
     font-family: 'Josefin Sans', sans-serif;
 }
@@ -34,8 +34,8 @@
     grid-template-rows: max-content;
     margin-bottom: 2rem;
     color: black;
-    font-size: 1.2rem;
-
+    font-size: 1.5rem;
+    font-weight: 300;
     font-family: 'Josefin Sans', sans-serif;
 }
 
@@ -52,7 +52,7 @@
     text-align: center;
 }
 
-#btnentrar {
+#btnAgregar {
     background: linear-gradient(180deg, #B81C00 40.88%, #7A1212 96.49%);
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     border-radius: 10px;
@@ -60,31 +60,52 @@
     font-style: normal;
     width: 100%;
     color: white;
- 
+
 }
 
-input.form-control {      
+input.form-control {
     border-radius: 1em;
-    font-size: .8rem;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    
+
 }
 
 .contenedorform {
-    max-width: 25rem;
-    width: 100%;
-    height: 27rem;
+    max-width: 30rem;
+    width: 30rem;
+    height: 30rem;
     background: rgba(217, 217, 217, 0.69);
     backdrop-filter: blur(3px);
     border-radius: 16px;
     margin: 1rem;
+    justify-content: center;
+    align-items: center;
+    justify-items: center;
 }
 
+.ayudaInicioSesion {
+    text-align: center;
+}
+
+
+.h6 {
+    cursor: pointer;
+    color: black;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 1.25rem;
+    font-weight: 300;
+}
+
+.h6:hover {
+    cursor: pointer;
+    color: #B81C00;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 1.25rem;
+}
 
 .fondoform {
     background-image: url(/assets/img/Carnes/fondo\ inicio.jpg);
     background-size: cover;
- 
+
     background-position: left center;
 
 }
@@ -92,4 +113,5 @@ input.form-control {
 .contenedorform1 {
     padding: 4.5rem;
     border-radius: 10px;
+
 }

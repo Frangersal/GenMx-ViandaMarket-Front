@@ -98,6 +98,13 @@ input::placeholder {
     border-color: #2A2E3A;
   }
 
+  #upload_widget{
+    width: 25vw;
+    background-color: #B81C00;
+    border: 1px solid transparent;
+    color: white;
+  }
+
  
 
 

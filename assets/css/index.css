@@ -167,8 +167,10 @@
 }
 
 /*----Cards Marcas----*/
-
- 
+.preview p{
+    font-size: 62.5%;
+    overflow-x: hidden;
+ }
   
  .container{
     max-width: 1200px;
