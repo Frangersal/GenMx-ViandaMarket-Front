@@ -1,6 +1,19 @@
 .ajusteHeader{
-    height: 12vw;
+    height: 9vw;
 }
+
+.icon-back{
+    font-size: 4vw;
+    margin-left: 5%;
+    color: rgba(42, 46, 58, 1);
+}
+
+
+.icon-back:hover{
+    color: #B81C00;
+}
+
+
 
 .productoCarne{
     margin: 5%;
@@ -39,10 +52,21 @@
     gap:3em;
 }
 
+.descripcion{
+    margin-top: 7%;
+}
+
 @media (max-width:800px){
     .ajusteHeader{
         height: 20vw;
     }
+
+    .icon-back{
+        font-size: 8vw;
+        margin-left: 5%;
+        color: rgba(42, 46, 58, 1);
+    }
+    
 
     .productoCarne{
         grid-template-columns: 1fr;

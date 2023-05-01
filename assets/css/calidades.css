@@ -1,0 +1,61 @@
+.ajusteHeader{
+    height: 10vw;
+}
+
+#tablaInter{
+    width: 100%;
+}
+
+.imagenContenedor{
+    display: grid;
+   grid-template-rows: min-content;
+    margin-left: 8%;
+
+
+}
+
+
+.productoTexto{
+    justify-content: center;
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
+
+#imagenCox{
+    width: 100%;
+    padding-right: 5%;
+    
+}
+
+
+
+
+
+@media (max-width:800px){
+    .ajusteHeader{
+        height: 20vw;
+    }
+}
+
+@media (min-width:800px){
+    .title{
+        height: 10vw;
+    }
+
+    .title h1{
+        padding-top: 4%;
+
+    }
+
+    .terminoCox{
+        margin: 5%;
+        align-items: center;
+        display: grid;
+        grid-template-columns: 0.8fr 1fr;
+        gap:1em;
+        
+    } 
+
+
+}

@@ -1,6 +1,13 @@
 import {
     productos
-} from "./productos.json.js";
+}from "./productos.json.js";
+
+
+
+
+
+
+
 let formDash = document.querySelectorAll('.form-dash');
 
 formDash.forEach(element => {
@@ -20,19 +27,29 @@ formDash.forEach(element => {
 //position 8: divalert
 //position 9: btnAgregar
 //position 10: btnClear
-let isComplete = [false, false, false, false, false, false, false, false];
+let isComplete = [false, false, false, false, false, false, false];
+let corte = document.getElementById("Nombre");
+let marca = document.getElementById("Brand");
+let calidad = document.getElementById("Quality");
+let origen = document.getElementById("Origin");
+let gramos = document.getElementById("Gramos");
+let precio = document.getElementById("Price");
+let foto = document.getElementById("Photo");
+let descri = document.getElementById("descripcion");
+let alerta = document.getElementById("divAlert");
+let btnAgregar = document.getElementById("btnAgregar");
 let btnClear = document.getElementById("btnClear");
 //* isComplete: declara la variable como boleana al inicio para regresar un true o false si esta bien el regax o no.
 
 // ? Expresiones Regulares
-const regexNombre = /^[a-zA-Z_-]{3,20}$/,
-    regexMarca = /^[a-zA-Z0-9_-]{3,20}$/,
-    regexCalidad = /^[a-zA-Z0-9_-]{3,20}$/,
-    regexOrigen = /^[a-zA-Z0-9_-]{3,20}$/,
+const regexNombre = /^[a-záéíóúA-ZÁÉÍÓÚ0-9_-]{3,}$/,
+    regexMarca = /^[a-záéíóúA-ZÁÉÍÓÚ0-9_-]{3,}$/,
+    regexCalidad = /^[a-záéíóúA-ZÁÉÍÓÚ0-9_-]{3,}$/,
+    regexOrigen = /^[a-záéíóúA-ZÁÉÍÓÚ0-9_-]{3,}$/,
     regexGramos = /^(\$)?(?=[1-9]\d*)([0-9]+(\.[0-9]+)?)/,
     regexPrecio = /^(\$)?(?=[1-9]\d*)([0-9]+(\.[0-9]+)?)/,
     regexFoto = /^(https?|ftp):\/\/[^\s/$.?#].[^\s]*$/,
-    regexDescripcion = /^[a-zA-Z0-9_-]{3,20}$/;
+    regexDescripcion = /^[a-záéíóúA-ZÁÉÍÓÚ0-9_-]{3,}$/;
 
 
 // ? Functions
@@ -40,19 +57,23 @@ function addProductos() {
     console.log(productos);
 
     let addProductos = {
-        "corte": `${formDash[0].value}`,
-        "marca": `${formDash[1].value}`,
-        "calidad": `${formDash[2].value}`,
-        "origen": `${formDash[3].value}`,
-        "gramos": parseInt(formDash[4].value),
-        "precio": parseInt(formDash[5].value),
-        "imagen": `${formDash[6].value}`,
-        "descripcion": `${formDash[7].value}`
+        "id":`0001`,
+        "corte": `${corte.value}`,
+        "marca": `${marca.value}`,
+        "calidad": `${calidad.value}`,
+        "origen": `${origen.value}`,
+        "gramos": parseInt(gramos.value),
+        "precio": parseInt(precio.value),
+        "imagen": `${foto.value}`,
+        "descripcionCorte": `${descri.value}`,
+        "descripcionMarca":`descripcionsobremarca`
     };
 
 
     productos.push(addProductos);
     console.log(productos);
+    localStorage.setItem("producto",JSON.stringify(productos));
+
     formDash.forEach(element => {
         if (element.id == "btnAgregar") {
 
@@ -61,7 +82,32 @@ function addProductos() {
         }
 
     });
+
+
+
+
 };
+
+function exitoToast() {
+    let alert = `   
+    <div class="toast align-items-center text-white border-0 mb-2" style="background-color:rgba(62, 175, 62, 0.496);" role="alert" aria-live="assertive" aria-atomic="true">
+  <div class="d-flex">
+    <div class="toast-body" style="color:#232222;">
+    <i class="bi bi-exclamation-circle-fill"></i>
+      Producto subido exitosamente
+    </div>
+    <button type="button" class="btn-close btn-close-white me-2 m-auto" data-bs-dismiss="toast" aria-label="Close"></button>
+  </div>
+</div>
+    `
+    alerta.innerHTML += alert;
+    const toastElList = [].slice.call(document.querySelectorAll('.toast'))
+    const toastList = toastElList.map(function (toastEl) {
+        return new bootstrap.Toast(toastEl)
+    })
+    toastList.forEach(toast => toast.show())
+    
+}
 
 
 
@@ -73,13 +119,13 @@ const invalid = (num, msj) => {
   <div class="d-flex">
     <div class="toast-body" style="color:#73510d;">
     <i class="bi bi-exclamation-circle-fill"></i>
-      ${msj}
+    ${msj}
     </div>
     <button type="button" class="btn-close btn-close-white me-2 m-auto" data-bs-dismiss="toast" aria-label="Close"></button>
   </div>
 </div>
     `
-    formDash[8].innerHTML += alert;
+    alerta.innerHTML += alert;
     const toastElList = [].slice.call(document.querySelectorAll('.toast'))
     const toastList = toastElList.map(function (toastEl) {
         return new bootstrap.Toast(toastEl)
@@ -89,20 +135,22 @@ const invalid = (num, msj) => {
 
 const valid = (num) => {
     isComplete[num] = true;
+
+  
 }
 
 // ? Listeners
-formDash[9].addEventListener('click', (e) => {
+btnAgregar.addEventListener('click', (e) => {
     e.preventDefault();
-    formDash[8].innerHTML = "";
-    (regexNombre.exec(formDash[0].value.trim())) ? valid(0): invalid(0, `Nombre inválido, por favor vuelva a intentarlo.`);
-    (regexMarca.exec(formDash[1].value.trim())) ? valid(1): invalid(1, `Marca, inválido, por favor vuelva a intentarlo.`);
-    (regexCalidad.exec(formDash[2].value.trim())) ? valid(2): invalid(2, `Calidad inválido, por favor vuelva a intentarlo.`);
-    (regexOrigen.exec(formDash[3].value.trim())) ? valid(3): invalid(3, `Origen inválido, por favor vuelva a intentarlo.`);
-    (regexGramos.exec(formDash[4].value.trim())) ? valid(4): invalid(4, `Gramos, inválido, por favor vuelva a intentarlo.`);
-    (regexPrecio.exec(formDash[5].value.trim())) ? valid(5): invalid(5, `Precio inválido, por favor vuelva a intentarlo.`);
-    (regexFoto.exec(formDash[6].value.trim())) ? valid(6): invalid(6, `Foto inválido.`);
-    (regexDescripcion.exec(formDash[7].value.trim())) ? valid(7): invalid(7, `Descripcion inválido, por favor vuelva a intentarlo.`);
+    alerta.innerHTML = "";
+    (regexNombre.exec(corte.value.trim())) ? valid(0): invalid(0, `Nombre inválido, por favor vuelva a intentarlo.`);
+    (regexMarca.exec(marca.value.trim())) ? valid(1): invalid(1, `Marca, inválido, por favor vuelva a intentarlo.`);
+    (regexCalidad.exec(calidad.value.trim())) ? valid(2): invalid(2, `Calidad inválido, por favor vuelva a intentarlo.`);
+    (regexOrigen.exec(origen.value.trim())) ? valid(3): invalid(3, `Origen inválido, por favor vuelva a intentarlo.`);
+    (regexGramos.exec(gramos.value.trim())) ? valid(4): invalid(4, `Gramos, inválido, por favor vuelva a intentarlo.`);
+    (regexPrecio.exec(precio.value.trim())) ? valid(5): invalid(5, `Precio inválido, por favor vuelva a intentarlo.`);
+    (regexFoto.exec(foto.value.trim())) ? valid(6): invalid(6, `Foto inválido.`);
+    (regexDescripcion.exec(descri.value.trim())) ? valid(6): invalid(6, `Descripcion inválido, por favor vuelva a intentarlo.`);
 
 
     let isActive = false;
@@ -115,7 +163,7 @@ formDash[9].addEventListener('click', (e) => {
             break;
         }
     }
-    (isActive === true) ? addProductos(): ' ';
+    (isActive === true) ? (addProductos(), exitoToast()) : ' ';
 
 });
 
@@ -135,6 +183,14 @@ btnClear.addEventListener("click", function (event) {
 
 
 console.log(productos);
+
+let producto =[];
+window.addEventListener("load",function(event){
+    if (localStorage.getItem("producto")!=null){
+        producto = JSON.parse(localStorage.getItem("prodcuto"))
+    };
+});
+
 
 
 

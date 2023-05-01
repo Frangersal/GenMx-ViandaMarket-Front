@@ -52,6 +52,23 @@ button {
     margin: 0 auto;
 }
 
+.ayudaInicioSesion{
+    text-align: center;
+}
+
+
+h6{
+    cursor: pointer;
+    color: black;
+    text-decoration: none;
+    text-decoration: inherit;
+
+}
+
+h6:hover{
+    cursor: pointer;
+    color: #B81C00;
+}
 
 
 .fondoform {
