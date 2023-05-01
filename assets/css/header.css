@@ -1,0 +1,216 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Oxygen&display=swap');
+@import url('https://fonts.cdnfonts.com/css/avenir');
+
+                
+body{
+background-color: white;
+}
+
+/*
+----Barra de navegación e intro
+*/
+
+.header {
+    background-color: #FCF7F1;
+    display:grid;
+    grid-auto-flow: column;
+    grid-template-columns: 2fr 1fr;
+    align-content: center;
+    height: 4vw;
+    
+    
+    }
+
+    .headerDestok .barraMenu{
+        font-size: 1.3vw;
+        cursor: pointer;
+        margin-left: 10%;
+
+    }
+ .iconos{
+    display:grid;
+    grid-auto-flow: column;
+    
+ }
+
+ #lupa{
+    margin-top: 7%;
+    font-size: 1.2vw;
+    color: rgba(42, 46, 58, 1);
+    
+ }
+    
+    #VMlogo{
+        margin-left: 20%;
+        margin-top: 2%;
+        width: 10vw;
+    }
+    
+
+.dropdownBuscador{
+    margin-top: 1.4vw;
+    margin-left: 115%;
+    margin-right: 20%;
+}
+    
+    #miCuenta{
+        background-color: rgba(42, 46, 58, 1);
+        color: rgba(252, 247, 241, 1);
+       margin-top: 15%;
+       margin-bottom: 18%;
+       margin-left: 50%;
+        font-size:1.1vw;
+        text-decoration: solid;
+        text-align: center;
+       border-radius: 30px;
+    }
+    
+    
+
+    
+    #shoppingCart{
+        background-color:rgba(42, 46, 58, 1) ;
+        margin-top: 20%;
+        margin-left: 5%;
+        margin-right: 50%;
+        margin-bottom: 25%;
+       text-align: center;
+        font-size: 1vw;
+     color:rgba(252, 247, 241, 1);
+     position:right;
+     border-radius: 30px;
+    
+    }
+    
+    .headerBar{
+        display: grid;
+          
+    }
+    .navbar{
+        background-color:rgba(42, 46, 58, 1);
+        display: grid;
+        text-align: center;
+        height: 3.5vw;
+    }
+    
+    
+    header nav ul{
+        background-color:rgba(42, 46, 58, 1);
+        /* margin-top: 1%; */
+        margin-right: 0vw;
+        margin-left: 5vw ;
+        list-style: none;
+        cursor: pointer;
+        font-size: 1.5vw;
+        color: rgba(252, 247, 241, 1);
+        display: grid;
+        grid-auto-flow: column;
+        grid-auto-columns: max-content;
+        gap:8vw;
+        text-align: justify;
+        margin-bottom: 10%;
+
+    }
+    .barraMenu{
+        margin-bottom: 2vw;
+    }
+
+    .headerDestok .barraMenu{
+        height: 1vw;
+        font-size: 1.5vw;
+        cursor: pointer;
+        margin-left: 3%;
+        
+
+    }
+
+    
+   header nav ol li{
+    text-align:center; 
+    }
+
+
+    .headerCel{
+        display: none;
+        background-color: #FCF7F1;
+        list-style: none;
+        height: 13vw;
+
+    }
+
+    .navbar-nav{ 
+        background-color: transparent;
+        font-size: 3vw;
+        gap:0.1vw;
+    }
+
+    .offcanvas-header{
+        background-color: #FCF7F1;
+    }
+    
+    #VMlogo2{
+        margin-left:8%;
+        margin-top: 2%;
+        margin-right: 1%;
+        width: 35vw;
+        
+    }
+
+    #menuHambu{
+        margin-top:4vw;
+        margin-bottom: 1vw;
+        margin-left: 40%;
+        color:rgba(42, 46, 58, 1);
+    }
+
+    #menuHambuLinea{
+        font-size: 4vw;
+        color: rgba(42, 46, 58, 1);
+    }
+
+    .navbar-toggler{
+        margin-top: 25%;
+    }
+
+    .btn-close{
+        font-size: 3vw;
+    }
+
+
+    #shoppingCart2{
+        margin-right: 10%;
+        /* margin-bottom: 3vw; */
+        margin-right: 10%;
+        margin-left: 3%;
+        font-size: 4vw;
+        color: rgba(42, 46, 58, 1);
+        border-radius: 30px;
+    }
+
+    .copytexto{
+        font-size: 0.7rem;
+    }
+
+ @media (max-width:800px){
+    .headerCel{
+        display:block;
+    }
+ }
+
+ @media (max-width:800px){
+    .header{
+        display:none;
+    }
+
+    header nav ul{
+        display: none;
+    }
+
+    .navbar{
+        display: none;
+    }
+ }  
+    
+/*
+----Barra de navegación e intro
+*/
