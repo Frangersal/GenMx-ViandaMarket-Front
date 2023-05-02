@@ -70,13 +70,13 @@ input.form-control {
 .contenedorform{
     padding: 5rem;
     background-color: rgba(254, 255, 255, 0.664);
-    border-radius: 3%;
+    border-radius: 25px;
 }
 
 .contenedorform1{
     padding: 3rem;
    
-    border-radius: 3%;
+    border-radius: 25px;
 }
 .textoform2{
     font-size: 1vw;
@@ -534,7 +534,7 @@ input::placeholder {
                     .contenedorform{
                         padding: 0rem 1rem 1rem 1rem;
                         background-color: rgba(254, 255, 255, 0.664);
-                        border-radius: 3%;
+                        border-radius:  25px;
                     }
                 
                     .textoform2{
