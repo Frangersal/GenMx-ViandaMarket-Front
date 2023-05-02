@@ -257,8 +257,8 @@ Zona de trabajo Fran INICIO
     src: url(../font/MADE\ Mirage\ Regular.otf);
 }
 @font-face {
-    font-family: dreamyEyes;
-    src: url(../font/dreamy-eyes.ttf);
+    font-family: Josefine;
+    src: url(../font/Josefin_Sans/JosefinSans-Regular.ttf);
 }
 
 .btn-celeste{ 
@@ -268,7 +268,7 @@ Zona de trabajo Fran INICIO
  width: 191.83px;
 height: 55px;
 font-size: 24px!important;
-font-family: dreamyEyes;
+font-family: Josefine;
 }
 .rowUno{
     margin-top: 1rem!important;
@@ -408,7 +408,7 @@ form{
 .info{ 
     width:  291px!important;
     height: 60px!important;
-    font-family: dreamyEyes;
+    font-family: Josefine;
     color: #fff; 
     line-height: 18px;
     letter-spacing: 1.8px;
@@ -457,7 +457,7 @@ Zona de trabajo Fran FIN
 
 @font-face {
     font-family: Mirage-medium;
-    src: url("../font/MADE\ Mirage\ Regular.otf") 
+    src: url("../font/MADE\ Mirage\ Regular.otf")
 }
 
 @font-face {
