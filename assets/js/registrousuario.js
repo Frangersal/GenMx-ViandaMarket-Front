@@ -50,7 +50,7 @@ const saveUser = () => {
         "id": (new Date().valueOf()),
         "nombre": `${inputRegister[0].value}`,
         "apellidos": `${inputRegister[1].value}`,
-        "email": `${inputRegister[2].value}`,
+        "email": `${(inputRegister[2].value).toLowerCase()}`,
         "contrasena": `${inputRegister[4].value}`
     };
     addUser(newUser);
