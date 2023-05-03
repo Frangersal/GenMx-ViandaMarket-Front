@@ -241,55 +241,19 @@ let productos = [
   }
 ];
 
-// const { default: info2 } = await import("./../json/productos.json", {
-//     assert: {
-//         type: "json",
-//     },
-// });
-// console.log(info2);
-
-// function getProducto() {
-//     return new Promise((resolve, reject) => {
-//         if (info2 == null) {
-//             reject(new Error("Producto no existe"));
-//         } // if == null
-//         setTimeout(() => {
-//             resolve(productos);
-//             foreachProductos(productos);
-//         }, 1);
-//     }); // new Promise  
-// }
-
-// getProducto();
-
-
-// un foreach recorriendo el JSON producto que es un array
-
-let producto=[];
+let cuerpoRows = document.getElementById("row");
 window.addEventListener("load",function(event){
-    if (localStorage.getItem("producto")!=null){
-        producto = JSON.parse(localStorage.getItem("producto"))
-        foreachProductos(productos)
+    if (localStorage.getItem("producto")==null){
+      localStorage.setItem("producto", JSON.stringify(productos));
+        foreachProductos(producto)
     }
-    localStorage.setItem("producto", JSON.stringify(productos));
+    foreachProductos(producto);
 
 });
 
-
-//Funcion para recorrer el JSON y mostrarlo en forma de cartas al DOM
-function foreachProductos(productos) {
-    // Variable que toma el elemento con el ID row
-    let cuerpoRows = document.getElementById("row");
-    // Mandar array producto a la consola para fines depurativos
-    console.log(producto)
-    // Manda la el JSON producto al Local Storage en forma de string 
-    // localStorage.setItem("producto", JSON.stringify(productos));
-    // Si producto del Local Storage no es igual a nulo
+let producto= JSON.parse(localStorage.getItem("producto"));
+function foreachProductos(producto) {
     if (localStorage.getItem("producto") != null) {
-        // la variable producto se iguala a un JSON almacenado almacenado en Local Storage (se hace una conversion de string a JSON) 
-       let producto = JSON.parse(localStorage.getItem("producto", productos.value));
-        console.log(producto);
-        //Por cada JSON del arreglo producto ejecutar la siguiente funcion
         producto.forEach(r => {
             let row = 
                 `
@@ -307,36 +271,15 @@ function foreachProductos(productos) {
                 </div>
             </div>`;
 
-            // <!-- Button trigger modal -->
-            
-            // <!-- Modal -->
-            // <div class="modal fade" id="staticBackdrop_${r.id}" data-bs-backdrop="static" data-bs-keyboard="false" 
-            // tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
-            //     <div class="modal-dialog">
-            //     <div class="modal-content">
-            //         <div class="modal-header">
-            //         <h1 class="modal-title fs-5" id="staticBackdropLabel">${r.title}</h1>
-            //         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-            //         </div>
-            //         <div class="modal-body">
-            //         ${r.description}
-            //         </div>
-                    
-            //         <div class="modal-body">
-            //         <h5  >$${r.price}</h5> 
-            //         </div>
-            //         <div class="modal-footer">
-            //         <button type="button" class="btn btn-warning" data-bs-dismiss="modal">Close</button>
-                        
-            //         </div>
-            //     </div>
-            //     </div>
-            // </div>
+  
             
 
             cuerpoRows.insertAdjacentHTML("beforeend", row);
 
         });//producto.forEach
+
+
+
 
 
         //?Esto srive para mandar la seleccion a la pagina de producto invidual
