@@ -55,12 +55,41 @@ const saveUser = () => {
     };
     addUser(newUser);
 }
+
+function compararInputAndLS(input) {
+    const users = JSON.parse(localStorage.getItem("Users")); 
+    let emailExists = false;
+    if (users === null) {
+        return false; // El JSON no existe en localStorage
+    } else {
+
+        for (let i = 0; i < users.length; i++) { 
+            if (users[i].email === input) {
+                emailExists = true;
+                break;
+            }
+        }
+
+        if (emailExists) {
+            console.log(`El email ${input} ya se encuentra registrado.`);
+            console.log(`emailExists - ${emailExists}`);
+            return emailExists;
+        } else {
+            console.log(`El email ${input} no se encuentra registrado.`);
+            console.log(`emailExists - ${emailExists}`);
+            return emailExists;
+        } 
+    }
+
+
+} 
+
 inputRegister[5].addEventListener("click", (e) => {
     e.preventDefault();
     inputRegister[7].innerHTML = "";
     (regexName.exec(inputRegister[0].value.trim())) ? isValid(0) : isInvalid(0, `Nombre inválido, por favor vuelva a intentarlo.`);
     (regexLastNames.exec(inputRegister[1].value.trim())) ? isValid(1) : isInvalid(1, `Apellidos inválidos, por favor vuelva a intentarlo.`);
-    (regexEmail.exec(inputRegister[2].value.trim())) ? isValid(2) : isInvalid(2, `Correo Electrónico, inválido, por favor vuelva a intentarlo.`);
+    (regexEmail.exec(inputRegister[2].value.trim()) && !compararInputAndLS(inputRegister[2].value) ) ? isValid(2) : isInvalid(2, `Correo Electrónico, inválido o ya esta siendo usado, por favor vuelva a intentarlo.`);
     (regexPassword.exec(inputRegister[3].value.trim())) ? isValid(3) : isInvalid(3, `Contraseña, inválido, por favor vuelva a intentarlo.`);
     (inputRegister[3].value.trim() === inputRegister[4].value.trim()) ? isValid(4) : isInvalid(4, `Contraseña, No coincide por favor vuelva a intentarlo.`);
 
