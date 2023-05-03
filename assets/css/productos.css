@@ -1,3 +1,4 @@
+
 .titulo{
     
     font-family: MADEmirage;
@@ -53,4 +54,10 @@
     font-style: normal;
     font-size: 16px;
     border-radius: 10px;
+}
+
+@media (max-width:800px){
+    .ajusteHeader{
+        height: 7vw;
+    }
 }

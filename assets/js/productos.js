@@ -241,26 +241,26 @@ let productos = [
   }
 ];
 
-const { default: info2 } = await import("./../json/productos.json", {
-    assert: {
-        type: "json",
-    },
-});
-console.log(info2);
+// const { default: info2 } = await import("./../json/productos.json", {
+//     assert: {
+//         type: "json",
+//     },
+// });
+// console.log(info2);
 
-function getProducto() {
-    return new Promise((resolve, reject) => {
-        if (info2 == null) {
-            reject(new Error("Producto no existe"));
-        } // if == null
-        setTimeout(() => {
-            resolve(productos);
-            foreachProductos(productos);
-        }, 1);
-    }); // new Promise  
-}
+// function getProducto() {
+//     return new Promise((resolve, reject) => {
+//         if (info2 == null) {
+//             reject(new Error("Producto no existe"));
+//         } // if == null
+//         setTimeout(() => {
+//             resolve(productos);
+//             foreachProductos(productos);
+//         }, 1);
+//     }); // new Promise  
+// }
 
-getProducto();
+// getProducto();
 
 
 // un foreach recorriendo el JSON producto que es un array
@@ -268,7 +268,8 @@ getProducto();
 let producto=[];
 window.addEventListener("load",function(event){
     if (localStorage.getItem("producto")!=null){
-        producto = JSON.parse(localStorage.getItem("prodcuto"))
+        producto = JSON.parse(localStorage.getItem("producto"))
+        foreachProductos(productos)
     }
     localStorage.setItem("producto", JSON.stringify(productos));
 
@@ -276,7 +277,7 @@ window.addEventListener("load",function(event){
 
 
 //Funcion para recorrer el JSON y mostrarlo en forma de cartas al DOM
-function foreachProductos(producto) {
+function foreachProductos(productos) {
     // Variable que toma el elemento con el ID row
     let cuerpoRows = document.getElementById("row");
     // Mandar array producto a la consola para fines depurativos

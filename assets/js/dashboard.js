@@ -48,8 +48,8 @@ const regexNombre = /^[a-záéíóúA-ZÁÉÍÓÚ0-9_-]{3,}$/,
     regexOrigen = /^[a-záéíóúA-ZÁÉÍÓÚ0-9_-]{3,}$/,
     regexGramos = /^(\$)?(?=[1-9]\d*)([0-9]+(\.[0-9]+)?)/,
     regexPrecio = /^(\$)?(?=[1-9]\d*)([0-9]+(\.[0-9]+)?)/,
-    regexFoto = /^(https?|ftp):\/\/[^\s/$.?#].[^\s]*$/,
-    regexDescripcion = /^[a-záéíóúA-ZÁÉÍÓÚ0-9_-]{3,}$/;
+    regexFoto = /^(https?|ftp):\/\/[^\s/$.?#].[^\s]*$/;
+    // regexDescripcion = /^[a-záéíóúA-ZÁÉÍÓÚ0-9_-]{3,}$/;
 
 
 // ? Functions
@@ -150,7 +150,7 @@ btnAgregar.addEventListener('click', (e) => {
     (regexGramos.exec(gramos.value.trim())) ? valid(4): invalid(4, `Gramos, inválido, por favor vuelva a intentarlo.`);
     (regexPrecio.exec(precio.value.trim())) ? valid(5): invalid(5, `Precio inválido, por favor vuelva a intentarlo.`);
     (regexFoto.exec(foto.value.trim())) ? valid(6): invalid(6, `Foto inválido.`);
-    (regexDescripcion.exec(descri.value.trim())) ? valid(6): invalid(6, `Descripcion inválido, por favor vuelva a intentarlo.`);
+    // (regexDescripcion.exec(descri.value.trim())) ? valid(6): invalid(6, `Descripcion inválido, por favor vuelva a intentarlo.`);
 
 
     let isActive = false;

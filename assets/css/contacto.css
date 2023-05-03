@@ -176,16 +176,23 @@ background-color: white;
         font-size: 3vw;
     }
 
-
-    #shoppingCart2{
-        margin-right: 10%;
-        /* margin-bottom: 3vw; */
-        margin-right: 10%;
-        margin-left: 3%;
+    #login{
         font-size: 4vw;
         color: rgba(42, 46, 58, 1);
-        border-radius: 30px;
-    }
+        margin-left:8%;
+  
+        
+      }
+      #shoppingCart2{
+        margin-top: 1%;
+          margin-right: 10%;
+          /* margin-left: 3%; */
+          font-size: 4vw;
+          color: rgba(42, 46, 58, 1);
+          border-radius: 30px;
+      }
+
+    
 
     .copytexto{
         font-size: 0.7rem;

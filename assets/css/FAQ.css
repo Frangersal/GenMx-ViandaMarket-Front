@@ -15,7 +15,7 @@
 
 .title{
     margin-top: 5vw;
-    height: 19vw;
+    height: 16vw;
     background-color: rgba(184, 28, 0, 1);
 }
 
@@ -24,7 +24,7 @@
     color: rgba(252, 247, 241, 1);
     padding-top: 11%;
     text-align: center;
-    font-size: 6vw;
+    font-size: 4vw;
 }
 
 .text1{
@@ -40,7 +40,7 @@
 
 @media (min-width:800px){
     .title{
-        height: 11vw;
+        height: 8vw;
     }
 
     .title h1{
