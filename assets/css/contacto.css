@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Oxygen&display=swap');
 @import url('https://fonts.cdnfonts.com/css/avenir');
 
-                
+            
 body{
 background-color: white;
 }
@@ -9,7 +9,7 @@ background-color: white;
 /*
 ----Barra de navegación e intro
 */
-
+@import url('https://fonts.cdnfonts.com/css/josefin-sans%27'); 
 .header {
     background-color: #FCF7F1;
     display:grid;
@@ -25,6 +25,7 @@ background-color: white;
         font-size: 1.3vw;
         cursor: pointer;
         margin-left: 10%;
+        font-family: 'Josefin Sans', sans-serif;
 
     }
  .iconos{
@@ -51,6 +52,7 @@ background-color: white;
     margin-top: 1.4vw;
     margin-left: 115%;
     margin-right: 20%;
+    font-family: 'Josefin Sans', sans-serif
 }
     
     #miCuenta{
@@ -63,6 +65,7 @@ background-color: white;
         text-decoration: solid;
         text-align: center;
        border-radius: 30px;
+       font-family: 'Josefin Sans', sans-serif
     }
     
     
@@ -99,6 +102,7 @@ background-color: white;
     
     
     header nav ul{
+        font-family: 'Josefin Sans', sans-serif;
         background-color:rgba(42, 46, 58, 1);
         /* margin-top: 1%; */
         margin-right: 0vw;
