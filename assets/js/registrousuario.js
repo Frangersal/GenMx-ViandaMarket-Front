@@ -42,8 +42,31 @@ const isInvalid = (num, msj) => {
     })
     toastList.forEach(toast => toast.show())
 };
+
+const isSuccess = () => {
+    let alert = `   
+      <div class="toast align-items-center text-white border-0 mb-2" style="background-color: #216610;" role="alert" aria-live="assertive" aria-atomic="true">
+          <div class="d-flex">
+              <div class="toast-body">
+                <i class="bi bi-check-circle-fill"></i>
+                ¡Se ha creado el usuario exitosamente!
+              </div>
+          <button type="button" class="btn-close btn-close-white me-2 m-auto" data-bs-dismiss="toast" aria-label="Close"></button>
+          </div>
+      </div>
+    `;
+    inputRegister[7].innerHTML += alert;
+    const toastElList = [].slice.call(document.querySelectorAll('.toast'))
+    const toastList = toastElList.map(function (toastEl) {
+      return new bootstrap.Toast(toastEl)
+    })
+    toastList.forEach(toast => toast.show())
+};
+
 const isValid = (num) => {
     isComplete[num] = true;
+    
+     
 };
 const saveUser = () => {
     let newUser = {
@@ -79,10 +102,10 @@ function compararInputAndLS(input) {
             console.log(`emailExists - ${emailExists}`);
             return emailExists;
         } 
-    }
-
-
+    } 
 } 
+
+
 
 inputRegister[5].addEventListener("click", (e) => {
     e.preventDefault();
@@ -103,7 +126,13 @@ inputRegister[5].addEventListener("click", (e) => {
         }
     }
     console.log(isActive);
-    (isActive === true) ? saveUser() : '';
+    if (isActive) {
+        saveUser();
+        isSuccess();
+        for (let i = 0; i <= 5; i++) {
+            inputRegister[i].value = "";
+        } 
+    } 
 
 })
 inputRegister[6].addEventListener("click", () => {
@@ -111,3 +140,6 @@ inputRegister[6].addEventListener("click", () => {
         inputRegister[i].value = "";
     }
 })
+ 
+    
+
