@@ -10,8 +10,11 @@
 
 @font-face {
     font-family: Josefin;
-    src: url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@1,500&family=Raleway:wght@600&display=swap');
+    src: url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@600&display=swap');
 }
+
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@600&display=swap');
+
 
 .title{
     margin-top: 5vw;
@@ -28,14 +31,18 @@
 }
 
 .text1{
-    padding: 5%;
+    font-size: 1vw;
+    margin-right: 15%;
+    margin-left: 15%;
+    padding: 3%;
     justify-content: center;
     text-align: justify;
-    font-family: Josefin;
+    font-family: 'Josefin Sans', sans-serif;
 }
 
 .text1 h3{
-    font-size: 3vw;
+    font-size: 1.8vw;
+    font-family: 'Josefin Sans', sans-serif;
 }
 
 @media (min-width:800px){
@@ -45,15 +52,17 @@
 
     .title h1{
         padding-top: 3%;
-
     }
+
+
+
 }
 
 .faq{
     list-style: none;
     max-width: 97vw;
-    margin-left: 5%;
-    margin-right: 15%;
+    margin-left: 15%;
+    margin-right: 20%;
 }
 
 .faq li{
@@ -63,6 +72,11 @@
 
 .faq li:first-child{
     border-top: 2px rgba(132, 163, 183, 1) solid;
+}
+
+.faq img{
+   margin-left: 15%;
+    width: 35vw;
 }
 
 .question{
@@ -96,11 +110,12 @@
 
 
 .faq p{
-    font-family: Josefin;
-    font-size: 2vw;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 1.7vw;
 }
 
 .answer{
+    font-family: 'Josefin Sans', sans-serif;
     overflow: hidden;
     height: 0;
     padding: 0 1em 0 3.3em;

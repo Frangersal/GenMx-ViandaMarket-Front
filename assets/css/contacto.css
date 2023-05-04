@@ -81,6 +81,10 @@ background-color: white;
      border-radius: 30px;
     
     }
+
+    #shoppingCart:hover, #miCuenta:hover{
+        background-color: #B81C00;
+    }
     
     .headerBar{
         display: grid;
@@ -192,7 +196,9 @@ background-color: white;
           border-radius: 30px;
       }
 
-    
+      #menuHambuLinea:hover, #shoppingCart2:hover, #login:hover{
+        color:rgba(184, 28, 0, 1);
+      }
 
     .copytexto{
         font-size: 0.7rem;

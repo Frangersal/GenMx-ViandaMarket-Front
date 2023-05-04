@@ -269,7 +269,9 @@ function foreachProductos(producto) {
                         Más info </button> </a>
                     </div>
                 </div>
-            </div>`;
+            </div>`
+            
+            ;
 
   
             

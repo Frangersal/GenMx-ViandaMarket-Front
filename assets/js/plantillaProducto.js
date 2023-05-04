@@ -43,7 +43,7 @@ let producto = [
       "origen": "Australia",
       "precio": "3.790,00",
       "imagen": "https://res.cloudinary.com/dw1mig7ts/image/upload/v1682899806/ViandaMarket/NewYork_-wagyustoneaxe2_gwu63x.jpg",
-      "gramos": "360 / 380 / 430",
+      "gramos": "360 / 380  / 430",
       "descripcionCorte": "Es un corte muy bien valorado, viene del lomo de la res. Es popular por su gran suavidad y poca grasa.",
       "descripcionMarca": "Stone Axe es un Wagyu Fullblood Australiano con BMS 9+, lo mas alto en la escala de marmoleo australiana."
     },
@@ -211,7 +211,7 @@ let producto = [
       "origen": "Mexico",
       "precio": "698,00",
       "imagen": "https://res.cloudinary.com/dw1mig7ts/image/upload/v1682899813/ViandaMarket/Ribeye-choicemx_ssi9q1.jpg",
-      "gramos": "380 / 400 / 420 / 450",
+      "gramos": "380 / 400  / 420 / 450",
       "descripcionCorte": "El preferido de muchos, esto gracias a su balance de sabor, suavidad y cantidad de grasa, es un corte sin hueso que proviene de la parte superior de las costillas.",
       "descripcionMarca": "El producto que manejamos en esta categoria proviene de Sonora, con un excelente sabor, calidad y textura. Su marmoleo es similar a los productos Choice y Prime."
     },
@@ -273,9 +273,9 @@ let producto = [
                            Seleccionar
                          </button>
                          <ul class="dropdown-menu">
-                           <li><a class="dropdown-item" href="#">Aquí</a></li>
-                           <li><a class="dropdown-item" href="#">Va</a></li>
-                           <li><a class="dropdown-item" href="#">Inventario</a></li>
+                           <li><a class="dropdown-item" href="#">${selProd.gramos.split("/")[0]}</a></li>
+                           <li><a class="dropdown-item" href="#">${selProd.gramos.split("/")[1]}</a></li>
+                           <li><a class="dropdown-item" href="#">${selProd.gramos.split("/")[2]}</a></li>
                          </ul>
                        </div>
                        <div class="precio">
