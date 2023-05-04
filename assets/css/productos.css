@@ -1,67 +1,58 @@
+.titulo {
 
-.titulo{
-    
     font-family: MADEmirage;
-    font-size: 4VW; 
+    font-size: 4VW;
     color: #fff;
-    margin-top: 1%!important;
+    margin-top: 1% !important;
 }
-
-.rowUno{
-    margin-top: 1rem!important;
+.rowUno {
+    margin-top: 1rem !important;
     display: grid;
     width: auto;
     grid-template-rows: max-content;
     text-align: center;
     background-color: #B81C00;
-    height:7vw;  
-    margin-top: 7.5vw!important;
+    height: 7vw;
+    margin-top: 7.5vw !important;
 }
-
-
-.card-img-top{
+.card-img-top {
 
     width: auto;
     grid-template-rows: max-content;
-    height:17vw;  
+    height: 22vw;
 }
-
 .card-1 {
     font-family: 'Josefin Sans';
     src: url(./Josefin_Sans/JosefinSans-Bold.ttf);
     font-style: normal;
-    font-weight: 700;
+    font-weight: bolder;
     font-size: 32px;
     line-height: 32px;
     color: #000000;
-
 }
-
 .card-2 {
     font-family: 'Josefin Sans';
     src: url(./Josefin_Sans/JosefinSans-Medium.ttf);
     font-style: normal;
-    font-weight: 500;
+    font-weight: bolder;
     font-size: 20px;
     line-height: 20px;
     color: #000000;
 }
-
-.btnProducto{
-    width: 121px;
-    height: 41px;
+.btnProducto {
+    width: 131px;
+    height: 36px;
     font-family: 'Josefin Sans';
     font-style: normal;
     font-size: 16px;
-    border-radius: 10px;
+    border-radius: 0px;
+    text-align: left;
 }
-
-#btnProducto:hover{
-background-color: #B81C00;
+#btnProducto:hover {
+    background-color: #B81C00;
 }
-
-@media (max-width:800px){
-    .ajusteHeader{
+@media (max-width:800px) {
+    .ajusteHeader {
         height: 7vw;
     }
 }
