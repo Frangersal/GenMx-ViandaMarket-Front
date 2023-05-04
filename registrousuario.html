@@ -34,9 +34,10 @@
                 <div class="col-md-8">
 
                     <h4 class=" mb-3 text-center" id="Titulo1">REGÍSTRATE</h4>
+                    <p class="p2">¿Tienes una cuenta?<br>Inicia sesión 
+                        <a href="./iniciosesion.html" class="h6"><strong>aquí</strong></p></a>
                     <h5 class=" mb-3 text-center" id="Titulo2">Ingresa tus datos</h5>
                     <!--*Campos del form-->
-
                     <!-- Este div manda la alerta -->
                     <div class="container row d-flex justify-content-center">
                         <form class="g-3">
@@ -45,58 +46,54 @@
                                 <input type="text" class="form-control register" placeholder="Nombre(s)">
                                 <div class="alert alert-danger fade show" style="display:none;" role="alert"
                                      id="alertValidaciones">
-                                    <p id="alertValidacionesTexto"></p>
-                                </div>
+                                <p id="alertValidacionesTexto"></p>
+                            </div>
+                            <div class="mb-3 justify-content-center" id="inputs">
+                                <label for="validationServer01" class="form-label"></label>
+                                <input type="text" class="form-control register" placeholder="Apellidos">
+                            <div class="alert alert-danger fade show" style="display:none;" role="alert" id="alertValidaciones">
+                                <p id="alertValidacionesTexto"></p>
+                            </div>
                                 <div class="mb-3 justify-content-center" id="inputs">
                                     <label for="validationServer01" class="form-label"></label>
-                                    <input type="text" class="form-control register" placeholder="Apellidos">
-                                    <div class="alert alert-danger fade show" style="display:none;" role="alert"
-                                         id="alertValidaciones">
+                                    <input type="text" class="form-control register" placeholder="Correo electrónico">
+                                    <div class="alert alert-danger fade show" style="display:none;" role="alert" id="alertValidaciones">
                                         <p id="alertValidacionesTexto"></p>
                                     </div>
                                     <div class="mb-3 justify-content-center" id="inputs">
-                                        <label for="validationServer01" class="form-label"></label>
-                                        <input type="text" class="form-control register"
-                                               placeholder="Correo electrónico">
-                                        <div class="alert alert-danger fade show" style="display:none;" role="alert"
-                                             id="alertValidaciones">
-                                            <p id="alertValidacionesTexto"></p>
-                                        </div>
-                                        <div class="mb-3 justify-content-center" id="inputs">
-                                            <label for="validationServer01" class="form-label"></label>
-                                            <input type="password" class="form-control register"
-                                                   placeholder="Contraseña">
-                                            <div class="alert alert-danger fade show" style="display:none;" role="alert"
-                                                 id="alertValidaciones">
-                                                <p id="alertValidacionesTexto"></p>
-                                            </div>
-                                            <div class="mb-3 justify-content-center" id="inputs">
-                                                <label for="validationServer01" class="form-label"></label>
-                                                <input type="password" class="form-control register"
-                                                       placeholder="Confirmar  constraseña">
-                                                <div class="alert alert-danger fade show" style="display:none;"
-                                                     role="alert"
-                                                     id="alertValidaciones">
-                                                    <p id="alertValidacionesTexto"></p>
-                                                </div>
-                                                <p>Tu contraseña debe contener al menos un dígito, una mayúscula, una minúscula y un caracter especial. </p>
-                                            </div>
-                                            <div class="text-center">
-                                                <button id="btnAgregar"
-                                                        class="btn btn-lg btn-block form-dash register"
-                                                        type="button">Registrarse
-                                                </button>
-                
-                                                <button id="btnClear"
-                                                        class="btn btn-secondary btn-lg btn-block form-dash register"
-                                                        type="button">Limpiar todo
-                                                </button>
-                                                <hr class="mb-4">
-                                            </div>
+                            <label for="validationServer01" class="form-label"></label>
+                            <input type="password" class="form-control register"
+                                    placeholder="Contraseña">
+                            <div class="alert alert-danger fade show" style="display:none;" role="alert"
+                                    id="alertValidaciones">
+                                <p id="alertValidacionesTexto"></p>
+                            </div>
+                            <div class="mb-3 justify-content-center" id="inputs">
+                                <label for="validationServer01" class="form-label"></label>
+                                <input type="password" class="form-control register"
+                                        placeholder="Confirmar  constraseña">
+                                <div class="alert alert-danger fade show" style="display:none;"
+                                        role="alert"
+                                        id="alertValidaciones">
+                                    <p id="alertValidacionesTexto"></p>
+                                </div>
+                                <p>Tu contraseña debe contener al menos un dígito, una mayúscula, una minúscula y un caracter especial. </p>
+                            </div>
+                            <div class="text-center">
+                                <button id="btnAgregar"
+                                        class="btn btn-lg btn-block form-dash register"
+                                        type="button">Registrarse
+                                </button>
 
+                                <button id="btnClear"
+                                        class="btn btn-secondary btn-lg btn-block form-dash register"
+                                        type="button">Limpiar todo
+                                </button>
+                                <hr class="mb-4">
+                            </div>  
                         </form>
                     </div>
-                </div>
+            </div>
 </section>
 <!--Toast-->
 <div>
