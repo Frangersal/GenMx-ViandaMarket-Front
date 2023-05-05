@@ -1,5 +1,5 @@
 
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@1,700&display=swap');
 
 .left {
     background-color: #2A2E3A;
@@ -14,6 +14,18 @@
     font-family: Roboto;
 }
 
+h5.caption {
+    font-family: Josefin Sans;
+    display: flex;
+    justify-content: center;
+}
+
+.caption {
+    font-family: Josefin Sans;
+    display: flex;
+    justify-content: left;
+}
+
 .image {
     display: flex;
     justify-content: center;
@@ -21,6 +33,11 @@
 
 .image img {
     width: 30rem;
+}
+
+img.icon-card {
+    width: 3em;
+    height: 2em;
 }
 
 .imagePaypal {
