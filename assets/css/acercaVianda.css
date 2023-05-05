@@ -26,7 +26,7 @@
 
 .mision, .vision, .valores{
     padding: 15%;
-    
+
 }
 
 .mision, .vision{
@@ -64,11 +64,11 @@ justify-self: center;
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
         gap:1em;
-        
-    } 
+
+    }
 
 
- 
+
 
 }
 
@@ -80,8 +80,8 @@ justify-self: center;
         grid-template-rows: max-content 1fr;
         gap:3em;
         text-align: justify;
-        
-        
+
+
     }
     #videoV{
         padding-left: 15%;
@@ -97,8 +97,8 @@ justify-self: center;
     #fachadaVFoto{
         width: 58vw;
     }
-   
-    
+
+
 }
 
 

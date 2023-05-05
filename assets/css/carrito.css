@@ -1,0 +1,33 @@
+@import url('https://fonts.cdnfonts.com/css/made-mirage');
+@import url('https://fonts.cdnfonts.com/css/josefin-sans');
+
+.title {
+    margin-top: 3vw;
+    height: 17vw;
+    background-color: rgba(184, 28, 0, 1);
+}
+
+.title h1 {
+    font-family: 'MADE Mirage', sans-serif;
+    color: rgba(252, 247, 241, 1);
+    padding-top: 11%;
+    text-align: center;
+    font-size: 5vw;
+    font-style: normal;
+    font-weight: 400;
+}
+
+#legend {
+    font-family: 'Josefin Sans', sans-serif;
+    font-style: normal;
+    font-size: 12px;
+}
+#btnPagar{
+    background: #2A2E3A;
+    border-radius: 10px;
+    font-family: 'Josefin Sans', sans-serif;
+    font-style: normal;
+}
+
+
+
