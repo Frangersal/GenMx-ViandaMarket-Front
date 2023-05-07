@@ -49,7 +49,8 @@ const isSuccess = () => {
           <div class="d-flex">
               <div class="toast-body">
                 <i class="bi bi-check-circle-fill"></i>
-                ¡Se ha creado el usuario exitosamente!
+                ¡Se ha creado el usuario exitosamente! <br>
+                Dele click a Iniciar Sesión
               </div>
           <button type="button" class="btn-close btn-close-white me-2 m-auto" data-bs-dismiss="toast" aria-label="Close"></button>
           </div>
