@@ -39,7 +39,9 @@
 }
 
 .parrafoinicio{
-    width: 23em;
+    width: 24em;
+    padding: 1rem;
+
 }
 
 
@@ -145,7 +147,7 @@
         }
 
         .imageninicio{
-            max-width: 280px !important;
+            max-width: 200px !important;
           
         }
         .textoinicio{
@@ -180,7 +182,6 @@
             margin-bottom: 0rem;
         }
 }
-
 
 
 
@@ -285,6 +286,8 @@
         .textobjetivos {
             font-family: Josefine;
             font-size: 4vw;
+            padding-left: 3em;
+            padding-right: 3em;
         }
         .margen {
             margin-bottom: 3rem;
@@ -303,7 +306,17 @@
          }
        
   }
- 
+  @media screen and (max-width: 1199px) {
+    .imageninicio {
+      max-width: auto !important;
+    }
+  }
+
+  @media screen and (min-width: 1200px) {
+    .imageninicio {
+      max-width:40rem !important ;
+    }
+  }
 
 
   @media screen and (min-width: 1200px){
@@ -324,3 +337,4 @@
             font-family: Josefine;
             font-size: 1.2vw;
         }
+   
