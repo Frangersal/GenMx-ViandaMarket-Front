@@ -1,4 +1,4 @@
-let productos = [
+let producto = [
   {
     "id": 1,
     "corte": "Ribeye",
@@ -43,7 +43,7 @@ let productos = [
     "origen": "Australia",
     "precio": "3.790,00",
     "imagen": "https://res.cloudinary.com/dw1mig7ts/image/upload/v1682899806/ViandaMarket/NewYork_-wagyustoneaxe2_gwu63x.jpg",
-    "gramos": "360 / 380 / 430",
+    "gramos": "360 / 380  / 430",
     "descripcionCorte": "Es un corte muy bien valorado, viene del lomo de la res. Es popular por su gran suavidad y poca grasa.",
     "descripcionMarca": "Stone Axe es un Wagyu Fullblood Australiano con BMS 9+, lo mas alto en la escala de marmoleo australiana."
   },
@@ -211,7 +211,7 @@ let productos = [
     "origen": "Mexico",
     "precio": "698,00",
     "imagen": "https://res.cloudinary.com/dw1mig7ts/image/upload/v1682899813/ViandaMarket/Ribeye-choicemx_ssi9q1.jpg",
-    "gramos": "380 / 400 / 420 / 450",
+    "gramos": "380 / 400  / 420 / 450",
     "descripcionCorte": "El preferido de muchos, esto gracias a su balance de sabor, suavidad y cantidad de grasa, es un corte sin hueso que proviene de la parte superior de las costillas.",
     "descripcionMarca": "El producto que manejamos en esta categoria proviene de Sonora, con un excelente sabor, calidad y textura. Su marmoleo es similar a los productos Choice y Prime."
   },
@@ -240,51 +240,47 @@ let productos = [
     "descripcionMarca": "El producto que manejamos en esta categoria proviene de Sonora, con un excelente sabor, calidad y textura. Su marmoleo es similar a los productos Choice y Prime."
   }
 ];
-let cuerpoRows = document.getElementById("row");
+let productoCarne = document.getElementsByClassName("productoCarne");
 window.addEventListener("load", function (event) {
-  if (localStorage.getItem("producto") == null) {
-    localStorage.setItem("producto", JSON.stringify(productos));
-    foreachProductos(producto)
+  if (localStorage.getItem("productoSeleccionado") == null) {
+    console.log("Error");
+    console.log(typeof (localStorage.getItem("productoSeleccionado")));
+    let error = `<h1> No se pudo cargar la página correctamente por favor
+        vuelve a intentarlo </h1>`
+    productoCarne[0].innerHTML = error;
   }
-  foreachProductos(producto);
-});
-let producto = JSON.parse(localStorage.getItem("producto"));
-function foreachProductos(producto) {
-  if (localStorage.getItem("producto") != null) {
-    producto.forEach(r => {
-      let row =
-        `
-                <div class="col-4">
-                <div class="card" style="border: none;">
-                  <img src="${r.imagen}" class="card-img-top">
-                  <div class="card-body" style="text-align: left;">
-                    <h4 class="card-1">${r.corte}</h4>
-                    <h6 class="card-2">${r.marca}</h6>
-                    <h6 class="card-2">${r.calidad}</h6>
-                    <h6 class="card-2">${r.origen}</h6>
-                        <a href="./plantillaProducto.html">
-                        <button  id="btnProducto_${r.id} "type="button" class="btnProducto" style="background-color: #2A2E3A; color: white;">Ver producto</button> </a>
-                    </div>
-                </div>
-            </div>`
-        ;
-      cuerpoRows.insertAdjacentHTML("beforeend", row);
-    });//producto.forEach
-    //?Esto srive para mandar la seleccion a la pagina de producto invidual
-    //==========================================================
-    let botones = document.getElementsByClassName("btnProducto");
-    console.log(botones.length);
-    for (let index = 0; index < botones.length; index++) {
-      botones[index].addEventListener("click", function (event) {
-        //console.log("click" + event.target.id);
-        //console.log(event.target.id.split("_")[1]);
-        localStorage.setItem("productoSeleccionado", event.target.id.split("_")[1]);
-      });//for que revisa el click del boton
-    }//for que evalua botone
-  }//if 
-}//foreachProductos 
-        //?Esto srive para mandar la seleccion a la pagina de producto invidual
-        //==========================================================
-
-
-
+  if (localStorage.getItem("productoSeleccionado") != null) {
+    console.log(producto.find(id => id.id == (parseInt(localStorage.getItem("productoSeleccionado")))));
+    let selProd = producto.find(id => id.id == (parseInt(localStorage.getItem("productoSeleccionado"))));
+    selProd = `
+                 <div class="imagenContenedor">
+                 <img src=${selProd.imagen} alt="" class="imagen" width="2vw">
+                 </div>
+                 <div class="productoTexto">
+                     <h1>${selProd.corte}</h1>
+                     <h2>${selProd.marca}</h2>
+                     <h3>${selProd.calidad}</h3>
+                     <h3>${selProd.origen}</h3>
+                     <h4 style="color:rgb(20, 179, 20)">Existencia</h4>
+                     <div class="dropdown">
+                         <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                           Seleccionar
+                         </button>
+                         <ul class="dropdown-menu">
+                           <li><a class="dropdown-item" href="#">${selProd.gramos.split("/")[0]}</a></li>
+                           <li><a class="dropdown-item" href="#">${selProd.gramos.split("/")[1]}</a></li>
+                           <li><a class="dropdown-item" href="#">${selProd.gramos.split("/")[2]}</a></li>
+                         </ul>
+                       </div>
+                       <div class="precio">
+                       <h2 style="color:rgba(184, 28, 0, 1)">$${selProd.precio}</h2>
+                       <button type="button" class="btnCompra">Añadir al carrito</button>                    
+                       </div>
+                       <p class="descripcion"> <h3>Descripción del corte:</h3> <span> ${selProd.descripcionCorte} </span><br>
+                       <h3>Descripción de la marca:</h3>
+                       <span>${selProd.descripcionMarca}</span>
+                       </p>
+                 </div>`;
+    productoCarne[0].insertAdjacentHTML("beforeend", selProd);
+  }
+})//window

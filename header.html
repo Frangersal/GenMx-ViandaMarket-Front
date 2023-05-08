@@ -1,5 +1,9 @@
 
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@600&display=swap" rel="stylesheet">
 <!-- Inicio de header -->
+
 <header class="fixed-top">
     <div class="header">
         <img src="./assets/img/Screenshot 2023-04-10 135520.jpg" alt="logo" id="VMlogo">
@@ -108,23 +112,33 @@
                 </form>
               </div>
             </div>
+
+            <a id="login" href="./iniciosesion.html"><i class="bi bi-person-circle"></i></a>
             <a id="shoppingCart2" href="./pasareladepagos.html" ><i class="bi bi-cart-fill"></i></a>
+          
           </div>
+          
           <!-- <img src="/assets/img/Screenshot 2023-04-10 135520.jpg" alt="logo" id="VMlogo2"> -->
         
-    
+          <style>
+            @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@600&display=swap');
+          </style>
         </nav>
+  
     </div>
-    
+       <!-- Fin de header -->
+       
     </header>
     <!-- Fin de header -->
-
-
+   
     <!-- CSS -->
     <style>
     /*
 ----Barra de navegación e intro
 */
+
+
+/* @import url('https://fonts.cdnfonts.com/css/josefin-sans%27'); */
 
 .header {
     background-color: #FCF7F1;
@@ -143,6 +157,7 @@
         font-size: 1.3vw;
         cursor: pointer;
         margin-left: 10%;
+        font-family: 'Josefin Sans', sans-serif;
 
     }
 
@@ -170,6 +185,7 @@
     margin-top: 1.2vw;
     margin-left: 115%;
     margin-right: 20%;
+    font-family: 'Josefin Sans', sans-serif;
 }
     
     #miCuenta{
@@ -182,6 +198,8 @@
         text-decoration: solid;
         text-align: center;
        border-radius: 30px;
+       font-family: 'Josefin Sans', sans-serif;
+
     }
     
     
@@ -199,6 +217,10 @@
      position:right;
      border-radius: 30px;
     
+    }
+
+    #shoppingCart:hover, #miCuenta:hover{
+        background-color: #B81C00;
     }
     
     .headerBar{
@@ -258,6 +280,7 @@
     }
 
     .navbar-nav{ 
+      font-family: 'Josefin Sans', sans-serif;
         background-color: transparent;
         font-size: 3vw;
         gap:0.1vw;
@@ -286,6 +309,8 @@
         color: rgba(42, 46, 58, 1);
     }
 
+  
+
     .navbar-toggler{
       margin-top: 2%;
         border-radius: 25px;
@@ -295,14 +320,24 @@
         font-size: 3vw;
     }
 
+    #login{
+      font-size: 4vw;
+      color: rgba(42, 46, 58, 1);
+      margin-left:8%;
 
+      
+    }
     #shoppingCart2{
       margin-top: 1%;
         margin-right: 10%;
-        margin-left: 15%;
+        margin-left: 3%;
         font-size: 4vw;
         color: rgba(42, 46, 58, 1);
         border-radius: 30px;
+    }
+
+    #menuHambuLinea:hover, #shoppingCart2:hover, #login:hover{
+      color:rgba(184, 28, 0, 1);
     }
 
     .copytexto{

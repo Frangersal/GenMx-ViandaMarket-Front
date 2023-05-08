@@ -38,9 +38,9 @@ const regexmail = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/,
 
 function exitoToast() {
     alerta.innerHTML = `
-        <div class="toast align-items-center text-white border-0 mb-2" style="background-color:rgba(62, 175, 62, 0.496);" role="alert" aria-live="assertive" aria-atomic="true">
+        <div class="toast align-items-center text-white border-0 mb-2" style="background-color:rgb(72, 201, 82);" role="alert" aria-live="assertive" aria-atomic="true">
             <div class="d-flex">
-                <div class="toast-body" style="color:#232222;">
+                <div class="toast-body" style="color:black;">
                     <i class="bi bi-exclamation-circle-fill"></i>
                     Inicio exitoso
                 </div>
@@ -98,6 +98,8 @@ btnAgregar.addEventListener('click', (e) => {
     let usuarioExistente = false;
     let passwExiste = false;
     let coincidencia = true;
+
+    try{
     for(let i=0; i<=((JSON.parse(localStorage.getItem("Users", Users))).length); i++){
        
        try{
@@ -116,10 +118,16 @@ btnAgregar.addEventListener('click', (e) => {
             }
     }catch (error){
         console.log("mensaje de erro " + error.message);
+       
 
                  }//trycatch
                  
         }// for usuarioExistente
+    } catch{
+        history.go(0);
+        alert("Lo sentimos algo salio mal, porfavor vuelve a intentarlo")
+        console.log("dsadas");
+    }
 
 
         console.log(passwExiste);
