@@ -5,6 +5,8 @@
    width: 1vw;
    
 }
+
+
 @font-face {
     font-family: Josefine;
     src: url("../font/Josefin_Sans/JosefinSans-Regular.ttf") 
@@ -17,7 +19,7 @@
 
 
 .encabezado{  
-    max-width: 2400px;
+    max-width: auto;
     background-color: rgba(184, 28, 0, 1);
     height: 10VH; 
     
@@ -124,7 +126,7 @@
 @media screen and (max-width: 500px) {
      
     .encabezado{  
-        max-width: 2400px;
+        max-width: auto;
         background-color: rgba(184, 28, 0, 1);
         height: 14VH; 
         padding-top: 2rem;
@@ -188,7 +190,7 @@
     @media screen and (max-width: 600px) {
      
         .encabezado{  
-            max-width: 2400px;
+            max-width: auto;
             background-color: rgba(184, 28, 0, 1);
             height: 14VH; 
             padding-top: 2rem;
@@ -240,16 +242,19 @@
                 margin-bottom: 0rem;
             }
   }
+  @media screen and (max-width: 769px)
+ {
+    .ajusteHeader{
+        height:11.3vw !important;
+         width: 1vw; 
+    }
+ }
 
   @media screen and (max-width: 1199px){
     
-.ajusteHeader{
-    height: 8.3vw;
-     width: 1vw; 
-}
 
     .encabezado{  
-        max-width: 2400px;
+        max-width: auto;
         background-color: rgba(184, 28, 0, 1);
         height: 14VH; 
         padding-top: 2rem;
