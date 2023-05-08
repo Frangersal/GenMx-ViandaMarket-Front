@@ -1,4 +1,9 @@
 
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
 
 .ajusteHeader{
     height: 7.5vw;
@@ -33,6 +38,7 @@
     /* margin: 2rem 15rem 3rem 20rem; */
     font-family: Josefine;
     font-size: 1vw;
+   
 }
 
 .imagenmarket{
@@ -115,7 +121,7 @@
 .video{
     max-width: 42em !important;
     max-height: 50em !important;
-  
+    
     
 }
 .margen2{
@@ -258,7 +264,7 @@
         background-color: rgba(184, 28, 0, 1);
         height: 14VH; 
         padding-top: 2rem;
-       
+        
     }
     
         .encabezadotexto{
@@ -271,7 +277,7 @@
         }
         .textoinicio{
             width: 20rem;
-            text-align: justify;
+            text-align: justify ;
             font-family: Josefine;
             font-size: 4vw !important;
         }
