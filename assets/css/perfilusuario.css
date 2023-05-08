@@ -1,0 +1,252 @@
+/* Import Font Dancing Script */
+@import url(https://fonts.googleapis.com/css?family=Dancing+Script);
+
+* {
+    margin: 0;
+    
+}
+
+.ajusteHeader{
+    height:7.5vw;
+   width: 1vw;
+   
+}
+@font-face {
+    font-family: MADEmirage;
+    src: url(../font/MADE\ Mirage\ Regular.otf);
+}
+
+@font-face {
+    font-family: Mirage-bold;
+    src: url("../font/MADE-Mirage-Bold.otf")
+}
+
+@font-face {
+    font-family:Josefine;
+    src: url("../font/Josefin_Sans/JosefinSans-Regular.ttf")
+}
+
+@import url('https://fonts.cdnfonts.com/css/josefin-sans%27');
+
+
+.fondoform {
+
+    background-image: url(../img/fondo.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    
+  }
+
+  /* .hide {
+    display: none;
+  } */
+
+#Titulo1 {
+    display: grid;
+    width: auto;
+    grid-template-rows: max-content;
+    margin-bottom: 2rem;
+    color: black;
+    font-size: 2.25rem;
+    margin-top: 2rem;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+#Titulo2 {
+    display: grid;
+    width: auto;
+    grid-template-rows: max-content;
+    margin-bottom: 2rem;
+    color: black;
+    font-size: 1.5rem;
+    font-weight: 300;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+.p1 {
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+.p2 {
+    font-family: 'Josefin Sans', sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 20px;
+    text-align: center;
+}
+
+#btnAgregar {
+    margin-top: 4rem;
+    background: linear-gradient(180deg, #B81C00 40.88%, #7A1212 96.49%);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+    font-family: 'Josefin Sans', sans-serif;
+    font-style: normal;
+    width: 100%;
+    color: white;
+
+}
+
+#btnAgregar:hover {
+    background-color: #2A2E3A !important;
+    border-color:  #2a2e3a !important;
+    box-shadow: 0px 8px 8px 4px rgba(0, 0, 0, 0.25);
+  }
+
+input.form-control {
+    border-radius: 1em;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+
+}
+
+.contenedorform {
+    max-width: 30rem;
+    width: 30rem;
+    height: 50rem;
+    background-color: rgba(255, 255, 255, 0.639);
+    border-radius: 16px;
+    margin: 1rem;
+    justify-content: center;
+    align-items: center;
+    justify-items: center;
+    margin-bottom: 130px;
+}
+
+.ayudaInicioSesion {
+    text-align: center;
+}
+
+
+.h6 {
+    cursor: pointer;
+    color: black;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 1.25rem;
+    font-weight: 300;
+}
+
+.h6:hover {
+    cursor: pointer;
+    color: #B81C00;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 1.25rem;
+}
+
+
+
+.contenedorform1 {
+    padding: 0rem;
+    border-radius: 10px;
+
+}
+
+
+
+
+.perfil {
+    margin-top: 5rem;
+    color: #333;
+    border-bottom-right-radius: 25px;
+    height: 46%;
+    left: 0;
+    overflow-x: hidden;
+    padding-top: 20px;
+    width: 250px;
+}
+
+.profile {
+    margin-bottom: 20px;
+    margin-top: -12px;
+    text-align: center;
+}
+
+.profile img {
+    border-radius: 50%;
+    box-shadow: 0px 0px 5px 1px grey;
+}
+
+#settings{
+    text-align: center;
+}
+#profile{
+    text-align: center;
+}
+
+.name {
+    font-size: 20px;
+    font-weight: bold;
+    padding-top: 20px;
+    color: white;
+}
+
+
+.job {
+    font-size: 16px;
+    font-weight: bold;
+    padding-top: 10px;
+    color: white;
+}
+
+.perfil {
+    background-color: rgba(184, 28, 0, 1);
+    height: 38VH; 
+}
+
+
+
+
+/* End */
+
+
+
+
+.main .card {
+    max-width: 20rem;
+    background-color: #ffffffa5;
+    border-radius: 18px;
+    box-shadow: 1px 1px 8px 0 grey;
+    height: auto;
+    margin-bottom: 20px;
+    /* padding: 20px 0 20px 50px; */
+    margin: 0 auto;
+}
+
+.main .card table {
+  
+    border: none;
+    font-size: 16px;
+    height: 170px;
+    
+}
+#direccion{
+    text-align: center;
+    font-family: Josefine;
+    font-size: 1.5rem;
+}
+.texto-tabla{
+    font-family: Josefine;
+    font-size: 1rem; 
+}
+.edit {
+    position: absolute;
+    color: #e7e7e8;
+    right: 14%;
+}
+.form-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    
+  }
+  
+@media screen and (max-width:768px) {
+    .ajusteHeader{
+        height:17.5vw;
+       width: 1vw;
+       
+    }
+    
+}
