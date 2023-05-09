@@ -262,7 +262,7 @@ function foreachProductos(producto) {
                     <h6 class="card-2">${r.marca}</h6>
                     <h6 class="card-2">${r.calidad}</h6>
                     <h6 class="card-2">${r.origen}</h6>
-                        <a href="./plantillaProducto.html">
+                        <a href="./ProductoIndividual.html">
                         <button  id="btnProducto_${r.id} "type="button" class="btnProducto" style="background-color: #2A2E3A; color: white;">Ver producto</button> </a>
                     </div>
                 </div>
