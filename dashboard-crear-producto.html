@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="./assets/img/favicon.ico"/>
+    <link rel="stylesheet" href="./assets/css/dashoboard.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.4/font/bootstrap-icons.css">
+     <link href="https://fonts.cdnfonts.com/css/josefin-sans?styles=19769,19766,19772,19773,19767,19768,19770,19771,19764,19765" rel="stylesheet">
+                
+        <title>Agregar Productos - Vianda Market</title>
+</head>
+
+<body>
+    <header>
+        <div class="headerQuick">
+        </div>
+        <div class="fixheader"></div>
+    </header>
+    
+    <section class="text-center">
+    <div class="rowUno container-fluid formulario-fondo d-flex align-items-center justify-content-center">
+        <main>
+          <div class="col-md-8 order-md-1">
+            <h2 class="titulo">Crear Producto</h2>
+         </div>
+        </section>
+
+        <section class="fondoform">
+          <div class="container contenedorform1">
+            <div class="contenedorform">
+
+            <div class="row justify-content-center">
+              <div class="col-md-8">
+                <h4 class="titulo4 mb-3 text-center">Agregar Productos</h4>
+                <div class="alert alert-danger fade show" style="display:none;" role="alert" id="alertValidaciones">
+                  <p id="alertValidacionesTexto"></p>
+                </div>
+                <form class="needs-validation" novalidate>
+                  <div class="row">
+                    <div class=" textoform2 col-12 col-md-6 mb-3">
+                      <label for="Name">Nombre</label>
+                      <input type="text" class="form-control form-dash" id="Nombre" autofocus placeholder="Ingresa el nombre del producto" required>
+                      <div class="invalid-feedback">
+                        Por favor, ingresa un nombre válido.
+                      </div>
+                    </div>
+        
+                    <div class=" textoform2 col-12 col-md-6 mb-3">
+                      <label for="Brand">Marca</label>
+                      <input type="text" class="form-control form-dash" id="Brand" autofocus placeholder="Ingresa la marca del producto" required>
+                      <div class="invalid-feedback">
+                        Por favor, ingresa una marca válida.
+                      </div>
+                    </div>
+        
+                    <div class=" textoform2 col-12 col-md-6 mb-3">
+                      <label for="Quality">Calidad</label>
+                      <input type="text" class="form-control form-dash" id="Quality" autofocus placeholder="Ingresa la calidad del producto" required>
+                      <div class="invalid-feedback">
+                        Por favor, ingresa una calidad válida.
+                      </div>
+                    </div>
+        
+                    <div class=" textoform2 col-12 col-md-6 mb-3">
+                      <label for="Origin">Origen</label>
+                      <input type="text" class="form-control form-dash" id="Origin" autofocus placeholder="Ingresa el origen del producto" required>
+                      <div class="invalid-feedback">
+                        Por favor, ingresa un origen válido.
+                      </div>
+                    </div>
+        
+                    <div class=" textoform2 col-12 col-md-6 mb-3">
+                      <label for="Weight">Gramos</label>
+                      <input type="text" class="form-control form-dash" id="Gramos" autofocus placeholder="Ingresa la cantidad en gramos" required>
+                      <div class="invalid-feedback">
+                        Por favor, ingresa una cantidad válida en gramos.
+                      </div>
+                    </div>
+        
+                    <div class=" textoform2 col-12 col-md-6 mb-3">
+                      <label for="Price">Precio</label>
+                      <input type="text" class="form-control form-dash" id="Price" placeholder="Ingresa el precio del producto" required>
+                      <div class="invalid-feedback">
+                        Por favor, ingresa un precio válido.
+                      </div>
+                    </div>
+        
+                    <div class=" textoform2 col-12 col-md-6 mb-3">
+                      <label for="Photo">Foto</label>
+                      <br>
+                      <button id="upload_widget" class="cloudinary-button botonCloudinary" type="button">Subir Foto</button>
+                      <div class="inputs"></div>
+
+                        <br>
+                      <input type="text" class="form-control form-dash" id="Photo" placeholder="Ingresa la URL de la foto del producto" required>
+                      <div class="invalid-feedback">
+                        Por favor, ingresa una URL de foto válida.
+                      </div>
+                    </div>
+
+                    <div class=" textoform2 col-12 col-md-6 mb-3">
+                      <label for="descripcion">Descripción</label>
+                      <input type="text" class="form-control form-dash" id="descripcion" placeholder="Ingresa una descripción válida" required>
+                      <div class="invalid-feedback">
+                        Por favor, ingresa una descripción válida.
+                      </div>
+                    </div>
+                    <!-- Este div manda la alerta -->
+                    <div class="position-fixed bottom-0 end-0 p-3 form-dash" id= "divAlert" style="z-index: 11">
+                    </div>
+                  </div>
+                  <div class="text-center">
+                  <button id="btnAgregar" class="btn btn-primary btn-lg btn-block form-dash" type="button">Agregar</button>
+                  <button id="btnClear" class="btn btn-secondary btn-lg btn-block form-dash" type="button">Limpiar todo</button>
+                  <hr class="mb-4">
+                </div>
+                </form>
+              </div>
+                </section>
+                <footer>
+                  <div class="footer">
+                  </div>
+                </div>
+              </footer>
+
+              <script src="https://upload-widget.cloudinary.com/global/all.js" type="text/javascript"></script>  
+
+<script type="text/javascript">  
+let foto = document.getElementById("Photo")
+var myWidget = cloudinary.createUploadWidget({
+  cloudName: 'dw1mig7ts', 
+  uploadPreset: 'ViandaMarket'}, (error, result) => { 
+    if (!error && result && result.event === "success") {    
+        foto.value = result.info.secure_url;
+      alert("Foto subida exitosamente");
+    }
+  }
+)
+
+
+
+
+document.getElementById("upload_widget").addEventListener("click", function(){
+    myWidget.open();
+  }, false);
+</script>
+
+
+    <script src="https://kit.fontawesome.com/eb496ab1a0.js" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"    
+    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"    
+    crossorigin="anonymous"></script>
+    <script src="./assets/js/footer.js"></script>
+    <script src="./assets/js/header.js"></script>
+    <script src="./assets/js/dashboard-crear-producto.js" type="module"></script>
+    <!-- <script src="../js/main.js"></script>
+    <script src="../js/carrito.js"></script> -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
