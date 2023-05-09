@@ -1,5 +1,8 @@
 /* ----Cuerpo de Inicio---- Trabaja Andy */              
 
+ @import url('https://fonts.cdnfonts.com/css/josefin-sans');
+
+                
 .center {
     display: flex;
     align-items: center;
@@ -23,6 +26,146 @@
     position: absolute;
 
 }
+/*cards lo mas vendido*/
+.slider-arrow {
+    position:absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 3vw;
+    height: 3vw;
+    border-radius: 50%;
+    background-color: rgba(42, 46, 58, 1);
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1vw;
+    filter: drop-shadow(0px 4px 6px rgba(0, 0, 0, 0.5));
+  }
+  
+  .arrow-icon {
+    font-size: 2vw;
+    line-height: 1;
+    margin-top: -0.2vw;
+    color: white;
+  }
+  
+  .slider-container {
+    position: relative;
+    margin: 0 auto;
+    width: 80%; /* cambiar el ancho al 100% */
+    overflow: hidden;
+  }
+    
+  
+  .slider-track {
+   
+    display: flex;
+    transition: transform 0.3s ease-in-out;
+    transform: translateX(0);
+    justify-content: flex-start;
+  }
+  
+  .slider-card {
+    margin: 3vw;
+    background-color: #eee;
+    text-align: center;
+    font-size: 2vw;
+    flex: 0 0 auto;
+    width: 20vw;
+  }
+  
+  .slider-arrow-left {
+    left: 1vw;
+  }
+  
+  .slider-arrow-right {
+    right: 1vw;
+  }
+  
+  /* Media queries */
+  @media (max-width: 767px) {
+    .slider-arrow {
+      width: 6vw;
+      height: 6vw;
+      font-size: 4vw;
+    }
+  
+    .arrow-icon {
+      font-size: 6vw;
+      margin-top: -0.4vw;
+    }
+  
+    .slider-card {
+      margin: 6vw;
+      font-size: 4vw;
+      width: 40vw;
+    }
+  
+    .slider-arrow-left {
+      left: 2vw;
+    }
+  
+    .slider-arrow-right {
+      right: 2vw;
+    }
+  }
+  
+  
+  @media (min-width: 768px) and (max-width: 1023px) {
+    .slider-arrow {
+      width: 4vw;
+      height: 4vw;
+      font-size: 2.5vw;
+    }
+  
+    .arrow-icon {
+      font-size: 3.5vw;
+      margin-top: -0.3vw;
+    }
+  
+    .slider-card {
+      margin: 4vw;
+      font-size: 2.5vw;
+      width: 25vw;
+    }
+  
+    .slider-arrow-left {
+      left: 1.5vw;
+    }
+  
+    .slider-arrow-right {
+      right: 1.5vw;
+    }
+  }
+  
+  @media (min-width: 1024px) {
+    .slider-arrow {
+      width: 3vw;
+      height: 3vw;
+      font-size: 1vw;
+    }
+  
+    .arrow-icon {
+      font-size: 2vw;
+      margin-top: -0.2vw;
+    }
+  
+    .slider-card {
+      margin: 3vw;
+      font-size: 2vw;
+      width: 20vw;
+    }
+  
+    .slider-arrow-left {
+      left: 1vw;
+    }
+  
+    .slider-arrow-right {
+      right: 1vw;
+    }
+  }
+  
 
 @media (max-width: 760px) {
     .principales {
@@ -51,13 +194,13 @@
 }
 
 .slider {
-
-    height: 195px;
-    margin: auto;
-
-    position: relative;
-    width: 1310%;
+  height: 195px;
+  margin: auto;
+  position: relative;
+  width: 100%;
+  overflow: hidden;
 }
+
 
 .slider::before,
 .slider::after {
@@ -168,8 +311,11 @@
 
 /*----Cards Marcas----*/
 .preview p{
-    font-size: 62.5%;
+    font-size: 5rem;
     overflow-x: hidden;
+    font-family: 'Josefin Sans';
+    font-style: normal;
+ 
  }
   
  .container{
@@ -182,7 +328,7 @@
  /*Acomodo horizontal de cards*/
  .container .products-container{
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(11rem, 1fr));
     gap:2rem;
  
  }
@@ -217,11 +363,11 @@
  }/*2*/
  
  .container .products-container .product img{
-    height: 8rem;
+    height: 5rem;
  }/*1*/
  
  .container .products-container .product-g  img{
-    height: 6rem;
+    height: 4rem;
  }/*2*/
 
  .container .products-container .product:hover img{
@@ -284,25 +430,14 @@
     font-size: 1rem;
     color:#777;
  }
- 
- 
- 
- @media (max-width:991px){
- 
-  
- 
- }
+
  
  @media (max-width:768px){
  
     .products-preview .preview img{
-       height: 25rem;
+       height: 8rem;
     }
  
  }
  
- @media (max-width:450px){
- 
-  
- }
 

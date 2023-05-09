@@ -5,6 +5,11 @@
     color: #fff;
     margin-top: 1% !important;
 }
+
+#filtro{
+    color: white;
+    background-color: #2A2E3A;
+}
 .rowUno {
     margin-top: 1rem !important;
     display: grid;
@@ -19,7 +24,7 @@
 
     width: auto;
     grid-template-rows: max-content;
-    height: 22vw;
+    height: 24vw;
 }
 .card-1 {
     font-family: 'Josefin Sans';

@@ -470,7 +470,7 @@ input::placeholder {
                     display: flex;
                     align-items: center;
                     justify-content: center;
-                    margin-left: 15vw !important;
+                    margin-right: 12vw !important;
                     /* agregar media query para mobile */
                 }
                 .contenedorform{
@@ -528,7 +528,7 @@ input::placeholder {
                         display: flex;
                         align-items: center;
                         justify-content: center;
-                        margin-left: 15vw !important;
+                        margin-right: 10vw !important;
                         /* agregar media query para mobile */
                     }
                     .contenedorform{

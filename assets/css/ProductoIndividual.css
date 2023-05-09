@@ -14,12 +14,12 @@
     align-items: center;
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 1em;
+    gap: 5em;
     align-items: center;
 }
 .productoTexto {
     margin-right: 30% ;
-   
+
 }
 .btnCompra {
     color: white;
@@ -29,26 +29,44 @@
     border-radius: 10px;
 }
 .imagenContenedor {
-    max-width: 500px;
+    max-width: 350px;
     justify-self: center;
 }
 .imagen {
-    width: 30vw;
+    width: 35vw;
+    height: 35vw;
     display: block;
 }
-h1,h2{
+/* h1,h2{
     padding-top: 0%;
-    /* text-align: center; */
+    text-align: center;
     font-size: 4vw;
     font-weight: 900;
+} */
+
+.corte {
+    font-size: 4vw;
+    font-weight: 700;
+
+}
+.marca {
+    /* font-size: vw; */
+    font-weight: 650;
+
+}
+.existencia {
+    font-size: .9vw;
+    /* font-weight: 650; */
+
 }
 .precio {
     display: grid;
     grid-auto-flow: column;
     gap: 3em;
+    width: 100%;
 }
 .descripcion {
-    margin-top: 7%;
+    margin-top: 0%;
 }
 @media (max-width:800px) {
     .ajusteHeader {

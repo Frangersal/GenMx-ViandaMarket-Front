@@ -254,6 +254,7 @@ function foreachProductos(producto) {
     producto.forEach(r => {
       let row =
         `
+        
                 <div class="col-4">
                 <div class="card" style="border: none;">
                   <img src="${r.imagen}" class="card-img-top">

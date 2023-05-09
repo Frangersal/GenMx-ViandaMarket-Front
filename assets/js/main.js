@@ -20,3 +20,27 @@ previewBox.forEach(close =>{
     preveiwContainer.style.display = 'none';
   };
 });
+
+var slider = document.querySelector(".slider-track");
+var cards = slider.querySelectorAll(".slider-card");
+var cardWidth = cards[0].offsetWidth;
+var prevBtn = document.querySelector(".slider-arrow-left");
+var nextBtn = document.querySelector(".slider-arrow-right");
+var position = 0;
+var limit = 5 * cardWidth; 
+
+nextBtn.addEventListener("click", function() {
+  if (position > -limit) {
+    position -= cardWidth;
+    slider.style.transform = `translateX(${position}px)`;
+  }
+});
+
+prevBtn.addEventListener("click", function() {
+  if (position < 0) {
+    position += cardWidth;
+    slider.style.transform = `translateX(${position}px)`;
+  }
+});
+
+

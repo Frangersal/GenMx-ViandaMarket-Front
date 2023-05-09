@@ -313,6 +313,13 @@ font-family: Josefine;
     .titulo{
         margin-top: 11%;
     }
+    .titulo {
+        font-family: MADEmirage;
+        font-size: 5vw;
+        color: rgb(255, 255, 255);
+        margin-top: 11% !important;
+    }
+  
  }
 /* @media (max-width: 784px) {
     .titulo{
@@ -375,7 +382,7 @@ justify-content: center;
 .mapa{
     position: relative;
    justify-content: center;
-    width:350px;
+    width:45vw;
     height:50vw;
     max-height: 480px;
     border:0;
@@ -390,6 +397,9 @@ form{
     
     width:100%; 
 }
+
+
+  
 @media (max-width: 380px) { 
     
     .info-contacto{
@@ -444,10 +454,19 @@ form{
     width: 100%;
     padding-bottom: 55px!important;
 }
+@media (max-width: 768px) { 
+    .conjunto-inputs{
+        padding-bottom: 80px!important;
+    }
+
+     
+}
+
 
 @media (max-width: 873px) { 
     .conjunto-inputs{
         padding-bottom: 80px!important;
+        
     }
 }
 .input-box-VM{
@@ -457,15 +476,60 @@ form{
     height: 25px!important;
     width: 350px!important;
 }
-
-
-
-
 .text-VM{
     width: 350px!important;
     height: 86px!important;
     
 } 
+
+@media (max-width: 320px) {
+    .conjunto-inputs{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 80px!important;
+    }
+    .input-box-VM{
+    height: 25px!important;
+    }
+    .inputs-VM{
+    height: 25px!important;
+    width: 15rem!important;
+    max-width: 15rem!important;
+    }
+    .text-VM{
+    width: 15rem!important;
+    height: 6rem!important;
+    max-width: 15rem!important;
+    }
+    .info {
+        display: flex;
+        justify-content: center;
+        width: 280px!important;
+        height: 60px!important;
+        font-family: Josefine;
+        color: #fff; 
+        line-height: 18px;
+        letter-spacing: 1px;
+        margin-left: 10px;
+        text-align: justify;
+        font-size:14px;
+    }
+    
+    .img-icon {
+        margin-left: 20px;
+        color: yellow!important;
+        width: 1.5rem!important;
+        height: 30px!important;
+        padding: 0rem;
+    }
+    
+
+    }
+
+
+
 /*
 Zona de trabajo Fran FIN
 */

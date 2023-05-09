@@ -257,11 +257,11 @@ window.addEventListener("load", function (event) {
                  <img src=${selProd.imagen} alt="" class="imagen" width="2vw">
                  </div>
                  <div class="productoTexto">
-                     <h1>${selProd.corte}</h1>
-                     <h2>${selProd.marca}</h2>
+                     <h1 class="corte">${selProd.corte}</h1>
+                     <h2 class="marca">${selProd.marca}</h2>
                      <h3>${selProd.calidad}</h3>
                      <h3>${selProd.origen}</h3>
-                     <h4 style="color:rgb(20, 179, 20)">Existencia</h4>
+                     <h4 class="existencia" style="color:rgb(20, 179, 20)">En existencia</h4>
                      <div class="dropdown">
                          <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
                            Seleccionar
@@ -273,7 +273,7 @@ window.addEventListener("load", function (event) {
                          </ul>
                        </div>
                        <div class="precio">
-                       <h2 style="color:rgba(184, 28, 0, 1)">$${selProd.precio}</h2>
+                       <h2 class="marca" style="color:rgba(184, 28, 0, 1)">$${selProd.precio}</h2>
                        <button type="button" class="btnCompra">Añadir al carrito</button>                    
                        </div>
                        <p class="descripcion"> <h3>Descripción del corte:</h3> <span> ${selProd.descripcionCorte} </span><br>
