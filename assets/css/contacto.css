@@ -307,7 +307,7 @@ font-family: Josefine;
 
 @media (max-width:800px){
     .rowUno{
-        height:22vw;
+        height:18vw;
         margin-top: 100%;
     }
     .titulo{
@@ -317,7 +317,7 @@ font-family: Josefine;
         font-family: MADEmirage;
         font-size: 5vw;
         color: rgb(255, 255, 255);
-        margin-top: 13% !important;
+        margin-top: 11% !important;
     }
   
  }
@@ -397,6 +397,9 @@ form{
     
     width:100%; 
 }
+
+
+  
 @media (max-width: 380px) { 
     
     .info-contacto{
@@ -459,9 +462,11 @@ form{
      
 }
 
+
 @media (max-width: 873px) { 
     .conjunto-inputs{
         padding-bottom: 80px!important;
+        
     }
 }
 .input-box-VM{
@@ -471,15 +476,37 @@ form{
     height: 25px!important;
     width: 350px!important;
 }
-
-
-
-
 .text-VM{
     width: 350px!important;
     height: 86px!important;
     
 } 
+
+@media (max-width: 320px) {
+    .conjunto-inputs{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 80px!important;
+    }
+    .input-box-VM{
+    height: 25px!important;
+    }
+    .inputs-VM{
+    height: 25px!important;
+    width: 15rem!important;
+    max-width: 15rem!important;
+    }
+    .text-VM{
+    width: 15rem!important;
+    height: 6rem!important;
+    max-width: 15rem!important;
+    }
+    }
+
+
+
 /*
 Zona de trabajo Fran FIN
 */
