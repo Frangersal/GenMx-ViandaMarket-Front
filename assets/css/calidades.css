@@ -1,7 +1,7 @@
 @font-face {
     font-family: 'Josefin Sans';
     font-style: normal;
-    font-weight: 300;
+    font-weight: 400;
     src: local('Josefin Sans'), url('https://fonts.cdnfonts.com/s/15771/JosefinSans-Light.woff') format('woff');
 }
 
@@ -16,7 +16,7 @@
 #descripcion {
     font-family: 'Josefin Sans';
     font-style: normal;
-    font-weight: 300;
+    font-weight: 400;
     font-size: 1.25rem;
     line-height: 100%;
     text-align: justify;
