@@ -21,13 +21,13 @@ previewBox.forEach(close =>{
   };
 });
 
-var slider = document.querySelector(".slider-track"); //este lo quita
+var slider = document.querySelector(".slider-track");
 var cards = slider.querySelectorAll(".slider-card");
 var cardWidth = cards[0].offsetWidth;
 var prevBtn = document.querySelector(".slider-arrow-left");
 var nextBtn = document.querySelector(".slider-arrow-right");
 var position = 0;
-var limit = Math.abs((cards.length * cardWidth) - slider.offsetWidth);
+var limit = 7 * cardWidth; // Límite establecido en 2 tarjetas completas
 
 nextBtn.addEventListener("click", function() {
   if (position > -limit) {
@@ -42,12 +42,5 @@ prevBtn.addEventListener("click", function() {
     slider.style.transform = `translateX(${position}px)`;
   }
 });
-// Obtener la cantidad de tarjetas y el ancho de cada una
-var numCards = cards.length;
-var cardWidth = cards[0].offsetWidth;
 
-// Desactivar el botón de "siguiente" al llegar a la última tarjeta
-if (position <= -(numCards - 1) * cardWidth) {
-  nextBtn.disabled = true;
-}
 
