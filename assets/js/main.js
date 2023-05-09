@@ -27,7 +27,7 @@ var cardWidth = cards[0].offsetWidth;
 var prevBtn = document.querySelector(".slider-arrow-left");
 var nextBtn = document.querySelector(".slider-arrow-right");
 var position = 0;
-var limit = 7 * cardWidth; // Límite establecido en 2 tarjetas completas
+var limit = 5 * cardWidth; 
 
 nextBtn.addEventListener("click", function() {
   if (position > -limit) {
