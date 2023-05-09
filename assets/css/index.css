@@ -53,7 +53,7 @@
   .slider-container {
     position: relative;
     margin: 0 auto;
-    width: 100%; /* cambiar el ancho al 100% */
+    width: 80%; /* cambiar el ancho al 100% */
     overflow: hidden;
   }
     
@@ -110,6 +110,7 @@
       right: 2vw;
     }
   }
+  
   
   @media (min-width: 768px) and (max-width: 1023px) {
     .slider-arrow {
@@ -327,7 +328,7 @@
  /*Acomodo horizontal de cards*/
  .container .products-container{
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(11rem, 1fr));
     gap:2rem;
  
  }
@@ -362,11 +363,11 @@
  }/*2*/
  
  .container .products-container .product img{
-    height: 8rem;
+    height: 5rem;
  }/*1*/
  
  .container .products-container .product-g  img{
-    height: 6rem;
+    height: 4rem;
  }/*2*/
 
  .container .products-container .product:hover img{
