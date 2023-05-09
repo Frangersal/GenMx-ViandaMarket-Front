@@ -1,61 +1,169 @@
-.ajusteHeader{
+@font-face {
+    font-family: 'Josefin Sans';
+    font-style: normal;
+    font-weight: 300;
+    src: local('Josefin Sans'), url('https://fonts.cdnfonts.com/s/15771/JosefinSans-Light.woff') format('woff');
+}
+
+@font-face {
+    font-family: Mirage-bold;
+    src: url("../font/MADE-Mirage-Bold.otf")
+}
+
+@import url('https://fonts.cdnfonts.com/css/josefin-sans');
+
+
+#descripcion {
+    font-family: 'Josefin Sans';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 1.25rem;
+    line-height: 100%;
+    text-align: justify;
+    letter-spacing: -0.32px;
+}
+
+.ajusteHeader {
     height: 10vw;
 }
 
-#tablaInter{
+#tablaInter {
     width: 100%;
 }
 
-.imagenContenedor{
+.imagenContenedor {
     display: grid;
-   grid-template-rows: min-content;
+    grid-template-rows: min-content;
     margin-left: 8%;
-
 
 }
 
 
-.productoTexto{
+.productoTexto {
     justify-content: center;
     padding-left: 10%;
     padding-right: 10%;
 }
 
 
-#imagenCox{
+#imagenCox {
     width: 100%;
     padding-right: 5%;
-    
+
+}
+
+.card-img-top {
+    max-width: 13.75rem;
+    max-height: 18.75rem;
+    object-fit: cover;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+
+.card-text {
+    text-align: justify;
+}
+
+.card-title {
+    text-align: center;
+    font-family: 'MADE Mirage';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 1.6rem;
+    text-align: justify;
+    letter-spacing: -0.32px;
+}
+
+h4 {
+    text-align: center;
+    font-family: 'MADE Mirage';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 1.6rem;
+    text-align: justify;
+    letter-spacing: -0.32px;
+}
+
+.card-grid {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 1rem;
+
+}
+
+.card-text-custom {
+    width: 13.75rem;
+
+
 }
 
 
 
+/* Para resoluciones menores a 320px */
+@media only screen and (max-width: 320px) {
+    #t1 {
+        font-size: 24px;
+        /* Tamaño de fuente más pequeño */
+    }
 
+    #descripcion {
+        font-size: 16px;
+        /* Tamaño de fuente más pequeño */
+    }
 
-@media (max-width:800px){
-    .ajusteHeader{
-        height: 20vw;
+    .card-text-custom {
+        width: 8rem;
+
     }
 }
 
-@media (min-width:800px){
-    .title{
+/* Para resoluciones mayores a 320px pero menores a 500px */
+@media only screen and (min-width: 321px) and (max-width: 500px) {
+    #t1 {
+        font-size: 28px;
+        /* Tamaño de fuente un poco más pequeño */
+    }
+
+    #descripcion {
+        font-size: 18px;
+        /* Tamaño de fuente un poco más pequeño */
+    }
+
+    .card-text-custom {
+        width: 11rem;
+
+    }
+}
+
+
+
+
+@media (max-width:800px) {
+    .ajusteHeader {
+        height: 20vw;
+    }
+
+}
+
+@media (min-width:800px) {
+    .title {
         height: 10vw;
     }
 
-    .title h1{
+    .title h1 {
         padding-top: 4%;
 
     }
 
-    .terminoCox{
+    .terminoCox {
         margin: 5%;
         align-items: center;
         display: grid;
         grid-template-columns: 0.8fr 1fr;
-        gap:1em;
-        
-    } 
+        gap: 1em;
+
+    }
 
 
 }
