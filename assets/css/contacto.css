@@ -307,12 +307,19 @@ font-family: Josefine;
 
 @media (max-width:800px){
     .rowUno{
-        height:18vw;
+        height:22vw;
         margin-top: 100%;
     }
     .titulo{
         margin-top: 11%;
     }
+    .titulo {
+        font-family: MADEmirage;
+        font-size: 5vw;
+        color: rgb(255, 255, 255);
+        margin-top: 13% !important;
+    }
+  
  }
 /* @media (max-width: 784px) {
     .titulo{
@@ -375,7 +382,7 @@ justify-content: center;
 .mapa{
     position: relative;
    justify-content: center;
-    width:350px;
+    width:45vw;
     height:50vw;
     max-height: 480px;
     border:0;
@@ -443,6 +450,13 @@ form{
 .conjunto-inputs{
     width: 100%;
     padding-bottom: 55px!important;
+}
+@media (max-width: 768px) { 
+    .conjunto-inputs{
+        padding-bottom: 80px!important;
+    }
+
+     
 }
 
 @media (max-width: 873px) { 
