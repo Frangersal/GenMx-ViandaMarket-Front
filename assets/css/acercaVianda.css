@@ -1,351 +1,106 @@
 
-* {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-  }
-
-.ajusteHeader{
-    height: 7.5vw;
-   width: 1vw;
-   
-}
+@import url('https://fonts.cdnfonts.com/css/josefin-sans');
 
 
-@font-face {
-    font-family: Josefine;
-    src: url("../font/Josefin_Sans/JosefinSans-Regular.ttf") 
-}
-
-@font-face {
-    font-family: MADEmirage;
-    src: url("../font/MADE\ Mirage\ Regular.otf") 
-}
-
-
-.encabezado{  
-    max-width: auto;
+.title{
+     height: 13rgitem;
     background-color: rgba(184, 28, 0, 1);
-    height: 10VH; 
-    
- 
-   
 }
 
-.textoinicio{
-    width: 20rem;
+.title h1{
+    font-family: 'MADE Mirage';
+    src: url(./fonts/MADE\ MIRAGE/);
+    color: rgba(252, 247, 241, 1);
+    padding-top: 8%;
+    text-align: center;
+    font-size: 4vw;
+    font-weight: 400;
+}
+
+
+
+.imageninicio {
+    max-width: 27rem;
+    max-height: 27rem;
+}
+
+#parrafoinicio {
+    width: 30rem;
+    padding: 1.1rem;
     text-align: justify;
-    /* margin: 2rem 15rem 3rem 20rem; */
-    font-family: Josefine;
-    font-size: 1vw;
+    font-size:1.5rem;
+    margin-left: 11rem;
+    font-family: 'Josefin Sans';
+    font-style: normal;
+    font-weight: 300;
+    src: local('Josefin Sans'), url('https://fonts.cdnfonts.com/s/15771/JosefinSans-Light.woff') format('woff');
+    line-height: 2rem;
+
+}
+
+.textobjetivos {
    
-}
-
-.imagenmarket{
-    max-width: 30rem;
-    max-height: 20rem;
-}
-
-.parrafoinicio{
-    width: 24em;
-    padding: 1rem;
-
+    text-align: justify;
+    font-size: 1.5rem;
+    font-family: 'Josefin Sans';
+    font-style: normal;
+    font-weight: 300;
+    src: local('Josefin Sans'), url('https://fonts.cdnfonts.com/s/15771/JosefinSans-Light.woff') format('woff');
+    line-height: 1.5rem;
 }
 
 
-.textobjetivos{
-    font-family: Josefine;
-    font-size: 1vw;
-}
-
-.encabezadotexto{
-    font-family: MADEmirage;
-    color: white;
-    font-size: 3vw;
-    text-align: center;
-    
-}
-
-.encabezadotexto2{
-    font-family: MADEmirage;
-    color:  rgba(184, 28, 0, 1);
-    font-size: 3vw;
+.encabezadotexto2 {
+    font-family: 'MADE Mirage';
+    src: url(./fonts/MADE\ MIRAGE/);
+    color: rgba(184, 28, 0, 1);
+    font-size: 2rem;
     text-align: center;
 }
 
-.iniciomargen{
+.iniciomargen {
     margin-top: 5rem;
 }
 
 
-#hr{
+#hr {
     margin-top: 25rem;
 }
 
-
-
-
-
-.columnavalores{
-   
-   display: flex;
-   flex-direction: column;
-   text-align: justify;
-   list-style: none;
-   margin-left: 3rem;
-  
-   
+.columnavalores {
+    display: flex;
+    flex-direction: column;
+    text-align: justify;
+    list-style: none;
+    margin-left: 3rem;
 }
 
-.objetivostexto{
+.objetivostexto {
     text-align: center;
     color: rgba(184, 28, 0, 1);
-    font-family: MADEmirage;
+    font-family: 'MADE Mirage';
+    src: url(./fonts/MADE\ MIRAGE/);
 }
 
-.margen{
+.margen {
     margin-bottom: 10rem;
 }
 
-.media{
+.media {
     margin: 0 auto;
+}
+
+.imagen {
+    max-width: 26rem;
+    max-height: 36rem; 
 
 }
 
-.imagen{
-   max-width: 45em !important;
-   max-height: 52em !important;
-   
-   
+.video {
+    max-width: 26rem;
+    max-height: 36rem; 
 }
-.video{
-    max-width: 42em !important;
-    max-height: 50em !important;
-    
-    
-}
-.margen2{
+
+.margen2 {
     margin-bottom: 10rem;
 }
-
-
-@media screen and (max-width: 500px) {
-     
-    .encabezado{  
-        max-width: auto;
-        background-color: rgba(184, 28, 0, 1);
-        height: 14VH; 
-        padding-top: 2rem;
-       
-    }
-    .iniciomargen{
-        margin-top: 2rem;
-    }
-
-    .iniciomargen2{
-        margin-top: 2em !important; ;
-    }
-        .encabezadotexto{
-            font-family: MADEmirage;
-            color: white;
-            font-size: 6vw;
-            text-align: center;
-            
-            
-        }
-
-        .imageninicio{
-            max-width: 200px !important;
-          
-        }
-        .textoinicio{
-            width: 20rem;
-            text-align: justify;
-            font-family: Josefine;
-            font-size: 4vw !important;
-        }
-     
-        #hr{
-            margin-top: 0vw !important;
-        }
-
-        .encabezadotexto2 {
-            font-family: MADEmirage;
-            color: rgba(184, 28, 0, 1);
-            font-size: 10vw;
-            text-align: center;
-        }
-        .textobjetivos {
-            font-family: Josefine;
-            font-size: 4vw;
-        }
-        .margen {
-            margin-bottom: 3rem;
-        }
-        
-     
-
-   
-        .margen2{
-            margin-bottom: 0rem;
-        }
-}
-
-
-
-    @media screen and (max-width: 600px) {
-     
-        .encabezado{  
-            max-width: auto;
-            background-color: rgba(184, 28, 0, 1);
-            height: 14VH; 
-            padding-top: 2rem;
-           
-        }
-        
-            .encabezadotexto{
-                font-family: MADEmirage;
-                color: white;
-                font-size: 6vw;
-                text-align: center;
-                
-                
-            }
-            .textoinicio{
-                width: 20rem;
-                text-align: justify;
-                /* margin: 2rem 15rem 3rem 20rem; */
-                font-family: Josefine;
-                font-size: 4vw;
-            }
-         
-            #hr{
-                margin-top: 29vw;
-            }
-    
-            .encabezadotexto2 {
-                font-family: MADEmirage;
-                color: rgba(184, 28, 0, 1);
-                font-size: 10vw;
-                text-align: center;
-            }
-            .textobjetivos {
-                font-family: Josefine;
-                font-size: 4vw;
-            }
-            .margen {
-                margin-bottom: 3rem;
-            }
-            
-        .video{
-            max-height: 20em !important;
-            max-width: 20em !important;
-        }
-       
-    
-     
-            .margen2{
-                margin-bottom: 0rem;
-            }
-  }
-  @media screen and (max-width: 769px)
- {
-    .ajusteHeader{
-        height:11.3vw !important;
-         width: 1vw; 
-    }
- }
-
-  @media screen and (max-width: 1199px){
-    
-
-    .encabezado{  
-        max-width: auto;
-        background-color: rgba(184, 28, 0, 1);
-        height: 14VH; 
-        padding-top: 2rem;
-        
-    }
-    
-        .encabezadotexto{
-            font-family: MADEmirage;
-            color: white;
-            font-size: 6vw;
-            text-align: center;
-            
-            
-        }
-        .textoinicio{
-            width: 20rem;
-            text-align: justify ;
-            font-family: Josefine;
-            font-size: 4vw !important;
-        }
-       .iniciomargen{
-        margin-top: 10vw;
-       }
-        
-       .iniciomargen2{
-        margin-top: 35vw;
-       }
-        .encabezadotexto2 {
-            font-family: MADEmirage;
-            color: rgba(184, 28, 0, 1);
-            font-size: 10vw;
-            text-align: center;
-        }
-        .textobjetivos {
-            font-family: Josefine;
-            font-size: 4vw;
-            padding-left: 3em;
-            padding-right: 3em;
-        }
-        .margen {
-            margin-bottom: 3rem;
-        }
-       
-  
-        .margen2{
-            margin-bottom: 0rem;
-        }
-       
-    
-        .imagen{
-         display: none;
-            
-            
-         }
-       
-  }
-  @media screen and (max-width: 1199px) {
-    .imageninicio {
-      max-width: auto !important;
-    }
-  }
-
-  @media screen and (min-width: 1200px) {
-    .imageninicio {
-      max-width:40rem !important ;
-    }
-  }
-
-
-  @media screen and (min-width: 1200px){
-    .imagen{
-          
-        max-height: 22em ;
-        max-width: 59em ! ;
-        
-        }
- .video{
-        max-height: 22.8em ;
-        max-width: 48em;
- }
-  }
-  .textoinicio{
-            width: 20rem;
-            text-align: justify;
-            font-family: Josefine;
-            font-size: 1.2vw;
-        }
-   
