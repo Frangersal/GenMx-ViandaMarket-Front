@@ -125,7 +125,6 @@ btnAgregar.addEventListener('click', (e) => {
         }// for usuarioExistente
     } catch{
         history.go(0);
-        alert("Lo sentimos algo salio mal, porfavor vuelve a intentarlo")
         console.log("dsadas");
     }
 

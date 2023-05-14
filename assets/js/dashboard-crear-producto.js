@@ -1,9 +1,15 @@
+
 import {
     productos
 }from "./productos.json.js";
 
+let producto =[];
+window.addEventListener("load",function(event){
+    if (localStorage.getItem("producto")!=null){
+        producto = JSON.parse(localStorage.getItem("producto"))
+    }
 
-
+});
 
 
 
@@ -50,7 +56,8 @@ const regexNombre = /^[a-záéíóúA-ZÁÉÍÓÚ0-9_-]{3,}$/,
     regexPrecio = /^(\$)?(?=[1-9]\d*)([0-9]+(\.[0-9]+)?)/,
     regexFoto = /^(https?|ftp):\/\/[^\s/$.?#].[^\s]*$/;
     // regexDescripcion = /^[a-záéíóúA-ZÁÉÍÓÚ0-9_-]{3,}$/;
-
+    console.log(productos);
+    console.log(producto);
 
 // ? Functions
 function addProductos() {
@@ -70,9 +77,9 @@ function addProductos() {
     };
 
 
-    productos.push(addProductos);
-    console.log(productos);
-    localStorage.setItem("producto",JSON.stringify(productos));
+    producto.push(addProductos);
+    console.log(addProductos);
+    localStorage.setItem("producto",JSON.stringify(producto));
 
     formDash.forEach(element => {
         if (element.id == "btnAgregar") {
@@ -90,9 +97,9 @@ function addProductos() {
 
 function exitoToast() {
     let alert = `   
-    <div class="toast align-items-center text-white border-0 mb-2" style="background-color:rgba(62, 175, 62, 0.496);" role="alert" aria-live="assertive" aria-atomic="true">
+    <div class="toast align-items-center text-white border-0 mb-2" style="background-color:green;" role="alert" aria-live="assertive" aria-atomic="true">
   <div class="d-flex">
-    <div class="toast-body" style="color:#232222;">
+    <div class="toast-body" style="color:black;">
     <i class="bi bi-exclamation-circle-fill"></i>
       Producto subido exitosamente
     </div>
@@ -165,7 +172,7 @@ btnAgregar.addEventListener('click', (e) => {
     }
     (isActive === true) ? (addProductos(), exitoToast()) : ' ';
 
-});
+});//btn agregar
 
 btnClear.addEventListener("click", function (event) {
     event.preventDefault();
@@ -184,12 +191,6 @@ btnClear.addEventListener("click", function (event) {
 
 console.log(productos);
 
-let producto =[];
-window.addEventListener("load",function(event){
-    if (localStorage.getItem("producto")!=null){
-        producto = JSON.parse(localStorage.getItem("prodcuto"))
-    };
-});
 
 
 

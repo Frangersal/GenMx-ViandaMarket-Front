@@ -41,7 +41,7 @@
 }
 
 .text1 h3{
-    font-size: 1.8vw;
+    font-size: 3vw;
     font-family: 'Josefin Sans', sans-serif;
 }
 
@@ -54,6 +54,7 @@
         padding-top: 3%;
     }
 
+  
 
 
 }
@@ -81,7 +82,7 @@
 
 .question{
     color:  rgba(132, 163, 183, 1);
-    font-size: 2.5vw;
+    font-size: 3.5vw;
     font-family: Mademirage;
     text-decoration: solid;
     padding: 1vw 0;
