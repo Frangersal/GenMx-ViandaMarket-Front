@@ -38,7 +38,7 @@
 }
 
 .text1 h3{
-    font-size: 1.5rem;
+    font-size: 3vw;
     font-family: 'Josefin Sans', sans-serif;
     font-weight: 400;
 }
@@ -51,6 +51,9 @@
     .title h1{
         padding-top: 3%;
     }
+
+  
+
 
 }
 
@@ -77,9 +80,8 @@
 
 .question{
     color:  rgba(132, 163, 183, 1);
-    font-size: 2.5vw;
-    font-family: 'MADE Mirage';
-    src: url(./fonts/MADE\ MIRAGE/);
+    font-size: 3.5vw;
+    font-family: Mademirage;
     text-decoration: solid;
     padding: 1vw 0;
     cursor: pointer;

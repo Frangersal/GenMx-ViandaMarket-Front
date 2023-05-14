@@ -274,7 +274,7 @@ window.addEventListener("load", function (event) {
                        </div>
                        <div class="precio">
                        <h2 class="marca" style="color:rgba(184, 28, 0, 1)">$${selProd.precio}</h2>
-                       <button type="button" class="btnCompra">Añadir al carrito</button>                    
+                                       
                        </div>
                        <p class="descripcion"> <h3>Descripción del corte:</h3> <span> ${selProd.descripcionCorte} </span><br>
                        <h3>Descripción de la marca:</h3>
@@ -283,4 +283,4 @@ window.addEventListener("load", function (event) {
                  </div>`;
     productoCarne[0].insertAdjacentHTML("beforeend", selProd);
   }
-})//window
+})//window  // <button type="button" class="btnCompra">Añadir al carrito</button>   
