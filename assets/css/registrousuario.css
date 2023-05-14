@@ -16,7 +16,9 @@
 
 
 
-
+.toast-body{
+    color:#fff!important;
+}
 #Titulo1 {
     display: grid;
     width: auto;

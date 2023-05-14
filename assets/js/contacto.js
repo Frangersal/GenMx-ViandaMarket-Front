@@ -18,11 +18,11 @@ const invalid = (num, msj) => {
     let alert = `   
     <div class="toast align-items-center text-white border-0 mb-2 bg-danger  role="alert" aria-live="assertive" aria-atomic="true">
   <div class="d-flex">
-    <div class="toast-body" style="color:#73510d;">
+    <div class="toast-body" style="color:#fff;">
     <i class="bi bi-exclamation-circle-fill"></i>
       ${msj}
     </div>
-    <button type="button" class="btn-close btn-close-white me-2 m-auto" data-bs-dismiss="toast" aria-label="Close"></button>
+    <button type="button" class="btn-close btn-close-white me-2 m-auto" data-bs-dismiss="toast" aria-label="Close" style="font-size: small;"></button>
   </div>
 </div>
     `
@@ -52,7 +52,7 @@ const sendEmail = () => {
               <div class="toast-body">
                 Mensaje enviado con éxito ${message}
               </div>
-              <button type="button" class="btn-close btn-close-white me-2 m-auto" data-bs-dismiss="toast" aria-label="Close"></button>
+              <button type="button" class="btn-close btn-close-white me-2 m-auto" data-bs-dismiss="toast" aria-label="Close" style="font-size: small;"></button>
             </div>
           </div>`
         contact[5].innerHTML += alert;

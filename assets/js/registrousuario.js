@@ -23,36 +23,36 @@ const regexName = /^[a-zA-Záéíóúñ][a-záéíóúñ]{1,}(?:\s+[a-zA-Záéí
  * una letra minúscula, una letra mayúscula y un carácter especial que no sea un signo de dos puntos.
  */
 const isInvalid = (num, msj) => {
-    isComplete[num] = false;
-    let alert = `   
-    <div class="toast align-items-center text-white border-0 mb-2" style="background-color:#fbf0da;" role="alert" aria-live="assertive" aria-atomic="true">
+  isComplete[num] = false;
+  let alert = `   
+    <div class="toast align-items-center text-white border-0 mb-2 bg-danger role="alert" aria-live="assertive" aria-atomic="true">
         <div class="d-flex">
             <div class="toast-body" style="color:#73510d;">
-            <i class="bi bi-exclamation-circle-fill" style="color:black;"></i>
+            <i class="bi bi-exclamation-circle-fill" style="color:white;"></i>
               ${msj}
             </div>
-        <button type="button" class="btn-close btn-close-black me-2 m-auto" data-bs-dismiss="toast" aria-label="Close"></button>
+            <button type="button" class="btn-close btn-close-white me-2 m-auto" data-bs-dismiss="toast" aria-label="Close" style="font-size: small;"></button>
         </div>
     </div>
     `;
-    inputRegister[7].innerHTML += alert;
-    const toastElList = [].slice.call(document.querySelectorAll('.toast'))
-    const toastList = toastElList.map(function (toastEl) {
-        return new bootstrap.Toast(toastEl)
-    })
-    toastList.forEach(toast => toast.show())
+  inputRegister[7].innerHTML += alert;
+  const toastElList = [].slice.call(document.querySelectorAll('.toast'))
+  const toastList = toastElList.map(function (toastEl) {
+    return new bootstrap.Toast(toastEl)
+  })
+  toastList.forEach(toast => toast.show())
 };
 
 const isSuccess = () => {
     let alert = `   
-      <div class="toast align-items-center text-white border-0 mb-2" style="background-color: #216610;" role="alert" aria-live="assertive" aria-atomic="true">
+      <div class="toast align-items-center text-white border-0 mb-2   bg-success role="alert" aria-live="assertive" aria-atomic="true">
           <div class="d-flex">
               <div class="toast-body">
                 <i class="bi bi-check-circle-fill"></i>
                 ¡Se ha creado el usuario exitosamente! <br>
                 Dele click a Iniciar Sesión
               </div>
-          <button type="button" class="btn-close btn-close-white me-2 m-auto" data-bs-dismiss="toast" aria-label="Close"></button>
+              <button type="button" class="btn-close btn-close-white me-2 m-auto" data-bs-dismiss="toast" aria-label="Close" style="font-size: small;"></button>
           </div>
       </div>
     `;
@@ -78,6 +78,9 @@ const saveUser = () => {
         "contrasena": `${inputRegister[4].value}`
     };
     addUser(newUser);
+    setTimeout(() => {
+        window.location.href = "perfilusuario.html";
+    }, 3000);
 }
 
 function compararInputAndLS(input) {
