@@ -50,7 +50,7 @@ const isSuccess = () => {
               <div class="toast-body">
                 <i class="bi bi-check-circle-fill"></i>
                 ¡Se ha creado el usuario exitosamente! <br>
-                Dele click a Iniciar Sesión
+                Por favor inicia Sesión.
               </div>
               <button type="button" class="btn-close btn-close-white me-2 m-auto" data-bs-dismiss="toast" aria-label="Close" style="font-size: small;"></button>
           </div>
@@ -79,8 +79,8 @@ const saveUser = () => {
     };
     addUser(newUser);
     setTimeout(() => {
-        window.location.href = "perfilusuario.html";
-    }, 3000);
+        window.location.href = "iniciosesion.html";
+    }, 2000);
 }
 
 function compararInputAndLS(input) {

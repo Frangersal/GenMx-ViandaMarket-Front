@@ -49,8 +49,8 @@ let btnClear = document.getElementById("btnClear");
 
 // ? Expresiones Regulares
 const regexNombre = /^[a-záéíóúA-ZÁÉÍÓÚ0-9_-]{3,}$/,
-    regexMarca = /^[a-záéíóúA-ZÁÉÍÓÚ0-9_-]{3,}$/,
-    regexCalidad = /^[a-záéíóúA-ZÁÉÍÓÚ0-9_-]{3,}$/,
+    regexMarca = /^[a-záéíóúA-ZÁÉÍÓÚ0-9_-]{2,}$/,
+    regexCalidad = /^[a-záéíóúA-ZÁÉÍÓÚ0-9_-]{2,}$/,
     regexOrigen = /^[a-záéíóúA-ZÁÉÍÓÚ0-9_-]{3,}$/,
     regexGramos = /^(\$)?(?=[1-9]\d*)([0-9]+(\.[0-9]+)?)/,
     regexPrecio = /^(\$)?(?=[1-9]\d*)([0-9]+(\.[0-9]+)?)/,

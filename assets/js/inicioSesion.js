@@ -56,8 +56,8 @@ function exitoToast() {
     toastList.forEach(toast => toast.show())
 
     setTimeout(function() {
-        window.location.href = "./perfilusuario.html";
-    }, 3000);
+        window.location.href = "index.html";
+    }, 2000);
 }
 
 
