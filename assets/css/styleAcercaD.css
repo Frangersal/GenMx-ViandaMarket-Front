@@ -46,7 +46,7 @@
 
     font-style: normal;
     color: rgba(255, 255, 255, 1);
-    display: grid, flex;
+    display: grid;
     height: 40vw;
     align-items: center;
     text-align: center;
@@ -65,7 +65,7 @@
 
 .tituloSegundo {
     font-size: 3vw;
-    margin: 10%;
+    margin: 2%;
     margin-top: 5%;
     font-family: 'Josefin Sans', sans-serif;
 }
@@ -81,22 +81,25 @@
 /* FIN CSS de la seccion [header] hecha por [caro] */
 /* Inicio CSS de la seccion [cards] hecha por [angel] */
 .img-foto{
-    max-height: 200px;
+    max-height: 30vw;
 }
 .textCardNombre {
-    font-size: 22px;
+    font-size: 4vw;
 }
 .textCardPuesto {
-    font-size: 18px;
+    font-size: 3vw;
 }
 
 .textCardDescription {
-    font-size: 16px;
-    height: 100px;
+    font-size: 3vw;
+   
 }
 .bg-card{
     background-color: #ffffff00!important;
     border-color: #ffffff00!important;
+}
+.bi-linkedin, .bi-briefcase-fill{
+    font-size: 5vw;
 }
 .circle {
     /*border-color: #404040 #1f9896 #1f9896 #404040;*/
@@ -107,7 +110,8 @@
 
     /*border-style: solid;*/
     /*border-width: 20px;*/
-    border:12px solid transparent;
+    
+    border:1vw solid transparent;
     /*
     background:url(./src/img/Untitled.png) center/100% 100% border-box;
     */
@@ -194,6 +198,29 @@ a{
     color: rgba(232, 212, 47, 1);
     font-size: x-large;
     font-size: 2rem;
+}
+
+@media (min-width:992px){
+    .img-foto{
+        max-height: 20vw;
+    }
+    .textCardNombre {
+        font-size: 2vw;
+    }
+    .textCardPuesto {
+        font-size: 1.2vw;
+    }
+    
+    .textCardDescription {
+        font-size: 1.2vw;
+       
+    }
+
+    .bi-linkedin, .bi-briefcase-fill{
+        font-size: 2vw;
+    }
+    
+
 }
 
 @media only screen and (max-width: 1199px) {
