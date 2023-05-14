@@ -4,11 +4,6 @@
 
 
 @font-face {
-    font-family: MADEmirage;
-    src: url(../font/MADE\ Mirage\ Regular.otf);
-}
-
-@font-face {
     font-family: Josefin;
     src: url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@600&display=swap');
 }
@@ -23,11 +18,13 @@
 }
 
 .title h1{
-    font-family: MADEmirage;
+    font-family: 'MADE Mirage';
+    src: url(./fonts/MADE\ MIRAGE/);
     color: rgba(252, 247, 241, 1);
     padding-top: 11%;
     text-align: center;
     font-size: 4vw;
+    font-weight: 400;
 }
 
 .text1{
@@ -41,8 +38,9 @@
 }
 
 .text1 h3{
-    font-size: 1.8vw;
+    font-size: 1.5rem;
     font-family: 'Josefin Sans', sans-serif;
+    font-weight: 400;
 }
 
 @media (min-width:800px){
@@ -53,8 +51,6 @@
     .title h1{
         padding-top: 3%;
     }
-
-
 
 }
 
@@ -82,7 +78,8 @@
 .question{
     color:  rgba(132, 163, 183, 1);
     font-size: 2.5vw;
-    font-family: Mademirage;
+    font-family: 'MADE Mirage';
+    src: url(./fonts/MADE\ MIRAGE/);
     text-decoration: solid;
     padding: 1vw 0;
     cursor: pointer;
