@@ -259,8 +259,8 @@ window.addEventListener("load", function (event) {
                  <div class="productoTexto">
                      <h1 class="corte">${selProd.corte}</h1>
                      <h2 class="marca">${selProd.marca}</h2>
-                     <h3>${selProd.calidad}</h3>
-                     <h3>${selProd.origen}</h3>
+                     <h3 class="calidad">${selProd.calidad}</h3>
+                     <h3 class="origen">${selProd.origen}</h3>
                      <h4 class="existencia" style="color:rgb(20, 179, 20)">En existencia</h4>
                      <div class="dropdown">
                          <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
