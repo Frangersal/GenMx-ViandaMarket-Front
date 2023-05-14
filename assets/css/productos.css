@@ -6,10 +6,11 @@
     margin-top: 1% !important;
 }
 
-#filtro{
+#filtro {
     color: white;
     background-color: #2A2E3A;
 }
+
 .rowUno {
     margin-top: 1rem !important;
     display: grid;
@@ -20,12 +21,14 @@
     height: 7vw;
     margin-top: 7.5vw !important;
 }
+
 .card-img-top {
 
     width: auto;
     grid-template-rows: max-content;
     height: 24vw;
 }
+
 .card-1 {
     font-family: 'Josefin Sans';
     src: url(./Josefin_Sans/JosefinSans-Bold.ttf);
@@ -35,6 +38,7 @@
     line-height: 32px;
     color: #000000;
 }
+
 .card-2 {
     font-family: 'Josefin Sans';
     src: url(./Josefin_Sans/JosefinSans-Medium.ttf);
@@ -44,6 +48,7 @@
     line-height: 20px;
     color: #000000;
 }
+
 .btnProducto {
     width: 131px;
     height: 36px;
@@ -53,11 +58,106 @@
     border-radius: 0px;
     text-align: left;
 }
+
 #btnProducto:hover {
     background-color: #B81C00;
 }
-@media (max-width:800px) {
+
+
+
+@media (max-width:768px) {
     .ajusteHeader {
-        height: 7vw;
+        height: 17vw;
     }
+
+    .card-1 {
+        font-family: 'Josefin Sans';
+        src: url(./Josefin_Sans/JosefinSans-Bold.ttf);
+        font-style: normal;
+        font-weight: bolder;
+        font-size: 18px;
+        line-height: 32px;
+        color: #000000;
+    }
+
+    #filtro1,
+    #filtro {
+        color: white;
+        background-color: #2A2E3A;
+        font-size: 0.7rem;
+    }
+
+    .titulo {
+        font-family: MADEmirage;
+        font-size: 6VW;
+        color: #fff;
+        margin-top: 1% !important;
+
+    }
+
+    .rowUno {
+        margin-top: 1rem !important;
+        display: grid;
+        width: auto;
+        grid-template-rows: max-content;
+        text-align: center;
+        background-color: #B81C00;
+        height: 11vw;
+        margin-top: 7.5vw;
+    }
+
+}
+
+@media (max-width:425px) {
+    .card-1 {
+        font-family: 'Josefin Sans';
+        src: url(./Josefin_Sans/JosefinSans-Bold.ttf);
+        font-style: normal;
+        font-weight: bolder;
+        font-size: 18px;
+        line-height: 32px;
+        color: #000000;
+    }
+
+    #filtro1,
+    #filtro {
+        color: white;
+        background-color: #2A2E3A;
+        font-size: 0.7rem;
+    }
+
+    .titulo {
+        font-family: MADEmirage;
+        font-size: 8VW;
+        color: #fff;
+        margin-top: 1% !important;
+    }
+
+    .rowUno {
+        margin-top: 1rem !important;
+        display: grid;
+        width: auto;
+        grid-template-rows: max-content;
+        text-align: center;
+        background-color: #B81C00;
+        height: 11vw;
+        margin-top: 7.5vw;
+    }
+}
+
+#btnProducto_2 {
+    display: flex;
+    justify-content: center;
+
+}
+
+@media (max-width:1440px) {
+
+    #filtro1,
+    #filtro {
+        color: white;
+        background-color: #2A2E3A;
+
+    }
+
 }
