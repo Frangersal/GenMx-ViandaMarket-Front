@@ -5,7 +5,9 @@
 body{
 background-color: white;
 }
-
+.toast-body{
+    color:#fff!important;
+}
 /*
 ----Barra de navegación e intro
 */
@@ -431,14 +433,15 @@ form{
     display: flex;
     align-items: center;
     justify-content: left;
+    width: 310px;
   }
 .info{ 
-    width:  291px!important;
+    width: 310px!important;
     height: 60px!important;
     font-family: Josefine;
-    color: #fff; 
+    color: #fff;
     line-height: 18px;
-    letter-spacing: 1.8px;
+    letter-spacing: 1.3px;
     text-align: justify;
 }
 .img-icon{
