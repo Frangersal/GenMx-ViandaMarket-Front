@@ -1,14 +1,17 @@
 .ajusteHeader {
     height: 9vw;
 }
+
 .icon-back {
     font-size: 4vw;
     margin-left: 7%;
     color: rgba(42, 46, 58, 1);
 }
+
 .icon-back:hover {
     color: #B81C00;
 }
+
 .productoCarne {
     margin: 2%;
     align-items: center;
@@ -17,10 +20,12 @@
     gap: 5em;
     align-items: center;
 }
+
 .productoTexto {
-    margin-right: 30% ;
+    margin-right: 30%;
 
 }
+
 .btnCompra {
     color: white;
     background-color: rgba(42, 46, 58, 1);
@@ -28,15 +33,18 @@
     align-self: right;
     border-radius: 10px;
 }
+
 .imagenContenedor {
     max-width: 350px;
     justify-self: center;
 }
+
 .imagen {
     width: 35vw;
     height: 35vw;
     display: block;
 }
+
 /* h1,h2{
     padding-top: 0%;
     text-align: center;
@@ -49,45 +57,113 @@
     font-weight: 700;
 
 }
+
 .marca {
     /* font-size: vw; */
     font-weight: 650;
 
 }
+
 .existencia {
     font-size: .9vw;
     /* font-weight: 650; */
 
 }
+
 .precio {
     display: grid;
     grid-auto-flow: column;
     gap: 3em;
     width: 100%;
 }
+
 .descripcion {
     margin-top: 0%;
 }
+
+@media (max-width:426px) {
+    .btnCompra {
+        color: white;
+        background-color: rgba(42, 46, 58, 1);
+        width: 100%;
+        align-self: right;
+        border-radius: 10px;
+    }
+    .corte {
+        font-size: 6vw;
+        font-weight: 700;
+    
+    }
+    
+    .marca {
+        /* font-size: vw; */
+        font-weight: 650;
+    
+    }
+    .calidad, .origen {
+        font-size: 5vw;
+        /* font-weight: 650; */
+    
+    }
+    .existencia {
+        /* font-size: 2020vw; */
+        /* font-weight: 650; */
+    
+    }
+    
+    .precio {
+        display: grid;
+        grid-auto-flow: column;
+        gap: 3em;
+        width: 100%;
+    }
+    
+    .descripcion {
+        margin-top: 0%;
+    }
+    
+}
+
+
 @media (max-width:800px) {
     .ajusteHeader {
         height: 20vw;
     }
+
     .icon-back {
         font-size: 8vw;
         margin-left: 5%;
         color: rgba(42, 46, 58, 1);
     }
+
     .productoCarne {
         grid-template-columns: 1fr;
         grid-template-rows: max-content 1fr;
-        gap: 3em;
+        gap: 0em;
         text-align: justify;
     }
+
     .imagenContenedor {
-        grid-row: 1/2;
+        /* grid-row: 1/3; */
         justify-self: center;
+        margin-left: 0%;
     }
+
     .productoTexto {
-        margin: 0 10%;
+        margin-left:10%;
+        margin-right: 10%;
+    }
+
+    .imagen {
+        width: 50vw;
+        height: 50vw;
+        display: block;
+        justify-self: center;
+
+    }
+    .existencia {
+        font-size: 2vw;
+        /* font-weight: 650; */
+    
     }
 }

@@ -16,13 +16,13 @@ const regexPhone = /^(?:(?:\+|00)52)?\s*\(?(?:(?:(?:1|2|3|4|5|6|7|8|9)\d{1,2})|8
 const invalid = (num, msj) => {
     isComplete[num] = false;
     let alert = `   
-    <div class="toast align-items-center text-white border-0 mb-2" style="background-color:#fbf0da;" role="alert" aria-live="assertive" aria-atomic="true">
+    <div class="toast align-items-center text-white border-0 mb-2 bg-danger  role="alert" aria-live="assertive" aria-atomic="true">
   <div class="d-flex">
-    <div class="toast-body" style="color:#73510d;">
+    <div class="toast-body" style="color:#fff;">
     <i class="bi bi-exclamation-circle-fill"></i>
       ${msj}
     </div>
-    <button type="button" class="btn-close btn-close-white me-2 m-auto" data-bs-dismiss="toast" aria-label="Close"></button>
+    <button type="button" class="btn-close btn-close-white me-2 m-auto" data-bs-dismiss="toast" aria-label="Close" style="font-size: small;"></button>
   </div>
 </div>
     `
@@ -47,12 +47,12 @@ const sendEmail = () => {
         Subject: "Atencion a Cliente desde Contacto Vianda",
         Body: `Nombre del Cliente: ${contact[0].value.trim()} <br> Cliente con numero: ${contact[2].value.trim()}<br>Con Email: ${contact[1].value.trim()}<br>Mensaje: ${contact[3].value.trim()}`
     }).then(message => {
-        let alert = `<div class="toast align-items-center text-white bg-primary border-0" role="alert" aria-live="assertive" aria-atomic="true">
+        let alert = `<div class="toast align-items-center text-white bg-success border-0" role="alert" aria-live="assertive" aria-atomic="true">
             <div class="d-flex">
               <div class="toast-body">
                 Mensaje enviado con éxito ${message}
               </div>
-              <button type="button" class="btn-close btn-close-white me-2 m-auto" data-bs-dismiss="toast" aria-label="Close"></button>
+              <button type="button" class="btn-close btn-close-white me-2 m-auto" data-bs-dismiss="toast" aria-label="Close" style="font-size: small;"></button>
             </div>
           </div>`
         contact[5].innerHTML += alert;

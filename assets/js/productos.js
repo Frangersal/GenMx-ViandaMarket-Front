@@ -255,7 +255,7 @@ function foreachProductos(producto) {
       let row =
         `
         
-                <div class="col-4">
+                <div class="col-6 col-xl-4 col-xxl-4 col-lg-4" >
                 <div class="card" style="border: none;">
                   <img src="${r.imagen}" class="card-img-top">
                   <div class="card-body" style="text-align: left;">
@@ -264,7 +264,7 @@ function foreachProductos(producto) {
                     <h6 class="card-2">${r.calidad}</h6>
                     <h6 class="card-2">${r.origen}</h6>
                         <a href="./ProductoIndividual.html">
-                        <button  id="btnProducto_${r.id} "type="button" class="btnProducto" style="background-color: #2A2E3A; color: white;">Ver producto</button> </a>
+                        <button  id="btnProducto_${r.id} "type="button" class="btnProducto text-center" style="background-color: #2A2E3A; color: white;">Ver producto</button> </a>
                     </div>
                 </div>
             </div>`
