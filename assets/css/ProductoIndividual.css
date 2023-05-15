@@ -1,7 +1,9 @@
 .ajusteHeader {
     height: 9vw;
 }
-
+.ProductoUnico{
+    font-family: 'Josefin Sans', sans-serif;
+}
 .icon-back {
     font-size: 4vw;
     margin-left: 7%;
@@ -105,11 +107,7 @@
         /* font-weight: 650; */
     
     }
-    .existencia {
-        /* font-size: 2020vw; */
-        /* font-weight: 650; */
-    
-    }
+   
     
     .precio {
         display: grid;

@@ -1,351 +1,243 @@
+/*Primera sección*/
 
-* {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-  }
-
-.ajusteHeader{
-    height: 7.5vw;
-   width: 1vw;
-   
-}
-
-
-@font-face {
-    font-family: Josefine;
-    src: url("../font/Josefin_Sans/JosefinSans-Regular.ttf") 
-}
-
-@font-face {
-    font-family: MADEmirage;
-    src: url("../font/MADE\ Mirage\ Regular.otf") 
-}
-
-
-.encabezado{  
-    max-width: auto;
+.title {
+    margin-top: 5vw;
+    height: 16vw;
     background-color: rgba(184, 28, 0, 1);
-    height: 10VH; 
-    
- 
-   
-}
-
-.textoinicio{
-    width: 20rem;
+  }
+  
+  .title h1 {
+    font-family: 'MADE Mirage';
+    src: url(./fonts/MADE\ MIRAGE/);
+    color: rgba(252, 247, 241, 1);
+    padding-top: 11%;
+    text-align: center;
+    font-size: 4vw;
+    font-weight: 400;
+  }
+  
+  .text1 {
+    font-size: 1vw;
+    margin-right: 15%;
+    margin-left: 15%;
+    padding: 3%;
+    justify-content: center;
     text-align: justify;
-    /* margin: 2rem 15rem 3rem 20rem; */
-    font-family: Josefine;
-    font-size: 1vw;
-   
-}
-
-.imagenmarket{
-    max-width: 30rem;
-    max-height: 20rem;
-}
-
-.parrafoinicio{
-    width: 24em;
-    padding: 1rem;
-
-}
-
-
-.textobjetivos{
-    font-family: Josefine;
-    font-size: 1vw;
-}
-
-.encabezadotexto{
-    font-family: MADEmirage;
-    color: white;
-    font-size: 3vw;
-    text-align: center;
-    
-}
-
-.encabezadotexto2{
-    font-family: MADEmirage;
-    color:  rgba(184, 28, 0, 1);
-    font-size: 3vw;
-    text-align: center;
-}
-
-.iniciomargen{
-    margin-top: 5rem;
-}
-
-
-#hr{
-    margin-top: 25rem;
-}
-
-
-
-
-
-.columnavalores{
-   
-   display: flex;
-   flex-direction: column;
-   text-align: justify;
-   list-style: none;
-   margin-left: 3rem;
+    font-family: 'Josefin Sans', sans-serif;
+    padding: 2%;
+  }
   
-   
-}
-
-.objetivostexto{
-    text-align: center;
-    color: rgba(184, 28, 0, 1);
-    font-family: MADEmirage;
-}
-
-.margen{
-    margin-bottom: 10rem;
-}
-
-.media{
+  .contenedor {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 100rem;
     margin: 0 auto;
-
-}
-
-.imagen{
-   max-width: 45em !important;
-   max-height: 52em !important;
-   
-   
-}
-.video{
-    max-width: 42em !important;
-    max-height: 50em !important;
-    
-    
-}
-.margen2{
-    margin-bottom: 10rem;
-}
-
-
-@media screen and (max-width: 500px) {
-     
-    .encabezado{  
-        max-width: auto;
-        background-color: rgba(184, 28, 0, 1);
-        height: 14VH; 
-        padding-top: 2rem;
-       
-    }
-    .iniciomargen{
-        margin-top: 2rem;
-    }
-
-    .iniciomargen2{
-        margin-top: 2em !important; ;
-    }
-        .encabezadotexto{
-            font-family: MADEmirage;
-            color: white;
-            font-size: 6vw;
-            text-align: center;
-            
-            
-        }
-
-        .imageninicio{
-            max-width: 200px !important;
-          
-        }
-        .textoinicio{
-            width: 20rem;
-            text-align: justify;
-            font-family: Josefine;
-            font-size: 4vw !important;
-        }
-     
-        #hr{
-            margin-top: 0vw !important;
-        }
-
-        .encabezadotexto2 {
-            font-family: MADEmirage;
-            color: rgba(184, 28, 0, 1);
-            font-size: 10vw;
-            text-align: center;
-        }
-        .textobjetivos {
-            font-family: Josefine;
-            font-size: 4vw;
-        }
-        .margen {
-            margin-bottom: 3rem;
-        }
-        
-     
-
-   
-        .margen2{
-            margin-bottom: 0rem;
-        }
-}
-
-
-
-    @media screen and (max-width: 600px) {
-     
-        .encabezado{  
-            max-width: auto;
-            background-color: rgba(184, 28, 0, 1);
-            height: 14VH; 
-            padding-top: 2rem;
-           
-        }
-        
-            .encabezadotexto{
-                font-family: MADEmirage;
-                color: white;
-                font-size: 6vw;
-                text-align: center;
-                
-                
-            }
-            .textoinicio{
-                width: 20rem;
-                text-align: justify;
-                /* margin: 2rem 15rem 3rem 20rem; */
-                font-family: Josefine;
-                font-size: 4vw;
-            }
-         
-            #hr{
-                margin-top: 29vw;
-            }
-    
-            .encabezadotexto2 {
-                font-family: MADEmirage;
-                color: rgba(184, 28, 0, 1);
-                font-size: 10vw;
-                text-align: center;
-            }
-            .textobjetivos {
-                font-family: Josefine;
-                font-size: 4vw;
-            }
-            .margen {
-                margin-bottom: 3rem;
-            }
-            
-        .video{
-            max-height: 20em !important;
-            max-width: 20em !important;
-        }
-       
-    
-     
-            .margen2{
-                margin-bottom: 0rem;
-            }
+    padding: 0 120px;
   }
-  @media screen and (max-width: 769px)
- {
-    .ajusteHeader{
-        height:11.3vw !important;
-         width: 1vw; 
-    }
- }
-
-  @media screen and (max-width: 1199px){
-    
-
-    .encabezado{  
-        max-width: auto;
-        background-color: rgba(184, 28, 0, 1);
-        height: 14VH; 
-        padding-top: 2rem;
-        
-    }
-    
-        .encabezadotexto{
-            font-family: MADEmirage;
-            color: white;
-            font-size: 6vw;
-            text-align: center;
-            
-            
-        }
-        .textoinicio{
-            width: 20rem;
-            text-align: justify ;
-            font-family: Josefine;
-            font-size: 4vw !important;
-        }
-       .iniciomargen{
-        margin-top: 10vw;
-       }
-        
-       .iniciomargen2{
-        margin-top: 35vw;
-       }
-        .encabezadotexto2 {
-            font-family: MADEmirage;
-            color: rgba(184, 28, 0, 1);
-            font-size: 10vw;
-            text-align: center;
-        }
-        .textobjetivos {
-            font-family: Josefine;
-            font-size: 4vw;
-            padding-left: 3em;
-            padding-right: 3em;
-        }
-        .margen {
-            margin-bottom: 3rem;
-        }
-       
   
-        .margen2{
-            margin-bottom: 0rem;
-        }
-       
-    
-        .imagen{
-         display: none;
-            
-            
-         }
-       
-  }
-  @media screen and (max-width: 1199px) {
-    .imageninicio {
-      max-width: auto !important;
-    }
-  }
-
-  @media screen and (min-width: 1200px) {
-    .imageninicio {
-      max-width:40rem !important ;
-    }
-  }
+  .parrafo {
+    font-size: 1.5rem;
+    font-family: 'Josefin Sans';
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.8rem;
+    text-align: justify;
+    width: calc(50% - 60px);
+    transition: width 0.5s ease-in-out, height 0.5s ease-in-out;
+  
 
 
-  @media screen and (min-width: 1200px){
-    .imagen{
-          
-        max-height: 22em ;
-        max-width: 59em ! ;
-        
-        }
- .video{
-        max-height: 22.8em ;
-        max-width: 48em;
- }
   }
-  .textoinicio{
-            width: 20rem;
-            text-align: justify;
-            font-family: Josefine;
-            font-size: 1.2vw;
-        }
+  
+  .imagen {
+    margin-top: 5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: calc(50% - 60px);
    
+  }
+  
+  .imagen img {
+   width: 26rem;
+   height: 26rem;
+   transition: width 0.5s ease-in-out, height 0.5s ease-in-out;
+  }
+  @media (min-width: 768px) and (max-width: 1280px) {
+    .contenedor {
+      max-width: 60rem;
+      margin: 0 auto;
+      padding: 0 2rem;
+    }
+  }
+  
+
+  @media (max-width: 440px) {
+    .imagen img {
+      width: 80%;
+      height: auto;
+    }
+  }
+  
+  @media (max-width: 767px) {
+    .contenedor {
+      flex-direction: column;
+      padding: 0;
+      margin: 2rem;
+    }
+  
+    .parrafo {
+        font-size: 1.2rem;
+        margin-bottom: 3rem;
+        width: 100%;
+        margin-top: 3rem;
+        margin-left: 0;
+      }
+  
+      .imagen {
+        width: 100%;
+        margin: 0 auto;
+        margin-top: 3rem;
+        margin-bottom: 3rem;
+      }
+  }
+  
+  
+  @media (max-width: 767px) {
+    .imagen {
+      width: 100%;
+      margin-top: 3rem;
+      margin-bottom: 3rem;
+    }
+  
+    .contenedor {
+      flex-direction: column;
+      padding: 0;
+    }
+  
+    .parrafo {
+      font-size: 1.2rem;
+      margin-bottom: 3rem;
+    }
+  
+    .imagen-container {
+      margin-top: 3rem;
+      margin-bottom: 3rem;
+    }
+  }
+  
+  @media (min-width:800px) {
+    .title {
+      height: 8vw;
+    }
+  
+    .contenedor {
+      flex-direction: row;
+      padding: 0 120px;
+    }
+  
+    .title h1 {
+      padding-top: 3%;
+    }
+  }
+  /*Segunda sección*/
+  .mitad {
+   border-top: .5rem solid rgb(0, 0, 0);
+    margin-left: 4rem ;
+    margin-right: 4rem;
+  }
+
+  .row {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .column {
+    flex: 1;
+    padding: 0 1em;
+    text-align: center;
+    margin: 5rem;
+  }
+  
+  .column h2 {
+    font-family: 'MADE Mirage';
+    src: url(./fonts/MADE\ MIRAGE/);
+    color: rgba(184, 28, 0, 1);
+    padding-top: 11%;
+    text-align: center;
+    font-size: 3rem;
+    font-weight: 400;
+  }
+  
+  .column p {
+    font-size: 1.5rem;
+    font-family: 'Josefin Sans';
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.8rem;
+    text-align: justify;
+  }
+  
+  .column ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .column li {
+    font-size: 1.5rem;
+    font-family: 'Josefin Sans';
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.8rem;
+    text-align: justify;
+  }
+  @media (max-width: 767px) {
+  .column p,
+  .column li {
+    font-size: 1.2rem;
+  }
+}
+  
+  /*Tercera Sección*/
+
+  .tercera {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .video  {
+    width: 26rem;
+    height: 36rem;
+    margin-right: 4rem;
+  }
+  
+  .fachada {
+    width: 26rem;
+    height: 36rem;
+    margin-left: 4rem;
+  }
+  
+  @media screen and (max-width: 1280px) {
+    .tercera {
+      margin: 0 10%;
+      padding: 0 40px;
+    }
+  }
+  
+  @media screen and (max-width: 767px) {
+    .tercera {
+      flex-direction: column;
+      margin: 0 5%;
+    }
+    
+    .video,
+    .fachada {
+      width: 100%;
+      height: auto;
+      margin: 0;
+    }
+  }
+  
