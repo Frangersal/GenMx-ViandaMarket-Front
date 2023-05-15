@@ -1,106 +1,243 @@
+/*Primera sección*/
 
-@import url('https://fonts.cdnfonts.com/css/josefin-sans');
-
-
-.title{
-     height: 13rgitem;
+.title {
+    margin-top: 5vw;
+    height: 16vw;
     background-color: rgba(184, 28, 0, 1);
-}
-
-.title h1{
+  }
+  
+  .title h1 {
     font-family: 'MADE Mirage';
     src: url(./fonts/MADE\ MIRAGE/);
     color: rgba(252, 247, 241, 1);
-    padding-top: 8%;
+    padding-top: 11%;
     text-align: center;
     font-size: 4vw;
     font-weight: 400;
-}
-
-
-
-.imageninicio {
-    max-width: 27rem;
-    max-height: 27rem;
-}
-
-#parrafoinicio {
-    width: 30rem;
-    padding: 1.1rem;
+  }
+  
+  .text1 {
+    font-size: 1vw;
+    margin-right: 15%;
+    margin-left: 15%;
+    padding: 3%;
+    justify-content: center;
     text-align: justify;
-    font-size:1.5rem;
-    margin-left: 11rem;
-    font-family: 'Josefin Sans';
-    font-style: normal;
-    font-weight: 300;
-    src: local('Josefin Sans'), url('https://fonts.cdnfonts.com/s/15771/JosefinSans-Light.woff') format('woff');
-    line-height: 2rem;
-
-}
-
-.textobjetivos {
-   
-    text-align: justify;
+    font-family: 'Josefin Sans', sans-serif;
+    padding: 2%;
+  }
+  
+  .contenedor {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 100rem;
+    margin: 0 auto;
+    padding: 0 120px;
+  }
+  
+  .parrafo {
     font-size: 1.5rem;
     font-family: 'Josefin Sans';
     font-style: normal;
-    font-weight: 300;
-    src: local('Josefin Sans'), url('https://fonts.cdnfonts.com/s/15771/JosefinSans-Light.woff') format('woff');
-    line-height: 1.5rem;
-}
-
-
-.encabezadotexto2 {
-    font-family: 'MADE Mirage';
-    src: url(./fonts/MADE\ MIRAGE/);
-    color: rgba(184, 28, 0, 1);
-    font-size: 2rem;
-    text-align: center;
-}
-
-.iniciomargen {
-    margin-top: 5rem;
-}
-
-
-#hr {
-    margin-top: 25rem;
-}
-
-.columnavalores {
-    display: flex;
-    flex-direction: column;
+    font-weight: 400;
+    line-height: 1.8rem;
     text-align: justify;
-    list-style: none;
-    margin-left: 3rem;
-}
+    width: calc(50% - 60px);
+    transition: width 0.5s ease-in-out, height 0.5s ease-in-out;
+  
 
-.objetivostexto {
+
+  }
+  
+  .imagen {
+    margin-top: 5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: calc(50% - 60px);
+   
+  }
+  
+  .imagen img {
+   width: 26rem;
+   height: 26rem;
+   transition: width 0.5s ease-in-out, height 0.5s ease-in-out;
+  }
+  @media (min-width: 768px) and (max-width: 1280px) {
+    .contenedor {
+      max-width: 60rem;
+      margin: 0 auto;
+      padding: 0 2rem;
+    }
+  }
+  
+
+  @media (max-width: 440px) {
+    .imagen img {
+      width: 80%;
+      height: auto;
+    }
+  }
+  
+  @media (max-width: 767px) {
+    .contenedor {
+      flex-direction: column;
+      padding: 0;
+      margin: 2rem;
+    }
+  
+    .parrafo {
+        font-size: 1.2rem;
+        margin-bottom: 3rem;
+        width: 100%;
+        margin-top: 3rem;
+        margin-left: 0;
+      }
+  
+      .imagen {
+        width: 100%;
+        margin: 0 auto;
+        margin-top: 3rem;
+        margin-bottom: 3rem;
+      }
+  }
+  
+  
+  @media (max-width: 767px) {
+    .imagen {
+      width: 100%;
+      margin-top: 3rem;
+      margin-bottom: 3rem;
+    }
+  
+    .contenedor {
+      flex-direction: column;
+      padding: 0;
+    }
+  
+    .parrafo {
+      font-size: 1.2rem;
+      margin-bottom: 3rem;
+    }
+  
+    .imagen-container {
+      margin-top: 3rem;
+      margin-bottom: 3rem;
+    }
+  }
+  
+  @media (min-width:800px) {
+    .title {
+      height: 8vw;
+    }
+  
+    .contenedor {
+      flex-direction: row;
+      padding: 0 120px;
+    }
+  
+    .title h1 {
+      padding-top: 3%;
+    }
+  }
+  /*Segunda sección*/
+  .mitad {
+   border-top: .5rem solid rgb(0, 0, 0);
+    margin-left: 4rem ;
+    margin-right: 4rem;
+  }
+
+  .row {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .column {
+    flex: 1;
+    padding: 0 1em;
     text-align: center;
-    color: rgba(184, 28, 0, 1);
+    margin: 5rem;
+  }
+  
+  .column h2 {
     font-family: 'MADE Mirage';
     src: url(./fonts/MADE\ MIRAGE/);
+    color: rgba(184, 28, 0, 1);
+    padding-top: 11%;
+    text-align: center;
+    font-size: 3rem;
+    font-weight: 400;
+  }
+  
+  .column p {
+    font-size: 1.5rem;
+    font-family: 'Josefin Sans';
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.8rem;
+    text-align: justify;
+  }
+  
+  .column ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .column li {
+    font-size: 1.5rem;
+    font-family: 'Josefin Sans';
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.8rem;
+    text-align: justify;
+  }
+  @media (max-width: 767px) {
+  .column p,
+  .column li {
+    font-size: 1.2rem;
+  }
 }
+  
+  /*Tercera Sección*/
 
-.margen {
-    margin-bottom: 10rem;
-}
-
-.media {
-    margin: 0 auto;
-}
-
-.imagen {
-    max-width: 26rem;
-    max-height: 36rem; 
-
-}
-
-.video {
-    max-width: 26rem;
-    max-height: 36rem; 
-}
-
-.margen2 {
-    margin-bottom: 10rem;
-}
+  .tercera {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .video  {
+    width: 26rem;
+    height: 36rem;
+    margin-right: 4rem;
+  }
+  
+  .fachada {
+    width: 26rem;
+    height: 36rem;
+    margin-left: 4rem;
+  }
+  
+  @media screen and (max-width: 1280px) {
+    .tercera {
+      margin: 0 10%;
+      padding: 0 40px;
+    }
+  }
+  
+  @media screen and (max-width: 767px) {
+    .tercera {
+      flex-direction: column;
+      margin: 0 5%;
+    }
+    
+    .video,
+    .fachada {
+      width: 100%;
+      height: auto;
+      margin: 0;
+    }
+  }
+  
