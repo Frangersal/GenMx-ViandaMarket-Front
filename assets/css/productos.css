@@ -1,26 +1,42 @@
-.titulo {
+.title {
+    margin-top: 5vw;
+    height: 16vw;
+    background-color: rgba(184, 28, 0, 1);
+  }
+  
+  .title h1 {
+    font-family: 'MADE Mirage';
+    src: url(./fonts/MADE\ MIRAGE/);
+    color: rgba(252, 247, 241, 1);
+    padding-top: 11%;
+    text-align: center;
+    font-size: 4vw;
+    font-weight: 400;
+  }
+  
+  @media (min-width: 800px) {
+    .title {
+      height: 8vw;
+    }
+   
+    .title h1 {
+      padding-top: 3%;
+      }
+  }
+  
+ 
+#filtro1{
+    color: white;
+    font-family: 'Josefin Sans', sans-serif;
 
-    font-family: MADEmirage;
-    font-size: 4VW;
-    color: #fff;
-    margin-top: 1% !important;
 }
 
 #filtro {
     color: white;
     background-color: #2A2E3A;
+    font-family: 'Josefin Sans', sans-serif;
 }
 
-.rowUno {
-    margin-top: 1rem !important;
-    display: grid;
-    width: auto;
-    grid-template-rows: max-content;
-    text-align: center;
-    background-color: #B81C00;
-    height: 7vw;
-    margin-top: 7.5vw !important;
-}
 
 .card-img-top {
 
@@ -66,10 +82,7 @@
 
 
 @media (max-width:768px) {
-    .ajusteHeader {
-        height: 17vw;
-    }
-
+ 
     .card-1 {
         font-family: 'Josefin Sans';
         src: url(./Josefin_Sans/JosefinSans-Bold.ttf);
@@ -87,25 +100,8 @@
         font-size: 0.7rem;
     }
 
-    .titulo {
-        font-family: MADEmirage;
-        font-size: 6VW;
-        color: #fff;
-        margin-top: 1% !important;
-
-    }
-
-    .rowUno {
-        margin-top: 1rem !important;
-        display: grid;
-        width: auto;
-        grid-template-rows: max-content;
-        text-align: center;
-        background-color: #B81C00;
-        height: 11vw;
-        margin-top: 7.5vw;
-    }
-
+   
+ 
 }
 
 @media (max-width:425px) {
@@ -126,23 +122,7 @@
         font-size: 0.7rem;
     }
 
-    .titulo {
-        font-family: MADEmirage;
-        font-size: 8VW;
-        color: #fff;
-        margin-top: 1% !important;
-    }
-
-    .rowUno {
-        margin-top: 1rem !important;
-        display: grid;
-        width: auto;
-        grid-template-rows: max-content;
-        text-align: center;
-        background-color: #B81C00;
-        height: 11vw;
-        margin-top: 7.5vw;
-    }
+   
 }
 
 #btnProducto_2 {
