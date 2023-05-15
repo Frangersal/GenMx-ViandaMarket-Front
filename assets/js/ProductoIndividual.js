@@ -284,3 +284,5 @@ window.addEventListener("load", function (event) {
     productoCarne[0].insertAdjacentHTML("beforeend", selProd);
   }
 })//window  // <button type="button" class="btnCompra">Añadir al carrito</button>   
+
+

@@ -111,3 +111,7 @@ window.addEventListener('resize', function () {
         document.getElementById('contacto').classList.remove('show');
     }
 });
+
+
+
+
