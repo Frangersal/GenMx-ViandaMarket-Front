@@ -9,7 +9,7 @@ let isComplete = [false, false, false, false, false];
  *   3 input.form-control.register Contraseña
  *   4 input.form-control.register Confirmar
  *   5 button#btnAgregar.btn.btn-primary.btn-lg.btn-block.form-dash.register
- *   6 button#btnClear.btn.btn-secondary.btn-lg.btn-block.form-dash.register
+ *   6 button#btnClear.btn.btn-secondary.btn-lg.btn-block.form-dash.register //
  *   7 divalert Toast
  */
 
