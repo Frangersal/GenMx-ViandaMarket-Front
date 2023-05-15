@@ -38,9 +38,9 @@ const regexmail = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/,
 
 function exitoToast() {
     alerta.innerHTML = `
-        <div class="toast align-items-center text-white border-0 mb-2" style="background-color:rgb(72, 201, 82);" role="alert" aria-live="assertive" aria-atomic="true">
+        <div class="toast align-items-center text-white border-0 mb-2  bg-success role="alert" aria-live="assertive" aria-atomic="true">
             <div class="d-flex">
-                <div class="toast-body" style="color:black;">
+                <div class="toast-body" style="color:white;">
                     <i class="bi bi-exclamation-circle-fill"></i>
                     Inicio exitoso
                 </div>
@@ -56,7 +56,7 @@ function exitoToast() {
     toastList.forEach(toast => toast.show())
 
     setTimeout(function() {
-        window.location.href = "./index.html";
+        window.location.href = "index.html";
     }, 2000);
 }
 
@@ -64,13 +64,13 @@ function exitoToast() {
 const invalid = (num, msj) => {
     isComplete[num] = false;
     let alert = `   
-    <div class="toast align-items-center text-white border-0 mb-2" style="background-color:#fbf0da;" role="alert" aria-live="assertive" aria-atomic="true">
+    <div class="toast align-items-center text-white border-0 mb-2 bg-danger  role="alert" aria-live="assertive" aria-atomic="true">
   <div class="d-flex">
-    <div class="toast-body" style="color:#73510d;">
+    <div class="toast-body" style="color:#fff;">
     <i class="bi bi-exclamation-circle-fill"></i>
     ${msj}
     </div>
-    <button type="button" class="btn-close btn-close-black me-2 m-auto" data-bs-dismiss="toast" aria-label="Close" style="font-size: small;"></button>
+    <button type="button" class="btn-close btn-close-white me-2 m-auto" data-bs-dismiss="toast" aria-label="Close" style="font-size: small;"></button>
   </div>
 </div>
     `
@@ -125,7 +125,6 @@ btnAgregar.addEventListener('click', (e) => {
         }// for usuarioExistente
     } catch{
         history.go(0);
-        alert("Lo sentimos algo salio mal, porfavor vuelve a intentarlo")
         console.log("dsadas");
     }
 
@@ -135,13 +134,13 @@ btnAgregar.addEventListener('click', (e) => {
 
         if(usuarioExistente==false){
             let alert = `   
-            <div class="toast align-items-center text-white border-0 mb-2" style="background-color:#fbf0da;" role="alert" aria-live="assertive" aria-atomic="true">
+            <div class="toast align-items-center text-white border-0 mb-2 bg-danger role="alert" aria-live="assertive" aria-atomic="true">
           <div class="d-flex">
-            <div class="toast-body" style="color:#73510d;">
+            <div class="toast-body" style="color:#fff;">
             <i class="bi bi-exclamation-circle-fill"></i>
             El correo no existe.
             </div>
-            <button type="button" class="btn-close btn-close-black me-2 m-auto" data-bs-dismiss="toast" aria-label="Close" style="font-size: small;"></button>
+            <button type="button" class="btn-close btn-close-white me-2 m-auto" data-bs-dismiss="toast" aria-label="Close" style="font-size: small;"></button>
           </div>
         </div>
             `
@@ -156,13 +155,13 @@ btnAgregar.addEventListener('click', (e) => {
 
         if(coincidencia==false){
             let alert = `   
-            <div class="toast align-items-center text-white border-0 mb-2" style="background-color:#fbf0da;" role="alert" aria-live="assertive" aria-atomic="true">
+            <div class="toast align-items-center text-white border-0 mb-2 bg-danger role="alert" aria-live="assertive" aria-atomic="true">
           <div class="d-flex">
-            <div class="toast-body" style="color:#73510d;">
+            <div class="toast-body" style="color:#fff;">
             <i class="bi bi-exclamation-circle-fill"></i>
             Lo sentimos la contraseña no coincide con el correo.
             </div>
-            <button type="button" class="btn-close btn-close-black me-2 m-auto" data-bs-dismiss="toast" aria-label="Close" style="font-size: small;"></button>
+            <button type="button" class="btn-close btn-close-white me-2 m-auto" data-bs-dismiss="toast" aria-label="Close" style="font-size: small;"></button>
           </div>
         </div>
             `

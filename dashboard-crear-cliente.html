@@ -12,7 +12,7 @@
      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.4/font/bootstrap-icons.css">
      <link href="https://fonts.cdnfonts.com/css/josefin-sans?styles=19769,19766,19772,19773,19767,19768,19770,19771,19764,19765" rel="stylesheet">
                 
-        <title>Agregar Productos - Vianda Market</title>
+        <title>Agregar Clientes - Vianda Market</title>
 </head>
 
 <body>
@@ -25,9 +25,9 @@
     <section class="text-center">
     <div class="rowUno container-fluid formulario-fondo d-flex align-items-center justify-content-center">
         <main>
-        
-            <h2 class="titulo">Crear Producto</h2>
-         
+          <div class="col-md-8 order-md-1">
+            <h2 class="titulo">Crear Clientes</h2>
+         </div>
         </section>
 
         <section class="fondoform">
@@ -36,80 +36,70 @@
 
             <div class="row justify-content-center">
               <div class="col-md-8">
-                <h4 class="titulo4 mb-3 text-center">Agregar Productos</h4>
+                <h4 class="titulo4 mb-3 text-center">Agregar Clientes</h4>
                 <div class="alert alert-danger fade show" style="display:none;" role="alert" id="alertValidaciones">
                   <p id="alertValidacionesTexto"></p>
                 </div>
                 <form class="needs-validation" novalidate>
                   <div class="row">
-                    <div class=" textoform2 col-12 col-md-6 mb-3">
-                      <label for="Name">Nombre</label>
-                      <input type="text" class="form-control form-dash" id="Nombre" autofocus placeholder="Ingresa el nombre del producto" required>
-                      <div class="invalid-feedback">
-                        Por favor, ingresa un nombre válido.
-                      </div>
-                    </div>
-        
-                    <div class=" textoform2 col-12 col-md-6 mb-3">
-                      <label for="Brand">Marca</label>
-                      <input type="text" class="form-control form-dash" id="Brand" autofocus placeholder="Ingresa la marca del producto" required>
-                      <div class="invalid-feedback">
-                        Por favor, ingresa una marca válida.
-                      </div>
-                    </div>
-        
-                    <div class=" textoform2 col-12 col-md-6 mb-3">
-                      <label for="Quality">Calidad</label>
-                      <input type="text" class="form-control form-dash" id="Quality" autofocus placeholder="Ingresa la calidad del producto" required>
-                      <div class="invalid-feedback">
-                        Por favor, ingresa una calidad válida.
-                      </div>
-                    </div>
-        
-                    <div class=" textoform2 col-12 col-md-6 mb-3">
-                      <label for="Origin">Origen</label>
-                      <input type="text" class="form-control form-dash" id="Origin" autofocus placeholder="Ingresa el origen del producto" required>
-                      <div class="invalid-feedback">
-                        Por favor, ingresa un origen válido.
-                      </div>
-                    </div>
-        
-                    <div class=" textoform2 col-12 col-md-6 mb-3">
-                      <label for="Weight">Gramos</label>
-                      <input type="text" class="form-control form-dash" id="Gramos" autofocus placeholder="Ingresa la cantidad en gramos" required>
-                      <div class="invalid-feedback">
-                        Por favor, ingresa una cantidad válida en gramos.
-                      </div>
-                    </div>
-        
-                    <div class=" textoform2 col-12 col-md-6 mb-3">
-                      <label for="Price">Precio</label>
-                      <input type="text" class="form-control form-dash" id="Price" placeholder="Ingresa el precio del producto" required>
-                      <div class="invalid-feedback">
-                        Por favor, ingresa un precio válido.
-                      </div>
-                    </div>
-        
-                    <div class=" textoform2 col-12 col-md-6 mb-3">
-                      <label for="Photo">Foto</label>
-                      <br>
-                      <button id="upload_widget" class="cloudinary-button botonCloudinary" type="button">Subir Foto</button>
-                      <div class="inputs"></div>
 
-                        <br>
-                      <input type="text" class="form-control form-dash" id="Photo" placeholder="Ingresa la URL de la foto del producto" required>
+                    <div class=" textoform2 col-12 col-md-6 mb-3">
+                      <label for="domicilio">Domicilio</label>
+                      <input type="text" class="form-control form-dash" id="domicilio" autofocus placeholder="Ingresa el domicilio del cliente" required>
                       <div class="invalid-feedback">
-                        Por favor, ingresa una URL de foto válida.
+                        Por favor, ingresa un domicilio válido.
+                      </div>
+                    </div>
+        
+                    <div class=" textoform2 col-12 col-md-6 mb-3">
+                      <label for="nombres">Nombres</label>
+                      <input type="text" class="form-control form-dash" id="nombres" autofocus placeholder="Ingresa los nombres del cliente" required>
+                      <div class="invalid-feedback">
+                        Por favor, ingresa unos nombres válidos.
+                      </div>
+                    </div>
+        
+                    <div class=" textoform2 col-12 col-md-6 mb-3">
+                      <label for="apellidos">Apellidos</label>
+                      <input type="text" class="form-control form-dash" id="apellidos" autofocus placeholder="Ingresa los apellidos del cliente" required>
+                      <div class="invalid-feedback">
+                        Por favor, ingresa unos apellidos válidos.
+                      </div>
+                    </div>
+        
+                    <div class=" textoform2 col-12 col-md-6 mb-3">
+                      <label for="correo">Correo</label>
+                      <input type="text" class="form-control form-dash" id="correo" autofocus placeholder="Ingresa el origen del cliente" required>
+                      <div class="invalid-feedback">
+                        Por favor, ingresa un correo válido.
+                      </div>
+                    </div>
+        
+                    <div class=" textoform2 col-12 col-md-6 mb-3">
+                      <label for="contrasena">Contraseña</label>
+                      <input type="password" class="form-control form-dash" id="contrasena" autofocus placeholder="Ingresa la contraseña del cliente" required>
+                      <div class="invalid-feedback">
+                        Por favor, ingresa una contraseña válido.
                       </div>
                     </div>
 
                     <div class=" textoform2 col-12 col-md-6 mb-3">
-                      <label for="descripcion">Descripción</label>
-                      <input type="text" class="form-control form-dash" id="descripcion" placeholder="Ingresa una descripción válida" required>
+                      <label for="confContrasena">Confirmar contraseña</label>
+                      <input type="password" class="form-control form-dash" id="confContrasena" autofocus placeholder="Ingresa la contraseña del cliente para confirmar" required>
                       <div class="invalid-feedback">
-                        Por favor, ingresa una descripción válida.
+                        Por favor, ingresa una contraseña válido.
                       </div>
                     </div>
+        
+                    <div class=" textoform2 col-12 col-md-6 mb-3">
+                      <label for="edad">Edad</label>
+                      <input type="text" class="form-control form-dash" id="edad" placeholder="Ingresa la edad del cliente" required>
+                      <div class="invalid-feedback">
+                        Por favor, ingresa una edad válida.
+                      </div>
+                    </div>
+        
+                     
                     <!-- Este div manda la alerta -->
                     <div class="position-fixed bottom-0 end-0 p-3 form-dash" id= "divAlert" style="z-index: 11">
                     </div>
@@ -130,39 +120,22 @@
 
               <script src="https://upload-widget.cloudinary.com/global/all.js" type="text/javascript"></script>  
 
-<script type="text/javascript">  
-let foto = document.getElementById("Photo")
-var myWidget = cloudinary.createUploadWidget({
-  cloudName: 'dw1mig7ts', 
-  uploadPreset: 'ViandaMarket'}, (error, result) => { 
-    if (!error && result && result.event === "success") {    
-        foto.value = result.info.secure_url;
-    }
-  }
-)
+ 
 
-
-
-
-document.getElementById("upload_widget").addEventListener("click", function(){
-    myWidget.open();
-  }, false);
-</script>
-
-<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
-integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
-crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
-integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
-crossorigin="anonymous"></script>
-<script src="https://kit.fontawesome.com/eb496ab1a0.js" crossorigin="anonymous"></script>
+              <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+              integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+              crossorigin="anonymous"></script>
+              <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+              integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+              crossorigin="anonymous"></script>
+              <script src="https://kit.fontawesome.com/eb496ab1a0.js" crossorigin="anonymous"></script>
     <script src="https://kit.fontawesome.com/eb496ab1a0.js" crossorigin="anonymous"></script>
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"    
     integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"    
     crossorigin="anonymous"></script>
     <script src="./assets/js/footer.js"></script>
     <script src="./assets/js/header.js"></script>
-    <script src="./assets/js/dashboard-crear-producto.js" type="module"></script>
+    <script src="./assets/js/dashboard-crear-cliente.js" type="module"></script>
     <!-- <script src="../js/main.js"></script>
     <script src="../js/carrito.js"></script> -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"

@@ -1,5 +1,21 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Oxygen&display=swap');
 @import url('https://fonts.cdnfonts.com/css/avenir');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@600&display=swap');
+
+
+@font-face {
+    font-family: MADEmirage;
+    src: url(../font/MADE\ Mirage\ Regular.otf);
+}
+
+@font-face {
+    font-family: Josefin;
+    src: url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@600&display=swap');
+}
+
+@import url('https://fonts.cdnfonts.com/css/josefin-sans%27');
+
+
 
 .center {
     display: flex;
@@ -10,32 +26,57 @@
 /* Inicio Header */
 
 /* * {background: linear-gradient(0deg, rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)), radial-gradient(50% 50% at 50% 50%, #FFFFFF 0%, rgba(255, 255, 255, 0) 100%); } */
-.bg-plano {
 
-}
 .bg-degradado { 
-    background: rgb(79,79,79);
-    background: radial-gradient(circle, rgba(79,79,79,1) 0%, rgba(0,0,0,1) 59%);
+    background-color: black;
+   background-image: url("https://res.cloudinary.com/dw1mig7ts/image/upload/b_rgb:000000,co_rgb:000000,dn_50,e_auto_saturation,o_39/v1684035406/filetes-ternera-crudos-especias-romero-vista-plana-vista-superior_rm1kri.jpg");
 }
-.bg-gradient2{
-    background: linear-gradient(0deg, rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)), radial-gradient(50% 50% at 50% 50%, #FFFFFF 0%, rgba(255, 255, 255, 0) 100%);
-}
-@font-face {
-    font-family: Tommy;
-    src: url(../../assets/font/MADE\ TOMMY\ Regular_PERSONAL\ USE.otf); 
-}
+
+
+.title {
+    margin-top: 5vw;
+    height: 16vw;
+    background-color: rgba(184, 28, 0, 1);
+  }
+  
+  .title h1 {
+    font-family: 'MADE Mirage';
+    src: url(./fonts/MADE\ MIRAGE/);
+    color: rgba(252, 247, 241, 1);
+    padding-top: 11%;
+    text-align: center;
+    font-size: 4vw;
+    font-weight: 400;
+  }
+  @media (min-width:800px) {
+    .title {
+      height: 8vw;
+    }
+  
+    .contenedor {
+      flex-direction: row;
+      padding: 0 120px;
+    }
+  
+    .title h1 {
+      padding-top: 3%;
+    }
+  }
 
 .intro {
-    font-family: Tommy, serif;
     font-style: normal;
     color: rgba(255, 255, 255, 1);
-    display: grid, flex;
+    display: grid;
     height: 40vw;
     align-items: center;
     text-align: center;
-    margin-top: 10%;
-    margin-bottom: 10%;
+    font-size: 2.75rem;
 
+}
+.intro h1{
+    font-family: MADEmirage;
+    padding-top: 8vw;
+    font-size: 2.75rem;
 }
 
 .tituloPrimero {
@@ -43,50 +84,56 @@
 }
 
 .tituloSegundo {
-    font-size: 3vw;
-    margin: 10%;
+    font-size: 2rem;
+    margin: 2%;
     margin-top: 5%;
+    font-family: 'Josefin Sans', sans-serif;
+    margin-left: 12rem;
+    margin-right: 12rem;
+font-style: normal;
+font-weight: 400;
+line-height: 100%;
+text-align: center;
+letter-spacing: -0.32px;
+line-height: 3rem;
 }
 
-.colorAmarillo {
-    color: rgba(232, 212, 47, 1);
+.colorrojo {
+    color: #B81C00;
 }
 
-.colorVerde {
-    color: rgba(31, 152, 150, 1);
-}
 
-.colorAzul {
-    color: rgba(89, 161, 194, 1);
-
-}
-
-.colorMorado {
-    color: rgba(182, 78, 155, 1);
-
-}
 
 /* Final de Header */
 
 /* FIN CSS de la seccion [header] hecha por [caro] */
 /* Inicio CSS de la seccion [cards] hecha por [angel] */
 .img-foto{
-    max-height: 200px;
+    max-height: 30vw;
 }
 .textCardNombre {
-    font-size: 22px;
+    font-size: 4vw;
+    font-family: 'MADE Mirage';
+    src: url(./fonts/MADE\ MIRAGE/);
 }
 .textCardPuesto {
-    font-size: 18px;
+    font-size: 3vw;
+    font-family: 'Josefin Sans';
+    font-style: normal;
 }
 
 .textCardDescription {
-    font-size: 16px;
-    height: 100px;
+    font-size: 3vw;
+    font-family: 'Josefin Sans';
+    font-style: normal;
+   
 }
 .bg-card{
     background-color: #ffffff00!important;
     border-color: #ffffff00!important;
+}
+.bi-linkedin, .bi-briefcase-fill{
+    font-size: 5vw;
 }
 .circle {
     /*border-color: #404040 #1f9896 #1f9896 #404040;*/
@@ -97,41 +144,41 @@
 
     /*border-style: solid;*/
     /*border-width: 20px;*/
-    border:12px solid transparent;
+    
+    border:1vw solid transparent;
     /*
     background:url(./src/img/Untitled.png) center/100% 100% border-box;
     */
 }
 .auraMoy{
-    background:url(../img/aura/auraMoises.png) center/100% 100% border-box; 
+    background-color: #9d251d;
+  
+    
 }
 .auraCaro{
-    background:url(../img/aura/auraCaro.png) center/100% 100% border-box;
-
+    background-color: #9d251d;
+   
 }
 .auraMaG{
-    background:url(../img/aura/auraMariano.png) center/100% 100% border-box;
-
+    background-color: #9d251d;
+    
 }
 .auraDom{
-    background:url(../img/aura/auraDominica.png) center/100% 100% border-box;
+    background-color: #9d251d;
 
 }
 .auraAnd{
-    background:url(../img/aura/auraAndrea.png) center/100% 100% border-box;
-
+    background-color: #9d251d;
 }
 .auraFrn{
-    background:url(../img/aura/auraFrancisco.png) center/100% 100% border-box;
-
+    background-color: #9d251d;
 }
 .auraJua{
-    background:url(../img/aura/auraJuan.png) center/100% 100% border-box;
+    background-color: #9d251d;
 
 }
 .auraFel{
-    background:url(../img/aura/auraFelix.png) center/100% 100% border-box;
-
+    background-color: #9d251d;
 }
 a{
     text-decoration: none;
@@ -140,7 +187,8 @@ a{
 /* FIN CSS de la seccion [cards] hecha por [angel] */
 /* Inicio CSS de la seccion [carrousel] hecha por [moy] */
 .contamos{
-  font-family: Tommy;
+    font-family: 'Josefin Sans';
+    font-style: normal;
   font-size: 5vw;
   text-align: center;
   color: rgba(255, 255, 255, 1);
@@ -157,9 +205,10 @@ a{
 /* Inicio CSS de la seccion [footer] hecha por [mariano] */
 
  .encabezadofooter  {
-    color: rgba(31, 152, 150, 1);
+    color: rgb(255, 255, 255);
     font-size: 2.9rem;
-    font-family: Tommy;
+    font-family: 'Josefin Sans';
+    font-style: normal;
   }
 
   .text-reset{
@@ -168,7 +217,8 @@ a{
   }
 
   .textofooter{
-    font-family: Tommy;
+    font-family: 'Josefin Sans';
+    font-style: normal;
     color: rgba(255, 255, 255, 1);
     font-size: 1.6rem;
   }
@@ -187,11 +237,35 @@ a{
     font-size: 2rem;
 }
 
+@media (min-width:992px){
+    .img-foto{
+        max-height: 20vw;
+    }
+    .textCardNombre {
+        font-size: 2vw;
+    }
+    .textCardPuesto {
+        font-size: 1.2vw;
+    }
+    
+    .textCardDescription {
+        font-size: 1.2vw;
+       
+    }
+
+    .bi-linkedin, .bi-briefcase-fill{
+        font-size: 2vw;
+    }
+    
+
+}
+
 @media only screen and (max-width: 1199px) {
     .encabezadofooter  {
-        color: rgba(31, 152, 150, 1);
+        color: rgb(254, 254, 254);
         font-size: 2rem;
-        font-family: Tommy;
+        font-family: 'Josefin Sans';
+        font-style: normal;
       }
     .bi-map{
         color: rgba(232, 212, 47, 1);
@@ -222,9 +296,10 @@ a{
 
 @media only screen and (max-width: 1024px) {
     .encabezadofooter  {
-        color: rgba(31, 152, 150, 1);
+        color: rgb(255, 255, 255);
         font-size: 2rem;
-        font-family: Tommy;
+        font-family: 'Josefin Sans';
+        font-style: normal;
       }
 .bi-map{
     color: rgba(232, 212, 47, 1);
@@ -355,6 +430,13 @@ a{
     display: none;
 }
 
+}
+
+
+@media (max-width:800px){
+    .arreglotitulo{
+        height: 8vw;
+    }
 }
 
 
