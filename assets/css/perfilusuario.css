@@ -5,7 +5,177 @@
     margin: 0;
     
 }
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Oxygen&display=swap');
+@import url('https://fonts.cdnfonts.com/css/avenir');
 
+@font-face {
+    font-family: dreamyEyes;
+    src: url(../font/dreamy-eyes.ttf);
+} 
+
+.center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card-header{
+    background-color: #B81C00!important;
+}
+.card-title{
+    color: #fff;
+    font-family:dreamyEyes ;
+    font-size: 20px;
+    letter-spacing: 1px;
+}
+.btn-primary{
+    background-color: #232222!important;
+    border: #232222!important; 
+    border: solid!important; 
+    border: 1px!important;
+    margin-top: 1rem!important;
+}
+.card{
+    border-radius: 0%!important;
+    background-color: #fcf7f1!important; 
+    
+}
+.card-bory{
+    border: #B81C00!important;
+}
+.card-header:first-child{
+    border-radius: 0%!important;
+
+}
+.nav-pills .nav-link.active, .nav-pills .show>.nav-link{
+    background-color: #fff!important;
+    color:#232222!important;
+}
+.nav-link{
+    color: #fff!important;
+}
+  /*
+  ------MAYOREO
+  */
+
+.bg-perfil-oscuro{ 
+    background-color: #2a2e3a!important; 
+}
+
+.txt-blanco{ color: #fff!important; }
+
+.box_bg-rojo{
+    margin-top: 1rem!important;
+    display: grid;
+    width: auto;
+    grid-template-rows: max-content;
+    text-align: center;
+    background-color: #B81C00;
+    height:7vw;  
+    margin-top: 7.5vw!important;
+}
+
+.box_bg-rojo_titulo{ 
+    font-family: MADEmirage;
+    font-size: 5VW; 
+    color: #fff;
+    margin-top: 1%!important;
+}
+
+/*---- Seccion mensaje ----*/
+.messege-section{
+    max-width: 70vw;
+    font-family: dreamyEyes;
+    font-size: 36px;
+    text-align: center;
+    letter-spacing: 1px;
+    margin: 2rem 0 ;
+    line-height: 1.1;
+}
+
+@media (max-width:860px){
+    .messege-section{
+        max-width: 80vw; 
+        font-size: 30px;  
+    }
+}
+@media (max-width:760px){
+    .messege-section{
+        max-width: 90vw; 
+        font-size: 25px;  
+    }
+}
+@media (max-width:560px){
+    .messege-section{
+        max-width: 100vw; 
+        font-size: 20px;  
+    }
+}
+
+/*---- Seccion formulario ----*/
+
+.form-section{
+    /*background-color: rgba(0, 255, 64, 0.575);*/
+    width: 35vw;
+    height: 420px;
+    font-family: dreamyEyes;
+    font-size: 16px;
+    text-align: center;
+    letter-spacing: 1px;
+    margin: 1rem 0 ;
+}
+
+@media (max-width:860px){
+    .form-section{
+        width: 50vw; 
+        font-size: 20px;  
+    }
+}
+@media (max-width:760px){
+    .form-section{
+        width: 70vw; 
+        font-size: 20px;  
+    }
+}
+@media (max-width:560px){
+    .form-section{
+        width: 100vw; 
+        font-size: 20px;  
+    }
+}
+
+.form-section_input{
+    width: 100%; 
+    margin: 0;
+    padding: 0;
+}
+
+.form-section_textarea{
+    width: 100%;
+    height: 86px; 
+}
+
+.form-section_box-btn{
+    width: 100%;
+    height: 60px; 
+    display: flex;
+    justify-content:left;
+    align-items: center;
+
+    margin-top: 1rem;
+
+}
+.btn-celeste{ 
+    background-color: #84A3B7!important;
+    border-color: #84A3B7!important;
+    margin-bottom: 10px;
+    width: 191.83px;
+    height: 55px;
+    font-size: 24px!important;
+    font-family: dreamyEyes;
+}
+
+/*
 .ajusteHeader{
     height:7.5vw;
    width: 1vw;
@@ -36,11 +206,7 @@
     background-repeat: no-repeat;
     background-attachment: fixed;
     
-  }
-
-  /* .hide {
-    display: none;
-  } */
+  } 
 
 #Titulo1 {
     display: grid;
@@ -195,10 +361,7 @@ input.form-control {
 
 
 
-
-/* End */
-
-
+ 
 
 
 .main .card {
@@ -207,8 +370,7 @@ input.form-control {
     border-radius: 18px;
     box-shadow: 1px 1px 8px 0 grey;
     height: auto;
-    margin-bottom: 20px;
-    /* padding: 20px 0 20px 50px; */
+    margin-bottom: 20px; 
     margin: 0 auto;
 }
 
