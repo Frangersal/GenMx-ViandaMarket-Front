@@ -1,18 +1,12 @@
-@font-face {
-    font-family: Mirage-bold;
-    src: url("../font/MADE-Mirage-Bold.otf")
-}
-
 @import url('https://fonts.cdnfonts.com/css/josefin-sans');
 
-
-.title {
+.title{
     margin-top: 5vw;
     height: 16vw;
     background-color: rgba(184, 28, 0, 1);
 }
 
-.title h1 {
+.title h1{
     font-family: 'MADE Mirage';
     src: url(./fonts/MADE\ MIRAGE/);
     color: rgba(252, 247, 241, 1);
@@ -36,7 +30,7 @@
     font-family: 'Josefin Sans';
     font-style: normal;
     font-weight: 400;
-    font-size: 1.25rem;
+    font-size: 1.25vw;
     line-height: 100%;
     text-align: justify;
     letter-spacing: -0.32px;
@@ -69,14 +63,15 @@
 }
 
 .card-img-top {
-    max-width: 13.75rem;
-    max-height: 18.75rem;
+    max-width: 13.75vw;
+    max-height: 18.75vw;
     object-fit: cover;
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 }
 
 .card-text {
     text-align: justify;
+    font-size: 1.2vw;
 }
 
 .card-title {
@@ -84,7 +79,7 @@
     font-family: 'MADE Mirage';
     font-style: normal;
     font-weight: 500;
-    font-size: 1.7rem;
+    font-size: 2rem;
     text-align: justify;
     letter-spacing: -0.32px;
     color: rgba(184, 28, 0, 1);
@@ -95,13 +90,13 @@ h4 {
     font-family: 'MADE Mirage';
     font-style: normal;
     font-weight: 500;
-    font-size: 1.6rem;
+    font-size: 3rem;
     text-align: justify;
     letter-spacing: -0.32px;
 }
 
 #t11 {
-    font-size: 3rem;
+    font-size: 6vw;
 }
 
 #t12 {
@@ -109,7 +104,7 @@ h4 {
     font-family: 'MADE Mirage';
     font-style: normal;
     font-weight: 500;
-    font-size: 1.7rem;
+    font-size: 3.5vw;
     letter-spacing: -0.32px;
 
 }
@@ -119,80 +114,23 @@ h4 {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    margin: 1rem;
+    margin: 1vw;
 
 }
 
 .card-text-custom {
-    width: 13.75rem;
-}
-
-
-
-/* Para resoluciones menores a 320px */
-@media only screen and (max-width: 320px) {
-    #t1 {
-        font-size: 24px;
-        /* Tamaño de fuente más pequeño */
-    }
-
-    #descripcion {
-        font-size: 16px;
-        /* Tamaño de fuente más pequeño */
-    }
-
-    .card-text-custom {
-        width: 8rem;
-
-    }
-}
-
-/* Para resoluciones mayores a 320px pero menores a 500px */
-@media only screen and (min-width: 321px) and (max-width: 500px) {
-    #t1 {
-        font-size: 28px;
-        /* Tamaño de fuente un poco más pequeño */
-    }
-
-    #descripcion {
-        font-size: 18px;
-        /* Tamaño de fuente un poco más pequeño */
-    }
-
-    .card-text-custom {
-        width: 11rem;
-
-    }
-}
-
-
-
-
-@media (max-width:800px) {
-    .ajusteHeader {
-        height: 20vw;
-    }
-
+    width: 13.75vw;
 }
 
 @media (min-width:800px) {
-    .title {
-        height: 10vw;
-    }
-
-    .title h1 {
-        padding-top: 4%;
-
-    }
+ 
 
     .terminoCox {
         margin: 5%;
         align-items: center;
         display: grid;
         grid-template-columns: 0.8fr 1fr;
-        gap: 1em;
+        gap: 1vw;
 
     }
-
-
 }
