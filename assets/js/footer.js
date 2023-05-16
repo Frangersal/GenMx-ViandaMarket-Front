@@ -33,18 +33,10 @@ const secciones = document.querySelectorAll("tituloCel");
 const encabezado = document.querySelectorAll("footerCel");
 const listaProdFooter = document.getElementById("#listaProdFooter");
 const opciones = document.getElementsByClassName("colapsadoFooter");
-console.log(secciones);
-console.log(listaProdFooter);
-console.log(opciones);
-console.log(encabezado);
-console.log(opciones);
-console.log(encabezado.length);
-console.log(opciones.length);
+
 
 for(let i=0; i < encabezado.length; i++){
     encabezado[i].addEventListener("click", () =>{
-      console.log(encabezado);
-      console.log(opciones);
       opciones[i].classList.toggle(".colapsadoFooter-open");
 
 })

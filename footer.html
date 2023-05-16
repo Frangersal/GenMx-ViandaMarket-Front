@@ -89,11 +89,11 @@
 <div class="productos">
 
     <div class="tituloCel">
-    <h2>
+    <h2 data-bs-toggle="collapse" data-bs-target="#collapseExample1" aria-expanded="false" aria-controls="collapseExample">
      Productos
     </h2>
     </div>
-
+    <div class="collapse" id="collapseExample1">
     <div class="colapsadoFooter" id="listaProdFooter">
         
         <a href="./productos.html" target="_blank" style="text-decoration: none; color: black;"><li>Japonés</li></a>
@@ -102,7 +102,7 @@
         <a href="./productos.html" target="_blank" style="text-decoration: none; color: black;"> <li>USA/Canadá</li></a>
         <a href="./productos.html" target="_blank" style="text-decoration: none; color: black;"> <li> Nacional </li></a>
         <a href="./productos.html" target="_blank" style="text-decoration: none; color: black;"> <li> Complementos </li></a>
-                   
+    </div>           
     </div>
 </div>
    
@@ -111,11 +111,12 @@
   
 <div class="acercade">        
     <div class="tituloCel">
-    <h2>
+    <h2 data-bs-toggle="collapse" data-bs-target="#collapseExample2" aria-expanded="false" aria-controls="collapseExample">
      Acerca de
     </h2>
     </div>
-
+    
+    <div class="collapse" id="collapseExample2">
     <div class="colapsadoFooter">
         
         <a href="./acercadevianda.html" target="_blank" style="text-decoration: none; color: black;"> <li> Acerca de Vianda Market </li></a>
@@ -124,15 +125,15 @@
         <a href="./acercade.html" target="_blank" style="text-decoration: none; color: black;"><li>Equipo de desarollo</li></a>         
     </div>
 </div>
-
+</div>
 <br>
       <div class="contacto">
         <div class="tituloCel">
-            <h2>
+            <h2 data-bs-toggle="collapse" data-bs-target="#collapseExample3" aria-expanded="false" aria-controls="collapseExample">
              Contacto
             </h2>
             </div>
-        
+        <div class="collapse" id="collapseExample3">
         <div class="colapsadoFooter">
         <a href="./contacto.html" target="_blank" style="text-decoration: none; color: black;"><li>Teléfono</li></a>
         <a href="./contacto.html" target="_blank" style="text-decoration: none; color: black;"><li>Ubicación</li></a>
@@ -141,7 +142,7 @@
         <a href="./mayoreo.html" target="_blank" style="text-decoration: none; color: black;"> <li>Mayoreo</li></a>
       </div>
       </div>
-
+    </div>
 
 
 </div>
@@ -259,6 +260,7 @@
 }
 
 .tituloCel:hover{
+    /*transform: scale(1.5);*/
     cursor: pointer;
     color: #4c6372;
     
