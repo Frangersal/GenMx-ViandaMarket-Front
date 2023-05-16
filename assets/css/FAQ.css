@@ -43,15 +43,6 @@
     font-weight: 400;
 }
 
-@media (min-width:800px){
-    .title{
-        height: 8vw;
-    }
-
-    .title h1{
-        padding-top: 3%;
-    }
-  }
 
 .faq{
     list-style: none;
@@ -127,7 +118,16 @@
 .arrow-rotated{
     transform: rotate(90deg);
 }
+@media (min-width:800px){
+    .title{
+        height: 8vw;
+    }
 
+    .title h1{
+        padding-top: 3%;
+    }
+   
+}
 
 
 
