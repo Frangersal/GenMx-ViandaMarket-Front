@@ -73,30 +73,34 @@
     font-size: 2.75rem;
 
 }
-.intro h1{
-    font-family: MADEmirage;
-    padding-top: 8vw;
-    font-size: 2.75rem;
-}
 
 .tituloPrimero {
-    font-size: 7vw;
-}
-
-.tituloSegundo {
+    font-size: 7vw; 
+    }
+    
+    .tituloSegundo {
     font-size: 2rem;
     margin: 2%;
     margin-top: 5%;
     font-family: 'Josefin Sans', sans-serif;
-    margin-left: 12rem;
-    margin-right: 12rem;
-font-style: normal;
-font-weight: 400;
-line-height: 100%;
-text-align: center;
-letter-spacing: -0.32px;
-line-height: 3rem;
+    margin-left: 5%; 
+    margin-right: 5%;
+    font-style: normal;
+    font-weight: 400;
+    text-align: center;
+    letter-spacing: -0.32px;
+    line-height: 3rem;
+    }
+
+@media (max-width: 767px) {
+    .tituloSegundo {
+        font-size: 1rem;
+        margin: 1%;
+        margin-top: 3%;
+        line-height: 2rem;
+    }
 }
+
 
 .colorrojo {
     color: #B81C00;
