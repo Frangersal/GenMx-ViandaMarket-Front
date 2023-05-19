@@ -93,7 +93,7 @@ const saveUser = () => {
             //"Access-Control-Allow-Origin": "*", // Agrega esta cabecera para permitir CORS
             "Authorization": "Bearer: " + token,
         },
-        mode: 'no-cors',
+        //mode: 'no-cors',
         body: JSON.stringify(newUser)
     })
         .then(response => {
