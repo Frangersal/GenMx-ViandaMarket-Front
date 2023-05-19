@@ -137,13 +137,13 @@ const regexNombre = /^[a-záéíóúA-ZÁÉÍÓÚ0-9_-]{3,}$/,
 
 function exitoToast() {
     let alert = `   
-    <div class="toast align-items-center text-white border-0 mb-2" style="background-color:green;" role="alert" aria-live="assertive" aria-atomic="true">
+    <div class="toast align-items-center text-white border-0 mb-2 bg-success"   role="alert" aria-live="assertive" aria-atomic="true">
   <div class="d-flex">
-    <div class="toast-body" style="color:black;">
+    <div class="toast-body" style="color:white;">
     <i class="bi bi-exclamation-circle-fill"></i>
-      Producto subido exitosamente
+      Producto subido exitosamente!
     </div>
-    <button type="button" class="btn-close btn-close-white me-2 m-auto" data-bs-dismiss="toast" aria-label="Close"></button>
+    <button type="button" class="btn-close btn-close-white me-2 m-auto" data-bs-dismiss="toast" aria-label="Close" style="font-size: small;"></button>
   </div>
 </div>
     `
@@ -160,18 +160,16 @@ function exitoToast() {
 
 
 
-
-
 const invalid = (num, msj) => {
     isComplete[num] = false;
     let alert = `   
-    <div class="toast align-items-center text-white border-0 mb-2" style="background-color:#fbf0da;" role="alert" aria-live="assertive" aria-atomic="true">
+    <div class="toast align-items-center text-white border-0 mb-2 bg-danger"   role="alert" aria-live="assertive" aria-atomic="true">
   <div class="d-flex">
-    <div class="toast-body" style="color:#73510d;">
+    <div class="toast-body" style="color:#fff;">
     <i class="bi bi-exclamation-circle-fill"></i>
     ${msj}
     </div>
-    <button type="button" class="btn-close btn-close-white me-2 m-auto" data-bs-dismiss="toast" aria-label="Close"></button>
+    <button type="button" class="btn-close btn-close-white me-2 m-auto" data-bs-dismiss="toast" aria-label="Close" style="font-size: small;"></button>
   </div>
 </div>
     `
