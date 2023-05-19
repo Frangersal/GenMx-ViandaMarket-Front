@@ -76,15 +76,12 @@ const saveUser = () => {
         "domicilio": `nowhere`,
         "nombres": `${inputRegister[0].value}`,
         "apellidos": `${inputRegister[1].value}`,
-        "email": `${(inputRegister[2].value).toLowerCase()}`,
+        "correo": `${(inputRegister[2].value).toLowerCase()}`,
         "contrasena": `${inputRegister[4].value}`,
         "edad": 25
     };
     /*
-    addUser(newUser);
-    setTimeout(() => {
-        window.location.href = "iniciosesion.html";
-    }, 2000);
+    addUser(newUser);  setTimeout(() => {  window.location.href = "iniciosesion.html";    }, 2000);
     */
     const token = "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiIjSG9sYU11bmRvMSIsInJvbGUiOiJ1c2VyIiwiaWF0IjoxNjg0NDYwMDM0LCJleHAiOjE2ODQ0OTYwMzR9.oH14UdAWfT_1aIAHqiuSJN37ruZlBL0z5gvZHlBcUWU";
 
