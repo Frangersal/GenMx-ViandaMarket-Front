@@ -42,16 +42,12 @@
     font-family: 'Josefin Sans', sans-serif;
     font-weight: 400;
 }
-
-@media (min-width:800px){
-    .title{
-        height: 8vw;
+@media (max-width: 768px) {
+    .text1 h3 {
+        font-size: 1rem;
     }
+}
 
-    .title h1{
-        padding-top: 3%;
-    }
-  }
 
 .faq{
     list-style: none;
@@ -127,9 +123,61 @@
 .arrow-rotated{
     transform: rotate(90deg);
 }
+@media (min-width:800px){
+    .title{
+        height: 8vw;
+    }
 
+    .title h1{
+        padding-top: 3%;
+    }
+   
+}
 
+@media (max-width: 768px) {
+    .faq {
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+    .faq p{
+        font-size:1rem;
+    }
+    .faq img {
+        margin-left: 5%;
+        width: 50vw;
+    }
 
+    .question {
+        font-size: 1.2rem;
+    }
+
+    .answer,
+    .answer-opened {
+        font-size: 1.2rem;
+    }
+}
+
+/* Media query para pantallas más grandes */
+@media (min-width: 1200px) {
+    .faq {
+        margin-left: 10%;
+        margin-right: 10%;
+    }
+
+    .faq img {
+        margin-left: 10%;
+        width: 70vw;
+    }
+
+    .question {
+        font-size: 1.2rem;
+    }
+
+    .answer,
+    .answer-opened {
+        font-size: 1.2rem;
+    }
+}
 
 
 

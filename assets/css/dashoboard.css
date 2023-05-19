@@ -1,52 +1,34 @@
-.fixheader{
-    height: 6.4vw;
-}
-
-@font-face {
-    font-family: MADEmirage;
-    src: url(../font/MADE\ Mirage\ Regular.otf);
-}
-
-@font-face {
-    font-family: Mirage-bold;
-    src: url("../font/MADE-Mirage-Bold.otf") 
-}
-@import url('https://fonts.cdnfonts.com/css/josefin-sans%27');
 
 
-.rowUno{
-    margin-top: 1rem;
-    display: grid;
-    width: auto;
-    grid-template-rows: max-content;
-    background-color: #B81C00;
-    margin-bottom: 0rem;
-  
-}
-.titulo{
-    
-    font-family: MADEmirage;
-    font-size: 6VW; 
-    color: #fff;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-left: 10vw;
-    /* agregar media query para mobile */
- 
+@import url('https://fonts.cdnfonts.com/css/josefin-sans');
+
+
+.title {
+    margin-top: 5vw;
+    height: 16vw;
+    background-color: rgba(184, 28, 0, 1);
 }
 
-.titulo4{
-    margin-top: 3rem;
-    display: grid;
-    width: auto;
-    grid-template-rows: max-content;
-    margin-bottom: 3rem;
-    color: black;
-    font-family: Mirage-bold;
-    font-size: 2VW; 
-    
+.title h1 {
+    font-family: 'MADE Mirage';
+    src: url(./fonts/MADE\ MIRAGE/);
+    color: rgba(252, 247, 241, 1);
+    padding-top: 11%;
+    text-align: center;
+    font-size: 4vw;
+    font-weight: 400;
 }
+
+@media (min-width:800px){
+    .title{
+        height: 8vw;
+    }
+
+    .title h1{
+        padding-top: 3%;
+    }
+  }
+
 input.form-control {
     width: 100%;
     /*height: 4rem;*/
@@ -74,16 +56,15 @@ input.form-control {
  }
 
 .contenedorform{
-    padding: 5rem;
+    padding: 2rem;
     background-color: rgba(254, 255, 255, 0.664);
-    border-radius: 25px;
+    border-radius: 1.5rem;
     backdrop-filter: blur(3px);
 }
 
 .contenedorform1{
     padding: 3rem;
-   
-    border-radius: 25px;
+       border-radius:1.5rem;
 }
 .textoform2{
     font-size: 1vw;
@@ -93,6 +74,7 @@ input.form-control {
 }
 input::placeholder {
     font-size: .8vw;
+    font-family: inherit;
   }
   #btnClear, #btnAgregar{
     background-color: #B81C00;
@@ -112,469 +94,30 @@ input::placeholder {
     color: white;
   }
 
- 
-
-
-    @media screen and (max-width:320px) {
-        .fixheader{
-            height: 18vw !important;
-        }
-        .form-control {
-            width: 16rem ;
-        
-        }
+  @media (max-width: 768px) {
+    input.form-control {
+    font-size: 1rem;
+    }
     
-        .titulo{
-            font-family: MADEmirage;
-            font-size: 9VW !important; 
-            color: #fff;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            margin-left: 2vw;
-            /* agregar media query para mobile */
-        }
-        .contenedorform{
-            padding: 0rem 1rem 1rem 1rem;
-            background-color: rgba(254, 255, 255, 0.664);
-            border-radius: 3%;
-        }
+    .cloudinary-button{
+  
+    font-size: 1rem!important;
+    }
     
-        .textoform2{
-            font-size: 8vw !important;
-            font-family: 'Josefin Sans', sans-serif;
-            font-weight: bold;
-            text-align: center !important;
-        }
-    
-        
-    .titulo4{
-       
-        display: grid;
-        width: auto;
-        grid-template-rows: max-content;
-        margin-bottom: 3rem;
-        color: black;
-        font-family: Mirage-bold;
-        font-size: 6VW; 
-        
+    .textoform2 {
+    font-size: 1rem;
     }
     
     input::placeholder {
-        font-size: 16px !important;
-      }
-        
+    font-size: 1rem;
+    }
     
-        #btnClear, #btnAgregar{
-            background-color: #B81C00;
-            font-family: 'Josefin Sans', sans-serif;
-            font-size: 3vw;
-            border-color: #B81C00;
-          }
+    #btnClear, #btnAgregar {
+    font-size: 1rem;
+    }
     
-        }
-        @media screen and (max-width:375px) {
-            .fixheader{
-                height: 18vw !important;
-            }
-            .form-control {
-                width: 19rem ;
-            
-            }
-        
-            .titulo{
-                font-family: MADEmirage;
-                font-size: 9VW; 
-                color: #fff;
-                display: flex;
-                align-items: center;
-                justify-content: center;
-                margin-left: 2vw;
-                /* agregar media query para mobile */
-            }
-            .contenedorform{
-                padding: 0rem 1rem 1rem 1rem;
-                background-color: rgba(254, 255, 255, 0.664);
-                border-radius: 3%;
-            }
-        
-            .textoform2{
-                font-size: 8vw;
-                font-family: 'Josefin Sans', sans-serif;
-                font-weight: bold;
-                text-align: center;
-            }
-        
-            
-        .titulo4{
-           
-            display: grid;
-            width: auto;
-            grid-template-rows: max-content;
-            margin-bottom: 3rem;
-            color: black;
-            font-family: Mirage-bold;
-            font-size: 6VW; 
-            
-        }
-        
-        input::placeholder {
-            font-size: 16px;
-          }
-            
-        
-            #btnClear, #btnAgregar{
-                background-color: #B81C00;
-                font-family: 'Josefin Sans', sans-serif;
-                font-size: 3vw !important;
-                border-color: #B81C00;
-              }
-        
-            }
-        
-
-                @media screen and (max-width:375px) {
-                    .fixheader{
-                        height: 20vw !important;
-                    }
-                    .form-control {
-                        width: 19rem;
-                    
-                    }
-                
-                    .titulo{
-                        font-family: MADEmirage;
-                        font-size: 9VW !important; 
-                        color: #fff;
-                        display: flex;
-                        align-items: center;
-                        justify-content: center;
-                        margin-left: 0vw !important;
-                        /* agregar media query para mobile */
-                    }
-                    .contenedorform{
-                        padding: 0rem 1rem 1rem 1rem;
-                        background-color: rgba(254, 255, 255, 0.664);
-                        border-radius: 3%;
-                    }
-                
-                    .textoform2{
-                        font-size: 8vw !important;
-                        font-family: 'Josefin Sans', sans-serif;
-                        font-weight: bold;
-                        text-align: center !important;
-                    }
-                
-                    
-                .titulo4{
-                   
-                    display: grid;
-                    width: auto;
-                    grid-template-rows: max-content;
-                    margin-bottom: 3rem;
-                    color: black;
-                    font-family: Mirage-bold;
-                    font-size: 6VW; 
-                    
-                }
-                
-                input::placeholder {
-                    font-size: 16px !important;
-                  }
-                    
-                
-                    #btnClear, #btnAgregar{
-                        background-color: #B81C00;
-                        font-family: 'Josefin Sans', sans-serif;
-                        font-size: 3vw;
-                        border-color: #B81C00;
-                      }
-                
-                    }
-
-                    @media screen and (max-width:425px) {
-                        .fixheader{
-                            height: 18vw;
-                        }
-                        .form-control {
-                            width: 20rem;
-                        
-                        }
-                    
-                        .titulo{
-                            font-family: MADEmirage;
-                            font-size: 9VW !important; 
-                            color: #fff;
-                            display: flex;
-                            align-items: center;
-                            justify-content: center;
-                            margin-left: 6vw;
-                            /* agregar media query para mobile */
-                        }
-                        .contenedorform{
-                            padding: 0rem 1rem 1rem 1rem;
-                            background-color: rgba(254, 255, 255, 0.664);
-                            border-radius: 3%;
-                        }
-                    
-                        .textoform2{
-                            font-size: 8vw !important;
-                            font-family: 'Josefin Sans', sans-serif;
-                            font-weight: bold;
-                            text-align: center;
-                        }
-                    
-                        
-                    .titulo4{
-                       
-                        display: grid;
-                        width: auto;
-                        grid-template-rows: max-content;
-                        margin-bottom: 3rem;
-                        color: black;
-                        font-family: Mirage-bold;
-                        font-size: 6VW !important; 
-                        
-                    }
-                    
-                    input::placeholder {
-                        font-size: 16px !important;
-                      }
-                        
-                    
-                        #btnClear, #btnAgregar{
-                            background-color: #B81C00;
-                            font-family: 'Josefin Sans', sans-serif;
-                            font-size: 3vw;
-                            border-color: #B81C00;
-                          }
-                    
-                        }
-                        @media screen and (min-width:768px) {
-                            .fixheader{
-                                height: 12vw;
-                            }
-                            .form-control {
-                                width: 12rem ;
-                            
-                            }
-                            .rowUno{
-                               display: none;
-                            }
-                              
-                            .titulo{
-                                display: none;
-                                /* agregar media query para mobile */
-                            }
-                            .contenedorform{
-                                padding: 0rem 1rem 1rem 1rem;
-                                background-color: rgba(254, 255, 255, 0.664);
-                                border-radius: 3%;
-                            }
-                        
-                            .textoform2{
-                                font-size: 2vw;
-                                font-family: 'Josefin Sans', sans-serif;
-                                font-weight: bold;
-                                text-align: left;
-                            }
-                        
-                            
-                        .titulo4{
-                           
-                            display: grid;
-                            width: auto;
-                            grid-template-rows: max-content;
-                            margin-bottom: 3rem;
-                            color: black;
-                            font-family: Mirage-bold;
-                            font-size: 4VW; 
-                            
-                        }
-                        
-                        input::placeholder {
-                            font-size: 16px;
-                          }
-                            
-                        
-                            #btnClear, #btnAgregar{
-                                background-color: #B81C00;
-                                font-family: 'Josefin Sans', sans-serif;
-                                font-size: 2vw;
-                                border-color: #B81C00;
-                              }
-                        
-                            }
-                            @media screen and (max-width:768px) {
-                                .fixheader{
-                                    height: 12vw;
-                                }
-                                .form-control {
-                                    width: 12rem ;
-                                
-                                }
-                                .rowUno{
-                                   display: none;
-                                }
-                                  
-                                .titulo{
-                                    display: none;
-                                    /* agregar media query para mobile */
-                                }
-                                .contenedorform{
-                                    padding: 0rem 1rem 1rem 1rem;
-                                    background-color: rgba(254, 255, 255, 0.664);
-                                    border-radius: 3%;
-                                }
-                            
-                                .textoform2{
-                                    font-size: 2vw;
-                                    font-family: 'Josefin Sans', sans-serif;
-                                    font-weight: bold;
-                                    text-align: left;
-                                }
-                            
-                                
-                            .titulo4{
-                               
-                                display: grid;
-                                width: auto;
-                                grid-template-rows: max-content;
-                                margin-bottom: 3rem;
-                                color: black;
-                                font-family: Mirage-bold;
-                                font-size: 4VW; 
-                                
-                            }
-                            
-                            input::placeholder {
-                                font-size: 16px;
-                              }
-                                
-                            
-                                #btnClear, #btnAgregar{
-                                    background-color: #B81C00;
-                                    font-family: 'Josefin Sans', sans-serif;
-                                    font-size: 2vw;
-                                    border-color: #B81C00;
-                                  }
-                            
-                                }
-                        
-            @media screen and (min-width:1024px) {
-                .fixheader{
-                    height: 6vw ;
-                }
-                .form-control {
-                    width: 12rem ;
-                
-                }
-            
-                .titulo{
-                    font-family: MADEmirage;
-                    font-size: 7VW !important; 
-                    color: #fff;
-                    display: flex;
-                    align-items: center;
-                    justify-content: center;
-                    margin-right: 12vw !important;
-                    /* agregar media query para mobile */
-                }
-                .contenedorform{
-                    padding: 0rem 1rem 1rem 1rem;
-                    background-color: rgba(254, 255, 255, 0.664);
-                    border-radius: 3%;
-                }
-            
-                .textoform2{
-                    font-size: 2vw;
-                    font-family: 'Josefin Sans', sans-serif;
-                    font-weight: bold;
-                    text-align: left;
-                }
-            
-                
-            .titulo4{
-               
-                display: grid;
-                width: auto;
-                grid-template-rows: max-content;
-                margin-bottom: 3rem;
-                color: black;
-                font-family: Mirage-bold;
-                font-size: 4VW; 
-                
-            }
-            
-            input::placeholder {
-                font-size: 16px;
-              }
-                
-            
-                #btnClear, #btnAgregar{
-                    background-color: #B81C00;
-                    font-family: 'Josefin Sans', sans-serif;
-                    font-size: 2vw;
-                    border-color: #B81C00;
-                  }
-            
-                }
-                @media screen and (min-width:1025px) {
-                    .fixheader{
-                        height: 6.2vw !important;
-                    }
-                    .form-control {
-                        width: 12rem ;
-                    
-                    }
-                
-                    .titulo{
-                        font-family: MADEmirage;
-                        font-size: 6VW !important; 
-                        color: #fff;
-                        display: flex;
-                        align-items: center;
-                        justify-content: center;
-                        margin-right: 10vw !important;
-                        /* agregar media query para mobile */
-                    }
-                    .contenedorform{
-                        padding: 0rem 1rem 1rem 1rem;
-                        background-color: rgba(254, 255, 255, 0.664);
-                        border-radius:  25px;
-                    }
-                
-                    .textoform2{
-                        font-size: 1.3vw;
-                        font-family: 'Josefin Sans', sans-serif;
-                        font-weight: bold;
-                        text-align: center;
-                    }
-                
-                    
-                .titulo4{
-                   
-                    display: grid;
-                    width: auto;
-                    grid-template-rows: max-content;
-                    margin-bottom: 3rem;
-                    color: black;
-                    font-family: Mirage-bold;
-                    font-size: 3VW !important; 
-                    
-                }
-                
-                input::placeholder {
-                    font-size: 16px;
-                  }
-                    
-                
-                    #btnClear, #btnAgregar{
-                        background-color: #B81C00;
-                        font-family: 'Josefin Sans', sans-serif;
-                        font-size: 1vw;
-                        border-color: #B81C00;
-                      }
-                
-                    }
-              
+    #upload_widget {
+    width: 100%;
+    }
+    }
+  
