@@ -38,7 +38,7 @@ const regexmail = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/,
 
 function exitoToast() {
     alerta.innerHTML = `
-        <div class="toast align-items-center text-white border-0 mb-2  bg-success role="alert" aria-live="assertive" aria-atomic="true">
+        <div class="toast align-items-center text-white border-0 mb-2  bg-success" role="alert" aria-live="assertive" aria-atomic="true">
             <div class="d-flex">
                 <div class="toast-body" style="color:white;">
                     <i class="bi bi-exclamation-circle-fill"></i>
