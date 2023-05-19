@@ -18,8 +18,6 @@ const regexName = /^[a-zA-Záéíóúñ][a-záéíóúñ]{1,}(?:\s+[a-zA-Záéí
     regexEmail = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/,
     regexPassword = /^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])([^\s]){8,20}$/;
 
-    
-    
 
 /***
  * la contraseña tenga al menos 8 caracteres y no más de 20 caracteres, y debe contener al menos un dígito,
@@ -27,8 +25,8 @@ const regexName = /^[a-zA-Záéíóúñ][a-záéíóúñ]{1,}(?:\s+[a-zA-Záéí
  */
 
 const isInvalid = (num, msj) => {
-  isComplete[num] = false;
-  let alert = `   
+    isComplete[num] = false;
+    let alert = `   
     <div class="toast align-items-center text-white border-0 mb-2 bg-danger role="alert" aria-live="assertive" aria-atomic="true">
         <div class="d-flex">
             <div class="toast-body" style="color:#73510d;">
@@ -39,12 +37,12 @@ const isInvalid = (num, msj) => {
         </div>
     </div>
     `;
-  inputRegister[7].innerHTML += alert;
-  const toastElList = [].slice.call(document.querySelectorAll('.toast'))
-  const toastList = toastElList.map(function (toastEl) {
-    return new bootstrap.Toast(toastEl)
-  })
-  toastList.forEach(toast => toast.show())
+    inputRegister[7].innerHTML += alert;
+    const toastElList = [].slice.call(document.querySelectorAll('.toast'))
+    const toastList = toastElList.map(function (toastEl) {
+        return new bootstrap.Toast(toastEl)
+    })
+    toastList.forEach(toast => toast.show())
 };
 
 const isSuccess = () => {
@@ -63,15 +61,15 @@ const isSuccess = () => {
     inputRegister[7].innerHTML += alert;
     const toastElList = [].slice.call(document.querySelectorAll('.toast'))
     const toastList = toastElList.map(function (toastEl) {
-      return new bootstrap.Toast(toastEl)
+        return new bootstrap.Toast(toastEl)
     })
     toastList.forEach(toast => toast.show())
 };
 
 const isValid = (num) => {
     isComplete[num] = true;
-    
-     
+
+
 };
 const saveUser = () => {
     let newUser = {
@@ -93,34 +91,35 @@ const saveUser = () => {
         headers: {
             "Content-Type": "application/json",
             //"Access-Control-Allow-Origin": "*", // Agrega esta cabecera para permitir CORS
-            "Authorization": "Bearer: "+token
+            "Authorization": "Bearer: " + token,
         },
+        mode: 'no-cors',
         body: JSON.stringify(newUser)
     })
-    .then(response => {
-        if (response.ok) {
-            isSuccess();
-            setTimeout(() => {
-            window.location.href = "iniciosesion.html";
-            }, 2000);
-        } else {
-            throw new Error("Error al crear el usuario.");
-        }
-    })
-    .catch(error => {
-        console.error(error);
-        isInvalid(5, "Error al crear el usuario. Por favor, inténtalo nuevamente.");
-    });
+        .then(response => {
+            if (response.ok) {
+                isSuccess();
+                setTimeout(() => {
+                    window.location.href = "iniciosesion.html";
+                }, 2000);
+            } else {
+                throw new Error("Error al crear el usuario.");
+            }
+        })
+        .catch(error => {
+            console.error(error);
+            isInvalid(5, "Error al crear el usuario. Por favor, inténtalo nuevamente.");
+        });
 }
 
 function compararInputAndLS(input) {
-    const users = JSON.parse(localStorage.getItem("Users")); 
+    const users = JSON.parse(localStorage.getItem("Users"));
     let emailExists = false;
     if (users === null) {
         return false; // El JSON no existe en localStorage
     } else {
 
-        for (let i = 0; i < users.length; i++) { 
+        for (let i = 0; i < users.length; i++) {
             if (users[i].email === input) {
                 emailExists = true;
                 break;
@@ -135,10 +134,9 @@ function compararInputAndLS(input) {
             console.log(`El email ${input} no se encuentra registrado.`);
             console.log(`emailExists - ${emailExists}`);
             return emailExists;
-        } 
-    } 
-} 
-
+        }
+    }
+}
 
 
 inputRegister[5].addEventListener("click", (e) => {
@@ -146,7 +144,7 @@ inputRegister[5].addEventListener("click", (e) => {
     inputRegister[7].innerHTML = "";
     (regexName.exec(inputRegister[0].value.trim())) ? isValid(0) : isInvalid(0, `Nombre inválido, por favor vuelva a intentarlo.`);
     (regexLastNames.exec(inputRegister[1].value.trim())) ? isValid(1) : isInvalid(1, `Apellidos inválidos, por favor vuelva a intentarlo.`);
-    (regexEmail.exec(inputRegister[2].value.trim()) && !compararInputAndLS(inputRegister[2].value) ) ? isValid(2) : isInvalid(2, `Correo Electrónico, inválido o ya esta siendo usado, por favor vuelva a intentarlo.`);
+    (regexEmail.exec(inputRegister[2].value.trim()) && !compararInputAndLS(inputRegister[2].value)) ? isValid(2) : isInvalid(2, `Correo Electrónico, inválido o ya esta siendo usado, por favor vuelva a intentarlo.`);
     (regexPassword.exec(inputRegister[3].value.trim())) ? isValid(3) : isInvalid(3, `Contraseña, inválido, por favor vuelva a intentarlo.`);
     (inputRegister[3].value.trim() === inputRegister[4].value.trim()) ? isValid(4) : isInvalid(4, `Contraseña, No coincide por favor vuelva a intentarlo.`);
 
@@ -165,8 +163,8 @@ inputRegister[5].addEventListener("click", (e) => {
         //isSuccess();
         for (let i = 0; i <= 5; i++) {
             inputRegister[i].value = "";
-        } 
-    } 
+        }
+    }
 
 })
 inputRegister[6].addEventListener("click", () => {

@@ -52,7 +52,7 @@ const pintarUsuarios = async () => {
                     <h6 class="card-2">${calidad[r.idcalidades-1].pais}</h6>
                     <h6 class="card-2">${calidad[r.idcalidades-1].calidad}</h6>
                         <a href="./ProductoIndividual.html">
-                        <button  id="btnProducto_${r.idcortes} "type="button" class="btnProducto text-center" style="background-color: #2A2E3A; color: white;">Ver producto</button> </a>
+                        <button  id="btnProducto_${r.id} "type="button" class="btnProducto text-center" style="background-color: #2A2E3A; color: white;">Ver producto</button> </a>
                     </div>
                 </div>
             </div>`
@@ -63,12 +63,13 @@ const pintarUsuarios = async () => {
     //==========================================================
     let botones = document.getElementsByClassName("btnProducto");
     console.log(botones.length);
+    
 
     for (let index = 0; index < botones.length; index++) {
       botones[index].addEventListener("click", function (event) {
-        // console.log("click" + event.target.idcortes);
-        console.log(event.target.idcortes.split("_")[1]);
-        localStorage.setItem("productoSeleccionado", event.target.idcortes.split("_")[1]);
+        console.log("click" + event.target.id);
+        console.log(event.target.id.split("_")[1]);
+        localStorage.setItem("productoSeleccionado", event.target.id.split("_")[1]);
       });//for que revisa el click del boton
     }//for que evalua botone
 
