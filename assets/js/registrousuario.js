@@ -22,6 +22,7 @@ const regexName = /^[a-zA-Záéíóúñ][a-záéíóúñ]{1,}(?:\s+[a-zA-Záéí
  * la contraseña tenga al menos 8 caracteres y no más de 20 caracteres, y debe contener al menos un dígito,
  * una letra minúscula, una letra mayúscula y un carácter especial que no sea un signo de dos puntos.
  */
+
 const isInvalid = (num, msj) => {
   isComplete[num] = false;
   let alert = `   
@@ -83,12 +84,14 @@ const saveUser = () => {
         window.location.href = "iniciosesion.html";
     }, 2000);
     */
-   
+    const token = "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiIjSG9sYU11bmRvMSIsInJvbGUiOiJ1c2VyIiwiaWF0IjoxNjg0NDYwMDM0LCJleHAiOjE2ODQ0OTYwMzR9.oH14UdAWfT_1aIAHqiuSJN37ruZlBL0z5gvZHlBcUWU";
+
     fetch("https://genmx-viandamarket-back-production.up.railway.app/api/usuarios/", {
         method: "POST",
         headers: {
             "Content-Type": "application/json",
-            "Access-Control-Allow-Origin": "*" // Agrega esta cabecera para permitir CORS
+            "Access-Control-Allow-Origin": "*", // Agrega esta cabecera para permitir CORS
+            "Authorization": "Bearer: "+token
         },
         body: JSON.stringify(newUser)
     })
