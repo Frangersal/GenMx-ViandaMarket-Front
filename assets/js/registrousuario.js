@@ -92,7 +92,7 @@ const saveUser = () => {
         method: "POST",
         headers: {
             "Content-Type": "application/json",
-            "Access-Control-Allow-Origin": "*", // Agrega esta cabecera para permitir CORS
+            //"Access-Control-Allow-Origin": "*", // Agrega esta cabecera para permitir CORS
             "Authorization": "Bearer: "+token
         },
         body: JSON.stringify(newUser)
