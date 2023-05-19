@@ -78,7 +78,7 @@ const saveUser = () => {
         "apellidos": `${inputRegister[1].value}`,
         "email": `${(inputRegister[2].value).toLowerCase()}`,
         "contrasena": `${inputRegister[4].value}`,
-        "edad": 25,
+        "edad": 25
     };
     /*
     addUser(newUser);
@@ -175,48 +175,3 @@ inputRegister[6].addEventListener("click", () => {
     }
 })
  
-/*
-import { addUser } from "./peticionesRegistroUsuario.js"; //hecho
-
-const inputRegister = document.querySelectorAll(".register"); //
-let isComplete = [false, false, false, false, false]; //
-
-// Resto del código...
-
-const saveUser = () => {
-    let newUser = {
-        id: new Date().valueOf(),
-        nombre: inputRegister[0].value,
-        apellidos: inputRegister[1].value,
-        email: inputRegister[2].value.toLowerCase(),
-        contrasena: inputRegister[4].value
-    };
-
-    fetch("http://tu-servidor-spring.com/api/usuarios", {
-        method: "POST",
-        headers: {
-            "Content-Type": "application/json",
-            "Access-Control-Allow-Origin": "*" // Agrega esta cabecera para permitir CORS
-        },
-        body: JSON.stringify(newUser)
-    })
-    .then(response => {
-        if (response.ok) {
-            isSuccess();
-            setTimeout(() => {
-            window.location.href = "iniciosesion.html";
-            }, 2000);
-        } else {
-            throw new Error("Error al crear el usuario.");
-        }
-    })
-    .catch(error => {
-        console.error(error);
-        isInvalid(5, "Error al crear el usuario. Por favor, inténtalo nuevamente.");
-    });
-};
-
-// Resto del código...
-
-*/    
-
