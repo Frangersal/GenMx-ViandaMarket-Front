@@ -84,7 +84,7 @@ const saveUser = () => {
     /*
     addUser(newUser);  setTimeout(() => {  window.location.href = "iniciosesion.html";    }, 2000);
     */
-    const token = "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiIjSG9sYU11bmRvMSIsInJvbGUiOiJ1c2VyIiwiaWF0IjoxNjg0NTE2MzU1LCJleHAiOjE2ODU3MjU5NTV9.pO8gd_wLEIVSQZ_QjPNIS5U6i0CgKQtJtWVEFa71gNg";
+    const token = "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJEamd1em1hbjMyMSEiLCJyb2xlIjoidXNlciIsImlhdCI6MTY4NDUxNjM4OSwiZXhwIjoxNjg1NzI1OTg5fQ.VfD1b1HxuFAi4uPK1xOeZy6R_aUZDP2zaJ5gek-cv8Y";
 
     fetch("https://genmx-viandamarket-back-production.up.railway.app/api/usuarios/", {
         method: "POST",
