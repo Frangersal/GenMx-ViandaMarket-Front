@@ -1,25 +1,55 @@
+const saveProd = () => {
 
-import {
-    productos
-}from "./productos.json.js";
+    let addProductos = {
+        "nombre": `${nombre.value}`,
+        "precio": `${precio.value}`,
+        "descripcion_corte": `${descri.value}`,
+        "disponibilidad": true,
+        "cantidad_disponible": `${canti.value}`,
+        "idcalidades":`${idcali.value}`,
+        "imagen": `${foto.value}`
 
-let producto =[];
-window.addEventListener("load",function(event){
-    if (localStorage.getItem("producto")!=null){
-        producto = JSON.parse(localStorage.getItem("producto"))
-    }
+    };
+    
 
-});
+//     "nombre": "Ribeye",
+//         "precio": 3520.0,
+//         "descripcion_corte": "Corte nacional con marmoleo bueno",
+//         "disponibilidad": true,
+//         "cantidad_disponible": 3.0,
+//         "idcalidades":7,
+//         "imagen": "https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.dw.com%2Fes%2Fverificaci%25C3%25B3n-qu%25C3%25A9-tan-perjudicial-para-el-clima-es-el-consumo-de-carne%2Fa-63568454&psig=AOvVaw0HGOsHIy7KxdBXlztl2Lx9&ust=1684563172704000&source=images&cd=vfe&ved=0CBEQjRxqFwoTCPCI-P3cgP8CFQAAAAAdAAAAABAE"
+//   }
+
+
+    // saveProd(addProductos);  setTimeout();
+    const token = "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJDYXJvIzEzMTAiLCJyb2xlIjoidXNlciIsImlhdCI6MTY4NDQ2NDc4NywiZXhwIjoxNjg1Njc0Mzg3fQ.8AS2m1E_VRYGlpNKlR_qt6sLd2HYt5HTD4QlFYFkeOQ"
+    fetch("https://genmx-viandamarket-back-production.up.railway.app/api/cortes/", {
+        method: "POST",
+        headers: {
+            "Content-Type": "application/json",
+            "Authorization": "Bearer: " + token
+        },
+        body: JSON.stringify(addProductos)
+    })
+    .then(response => {
+        if (response.ok) {
+            exitoToast();
+        } else {
+            throw new Error("Error al crear el usuario.");
+        }
+    })
+    .catch(error => {
+        console.error(error);
+        isInvalid(5, "Error al crear el usuario. Por favor, inténtalo nuevamente.");
+    });
+}
 
 
 
 
-let formDash = document.querySelectorAll('.form-dash');
 
-formDash.forEach(element => {
-    console.log(element);
 
-});
 
 //* Trae cada elemento de que coincida con formDash
 // position 0:Nombre //No vacio, no numeros, minimo 3 letras
@@ -34,66 +64,76 @@ formDash.forEach(element => {
 //position 9: btnAgregar
 //position 10: btnClear
 let isComplete = [false, false, false, false, false, false, false];
-let corte = document.getElementById("Nombre");
-let marca = document.getElementById("Brand");
-let calidad = document.getElementById("Quality");
-let origen = document.getElementById("Origin");
-let gramos = document.getElementById("Gramos");
-let precio = document.getElementById("Price");
+let nombre = document.getElementById("Nombre");
+let precio = document.getElementById("Precio");
+let descri = document.getElementById("descri");
+let canti = document.getElementById("canti");
+let idcali = document.getElementById("idcali"); 
+let idgramos = document.getElementById("idgramos"); 
 let foto = document.getElementById("Photo");
-let descri = document.getElementById("descripcion");
 let alerta = document.getElementById("divAlert");
 let btnAgregar = document.getElementById("btnAgregar");
 let btnClear = document.getElementById("btnClear");
+let formDash = document.querySelectorAll(".form-dash");
+
 //* isComplete: declara la variable como boleana al inicio para regresar un true o false si esta bien el regax o no.
 
 // ? Expresiones Regulares
 const regexNombre = /^[a-záéíóúA-ZÁÉÍÓÚ0-9_-]{3,}$/,
-    regexMarca = /^[a-záéíóúA-ZÁÉÍÓÚ0-9_-]{2,}$/,
-    regexCalidad = /^[a-záéíóúA-ZÁÉÍÓÚ0-9_-]{2,}$/,
-    regexOrigen = /^[a-záéíóúA-ZÁÉÍÓÚ0-9_-]{3,}$/,
-    regexGramos = /^(\$)?(?=[1-9]\d*)([0-9]+(\.[0-9]+)?)/,
     regexPrecio = /^(\$)?(?=[1-9]\d*)([0-9]+(\.[0-9]+)?)/,
+    regexcantiDisponible = /^(\$)?(?=[1-9]\d*)([0-9]+(\.[0-9]+)?)/,
+    regexidCalidades = /^(\$)?(?=[1-9]\d*)([0-9]+(\.[0-9]+)?)/,
     regexFoto = /^(https?|ftp):\/\/[^\s/$.?#].[^\s]*$/;
     // regexDescripcion = /^[a-záéíóúA-ZÁÉÍÓÚ0-9_-]{3,}$/;
-    console.log(productos);
-    console.log(producto);
+    // console.log(productos);
+    // console.log(producto);
 
 // ? Functions
-function addProductos() {
-    console.log(productos);
+// function addProductos() {
+//     console.log(productos);
 
-    let addProductos = {
-        "id":`0001`,
-        "corte": `${corte.value}`,
-        "marca": `${marca.value}`,
-        "calidad": `${calidad.value}`,
-        "origen": `${origen.value}`,
-        "gramos": parseInt(gramos.value),
-        "precio": parseInt(precio.value),
-        "imagen": `${foto.value}`,
-        "descripcionCorte": `${descri.value}`,
-        "descripcionMarca":`descripcionsobremarca`
-    };
+//     let addProductos = {
+//         "nombre": `${nombre.value}`,
+//         "precio": `${precio.value}`,
+//         "descripcion_corte": `${descri.value}`,
+//         "disponibilidad": '1',
+//         "cantidad_disponible": `${canti.value}`,
+//         "idcalidades":`${idcali.value}`,
+//         "idgramos": `${idgramos.value}`,
+//         "imagen": `${foto.value}`,
+
+//     };
 
 
-    producto.push(addProductos);
-    console.log(addProductos);
-    localStorage.setItem("producto",JSON.stringify(producto));
+    // producto.push(addProductos);
+    // console.log(addProductos);
+    // localStorage.setItem("producto",JSON.stringify(producto));
 
-    formDash.forEach(element => {
-        if (element.id == "btnAgregar") {
+//     formDash.forEach(element => {
+//         if (element.id == "btnAgregar") {
 
-        } else {
-            element.value = "";
-        }
+//         } else {
+//             element.value = "";
+//         }
 
-    });
-
+//     });
 
 
 
-};
+
+// };
+// function clear() {
+//     formDash.forEach(element => {
+//     if (element.id == "btnAgregar") {
+//     } else {
+//         element.value = "";
+//     }
+
+// });
+// };
+
+
+
 
 function exitoToast() {
     let alert = `   
@@ -113,8 +153,11 @@ function exitoToast() {
         return new bootstrap.Toast(toastEl)
     })
     toastList.forEach(toast => toast.show())
+
+
+};
     
-}
+
 
 
 
@@ -150,12 +193,12 @@ const valid = (num) => {
 btnAgregar.addEventListener('click', (e) => {
     e.preventDefault();
     alerta.innerHTML = "";
-    (regexNombre.exec(corte.value.trim())) ? valid(0): invalid(0, `Nombre inválido, por favor vuelva a intentarlo.`);
-    (regexMarca.exec(marca.value.trim())) ? valid(1): invalid(1, `Marca, inválido, por favor vuelva a intentarlo.`);
-    (regexCalidad.exec(calidad.value.trim())) ? valid(2): invalid(2, `Calidad inválido, por favor vuelva a intentarlo.`);
-    (regexOrigen.exec(origen.value.trim())) ? valid(3): invalid(3, `Origen inválido, por favor vuelva a intentarlo.`);
-    (regexGramos.exec(gramos.value.trim())) ? valid(4): invalid(4, `Gramos, inválido, por favor vuelva a intentarlo.`);
-    (regexPrecio.exec(precio.value.trim())) ? valid(5): invalid(5, `Precio inválido, por favor vuelva a intentarlo.`);
+    (regexNombre.exec(nombre.value.trim())) ? valid(0): invalid(0, `Nombre inválido, por favor vuelva a intentarlo.`);
+    (regexPrecio.exec(precio.value.trim())) ? valid(1): invalid(1, `Nombre inválido, por favor vuelva a intentarlo.`);
+    (descri.value.trim()) ? valid(2): invalid(2, `Marca, inválido, por favor vuelva a intentarlo.`);
+    (regexcantiDisponible.exec(canti.value.trim())) ? valid(3): invalid(3, `Calidad inválido, por favor vuelva a intentarlo.`);
+    (regexidCalidades.exec(idcali.value.trim())) ? valid(4): invalid(4, `Origen inválido, por favor vuelva a intentarlo.`);
+    (idgramos.value.trim()) ? valid(5): invalid(5, `Marca, inválido, por favor vuelva a intentarlo.`);
     (regexFoto.exec(foto.value.trim())) ? valid(6): invalid(6, `Foto inválido.`);
     // (regexDescripcion.exec(descri.value.trim())) ? valid(6): invalid(6, `Descripcion inválido, por favor vuelva a intentarlo.`);
 
@@ -170,7 +213,19 @@ btnAgregar.addEventListener('click', (e) => {
             break;
         }
     }
-    (isActive === true) ? (addProductos(), exitoToast()) : ' ';
+    (isActive === true) ? (saveProd()) : (clear());
+
+        formDash.forEach(element => {
+            if (element.id == "btnAgregar") {
+    
+            } else {
+                element.value = "";
+            }
+    
+        });
+    
+    
+    
 
 });//btn agregar
 
@@ -189,10 +244,7 @@ btnClear.addEventListener("click", function (event) {
 }); //btnClear
 
 
-console.log(productos);
-
-
-
+// console.log(productos);
 
 
 // ? boton para cargar imagenes en cloudinary
