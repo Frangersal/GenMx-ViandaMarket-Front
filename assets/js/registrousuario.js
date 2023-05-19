@@ -159,7 +159,7 @@ inputRegister[5].addEventListener("click", (e) => {
     console.log(isActive);
     if (isActive) {
         saveUser();
-        isSuccess();
+        //isSuccess();
         for (let i = 0; i <= 5; i++) {
             inputRegister[i].value = "";
         } 
