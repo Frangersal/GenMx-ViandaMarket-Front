@@ -37,72 +37,73 @@
     <div class="container contenedorform1">
       <div class="contenedorform">
 
-        <div class="row justify-content-center">
-          <div class="col-md-8">
-            <div class="alert alert-danger fade show" style="display:none;" role="alert" id="alertValidaciones">
-              <p id="alertValidacionesTexto"></p>
-            </div>
-            <form class="needs-validation" novalidate>
-              <div class="row">
-                <div class=" textoform2 col-12 col-md-6 mb-3">
-                  <label for="Name">Nombre</label>
-                  <input type="text" class="form-control form-dash" id="Nombre" autofocus
-                    placeholder="Ingresa el nombre del producto" required>
-                  <div class="invalid-feedback">
-                    Por favor, ingresa un nombre válido.
-                  </div>
+            <div class="row justify-content-center">
+              <div class="col-md-8">
+                <h4 class="titulo4 mb-3 text-center">Agregar Productos</h4>
+                <div class="alert alert-danger fade show" style="display:none;" role="alert" id="alertValidaciones">
+                  <p id="alertValidacionesTexto"></p>
                 </div>
+                <form class="needs-validation" novalidate>
+                  <div class="row">
+                    <div class=" textoform2 col-12 col-md-6 mb-3">
+                      <label for="Name">Nombre</label>
+                      <input type="text" class="form-control form-dash" id="Nombre" autofocus placeholder="Ingresa el nombre del producto" required>
+                      <div class="invalid-feedback">
+                        Por favor, ingresa un nombre válido.
+                      </div>
+                    </div>
+        
+                    <div class=" textoform2 col-12 col-md-6 mb-3">
+                      <label for="Brand">Precio</label>
+                      <input type="text" class="form-control form-dash" id="Precio" autofocus placeholder="Ingresa la marca del producto" required>
+                      <div class="invalid-feedback">
+                        Por favor, ingresa una precio válida.
+                      </div>
+                    </div>
+        
+                    <div class=" textoform2 col-12 col-md-6 mb-3">
+                      <label for="Quality">Descripición</label>
+                      <input type="text" class="form-control form-dash" id="descri" autofocus placeholder="Ingresa la calidad del producto" required>
+                      <div class="invalid-feedback">
+                        Por favor, ingresa una calidad válida.
+                      </div>
+                    </div>
+        
+                    
+                    <div class=" textoform2 col-12 col-md-6 mb-3">
+                      <label for="Origin">Cantidad disponible</label>
+                      <input type="text" class="form-control form-dash" id="canti" autofocus placeholder="Ingresa el origen del producto" required>
+                      <div class="invalid-feedback">
+                        Por favor, ingresa cantidad disponible.
+                      </div>
+                    </div>
 
-                <div class=" textoform2 col-12 col-md-6 mb-3">
-                  <label for="Brand">Marca</label>
-                  <input type="text" class="form-control form-dash" id="Brand" autofocus
-                    placeholder="Ingresa la marca del producto" required>
-                  <div class="invalid-feedback">
-                    Por favor, ingresa una marca válida.
-                  </div>
-                </div>
+                            <div class=" textoform2 col-12 col-md-6 mb-3">
+                      <label for="Origin">Id calidades</label>
+                      <input type="text" class="form-control form-dash" id="idcali" autofocus placeholder="Ingresa el origen del producto" required>
+                      <div class="invalid-feedback">
+                        Por favor, ingresa la identificación de calidades.
+                      </div>
+                    </div>
 
-                <div class=" textoform2 col-12 col-md-6 mb-3">
-                  <label for="Quality">Calidad</label>
-                  <input type="text" class="form-control form-dash" id="Quality" autofocus
-                    placeholder="Ingresa la calidad del producto" required>
-                  <div class="invalid-feedback">
-                    Por favor, ingresa una calidad válida.
-                  </div>
-                </div>
 
-                <div class=" textoform2 col-12 col-md-6 mb-3">
-                  <label for="Origin">Origen</label>
-                  <input type="text" class="form-control form-dash" id="Origin" autofocus
-                    placeholder="Ingresa el origen del producto" required>
-                  <div class="invalid-feedback">
-                    Por favor, ingresa un origen válido.
-                  </div>
-                </div>
+                      <div class=" textoform2 col-12 col-md-6 mb-3">
+                      <label for="Origin">Id gramos</label>
+                      <input type="text" class="form-control form-dash" id="idgramos" autofocus placeholder="Ingresa el origen del producto" required>
+                      <div class="invalid-feedback">
+                        Por favor, ingresa la identificación de gramos.
+                      </div>
+                    </div>
+        
+        
 
-                <div class=" textoform2 col-12 col-md-6 mb-3">
-                  <label for="Weight">Gramos</label>
-                  <input type="text" class="form-control form-dash" id="Gramos" autofocus
-                    placeholder="Ingresa la cantidad en gramos" required>
-                  <div class="invalid-feedback">
-                    Por favor, ingresa una cantidad válida en gramos.
-                  </div>
-                </div>
 
-                <div class=" textoform2 col-12 col-md-6 mb-3">
-                  <label for="Price">Precio</label>
-                  <input type="text" class="form-control form-dash" id="Price"
-                    placeholder="Ingresa el precio del producto" required>
-                  <div class="invalid-feedback">
-                    Por favor, ingresa un precio válido.
-                  </div>
-                </div>
-
-                <div class=" textoform2 col-12 col-md-6 mb-3">
-                  <label for="Photo">Foto</label>
-                  <br>
-                  <button id="upload_widget" class="cloudinary-button botonCloudinary" type="button">Subir Foto</button>
-                  <div class="inputs"></div>
+        
+                    <div class=" textoform2 col-12 col-md-6 mb-3">
+                      <label for="Photo">Foto</label>
+                      <br>
+                      <button id="upload_widget" class="cloudinary-button botonCloudinary" type="button">Subir Foto</button>
+                      <div class="inputs"></div>
 
                   <br>
                   <input type="text" class="form-control form-dash" id="Photo"
@@ -112,33 +113,24 @@
                   </div>
                 </div>
 
-                <div class=" textoform2 col-12 col-md-6 mb-3">
-                  <label for="descripcion">Descripción</label>
-                  <input type="text" class="form-control form-dash" id="descripcion"
-                    placeholder="Ingresa una descripción válida" required>
-                  <div class="invalid-feedback">
-                    Por favor, ingresa una descripción válida.
+
+                    <!-- Este div manda la alerta -->
+                    <div class="position-fixed bottom-0 end-0 p-3 form-dash" id= "divAlert" style="z-index: 11">
+                    </div>
+                  </div>
+                  <div class="text-center">
+                  <button id="btnAgregar" class="btn btn-primary btn-lg btn-block form-dash" type="button">Agregar</button>
+                  <button id="btnClear" class="btn btn-secondary btn-lg btn-block form-dash" type="button">Limpiar todo</button>
+                  <hr class="mb-4">
+                </div>
+                </form>
+              </div>
+                </section>
+                <footer>
+                  <div class="footer">
                   </div>
                 </div>
-                <!-- Este div manda la alerta -->
-                <div class="position-fixed bottom-0 end-0 p-3 form-dash" id="divAlert" style="z-index: 11">
-                </div>
-              </div>
-              <div class="text-center">
-                <button id="btnAgregar" class="btn btn-primary btn-lg btn-block form-dash"
-                  type="button">Agregar</button>
-                <button id="btnClear" class="btn btn-secondary btn-lg btn-block form-dash" type="button">Limpiar
-                  todo</button>
-
-              </div>
-            </form>
-          </div>
-  </section>
-  <footer>
-    <div class="footer">
-    </div>
-    </div>
-  </footer>
+              </footer>
 
   <script src="https://upload-widget.cloudinary.com/global/all.js" type="text/javascript"></script>
 

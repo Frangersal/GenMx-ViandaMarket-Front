@@ -240,6 +240,8 @@ let producto = [
     "descripcionMarca": "El producto que manejamos en esta categoria proviene de Sonora, con un excelente sabor, calidad y textura. Su marmoleo es similar a los productos Choice y Prime."
   }
 ];
+
+console.log(JSON.stringify(producto));
 let productoCarne = document.getElementsByClassName("productoCarne");
 window.addEventListener("load", function (event) {
   if (localStorage.getItem("productoSeleccionado") == null) {
