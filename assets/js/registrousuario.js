@@ -16,7 +16,8 @@ let isComplete = [false, false, false, false, false];
 const regexName = /^[a-zA-Záéíóúñ][a-záéíóúñ]{1,}(?:\s+[a-zA-Záéíóúñ][a-záéíóúñ]{1,}){0,2}(?:\s+[a-zA-Záéíóúñ][a-záéíóúñ]{1,}){0,1}$/,
     regexLastNames = /^[a-zA-Záéíóúñ][a-záéíóúñ]{1,}(?:\s+[a-zA-Záéíóúñ][a-záéíóúñ]{1,}){0,2}(?:\s+[a-zA-Záéíóúñ][a-záéíóúñ]{1,}){0,1}$/,
     regexEmail = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/,
-    regexPassword = /^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[^\w\d\s:])([^\s]){8,20}$/u;
+    regexPassword = /^(?=.\d)(?=.[a-z])(?=.[A-Z])(?=.[0-9])([^\s]){8,20}$/;
+    
 
 /***
  * la contraseña tenga al menos 8 caracteres y no más de 20 caracteres, y debe contener al menos un dígito,
