@@ -163,7 +163,7 @@ function exitoToast() {
 const invalid = (num, msj) => {
     isComplete[num] = false;
     let alert = `   
-    <div class="toast align-items-center text-white border-0 mb-2 bg-danger"   role="alert" aria-live="assertive" aria-atomic="true">
+    <div class="toast align-items-center text-white border-0 mb-2 bg-danger "   role="alert" aria-live="assertive" aria-atomic="true">
   <div class="d-flex">
     <div class="toast-body" style="color:#fff;">
     <i class="bi bi-exclamation-circle-fill"></i>
