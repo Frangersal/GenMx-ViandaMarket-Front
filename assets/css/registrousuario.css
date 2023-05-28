@@ -121,9 +121,10 @@ input.form-control {
     right: 5%;
     top:50%;
     transform:translateY(-50%);
-    font-size: 2vw;
+    font-size: 100%;
     color: #7A1212;
     cursor: pointer;
     /* display: none; */
     
 }
+

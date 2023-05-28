@@ -85,8 +85,8 @@ var requestOptions = {
     nombreModal.placeholder= `${userSession.nombres}`
     apellidoModal.placeholder= `${userSession.apellidos}`
     telefonoModal.placeholder= `${userSession.telefono}`
-    edadModal.placeholder= `${userSession.edad}`
-    direccionModal.placeholder= `${userSession.domicilio}`
+    edadModal.value= `${userSession.edad}`
+    direccionModal.value= `${userSession.domicilio}`
 
   
 
@@ -128,6 +128,8 @@ var requestOptions = {
           </div>
       </div>
   `;
+
+  console.log(direccionModal.value)
 
   const toastElList = [].slice.call(document.querySelectorAll('.toast'))
   const toastList = toastElList.map(function (toastEl) {
