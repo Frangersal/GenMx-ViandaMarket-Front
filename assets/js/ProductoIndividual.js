@@ -55,24 +55,25 @@ const pintarcorte = async () => {
                   <h3 class="calidad">${calidad[selProd.idcalidades-1].calidad}</h3>
                   <h3 class="origen">${calidad[selProd.idcalidades-1].pais}</h3>
                   <h4 class="existencia" style="color:rgb(20, 179, 20)">En existencia</h4>
-                  <div class="dropdown">
+                  
+                  <div class="botones">
                     <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
                     Seleccionar
-                    </button>
+                    </button>                   
+                    <button type="button" class="btnCarrito" id="btnCarrito">Añadir al carrito</button>   
+                    </div>
                     <ul class="dropdown-menu">
                     <li><a class="dropdown-item" href="#"></a></li>
                     <li><a class="dropdown-item" href="#"></a></li>
                     <li><a class="dropdown-item" href="#"></a></li>
-                    </ul>
-                  </div>
-                  <button type="button" class="btnCarrito" id="btnCarrito">Añadir al carrito</button>   
+                    </ul>   
                   <div class="precio">
                     <h2 class="marca" style="color:rgba(184, 28, 0, 1)">$${selProd.precio}</h2> 
                   </div>
                   <p class="descripcion"> <h3>Descripción del corte:</h3> <span> ${selProd.descripcion_corte} </span><br>
                     <h3>Descripción de la marca:</h3>
                     <span>${calidad[selProd.idcalidades-1].descripcion_marca}</span>
-                  </p>
+                  </p>    
                 </div>
                 
                 `;
