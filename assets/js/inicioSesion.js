@@ -1,3 +1,24 @@
+
+  if(localStorage.getItem("SessionId")!= null){
+    window.location.assign("./perfilusuario.html");
+  }
+
+
+  //? Funcion para mostrar password
+
+let eyeicon = document.getElementById("eyeicon");
+let campoPass= document.getElementById("contraFormulario");
+
+eyeicon.onclick = function(){
+    if(campoPass.type == "password"){
+        campoPass.type = "text";
+        eyeicon.className="bi bi-eye-fill"
+    }else{
+        eyeicon.className="bi bi-eye-slash-fill"
+        campoPass.type="password";
+    }
+}
+
 //? DOM variables ⬇
 let isComplete = [false, false];
 let mail = document.getElementById("correoFormulario");
@@ -41,9 +62,9 @@ function exitoToast() {
 
     toastList.forEach(toast => toast.show())
 
-    setTimeout(function () {
-        window.location.href = "index.html";
-    }, 1000);
+    // setTimeout(function () {
+    //     window.location.href = "index.html";
+    // }, 1000);
 }
 
 
@@ -120,9 +141,10 @@ btnAgregar.addEventListener('click', async (e) => {
 
         if (resp.ok) {
             const data = await resp.json();
-
+            console.log(data);
+            // localStorage.setItem('correo', mail.value);
             // Insertar el resultado en el Local Storage
-            localStorage.setItem('resultado', JSON.stringify(data));
+            localStorage.setItem('SessionId', JSON.stringify(data));
 
             // Mostrar un mensaje de éxito o realizar otras acciones necesarias
             exitoToast();
@@ -134,6 +156,4 @@ btnAgregar.addEventListener('click', async (e) => {
     }
 })
 ;
-
-
 

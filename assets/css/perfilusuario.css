@@ -62,6 +62,21 @@ textarea {
 .nav-link{
     color: #fff!important;
 }
+
+.btnPerfil{
+    padding: 1%;
+    text-align: center;
+   color: #fff;
+   text-decoration: none;
+}
+.btnPerfil:hover{
+    border-radius: 4px;
+    background-color: #fff;
+    color: #232222;
+    text-decoration:solid, 10px;
+ }
+ 
+
   /*
   ------MAYOREO
   */
@@ -181,6 +196,23 @@ textarea {
     height: 55px;
     font-size: 24px!important;
     font-family: dreamyEyes;
+}
+
+.wrapperPass{
+    position: relative;
+}
+
+
+.wrapperPass i{
+    position: absolute;
+    right: 5%;
+    top:50%;
+    transform:translateY(-50%);
+    font-size: 2vw;
+    color: #7A1212;
+    cursor: pointer;
+    /* display: none; */
+    
 }
 
 /*
