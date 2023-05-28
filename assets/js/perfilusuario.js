@@ -11,6 +11,13 @@ let contra = document.getElementById("password");
 let editarPerfil = document.getElementById("editarPerfil");
 const nombreModal =document.getElementById("nombreModal");
 const apellidoModal =document.getElementById("apellidoModal");
+let cerrarSesion = document.getElementById("cerrarSesion");
+let telefonoModal = document.getElementById("telefonoModal");
+let edadModal = document.getElementById("edadModal");
+let direccionModal = document.getElementById("direccionModal");
+let btnCambiosPerfil = document.getElementById("btnCambiosPerfil");
+let divAlert = document.getElementById("divAlert");
+
 // console.log(sessionId);
 // console.log(userId);
 
@@ -42,6 +49,13 @@ const apellidoModal =document.getElementById("apellidoModal");
 }
 
 
+ //? Funcion para cerrar sesion**************************************************************
+
+ cerrarSesion.addEventListener("click", (e)=>{
+  localStorage.removeItem("SessionId")
+ })
+
+//? Pintar informacion de usuario en el perfil
 var myHeaders = new Headers();
 myHeaders.append("Authorization", `Bearer: ${sessionId}`);
 
@@ -60,14 +74,20 @@ var requestOptions = {
   const showUser = (users)=>{
     const userSession = users.find(user => user.id == userId);
     // console.log(userSession);
+    //Perfil
     nombre.placeholder= `${userSession.nombres}`
    apellido.placeholder= `${userSession.apellidos}`
     correo.placeholder= `${userSession.correo}`
     telefono.placeholder= `${userSession.telefono}`
     edad.placeholder= `${userSession.edad}`
     domicilio.placeholder= `${userSession.domicilio}`
+   //Modal
     nombreModal.placeholder= `${userSession.nombres}`
     apellidoModal.placeholder= `${userSession.apellidos}`
+    telefonoModal.placeholder= `${userSession.telefono}`
+    edadModal.placeholder= `${userSession.edad}`
+    direccionModal.placeholder= `${userSession.domicilio}`
+
   
 
     let e =
@@ -80,6 +100,49 @@ var requestOptions = {
 
 
 
+  //? Modificar perfil de usuario***********************************************************
+
+  var myHeaders = new Headers();
+  myHeaders.append("Authorization", `Bearer: ${sessionId}`);
+
+var requestOptions = {
+  method: 'PUT',
+  headers: myHeaders,
+  redirect: 'follow'
+};
+
+  btnCambiosPerfil.addEventListener("click", (e)=>{
+    fetch(`https://genmx-viandamarket-back-production.up.railway.app/api/usuarios/${userId}?edad=${edadModal.value}&domicilio=${direccionModal.value}`, requestOptions)
+  .then(response => response.text())
+  .then(result => console.log(result))
+  .catch(error => console.log('error', error));
+
+  //? Alerta de Confirmacion
+  divAlert.innerHTML = `
+      <div class="toast align-items-center text-white border-0 mb-2  bg-success" role="alert" aria-live="assertive" aria-atomic="true">
+          <div class="d-flex">
+              <div class="toast-body" style="color:white;">
+                  <i class="bi bi-exclamation-circle-fill"></i>
+                  Tus cambios han sido guardados
+              </div>
+          </div>
+      </div>
+  `;
+
+  const toastElList = [].slice.call(document.querySelectorAll('.toast'))
+  const toastList = toastElList.map(function (toastEl) {
+      return new bootstrap.Toast(toastEl)
+  })
+
+  toastList.forEach(toast => toast.show())
+
+  setTimeout(function () {
+      window.location.href = "./perfilusuario.html";
+  }, 1000);
+   
+  })
+
+//&telefono=33333333
   
 
 

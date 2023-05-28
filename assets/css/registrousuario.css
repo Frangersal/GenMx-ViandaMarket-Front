@@ -110,3 +110,20 @@ input.form-control {
     border-radius: 10px;
 
 }
+
+.wrapperPass{
+    position: relative;
+}
+
+
+.wrapperPass i{
+    position: absolute;
+    right: 5%;
+    top:50%;
+    transform:translateY(-50%);
+    font-size: 2vw;
+    color: #7A1212;
+    cursor: pointer;
+    /* display: none; */
+    
+}

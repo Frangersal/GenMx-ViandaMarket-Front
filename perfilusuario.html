@@ -82,14 +82,19 @@
                                           </div>
                                         
                                       </form>
-                                    </div>
+                                    </div>      
                                     <div class="modal-footer">
-                                      <button type="button" class="btn btn-secondary">Guardar Cambios</button>
+                                      <div class="position-fixed bottom-0 end-0 p-3 form-dash" id="divAlert" style="z-index: 11">
+                                      </div>
+                                      <div class="alert alert-danger fade show" style="display:none;" role="alert" id="alertValidaciones">
+                                          <p id="alertValidacionesTexto"></p>
+                                      </div>
+                                      <button type="button" class="btn btn-secondary" id="btnCambiosPerfil">Guardar Cambios</button>
                                     </div>
                                   </div>
                                 </div>
                               </div>
-                            
+
                             
                             <a class="btnPerfil" id="cambiarPass" data-bs-toggle="modal" data-bs-target="#exampleModalPass">Cambiar contraseña</a>
 
@@ -131,7 +136,7 @@
 
                   
                             <a class="btnPerfil" href="#">Contáctanos</a>
-                            <a class="btnPerfil" href="#">Cerrar Sesión</a>
+                            <a class="btnPerfil" href="./index.html" id="cerrarSesion">Cerrar Sesión</a>
                         </nav>
                     </div>
                 </div>

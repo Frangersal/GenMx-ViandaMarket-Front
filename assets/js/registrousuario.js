@@ -1,5 +1,33 @@
 import {addUser} from "./peticionesRegistroUsuario.js";
 
+
+  //? Funcion para mostrar password
+
+  let eyeicon1 = document.getElementById("eyeicon1");
+  let eyeicon2 = document.getElementById("eyeicon2");
+  let campoPass= document.getElementById("campoPass1");
+  let campoPass2= document.getElementById("campoPass2");
+  
+  eyeicon1.onclick = function(){
+      if(campoPass.type == "password"){
+        campoPass.type = "text";
+          eyeicon1.className="bi bi-eye-fill"
+      }else{
+          eyeicon1.className="bi bi-eye-slash-fill"
+          campoPass.type="password";
+      }
+  }
+
+  eyeicon2.onclick = function(){
+    if(campoPass2.type == "password"){
+      campoPass2.type = "text";
+        eyeicon2.className="bi bi-eye-fill"
+    }else{
+        eyeicon2.className="bi bi-eye-slash-fill"
+        campoPass2.type="password";
+    }
+}
+
 const inputRegister = document.querySelectorAll(".register");
 let isComplete = [false, false, false, false, false];
 /**
