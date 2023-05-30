@@ -131,3 +131,41 @@
     font-size: 24px!important;
     font-family: dreamyEyes;
 }
+
+.btn-delete{
+  background-color: rgba(214, 214, 214, 0.048)!important;
+  width: 2rem;
+  height: 2rem;
+
+}
+
+.box-center{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  height: 120px;
+} 
+.titulo{
+  width: 100%; 
+}
+.productoImg{
+  height: 100px!important; 
+  width: 100px!important; 
+  padding: 10px;
+}
+ul {
+  list-style-type: none;
+}
+.fa-trash{
+  font-size: 1.4rem;
+}
+.li-producto {
+  font-size: 1.4rem;
+}
+.li-marca {
+  font-size: 1rem;
+}
+.li-gramos {
+  font-size: 1rem;
+}

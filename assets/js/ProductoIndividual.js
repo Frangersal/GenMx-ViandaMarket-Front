@@ -58,14 +58,14 @@ const pintarcorte = async () => {
                   
                   <div class="botones">
                     <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-                    Seleccionar
+                      Seleccionar
                     </button>                   
                     <button type="button" class="btnCarrito" id="btnCarrito">Añadir al carrito</button>   
                     </div>
                     <ul class="dropdown-menu">
-                    <li><a class="dropdown-item" href="#"></a></li>
-                    <li><a class="dropdown-item" href="#"></a></li>
-                    <li><a class="dropdown-item" href="#"></a></li>
+                      <li><a class="dropdown-item" href="#"></a></li>
+                      <li><a class="dropdown-item" href="#"></a></li>
+                      <li><a class="dropdown-item" href="#"></a></li>
                     </ul>   
                   <div class="precio">
                     <h2 class="marca" style="color:rgba(184, 28, 0, 1)">$${selProd.precio}</h2> 
@@ -90,6 +90,7 @@ const pintarcorte = async () => {
         imagen: selProd.imagen,
         nombre: selProd.nombre,
         precio: selProd.precio,
+        cantidad: 1,
         marca: calidad[selProd.idcalidades-1].marca,
       };
     
