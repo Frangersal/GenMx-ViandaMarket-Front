@@ -84,6 +84,15 @@ const pintarcorte = async () => {
     btnCarrito.addEventListener(`click`, function(e) {
       e.preventDefault();
       let selProd = producto.find(id => id.id == (parseInt(localStorage.getItem("productoSeleccionado"))));
+
+      // Comprobar si el producto ya está en el carrito
+      let carrito = JSON.parse(localStorage.getItem('carrito')) || [];
+      const productoExistente = carrito.find(item => item.idProducto === selProd.id);
+      if (productoExistente) {
+        // Mostrar un toast indicando que el producto ya está en el carrito
+        mostrarToast("Este producto ya está agregado al carrito");
+        return; // Salir de la función si el producto ya existe
+      }
     
       let productoSeleccionado = {
         idProducto: selProd.id,
@@ -96,15 +105,13 @@ const pintarcorte = async () => {
         pais: calidad[selProd.idcalidades-1].pais,
       };
     
-      let carrito = JSON.parse(localStorage.getItem('carrito')) || []; // Recuperar el valor actual del localStorage o iniciar un array vacío si no existe
-    
       carrito.push(productoSeleccionado);
       localStorage.setItem(`carrito`, JSON.stringify(carrito));
     
       console.log("Producto agregado al carrito:", productoSeleccionado);
       try {
         // Perform the cart update here
-
+    
         // Create the success toast notification
         let toast = document.createElement("div");
         toast.className = "toast align-items-center text-white border-0 mb-2 bg-success";
@@ -119,21 +126,21 @@ const pintarcorte = async () => {
           <div class="d-flex">
             <div class="toast-body" style="color:white;">
               <i class="bi bi-check-circle-fill"></i>
-              Producto añadido al carrito exitosamente!
+              ¡Producto añadido al carrito exitosamente!
             </div>
             <button type="button" class="btn-close btn-close-white me-2 m-auto" data-bs-dismiss="toast" aria-label="Close" style="font-size: small;"></button>
           </div>
         `;
-
+    
         // Append the toast to the document body
         document.body.appendChild(toast);
-
+    
         // Show the toast
         let bootstrapToast = new bootstrap.Toast(toast);
         bootstrapToast.show();
       } catch (error) {
         console.log("Error al actualizar el carrito:", error);
-
+    
         // Create the error toast notification
         let toast = document.createElement("div");
         toast.className = "toast align-items-center text-white border-0 mb-2 bg-danger";
@@ -153,15 +160,52 @@ const pintarcorte = async () => {
             <button type="button" class="btn-close btn-close-white me-2 m-auto" data-bs-dismiss="toast" aria-label="Close" style="font-size: small;"></button>
           </div>
         `;
-
+    
         // Append the toast to the document body
         document.body.appendChild(toast);
-
+    
         // Show the toast
         let bootstrapToast = new bootstrap.Toast(toast);
         bootstrapToast.show();
       }
+    });
+    
+    // Función para mostrar un toast
+    function mostrarToast(mensaje) {
+      // Aquí puedes implementar tu lógica para mostrar el toast en la interfaz de usuario
+      console.log(mensaje); // Ejemplo: Mostrar mensaje en la consola
       
+        // Create the error toast notification
+        let toast = document.createElement("div");
+        toast.className = "toast align-items-center text-white border-0 mb-2 bg-danger";
+        toast.setAttribute("role", "alert");
+        toast.setAttribute("aria-live", "assertive");
+        toast.setAttribute("aria-atomic", "true");
+        toast.style.position = "fixed";
+        toast.style.top = "80%";
+        toast.style.right = "10px"; 
+        toast.style.transform = "translateY(-50%)";
+        toast.innerHTML = `
+          <div class="d-flex">
+            <div class="toast-body" style="color:white;">
+              <i class="bi bi-exclamation-circle-fill"></i>
+              Este producto ya se encuentra en el carrito
+            </div>
+            <button type="button" class="btn-close btn-close-white me-2 m-auto" data-bs-dismiss="toast" aria-label="Close" style="font-size: small;"></button>
+          </div>
+        `;
+    
+        // Append the toast to the document body
+        document.body.appendChild(toast);
+    
+        // Show the toast
+        let bootstrapToast = new bootstrap.Toast(toast);
+        bootstrapToast.show();
+    }
+    
+    // Evento que se ejecuta cuando la ventana ha cargado
+    window.addEventListener("load", function (event) {
+      pintarcorte();
     });
     
   } 
