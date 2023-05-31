@@ -14,7 +14,7 @@ if (productos) {
   var jsonArray = JSON.parse(productos);
   for (var i = 0; i < jsonArray.length; i++) {
     var productosObject = jsonArray[i];
-    console.log(productosObject.id);
+    console.log(productosObject.idProducto);
     console.log(productosObject.imagen);
     console.log(productosObject.marca);
     console.log(productosObject.nombre);
@@ -40,14 +40,14 @@ if (productos) {
       </div>
       <div class="col-6 box-center">
         <div class="number-input">
-          <button onclick="changeQuantity(${productosObject.id}, 'decrement')" class="minus"></button>
-          <input class="quantity" min="1" max="50" name="quantity" value="1" type="number" id="quantity-${productosObject.id}" onchange="updateTotalPrice(${productosObject.id})">
-          <button onclick="changeQuantity(${productosObject.id}, 'increment')" class="plus"></button>
+          <button onclick="changeQuantity(${productosObject.idProducto}, 'decrement')" class="minus"></button>
+          <input class="quantity" min="1" max="50" name="quantity" value="1" type="number" id="quantity-${productosObject.idProducto}" onchange="updateTotalPrice(${productosObject.id})">
+          <button onclick="changeQuantity(${productosObject.idProducto}, 'increment')" class="plus"></button>
         </div>
-        <button class="btn btn-sm btn-delete" onclick="eliminarDelCarrito(${productosObject.id}); updateTotalPrice(${productosObject.id})"><i class="fas fa-trash"></i></button>
+        <button class="btn btn-sm btn-delete" onclick="eliminarDelCarrito(${productosObject.idProducto}); updateTotalPrice(${productosObject.idProducto})"><i class="fas fa-trash"></i></button>
       </div>
       <div class="col col-md-2 box-center">
-        <h4 id="precio-${productosObject.id}">Subtotal: $${(productosObject.precio * 1).toLocaleString()}</h4>
+        <h4 id="precio-${productosObject.idProducto}">Subtotal: $${(productosObject.precio * 1).toLocaleString()}</h4>
       </div>
     </div>`;
 
@@ -58,9 +58,9 @@ if (productos) {
   console.log('No se encontró el array en el localStorage.');
 }
 
-function changeQuantity(id, operation) {
-  var quantityElement = document.getElementById(`quantity-${id}`);
-  var quantity = parseInt(quantityElement.value);
+function changeQuantity(idProducto, operation) {
+  let quantityElement = document.getElementById(`quantity-${idProducto}`);
+  let quantity = parseInt(quantityElement.value);
 
   if (operation === 'increment') {
     quantity++;
@@ -71,26 +71,26 @@ function changeQuantity(id, operation) {
   }
 
   quantityElement.value = quantity;
-  updateTotalPrice(id);
+  updateTotalPrice(idProducto);
 }
 
 // Resto del código anterior...
 
-function updateTotalPrice(id) {
-  var quantityElement = document.getElementById(`quantity-${id}`);
-  var precioElement = document.getElementById(`precio-${id}`);
-  var producto = jsonArray.find(item => item.id === id);
-  var precio = +producto.precio;
-  var quantity = +quantityElement.value;
-  var totalPrice = precio * quantity;
+function updateTotalPrice(idProducto) {
+  let quantityElement = document.getElementById(`quantity-${idProducto}`);
+  let precioElement = document.getElementById(`precio-${idProducto}`);
+  let producto = jsonArray.find(item => item.idProducto === idProducto);
+  let precio = +producto.precio;
+  let quantity = +quantityElement.value;
+  let totalPrice = precio * quantity;
 
   precioElement.innerHTML = `Subtotal: $${totalPrice.toLocaleString()}`;
 
   // Actualizar el precio total
   precioTotalAcumulado = 0;
-  for (var i = 0; i < jsonArray.length; i++) {
-    var producto = jsonArray[i];
-    var quantity = +document.getElementById(`quantity-${producto.id}`).value;
+  for (let i = 0; i < jsonArray.length; i++) {
+    let producto = jsonArray[i];
+    let quantity = +document.getElementById(`quantity-${producto.idProducto}`).value;
     precioTotalAcumulado += producto.precio * quantity;
   }
   precioTotal.innerHTML = "$" + precioTotalAcumulado.toLocaleString();
@@ -115,3 +115,41 @@ function eliminarDelCarrito(id) {
     location.reload();
   }
 }
+
+let btnPagarPedido = document.getElementById(`btnPagarPedido`);
+btnPagarPedido.addEventListener(`click`, function(e) {
+  e.preventDefault();
+
+  // Eliminar pasarelaProductos del localStorage si existe
+  if (localStorage.getItem('pasarelaProductos')) {
+    localStorage.removeItem('pasarelaProductos');
+  }
+  let pasarelaProductos = JSON.parse(localStorage.getItem('pasarelaProductos')) || []; // Recuperar el valor actual del localStorage o iniciar un array vacío si no existe
+
+  // Iterar sobre los productos en el carrito y agregarlos a pasarelaProductos
+  for (let i = 0; i < jsonArray.length; i++) {
+    let producto = jsonArray[i];
+
+    let productoToPasarelaPago = {
+      idProducto: producto.idProducto,
+      imagen: producto.imagen,
+      nombre: producto.nombre,
+      precio: producto.precio,
+      cantidad: +document.getElementById(`quantity-${producto.idProducto}`).value, 
+
+      idCalidades: producto.idCalidades,
+      marca: producto.marca,
+      calidad: producto.calidad,
+      pais: producto.pais,
+      subtotal: producto.precio * +document.getElementById(`quantity-${producto.idProducto}`).value,
+    };
+
+    pasarelaProductos.push(productoToPasarelaPago);
+  }
+
+  // Guardar pasarelaProductos en el localStorage
+  localStorage.setItem('pasarelaProductos', JSON.stringify(pasarelaProductos));
+
+  console.log('Productos agregados a pasarelaProductos:', pasarelaProductos);
+});
+    
