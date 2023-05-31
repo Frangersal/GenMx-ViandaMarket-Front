@@ -86,12 +86,14 @@ const pintarcorte = async () => {
       let selProd = producto.find(id => id.id == (parseInt(localStorage.getItem("productoSeleccionado"))));
     
       let productoSeleccionado = {
-        id: selProd.id,
+        idProducto: selProd.id,
         imagen: selProd.imagen,
         nombre: selProd.nombre,
-        precio: selProd.precio,
-        cantidad: 1,
+        precio: selProd.precio, 
+        idCalidades: calidad[selProd.idcalidades-1].id,
         marca: calidad[selProd.idcalidades-1].marca,
+        calidad: calidad[selProd.idcalidades-1].calidad,
+        pais: calidad[selProd.idcalidades-1].pais,
       };
     
       let carrito = JSON.parse(localStorage.getItem('carrito')) || []; // Recuperar el valor actual del localStorage o iniciar un array vacío si no existe
@@ -100,14 +102,75 @@ const pintarcorte = async () => {
       localStorage.setItem(`carrito`, JSON.stringify(carrito));
     
       console.log("Producto agregado al carrito:", productoSeleccionado);
+      try {
+        // Perform the cart update here
+
+        // Create the success toast notification
+        let toast = document.createElement("div");
+        toast.className = "toast align-items-center text-white border-0 mb-2 bg-success";
+        toast.setAttribute("role", "alert");
+        toast.setAttribute("aria-live", "assertive");
+        toast.setAttribute("aria-atomic", "true");
+        toast.style.position = "fixed";
+        toast.style.top = "80%";
+        toast.style.right = "10px"; 
+        toast.style.transform = "translateY(-50%)";
+        toast.innerHTML = `
+          <div class="d-flex">
+            <div class="toast-body" style="color:white;">
+              <i class="bi bi-check-circle-fill"></i>
+              Producto añadido al carrito exitosamente!
+            </div>
+            <button type="button" class="btn-close btn-close-white me-2 m-auto" data-bs-dismiss="toast" aria-label="Close" style="font-size: small;"></button>
+          </div>
+        `;
+
+        // Append the toast to the document body
+        document.body.appendChild(toast);
+
+        // Show the toast
+        let bootstrapToast = new bootstrap.Toast(toast);
+        bootstrapToast.show();
+      } catch (error) {
+        console.log("Error al actualizar el carrito:", error);
+
+        // Create the error toast notification
+        let toast = document.createElement("div");
+        toast.className = "toast align-items-center text-white border-0 mb-2 bg-danger";
+        toast.setAttribute("role", "alert");
+        toast.setAttribute("aria-live", "assertive");
+        toast.setAttribute("aria-atomic", "true");
+        toast.style.position = "fixed";
+        toast.style.top = "80%";
+        toast.style.right = "10px"; 
+        toast.style.transform = "translateY(-50%)";
+        toast.innerHTML = `
+          <div class="d-flex">
+            <div class="toast-body" style="color:white;">
+              <i class="bi bi-exclamation-circle-fill"></i>
+              No se pudo actualizar el carrito. Por favor, inténtalo nuevamente.
+            </div>
+            <button type="button" class="btn-close btn-close-white me-2 m-auto" data-bs-dismiss="toast" aria-label="Close" style="font-size: small;"></button>
+          </div>
+        `;
+
+        // Append the toast to the document body
+        document.body.appendChild(toast);
+
+        // Show the toast
+        let bootstrapToast = new bootstrap.Toast(toast);
+        bootstrapToast.show();
+      }
+      
     });
     
   } 
 }
-
+   
 //window  // <button type="button" class="btnCompra">Añadir al carrito</button>   
 window.addEventListener("load", function (event) {
   pintarcorte();
   
 
 });
+
