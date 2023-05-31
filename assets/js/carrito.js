@@ -73,9 +73,7 @@ function changeQuantity(idProducto, operation) {
   quantityElement.value = quantity;
   updateTotalPrice(idProducto);
 }
-
-// Resto del código anterior...
-
+ 
 function updateTotalPrice(idProducto) {
   let quantityElement = document.getElementById(`quantity-${idProducto}`);
   let precioElement = document.getElementById(`precio-${idProducto}`);
@@ -95,15 +93,12 @@ function updateTotalPrice(idProducto) {
   }
   precioTotal.innerHTML = "$" + precioTotalAcumulado.toLocaleString();
 }
-
-// Resto del código sin cambios...
-
+ 
 
 
-
-function eliminarDelCarrito(id) {
+function eliminarDelCarrito(idProducto) {
   // Buscar el objeto con el ID proporcionado en el carrito
-  const index = contentCart.findIndex(item => item.id === id);
+  const index = contentCart.findIndex(item => item.idProducto === idProducto);
 
   if (index !== -1) {
     // Eliminar el objeto del carrito
