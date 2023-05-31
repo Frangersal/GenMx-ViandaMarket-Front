@@ -17,16 +17,21 @@ let edadModal = document.getElementById("edadModal");
 let direccionModal = document.getElementById("direccionModal");
 let btnCambiosPerfil = document.getElementById("btnCambiosPerfil");
 let divAlert = document.getElementById("divAlert");
+let cambioPass = document.getElementById("cambioPass");
+let newCambioPass = document.getElementById("newCambioPass");
+let newCambioPass2 = document. getElementById("newCambioPass2");
+let btnCambioPass = document.getElementById("btnCambioPass");
+let divAlertPass = document.getElementById("divAlertPass");
 
-// console.log(sessionId);
-// console.log(userId);
 
   //? Funcion para mostrar password
 
   let eyeicon1 = document.getElementById("eyeicon1");
   let eyeicon2 = document.getElementById("eyeicon2");
+  let eyeicon3 = document.getElementById("eyeicon3");
   let campoPass= document.getElementById("cambioPass");
   let campoPass2= document.getElementById("newCambioPass");
+  let campoPass3= document.getElementById("newCambioPass2");
   
   eyeicon1.onclick = function(){
       if(campoPass.type == "password"){
@@ -48,12 +53,164 @@ let divAlert = document.getElementById("divAlert");
     }
 }
 
+eyeicon3.onclick = function(){
+  if(campoPass3.type == "password"){
+    campoPass3.type = "text";
+      eyeicon3.className="bi bi-eye-fill"
+  }else{
+      eyeicon3.className="bi bi-eye-slash-fill"
+      campoPass3.type="password";
+  }
+}
+
+
+
+//? Regex de cambio de contrasena***************************************************************************************************
+
+
+let isComplete = [false, false, false,false];
+const regexPassword = /^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])([^\s]){8,20}$/;
+
+
+const isValid = (num) => {
+  isComplete[num] = true;
+
+};
+
+const isInvalid = (num, msj) => {
+  isComplete[num] = false;
+  let alert = `   
+  <div class="toast align-items-center text-white border-0 mb-2 bg-danger role="alert" aria-live="assertive" aria-atomic="true">
+      <div class="d-flex">
+          <div class="toast-body" style="color:#73510d;">
+          <i class="bi bi-exclamation-circle-fill" style="color:white;"></i>
+            ${msj}
+          </div>
+          <button type="button" class="btn-close btn-close-white me-2 m-auto" data-bs-dismiss="toast" aria-label="Close" style="font-size: small;"></button>
+      </div>
+  </div>
+  `;
+  divAlertPass.innerHTML += alert;
+  const toastElList = [].slice.call(document.querySelectorAll('.toast'))
+  const toastList = toastElList.map(function (toastEl) {
+      return new bootstrap.Toast(toastEl)
+  })
+  toastList.forEach(toast => toast.show())
+};
+
+
+
+function passSucess() {
+  let alert = `   
+  <div class="toast align-items-center text-white border-0 mb-2 bg-success" role="alert" aria-live="assertive" aria-atomic="true">
+<div class="d-flex">
+  <div class="toast-body" style="color:white;">
+  <i class="bi bi-exclamation-circle-fill"></i>
+   Contreseña cambiada exitosamente.
+  </div>
+  <button type="button" class="btn-close btn-close-white me-2 m-auto" data-bs-dismiss="toast" aria-label="Close" style="font-size: small;"></button>
+</div>
+</div>
+  `
+  divAlertPass.innerHTML += alert;
+  const toastElList = [].slice.call(document.querySelectorAll('.toast'))
+  const toastList = toastElList.map(function (toastEl) {
+      return new bootstrap.Toast(toastEl)
+  })
+  toastList.forEach(toast => toast.show())
+  setTimeout(function () {
+    window.location.href = "./perfilusuario.html";
+}, 1000);
+
+};
+
+
+
+
+//   //? Cambiar contrasena****************************************************************************************************************
+const cambioContrasena = () =>{
+  var myHeaders = new Headers();
+  myHeaders.append("Content-Type", "application/json");
+  
+  var raw = JSON.stringify({
+    "contrasena": `${cambioPass.value}`,
+    "newContrasena": `${newCambioPass.value}`
+  });
+  
+  var requestOptions = {
+    method: 'PUT',
+    headers: myHeaders,
+    body: raw,
+    redirect: 'follow'
+  };
+  
+  // const cambioContrasena = () =>{
+    fetch(`https://genmx-viandamarket-back-production.up.railway.app/api/login/${userId}`, requestOptions)
+  
+    .then(response => response.text())
+    .then(result = (respuesta) =>{
+    console.log(respuesta)
+    if (respuesta === ""){
+      let alert = `   
+  <div class="toast align-items-center text-white border-0 mb-2 bg-danger role="alert" aria-live="assertive" aria-atomic="true">
+      <div class="d-flex">
+          <div class="toast-body" style="color:#73510d;">
+          <i class="bi bi-exclamation-circle-fill" style="color:white;"></i>
+           No se pudo nimodo.
+          </div>
+          <button type="button" class="btn-close btn-close-white me-2 m-auto" data-bs-dismiss="toast" aria-label="Close" style="font-size: small;"></button>
+      </div>
+  </div>
+  `;
+  divAlertPass.innerHTML += alert;
+  const toastElList = [].slice.call(document.querySelectorAll('.toast'))
+  const toastList = toastElList.map(function (toastEl) {
+      return new bootstrap.Toast(toastEl)
+  })
+  toastList.forEach(toast => toast.show())
+      
+    }else{
+      passSucess(); 
+    }
+  })
+    .catch(error => console.log('error', error));
+ 
+ }
+
+
+
+
+btnCambioPass.addEventListener("click", (e) => {
+  e.preventDefault();
+  console.log(newCambioPass.value);
+  divAlertPass.innerHTML = "";
+  (regexPassword.exec(cambioPass.value.trim())) ? isValid(0) : isInvalid(0,`Contraseña, inválido, por favor vuelva a intentarlo.`);
+  (regexPassword.exec(newCambioPass.value.trim())) ? isValid(1) : isInvalid(1,`La nueva contraseña es inválido, por favor vuelva a intentarlo.`);
+  (cambioPass.value.trim() !== newCambioPass.value.trim()) ? isValid(2) : isInvalid( 2,`Lo sentimos la nueva contrasña debe de ser diferente a la nueva contraseña.`);
+  (newCambioPass.value.trim() === newCambioPass2.value.trim()) ? isValid(3) : isInvalid( 3,`Las contraseñas no coincide por favor vuelva a intentarlo.`);
+
+  console.log(isComplete);
+
+  let isActive = false;
+  for (const temp of isComplete) {
+      if (temp) {
+          isActive = true;
+      } else {
+          isActive = false
+          break;
+      }
+  }
+  if (isActive === true ){
+    cambioContrasena();
+   
+  }
+});
 
  //? Funcion para cerrar sesion**************************************************************
 
  cerrarSesion.addEventListener("click", (e)=>{
   localStorage.removeItem("SessionId")
- })
+ });
 
 //? Pintar informacion de usuario en el perfil
 var myHeaders = new Headers();
@@ -146,6 +303,4 @@ var requestOptions = {
 
 //&telefono=33333333
   
-
-
 

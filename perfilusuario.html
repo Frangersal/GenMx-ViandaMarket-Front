@@ -89,6 +89,7 @@
                                       <div class="alert alert-danger fade show" style="display:none;" role="alert" id="alertValidaciones">
                                           <p id="alertValidacionesTexto"></p>
                                       </div>
+
                                       <button type="button" class="btn btn-secondary" id="btnCambiosPerfil">Guardar Cambios</button>
                                     </div>
                                   </div>
@@ -113,6 +114,8 @@
                                           <div class="wrapperPass">
                                           <input type="password" class="form-control" id="cambioPass">
                                           <i id="eyeicon1" class="bi bi-eye-slash-fill"></i>
+                                          <!-- <span>La contraseña debe incluir una mayuscula, un caracteres especial, 
+                                            un numero y debe de ser minimo de 8 caracteres.</span> -->
                                         </div>
                                         </div>
                 
@@ -123,10 +126,29 @@
                                             <i id="eyeicon2" class="bi bi-eye-slash-fill"></i>
                                             </div>
                                           </div>
+
+                                          <div class="mb-3">
+                                            <label for="recipient-name" class="col-form-label">Repite contraseña</label>
+                                            <div class="wrapperPass">
+                                            <input type="password" class="form-control" id="newCambioPass2" >
+                                            <i id="eyeicon3" class="bi bi-eye-slash-fill"></i>
+                                            </div>
+                                          </div>
+
+                                          <div class="modal-footer">
+                                            <div class="position-fixed bottom-0 end-0 p-3 form-dash" id="divAlertPass" style="z-index: 11">
+                                            </div>
+                                            <div class="alert alert-danger fade show" style="display:none;" role="alert" id="alertValidaciones">
+                                                <p id="alertValidacionesTexto"></p>
+                                            </div>
+                                          </div>
+
+
+
                                       </form>
                                     </div>
                                     <div class="modal-footer">
-                                      <button type="button" class="btn btn-secondary">Guardar Cambios</button>
+                                      <button type="button" class="btn btn-secondary" id="btnCambioPass">Guardar Cambios</button>
                                     </div>
                                   </div>
                                 </div>
