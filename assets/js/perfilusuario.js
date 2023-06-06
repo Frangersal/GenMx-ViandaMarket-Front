@@ -145,7 +145,7 @@ const cambioContrasena = () =>{
   };
   
   // const cambioContrasena = () =>{
-    fetch(`https://genmx-viandamarket-back-production.up.railway.app/api/login/${userId}`, requestOptions)
+    fetch(`/api/login/${userId}`, requestOptions)
   
     .then(response => response.text())
     .then(result = (respuesta) =>{
@@ -222,7 +222,7 @@ var requestOptions = {
   redirect: 'follow'
 };
 
- fetch("https://genmx-viandamarket-back-production.up.railway.app/api/usuarios/", requestOptions)
+ fetch("/api/usuarios/", requestOptions)
   .then(response => response.json())
   .then(users =>showUser(users))
   .catch(error => console.log('error', error));
@@ -269,7 +269,7 @@ var requestOptions = {
 };
 
   btnCambiosPerfil.addEventListener("click", (e)=>{
-    fetch(`https://genmx-viandamarket-back-production.up.railway.app/api/usuarios/${userId}?edad=${edadModal.value}&domicilio=${direccionModal.value}`, requestOptions)
+    fetch(`/api/usuarios/${userId}?edad=${edadModal.value}&domicilio=${direccionModal.value}`, requestOptions)
   .then(response => response.text())
   .then(result => console.log(result))
   .catch(error => console.log('error', error));

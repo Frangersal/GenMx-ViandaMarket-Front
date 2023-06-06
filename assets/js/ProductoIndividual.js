@@ -6,7 +6,7 @@ let productoCarne = document.getElementsByClassName("productoCarne")
   }
 
 
-const URL = "https://genmx-viandamarket-back-production.up.railway.app/api/cortes/"
+const URL = "/api/cortes/"
 const obternerUsuarios = async () => {
     const resp = await fetch(URL, {
         method: 'GET',
@@ -18,7 +18,7 @@ const obternerUsuarios = async () => {
 }
 
 
-const URLcalidad = "https://genmx-viandamarket-back-production.up.railway.app/api/calidad/"
+const URLcalidad = "/api/calidad/"
 const token = 'eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJDYXJvIzEzMTAiLCJyb2xlIjoidXNlciIsImlhdCI6MTY4NDQ2NDc4NywiZXhwIjoxNjg1Njc0Mzg3fQ.8AS2m1E_VRYGlpNKlR_qt6sLd2HYt5HTD4QlFYFkeOQ'
 const obtenerCalidad = async () => {
     const resp = await fetch(URLcalidad, {

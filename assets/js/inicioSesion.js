@@ -25,7 +25,7 @@ let mail = document.getElementById("correoFormulario");
 let passwo = document.getElementById("contraFormulario");
 let alerta = document.getElementById("divAlert")
 let btnAgregar = document.getElementById("btnAgregar")
-const URL = "https://genmx-viandamarket-back-production.up.railway.app"
+// const URL = "https://genmx-viandamarket-back-production.up.railway.app"
 
 let rulespassword = `
 <li>Tener al menos un dígito.</li>
@@ -132,7 +132,7 @@ btnAgregar.addEventListener('click', async (e) => {
 
 
     try {
-        const resp = await fetch(`${URL}/api/login/`, {
+        const resp = await fetch(`/api/login/`, {
             method: 'POST',
             headers: new Headers({'Content-type': 'application/json'}),
             mode: 'cors',

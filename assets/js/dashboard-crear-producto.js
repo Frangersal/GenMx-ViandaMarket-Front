@@ -24,7 +24,7 @@ const saveProd = () => {
 
     // saveProd(addProductos);  setTimeout();
     const token = "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJDYXJvIzEzMTAiLCJyb2xlIjoidXNlciIsImlhdCI6MTY4NDQ2NDc4NywiZXhwIjoxNjg1Njc0Mzg3fQ.8AS2m1E_VRYGlpNKlR_qt6sLd2HYt5HTD4QlFYFkeOQ"
-    fetch("https://genmx-viandamarket-back-production.up.railway.app/api/cortes/", {
+    fetch("/api/cortes/", {
         method: "POST",
         headers: {
             "Content-Type": "application/json",
