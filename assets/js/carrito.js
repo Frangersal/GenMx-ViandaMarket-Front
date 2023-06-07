@@ -126,25 +126,35 @@ btnPagarPedido.addEventListener(`click`, function(e) {
     let producto = jsonArray[i];
 
     let productoToPasarelaPago = {
-      idProducto: producto.idProducto,
-      imagen: producto.imagen,
-      nombre: producto.nombre,
-      precio: producto.precio,
-      cantidad: +document.getElementById(`quantity-${producto.idProducto}`).value, 
-
-      idCalidades: producto.idCalidades,
-      marca: producto.marca,
-      calidad: producto.calidad,
-      pais: producto.pais,
-      subtotal: producto.precio * +document.getElementById(`quantity-${producto.idProducto}`).value,
+      price_data: {
+        currency: 'mxn',
+        product_data: {
+          name: producto.nombre,
+        },
+        unit_amount: producto.precio * 100, // El precio debe estar en centavos
+      },
+      quantity: +document.getElementById(`quantity-${producto.idProducto}`).value,
     };
 
     pasarelaProductos.push(productoToPasarelaPago);
   }
 
-  // Guardar pasarelaProductos en el localStorage
-  localStorage.setItem('pasarelaProductos', JSON.stringify(pasarelaProductos));
-
-  console.log('Productos agregados a pasarelaProductos:', pasarelaProductos);
+  // Enviar pasarelaProductos al backend utilizando una solicitud HTTP
+  fetch('/ruta-hacia-el-backend', {
+    method: 'POST',
+    headers: {
+      'Content-Type': 'application/json',
+    },
+    body: JSON.stringify({ pasarelaProductos }), // Enviar los productos al backend en el cuerpo de la solicitud
+  })
+    .then(response => response.json())
+    .then(data => {
+      // Realizar acciones con la respuesta del backend
+      console.log('Respuesta del backend:', data);
+      // Redireccionar a la vista para ver los productos a pagar
+      window.location.href = '/ruta-de-la-vista-para-ver-productos-a-pagar';
+    })
+    .catch(error => {
+      console.error('Error al enviar los productos al backend:', error);
+    });
 });
-    
