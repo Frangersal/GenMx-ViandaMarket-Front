@@ -1,0 +1,3 @@
+[submodule "PanelVM"]
+	path = PanelVM
+	url = https://github.com/johnangelmx/Eshop-AdminLTE.git
