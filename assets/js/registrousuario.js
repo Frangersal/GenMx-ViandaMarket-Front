@@ -112,8 +112,7 @@ const saveUser = () => {
     /*
     addUser(newUser);  setTimeout(() => {  window.location.href = "iniciosesion.html";    }, 2000);
     */
-    const token = "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJEamd1em1hbjMyMSEiLCJyb2xlIjoidXNlciIsImlhdCI6MTY4NDUxNjM4OSwiZXhwIjoxNjg1NzI1OTg5fQ.VfD1b1HxuFAi4uPK1xOeZy6R_aUZDP2zaJ5gek-cv8Y";
-
+   
     fetch("/api/usuarios/", {
         method: "POST",
         headers: {

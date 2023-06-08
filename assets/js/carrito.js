@@ -127,7 +127,7 @@ btnPagarPedido.addEventListener(`click`, function(e) {
 
     let productoToPasarelaPago = {
       price_data: {
-        currency: 'mxn',
+        currency: "mxn",
         product_data: {
           name: producto.nombre,
         },
