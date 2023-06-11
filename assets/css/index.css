@@ -400,43 +400,50 @@
     position: relative;
     margin:2rem;
     width: 40rem;
+    border-radius: 3%;
  }
  
  .products-preview .preview.active{
+  display: flex;
+  
+  /* display: inline-block; */
+}
+/*imagen interna de cards*/
+.products-preview .preview img{
+  height: 9rem;
+}
+/*tache para salir de cards*/
+.products-preview .preview .fa-times{
+  position: absolute;
+  top:1rem; right:1.5rem;
+  cursor: pointer;
+  color:#444;
+  font-size: 2rem;
+}
+
+.products-preview .preview .fa-times:hover{
+  transform: rotate(90deg);
+}
+
+/*descripción de cards*/
+.products-preview .preview p{
+  line-height: 1.5;
+  font-size: 1rem;
+  text-align:center;
+  padding: 5%;
+  color: whitesmoke;
+  background-color: #B81C00;
+  border-radius: 3%;
+}
+
+
+@media (max-width:768px){
+
+  .products-preview .preview img{
+     height: 8rem;
+  }
+  .products-preview .preview.active{
     display: inline-block;
  }
- /*imagen interna de cards*/
- .products-preview .preview img{
-    height: 8rem;
- }
-  /*tache para salir de cards*/
- .products-preview .preview .fa-times{
-    position: absolute;
-    top:1rem; right:1.5rem;
-    cursor: pointer;
-    color:#444;
-    font-size: 2rem;
- }
-
- .products-preview .preview .fa-times:hover{
-    transform: rotate(90deg);
- }
- 
-  /*descripción de cards*/
- .products-preview .preview p{
-    line-height: 1.5;
-    padding:1rem 0;
-    font-size: 1rem;
-    color:#777;
- }
-
- 
- @media (max-width:768px){
- 
-    .products-preview .preview img{
-       height: 8rem;
-    }
- 
- }
- 
+}
 
