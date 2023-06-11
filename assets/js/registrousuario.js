@@ -1,30 +1,30 @@
 import {addUser} from "./peticionesRegistroUsuario.js";
 
 
-  //? Funcion para mostrar password
+//? Funcion para mostrar password
 
-  let eyeicon1 = document.getElementById("eyeicon1");
-  let eyeicon2 = document.getElementById("eyeicon2");
-  let campoPass= document.getElementById("campoPass1");
-  let campoPass2= document.getElementById("campoPass2");
-  
-  eyeicon1.onclick = function(){
-      if(campoPass.type == "password"){
+let eyeicon1 = document.getElementById("eyeicon1");
+let eyeicon2 = document.getElementById("eyeicon2");
+let campoPass = document.getElementById("campoPass1");
+let campoPass2 = document.getElementById("campoPass2");
+
+eyeicon1.onclick = function () {
+    if (campoPass.type == "password") {
         campoPass.type = "text";
-          eyeicon1.className="bi bi-eye-fill"
-      }else{
-          eyeicon1.className="bi bi-eye-slash-fill"
-          campoPass.type="password";
-      }
-  }
+        eyeicon1.className = "bi bi-eye-fill"
+    } else {
+        eyeicon1.className = "bi bi-eye-slash-fill"
+        campoPass.type = "password";
+    }
+}
 
-  eyeicon2.onclick = function(){
-    if(campoPass2.type == "password"){
-      campoPass2.type = "text";
-        eyeicon2.className="bi bi-eye-fill"
-    }else{
-        eyeicon2.className="bi bi-eye-slash-fill"
-        campoPass2.type="password";
+eyeicon2.onclick = function () {
+    if (campoPass2.type == "password") {
+        campoPass2.type = "text";
+        eyeicon2.className = "bi bi-eye-fill"
+    } else {
+        eyeicon2.className = "bi bi-eye-slash-fill"
+        campoPass2.type = "password";
     }
 }
 
@@ -102,25 +102,20 @@ const isValid = (num) => {
 const saveUser = () => {
     let newUser = {
         //"id": (new Date().valueOf()),
-        "domicilio": `nowhere`,
         "nombres": `${inputRegister[0].value}`,
         "apellidos": `${inputRegister[1].value}`,
         "correo": `${(inputRegister[2].value).toLowerCase()}`,
-        "contrasena": `${inputRegister[4].value}`,
-        "edad": 25
+        "contrasena": `${inputRegister[4].value}`
     };
     /*
     addUser(newUser);  setTimeout(() => {  window.location.href = "iniciosesion.html";    }, 2000);
     */
-   
+
     fetch("/api/usuarios/", {
         method: "POST",
         headers: {
             "Content-Type": "application/json",
-            //"Access-Control-Allow-Origin": "*", // Agrega esta cabecera para permitir CORS
-            "Authorization": "Bearer: " + token,
         },
-        //mode: 'no-cors',
         body: JSON.stringify(newUser)
     })
         .then(response => {
