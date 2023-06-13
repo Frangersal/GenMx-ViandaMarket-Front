@@ -124,23 +124,30 @@ btnPagarPedido.addEventListener(`click`, function(e) {
   // Iterar sobre los productos en el carrito y agregarlos a pasarelaProductos
   for (let i = 0; i < jsonArray.length; i++) {
     let producto = jsonArray[i];
+    let productoNombre = producto.nombre;
+    let productoPrecio = producto.precio * 100;
+    let productoCantidad = document.getElementById("quantity-"+producto.idProducto).value;
 
-    let productoToPasarelaPago = {
-      price_data: {
-        currency: "mxn",
-        product_data: {
-          name: producto.nombre,
+    let productoToPasarelaPago = 
+    `
+    {
+      "price_data:" {
+        "currency:" "mxn",
+        "product_data:" {
+          "name:" "${productoNombre}",
         },
-        unit_amount: producto.precio * 100, // El precio debe estar en centavos
+        "unit_amount:" ${productoPrecio},  
       },
-      quantity: +document.getElementById(`quantity-${producto.idProducto}`).value,
-    };
+      quantity: ${productoCantidad},
+    }
+    `
+    ;
 
     pasarelaProductos.push(productoToPasarelaPago);
   }
 
   // Enviar pasarelaProductos al backend utilizando una solicitud HTTP
-  fetch('/ruta-hacia-el-backend', {
+  fetch('/api/pasarela-pagos', {
     method: 'POST',
     headers: {
       'Content-Type': 'application/json',
