@@ -131,17 +131,18 @@ btnPagarPedido.addEventListener(`click`, function(e) {
     let productoToPasarelaPago = 
     `
     {
-      "price_data:" {
-        "currency:" "mxn",
-        "product_data:" {
-          "name:" "${productoNombre}",
+      "price_data": {
+        "currency": "mxn",
+        "product_data": {
+          "name": "${productoNombre}"
         },
-        "unit_amount:" ${productoPrecio},  
+        "unit_amount": ${productoPrecio}
       },
-      quantity: ${productoCantidad},
+      "quantity": ${productoCantidad}
     }
     `
     ;
+
 
     pasarelaProductos.push(productoToPasarelaPago);
   }
