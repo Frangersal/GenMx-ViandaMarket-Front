@@ -71,8 +71,9 @@
     align-items: center;
     text-align: center;
     font-size: 2.75rem;
-
+   
 }
+
 
 .tituloPrimero {
     font-size: 7vw; 
@@ -210,7 +211,7 @@ a{
 
  .encabezadofooter  {
     color: rgb(255, 255, 255);
-    font-size: 2.9rem;
+    font-size: 2.0rem;
     font-family: 'Josefin Sans';
     font-style: normal;
   }
@@ -225,6 +226,7 @@ a{
     font-style: normal;
     color: rgba(255, 255, 255, 1);
     font-size: 1.6rem;
+    
   }
 
 
@@ -240,6 +242,10 @@ a{
     font-size: x-large;
     font-size: 2rem;
 }
+.bi-lightbulb{
+       color: rgba(232, 212, 47, 1);
+        font-size: 2rem;
+    }
 
 @media (min-width:992px){
     .img-foto{
@@ -261,7 +267,7 @@ a{
         font-size: 2vw;
     }
     
-
+    
 }
 
 @media only screen and (max-width: 1199px) {
@@ -278,8 +284,13 @@ a{
     
     .bi-envelope{
         color: rgba(232, 212, 47, 1);
-        font-size: 1.4rem;
+        font-size: 2rem;
     } 
+
+    .bi-lightbulb{
+       color: rgba(232, 212, 47, 1);
+        font-size: 2rem;
+    }
     
     .invisible {
         display: block;
@@ -290,6 +301,7 @@ a{
     
     .textofooter{
         font-size:  1.2rem;
+        text-decoration: none;
     }
     }
     
@@ -301,7 +313,7 @@ a{
 @media only screen and (max-width: 1024px) {
     .encabezadofooter  {
         color: rgb(255, 255, 255);
-        font-size: 2rem;
+        font-size: 1.5rem;
         font-family: 'Josefin Sans';
         font-style: normal;
       }
@@ -312,7 +324,7 @@ a{
 
 .bi-envelope{
     color: rgba(232, 212, 47, 1);
-    font-size: 1.4rem;
+    font-size: 2rem;
 } 
 
 .invisible {
@@ -324,6 +336,7 @@ a{
 
 .textofooter{
     font-size:  1.2rem;
+    text-decoration: none;
 }
 }
 
@@ -332,16 +345,9 @@ a{
 
 @media only screen and (min-width: 768px) {
     .encabezadofooter{
-        font-size: 1.2rem;
+        font-size: .92rem;
     }
-    .bi-map{
-        color: rgba(232, 212, 47, 1);
-        font-size:1.4rem;
-    }
-    
-    .bi-envelope{
-        color: rgba(232, 212, 47, 1);
-        font-size:1.5rem;
+  
     }
   
     .text-reset{
@@ -350,11 +356,11 @@ a{
 
     .textofooter{
         font-size:.7rem;
+        text-decoration: none;
     }
     .invisible {
         display: block;
     }
-}
 
   
 @media only screen and (max-width: 320px ) {
@@ -366,14 +372,14 @@ a{
 
 .bi-envelope{
     color: rgba(232, 212, 47, 1);
-    font-size: 1.2rem;
+    font-size: 2rem;
 }
 
 .invisible {
     display: none;
 }
 .encabezadofooter{
-    font-size: 1.4rem;
+    font-size: 1rem;
 }
 .text-reset{
     font-size:.8665rem;
@@ -381,6 +387,7 @@ a{
 
 .textofooter{
     font-size:.9rem;
+    text-decoration: none;
 }
 }
 
@@ -393,7 +400,7 @@ a{
 
 .bi-envelope{
     color: rgba(232, 212, 47, 1);
-    font-size: x-large;
+    font-size: 2rem;
 }
 .invisible {
     display: none;
@@ -409,7 +416,7 @@ a{
 
 .bi-envelope{
     color: rgba(232, 212, 47, 1);
-    font-size: x-large;
+    font-size: 2rem;
 }
 .invisible {
     display: none;
@@ -427,7 +434,7 @@ a{
 
 .bi-envelope{
     color: rgba(232, 212, 47, 1);
-    font-size: x-large;
+    font-size: 2rem;
 }
 
 .invisible {
