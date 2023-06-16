@@ -16,7 +16,10 @@
 @import url('https://fonts.cdnfonts.com/css/josefin-sans%27');
 
 
+.espacio{
 
+    overflow-x: hidden
+}
 .center {
     display: flex;
     align-items: center;
@@ -66,8 +69,7 @@
 .intro {
     font-style: normal;
     color: rgba(255, 255, 255, 1);
-    display: grid;
-    height: 40vw;
+    height: 18rem;
     align-items: center;
     text-align: center;
     font-size: 2.75rem;
@@ -95,10 +97,30 @@
 
 @media (max-width: 767px) {
     .tituloSegundo {
-        font-size: 1rem;
+        font-size: 1.0rem;
         margin: 1%;
         margin-top: 3%;
         line-height: 2rem;
+    }
+    .bi-map{
+        color: rgba(232, 212, 47, 1);
+        font-size: x-large;
+    }
+    
+    .bi-envelope{
+        color: rgba(232, 212, 47, 1);
+        font-size: 2rem;
+    }
+    .invisible {
+        display: none;
+    }
+    .intro {
+        height: 14rem !important;
+       
+    }
+    .textCardDescription {
+        font-size: 3.5vw; 
+        
     }
 }
 
@@ -117,28 +139,35 @@
     max-height: 30vw;
 }
 .textCardNombre {
+   
     font-size: 4vw;
     font-family: 'MADE Mirage';
     src: url(./fonts/MADE\ MIRAGE/);
+    text-align: center;
 }
 .textCardPuesto {
     font-size: 3vw;
     font-family: 'Josefin Sans';
     font-style: normal;
+    text-align: center;
+   
 }
 
 .textCardDescription {
     font-size: 3vw;
     font-family: 'Josefin Sans';
     font-style: normal;
+    text-align: center;
    
 }
 .bg-card{
+    
     background-color: #ffffff00!important;
     border-color: #ffffff00!important;
 }
-.bi-linkedin, .bi-briefcase-fill{
+.bi-linkedin, .bi-github {
     font-size: 5vw;
+    padding: 0.5rem;
 }
 .circle {
     /*border-color: #404040 #1f9896 #1f9896 #404040;*/
@@ -150,62 +179,27 @@
     /*border-style: solid;*/
     /*border-width: 20px;*/
     
+    
+    
     border:1vw solid transparent;
     /*
     background:url(./src/img/Untitled.png) center/100% 100% border-box;
     */
 }
-.auraMoy{
+.aura{
     background-color: #9d251d;
   
     
 }
-.auraCaro{
-    background-color: #9d251d;
-   
-}
-.auraMaG{
-    background-color: #9d251d;
-    
-}
-.auraDom{
-    background-color: #9d251d;
 
-}
-.auraAnd{
-    background-color: #9d251d;
-}
-.auraFrn{
-    background-color: #9d251d;
-}
-.auraJua{
-    background-color: #9d251d;
 
-}
-.auraFel{
-    background-color: #9d251d;
-}
 a{
     text-decoration: none;
 }
   
 /* FIN CSS de la seccion [cards] hecha por [angel] */
 /* Inicio CSS de la seccion [carrousel] hecha por [moy] */
-.contamos{
-    font-family: 'Josefin Sans';
-    font-style: normal;
-  font-size: 5vw;
-  text-align: center;
-  color: rgba(255, 255, 255, 1);
 
-
-}
-
-.imagen-carrusel {
-    object-fit: cover;
-    height: 500px; /* ajusta la altura según lo que necesites */
-  }
-  
 /* FIN CSS de la seccion [carrousel] hecha por [moy] */
 /* Inicio CSS de la seccion [footer] hecha por [mariano] */
 
@@ -263,8 +257,9 @@ a{
        
     }
 
-    .bi-linkedin, .bi-briefcase-fill{
+    .bi-linkedin, .bi-github{
         font-size: 2vw;
+        padding: 0.8rem;
     }
     
     
@@ -304,7 +299,7 @@ a{
         text-decoration: none;
     }
     }
-    
+  
 
 
 
@@ -338,6 +333,7 @@ a{
     font-size:  1.2rem;
     text-decoration: none;
 }
+
 }
 
 
@@ -358,10 +354,11 @@ a{
         font-size:.7rem;
         text-decoration: none;
     }
-    .invisible {
-        display: block;
+   
+    .intro {
+        height: 22rem;
+   
     }
-
   
 @media only screen and (max-width: 320px ) {
  
@@ -418,10 +415,6 @@ a{
     color: rgba(232, 212, 47, 1);
     font-size: 2rem;
 }
-.invisible {
-    display: none;
-}
-
 
 }
 
@@ -448,6 +441,7 @@ a{
     .arreglotitulo{
         height: 8vw;
     }
+
 }
 
 
