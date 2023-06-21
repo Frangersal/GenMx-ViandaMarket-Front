@@ -1,0 +1,227 @@
+[33mcommit cc3c6e68824e1be7fb2ae16cf0c99483e9cdcbf3[m[33m ([m[1;36mHEAD -> [m[1;32mMariano-Nuevo[m[33m, [m[1;31morigin/main[m[33m, [m[1;31morigin/HEAD[m[33m, [m[1;32mmain[m[33m)[m
+Author: Mariano Gonzalez <oettinghaus@hotmail.com>
+Date:   Wed Jun 21 10:36:01 2023 -0600
+
+    correcciones a la navbar
+
+[33mcommit a687371a6c229995b4ac4aa08706410f4e8d489e[m
+Author: Mariano Gonzalez <oettinghaus@hotmail.com>
+Date:   Fri Jun 16 09:33:52 2023 -0600
+
+    rediseño de pagina de acerca de Lcs
+
+[33mcommit 268640b63ebc37eb1f3b0346f16eb03f1748f8e2[m[33m ([m[1;31morigin/Mariano-Nuevo[m[33m)[m
+Author: Mariano Gonzalez <oettinghaus@hotmail.com>
+Date:   Thu Jun 15 10:43:02 2023 -0600
+
+    se arreglan enlaces de inicio, se ccambia footer de acercade, se eliminan imagenes del faq
+
+[33mcommit fdabc27c43f101bec11ec2a2a0b829667f578e50[m[33m ([m[1;31morigin/develop[m[33m, [m[1;31morigin/Moises[m[33m)[m
+Author: Moicr96 <moicr96@gmail.com>
+Date:   Wed Jun 14 10:46:30 2023 -0600
+
+    se cambian las imagenes a formato webp así como ajustar las referencias a las img
+
+[33mcommit 701b53b6c1645b6e8586a78c89d7dec13002a918[m
+Author: Mariano Gonzalez <oettinghaus@hotmail.com>
+Date:   Wed Jun 14 10:12:41 2023 -0600
+
+    se arreglan conflictos con index
+
+[33mcommit f00f116e0f4374b36d3bb8d243c2d61c1936d345[m
+Merge: a6dd698 a608150
+Author: Mariano Gonzalez <oettinghaus@hotmail.com>
+Date:   Wed Jun 14 10:07:40 2023 -0600
+
+    error index
+
+[33mcommit a6081508086644c29cae1c4a31347dbe47e8ddd3[m
+Author: Mariano Gonzalez <oettinghaus@hotmail.com>
+Date:   Wed Jun 14 09:36:09 2023 -0600
+
+    correcciones responsive calidades
+
+[33mcommit 4028fd758aaf630d393d87fdd5f964eb781856cd[m
+Author: Mariano Gonzalez <oettinghaus@hotmail.com>
+Date:   Wed Jun 14 08:51:47 2023 -0600
+
+    se centro boton de mayoreo, se arreglaron enlaces de inicio, se arreglo responsive de calidades
+
+[33mcommit a6dd69873fc25e39bbc16688e4c39ac7c9bbea06[m
+Author: Juan Angel <johnangelmx@gmail.com>
+Date:   Tue Jun 13 12:09:42 2023 -0600
+
+    version antigua del index.html S3 descartado
+
+[33mcommit 41c93a982a64329248cba0a2c7815966e38ca4f5[m
+Author: frangersal <frangersal@outlook.com>
+Date:   Tue Jun 13 11:03:28 2023 -0600
+
+    cambie de nuevo la forma del json de productoToPasarelaPago
+
+[33mcommit a45dccba68867eeeaa8723bd52a7303061018353[m
+Author: frangersal <frangersal@outlook.com>
+Date:   Tue Jun 13 01:03:36 2023 -0600
+
+    correccion json, nombre de los datos no van con punto y coma adentro de las comillas dobles
+
+[33mcommit 100ec5ecea17f3eaccc14b80a6df53d023b87950[m
+Merge: 2be78c0 c5040c5
+Author: frangersal <frangersal@outlook.com>
+Date:   Mon Jun 12 23:39:40 2023 -0600
+
+    Merge branch 'main' of github.com:Frangersal/GenMx-ViandaMarket-Front
+
+[33mcommit 2be78c06ed34656cc436b10971aa7eeca70a84f3[m
+Author: frangersal <frangersal@outlook.com>
+Date:   Mon Jun 12 23:38:45 2023 -0600
+
+    cambio de forma del json y url del fetch
+
+[33mcommit c5040c53627416a0bcbb79bd7779e5ec74665113[m
+Author: Moicr96 <moicr96@gmail.com>
+Date:   Mon Jun 12 21:24:07 2023 -0600
+
+    se cambiaron las refencias locales a las del s3
+
+[33mcommit 8d08159e2b77b4686d71cf4832fe186b5b20815c[m
+Author: Juan Angel <johnangelmx@gmail.com>
+Date:   Mon Jun 12 09:17:25 2023 -0600
+
+    Actualizacion submodule panelvm
+
+[33mcommit 10d859e1d2b4e66f860b7478e37bef4ebd4b6f34[m
+Author: Juan Angel <johnangelmx@gmail.com>
+Date:   Sun Jun 11 17:36:14 2023 -0600
+
+    actualizacion submodulo dashboard
+
+[33mcommit 4b4e9197f741b20f2f145dcfd80ce69f54a01d6b[m
+Author: Juan Angel <johnangelmx@gmail.com>
+Date:   Sun Jun 11 15:16:09 2023 -0600
+
+    Actualizando el fetch de registro de usuarios JS
+
+[33mcommit f679be5ea42e1eb227927e457cb13d24488d6725[m
+Author: Juan Angel <johnangelmx@gmail.com>
+Date:   Sun Jun 11 14:23:26 2023 -0600
+
+    Actualizar configuraciones de submódulos para apuntar a la rama main
+
+[33mcommit 86a1c4b9e6020e82dd5ddad6be7cf393563fc9a8[m
+Author: Mariano Gonzalez <oettinghaus@hotmail.com>
+Date:   Sat Jun 10 21:35:29 2023 -0600
+
+    se modifica diseño de cards de pagina de inicio
+
+[33mcommit 4926cc760839a353314ca9b6fab884fc8a39efdc[m
+Merge: 3d2b826 1cfd746
+Author: frangersal <frangersal@outlook.com>
+Date:   Thu Jun 8 10:09:41 2023 -0600
+
+    Merge branch 'main' of github.com:Frangersal/GenMx-ViandaMarket-Front
+
+[33mcommit 3d2b8262d7fbad83eb69f10c041698d195e23b5e[m
+Author: frangersal <frangersal@outlook.com>
+Date:   Thu Jun 8 09:51:31 2023 -0600
+
+    quite token de registrousuario.js y cambie a mxn en el json que mandaremos al back
+
+[33mcommit 1cfd74694bb1a50f80ed7a0dd3731485e4183c04[m
+Author: Mariano Gonzalez <oettinghaus@hotmail.com>
+Date:   Wed Jun 7 09:50:04 2023 -0600
+
+    se arreglaron iconos y botones de la barra de navegacion
+
+[33mcommit 2b8a77a1366e307fb1005ddee041f753ff418f58[m
+Author: Juan Angel <johnangelmx@gmail.com>
+Date:   Wed Jun 7 01:07:58 2023 -0600
+
+    agregado panel y redireccionamiento
+
+[33mcommit 0a453d53cd1f192f1d2dcb4d484f51213072e37c[m
+Author: frangersal <frangersal@outlook.com>
+Date:   Wed Jun 7 00:11:24 2023 -0600
+
+    se modifico el json para ser algo que pueda recibir stripe y hace una peticion POST para mandar ese mismo json
+
+[33mcommit 349a1d4d361c087d26f04402aff1aaab766b0aa9[m
+Author: Moicr96 <moicr96@gmail.com>
+Date:   Tue Jun 6 11:31:27 2023 -0600
+
+    se quitan las url de railway, se modifican los fetch igual
+
+[33mcommit 9f4970ddba3b90c7925f3d935ddb8bfa53e30a5f[m
+Author: frangersal <frangersal@outlook.com>
+Date:   Wed May 31 17:52:02 2023 -0600
+
+    Agregado toast y no duplicado en producto individual
+
+[33mcommit aa30b8e15e0afa2ad2dbb7b71a114ebd31a7034b[m
+Author: frangersal <frangersal@outlook.com>
+Date:   Wed May 31 17:48:17 2023 -0600
+
+    -Arreglado error del boton de borrar producto que no funcionaba.
+    -Agregue Alerta a productoIndiviual para que el usuario sepa si ese producto ya esta en el carrito
+    -No permite agregar productos duplicados
+
+[33mcommit 672466c2abf47c9fdb28a6a31c13307d56b021ea[m
+Merge: 8499956 6f8abb0
+Author: frangersal <frangersal@outlook.com>
+Date:   Wed May 31 16:19:00 2023 -0600
+
+    Merge branch 'CarritoToPPagos' into develop
+
+[33mcommit 6f8abb03600e05e816c0d7654d15b0443d9b57c2[m
+Author: frangersal <frangersal@outlook.com>
+Date:   Wed May 31 16:14:30 2023 -0600
+
+    De productoIndividual se da mas informacion a carrito, desde localstorage, y desde el mismo medio carrito envia informacion a pasarela de pagos. un toast al agregar producto al carrito
+
+[33mcommit 8499956ff29b06f6708608bc18c8a521baab03cc[m
+Merge: 81d7108 a2764f7
+Author: Carolina Tovar <carolina.ta13@gmail.com>
+Date:   Wed May 31 12:18:21 2023 -0600
+
+    Merge branch 'develop' of github.com:Frangersal/GenMx-ViandaMarket-Front into develop
+
+[33mcommit 81d7108bc820b14c1e5d2621b8933eeaccee11c4[m
+Author: Carolina Tovar <carolina.ta13@gmail.com>
+Date:   Wed May 31 12:18:06 2023 -0600
+
+    Se agrego cambio de contrasena
+
+[33mcommit a2764f7ac7286b8cc4c0111e9b5bd0e372a4dd26[m
+Author: frangersal <frangersal@outlook.com>
+Date:   Mon May 29 23:31:06 2023 -0600
+
+    Mejorada apariencia de carrito, y se actualiza el precio del subtotal y total en tiempo real segun la cantidad de producto
+
+[33mcommit 608f5dd32ffa709f27d866a848935fe6d2d75cb9[m
+Author: Carolina Tovar <carolina.ta13@gmail.com>
+Date:   Sat May 27 20:16:55 2023 -0600
+
+    Ajustes en la fuente del ojo contrasena
+
+[33mcommit dfa4dcc3835ad69f7dbd58023fa20c3ec0bb1872[m
+Author: Carolina Tovar <carolina.ta13@gmail.com>
+Date:   Sat May 27 20:04:34 2023 -0600
+
+    Se agrego el metodo put para modificacion de perfil de usuario
+
+[33mcommit 6dc6c539be5a987c6db27b4ee8ea0b5418204c09[m
+Author: Carolina Tovar <carolina.ta13@gmail.com>
+Date:   Sat May 27 19:00:45 2023 -0600
+
+    Se subieron los cambios de ajustes de perfil
+
+[33mcommit 97ce8f98d18d2ca76c9a9b9995831641dae37e8c[m
+Merge: af0a28c aa9bd3c
+Author: Carolina Tovar <carolina.ta13@gmail.com>
+Date:   Sat May 27 18:41:49 2023 -0600
+
+    Merge branch 'main' of github.com:Frangersal/GenMx-ViandaMarket-Front
+
+[33mcommit af0a28c237430840848f1fc6001e363ce3d8f9f4[m
+Author: Carolina Tovar <carolina.ta13@gmail.com>
+Date:   Sat May 27 18:40:31 202
