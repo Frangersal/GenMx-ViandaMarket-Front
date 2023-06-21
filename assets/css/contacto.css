@@ -154,7 +154,14 @@ background-color: white;
         background-color: transparent;
         font-size: 3vw;
         gap:0.1vw;
+        display: flex;
+        align-items: center;
+        justify-content: center;
     }
+    .navbar-nav .nav-item {
+        display: flex;
+        align-items: center;
+      }
 
     .offcanvas-header{
         background-color: #FCF7F1;
