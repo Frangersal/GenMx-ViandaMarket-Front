@@ -121,26 +121,46 @@ btnPagarPedido.addEventListener(`click`, function(e) {
   }
   let pasarelaProductos = JSON.parse(localStorage.getItem('pasarelaProductos')) || []; // Recuperar el valor actual del localStorage o iniciar un array vacío si no existe
 
+  if (localStorage.getItem('SessionId')) {
+    let id_usuarios = localStorage.getItem('idUsuario');
+    console.log('El usuario está registrado. ID de usuario:', id_usuarios);
   // Iterar sobre los productos en el carrito y agregarlos a pasarelaProductos
-  for (let i = 0; i < jsonArray.length; i++) {
-  let producto = jsonArray[i];
-  let productoNombre = producto.nombre;
-  let productoPrecio = producto.precio * 100;
-  let productoCantidad = document.getElementById("quantity-" + producto.idProducto).value;
+    for (let i = 0; i < jsonArray.length; i++) {
+      let producto = jsonArray[i];
+      let productoNombre = producto.nombre;
+      let productoPrecio = producto.precio * 100;
+      let productoCantidad = document.getElementById("quantity-" + producto.idProducto).value;
+      let fecha_guardado = new Date();
+      let estatus = false;
+      /*
+      let productoToPasarelaPago = {
+        price_data: {
+          currency: "mxn",
+          product_data: {
+            name: `${productoNombre}`
+          },
+          unit_amount: `${productoPrecio}`
+        },
+        quantity: `${productoCantidad}`
+      };
+    */
+      let productoToPasarelaPago = {
+        nombre: `${productoNombre}`,
+        precio: `${productoPrecio}`,
+        cantidad: `${productoCantidad}`,
+        estatus: `${estatus}`,
+        fechaGuardado: `${fecha_guardado}`,
+        id_usuarios:  `${id_usuarios}`
+      };
+      pasarelaProductos.push(productoToPasarelaPago);
+    }
 
-  let productoToPasarelaPago = {
-    price_data: {
-      currency: "mxn",
-      product_data: {
-        name: `${productoNombre}`
-      },
-      unit_amount: `${productoPrecio}`
-    },
-    quantity: `${productoCantidad}`
-  };
 
-  pasarelaProductos.push(productoToPasarelaPago);
-}
+  } else {
+    console.log('El usuario no está registrado.');
+  }
+  
+
 
 
   // Enviar pasarelaProductos al backend utilizando una solicitud HTTP
@@ -156,7 +176,7 @@ btnPagarPedido.addEventListener(`click`, function(e) {
       // Realizar acciones con la respuesta del backend
       console.log('Respuesta del backend:', data);
       // Redireccionar a la vista para ver los productos a pagar
-      window.location.href = '/ruta-de-la-vista-para-ver-productos-a-pagar';
+      window.location.href = '/index.html';
     })
     .catch(error => {
       console.error('Error al enviar los productos al backend:', error);
