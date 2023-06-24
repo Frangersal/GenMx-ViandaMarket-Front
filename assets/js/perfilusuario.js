@@ -304,3 +304,18 @@ var requestOptions = {
 //&telefono=33333333
   
 
+// Obtiene la dirección de enlace (URL) de la página actual
+var direccionEnlace = window.location.href;
+
+// Crea un objeto URLSearchParams con la URL
+var parametrosURL = new URLSearchParams(direccionEnlace);
+
+// Comprueba si el parámetro "?success" está presente en la URL
+if (parametrosURL.has('success')) {
+  // El parámetro "?success" está presente
+  var resultHeading = document.getElementById("historialCompras");
+  resultHeading.innerText = 'La URL contiene el parámetro "?success"';
+
+  // Desplaza la página hasta el elemento resultHeading
+  resultHeading.scrollIntoView({ behavior: 'smooth' });
+} 
