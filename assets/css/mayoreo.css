@@ -84,6 +84,14 @@
         width: 100vw; 
         font-size: 20px;  
     }
+    .message-section {
+      font-size: 1rem;
+      margin-top: 5%;
+    
+      
+      
+
+     }
 }
 
 .form-section_input{

@@ -13,232 +13,7 @@ background-color: white;
 ----Barra de navegación e intro
 */
 
-.header {
-    background-color: #FCF7F1;
-    display:grid;
-    grid-auto-flow: column;
-    grid-template-columns: 2fr 1fr;
-    align-content: center;
-    height: 4vw;
-    
-    
-    }
 
-    .headerDestok .barraMenu{
-        font-size: 1.3vw;
-        cursor: pointer;
-        margin-left: 10%;
-        font-family: 'Josefin Sans', sans-serif;
-
-    }
- .iconos{
-    display:grid;
-    grid-auto-flow: column;
-    
- }
-
- #lupa{
-    margin-top: 7%;
-    font-size: 1.2vw;
-    color: rgba(42, 46, 58, 1);
-    
- }
-    
-    #VMlogo{
-        margin-left: 20%;
-        margin-top: 2%;
-        width: 10vw;
-    }
-    
-
-.dropdownBuscador{
-    margin-top: 1.4vw;
-    margin-left: 115%;
-    margin-right: 20%;
-    font-family: 'Josefin Sans', sans-serif
-}
-    
-    #miCuenta{
-        background-color: rgba(42, 46, 58, 1);
-        color: rgba(252, 247, 241, 1);
-       margin-top: 15%;
-       margin-bottom: 18%;
-       margin-left: 50%;
-        font-size:1.1vw;
-        text-decoration: solid;
-        text-align: center;
-       border-radius: 30px;
-       font-family: 'Josefin Sans', sans-serif
-    }
-    
-    
-
-    
-    #shoppingCart{
-        background-color:rgba(42, 46, 58, 1) ;
-        margin-top: 20%;
-        margin-left: 5%;
-        margin-right: 50%;
-        margin-bottom: 25%;
-       text-align: center;
-        font-size: 1vw;
-        padding: 2px;
-     color:rgba(252, 247, 241, 1);
-     position:right;
-     border-radius: 30px;
-    
-    }
-
-    #shoppingCart:hover, #miCuenta:hover{
-        background-color: #B81C00;
-    }
-    
-    .headerBar{
-        display: grid;
-          
-    }
-    .navbar{
-        background-color:rgba(42, 46, 58, 1);
-        display: grid;
-        text-align: center;
-        height: 3.5vw;
-    }
-    
-    
-    header nav ul{
-        font-family: 'Josefin Sans', sans-serif;
-        background-color:rgba(42, 46, 58, 1);
-        /* margin-top: 1%; */
-        margin-right: 0vw;
-        margin-left: 5vw ;
-        list-style: none;
-        cursor: pointer;
-        font-size: 1.5vw;
-        color: rgba(252, 247, 241, 1);
-        display: grid;
-        grid-auto-flow: column;
-        grid-auto-columns: max-content;
-        gap:8vw;
-        text-align: justify;
-        margin-bottom: 10%;
-
-    }
-    .barraMenu{
-        margin-bottom: 2vw;
-    }
-
-    .headerDestok .barraMenu{
-        height: 1vw;
-        font-size: 1.5vw;
-        cursor: pointer;
-        margin-left: 3%;
-        
-
-    }
-
-    
-   header nav ol li{
-    text-align:center; 
-    }
-
-
-    .headerCel{
-        display: none;
-        background-color: #FCF7F1;
-        list-style: none;
-        height: 13vw;
-
-    }
-
-    .navbar-nav{ 
-        background-color: transparent;
-        font-size: 3vw;
-        gap:0.1vw;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-    }
-    .navbar-nav .nav-item {
-        display: flex;
-        align-items: center;
-      }
-
-    .offcanvas-header{
-        background-color: #FCF7F1;
-    }
-    
-    #VMlogo2{
-        margin-left:8%;
-        margin-top: 2%;
-        margin-right: 1%;
-        width: 35vw;
-        
-    }
-
-    #menuHambu{
-        margin-top:4vw;
-        margin-bottom: 1vw;
-        margin-left: 40%;
-        color:rgba(42, 46, 58, 1);
-    }
-
-    #menuHambuLinea{
-        font-size: 4vw;
-        color: rgba(42, 46, 58, 1);
-    }
-
-    .navbar-toggler{
-        margin-top: 25%;
-    }
-
-    .btn-close{
-        font-size: 3vw;
-    }
-
-    #login{
-        font-size: 4vw;
-        color: rgba(42, 46, 58, 1);
-        margin-left:8%;
-  
-        
-      }
-      #shoppingCart2{
-        margin-top: 1%;
-          margin-right: 10%;
-          /* margin-left: 3%; */
-          font-size: 4vw;
-          color: rgba(42, 46, 58, 1);
-          border-radius: 30px;
-      }
-
-      #menuHambuLinea:hover, #shoppingCart2:hover, #login:hover{
-        color:rgba(184, 28, 0, 1);
-      }
-
-    .copytexto{
-        font-size: 0.7rem;
-    }
-
- @media (max-width:800px){
-    .headerCel{
-        display:block;
-    }
- }
-
- @media (max-width:800px){
-    .header{
-        display:none;
-    }
-
-    header nav ul{
-        display: none;
-    }
-
-    .navbar{
-        display: none;
-    }
- }  
-    
 /*
 ----Barra de navegación e intro
 */
@@ -251,7 +26,9 @@ background-color: white;
 /*
 Zona de trabajo Fran INICIO
 */
-
+.contenedor {
+    overflow-x: hidden; /* Oculta el desplazamiento horizontal */
+  }
 .center {
     display: flex;
     align-items: center;
@@ -341,7 +118,7 @@ border-radius: .5rem;
       padding-top: 8%;
     }
   }
-  @media (max-width: 767px) {
+  @media (max-width: 768px) {
   .title {
     height: 8vw;
     padding: 10%;
@@ -537,7 +314,10 @@ form{
     
 
     }
-
+  
+     
+   
+ 
 
 
 /*
