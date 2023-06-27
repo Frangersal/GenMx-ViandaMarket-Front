@@ -26,7 +26,7 @@ background-color: white;
 /*
 Zona de trabajo Fran INICIO
 */
-.contenedor {
+body {
     overflow-x: hidden; /* Oculta el desplazamiento horizontal */
   }
 .center {
@@ -312,7 +312,7 @@ form{
         padding: 0rem;
     }
     
-
+   
     }
   
      
