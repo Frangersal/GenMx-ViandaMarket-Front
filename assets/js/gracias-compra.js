@@ -1,54 +1,40 @@
-/**
- * 
- */
+const verifySession = () => {
+    return JSON.parse(localStorage.getItem('SessionId'));
+};
 
- const urlCompleta = window.location.href;
-const protocolo = window.location.protocol;
-const host = window.location.host;
-const pathname = window.location.pathname;
-let parametros = window.location.search;
+async function verificacionCompra() {
 
-if (parametros != null) {
-    //const params = new URLSearchParams(parametros);
-    //const token = params.get('token');
-    let token = parametros.substring(1); 
-    const sessionPedidosId = localStorage.getItem('sessionPedidosId');
-    console.log("5 token - "+parametros);
-    console.log("5 SPID - "+sessionPedidosId);
+    let parametros = window.location.search;
+    if (parametros != null) {
+        //const params = new URLSearchParams(parametros);
+        //const token = params.get('token');
+        let token = parametros.substring(1);
+        let sessionPedidosId = localStorage.getItem('sessionPedidosId');
+        sessionPedidosId = sessionPedidosId.replace("idosId=", "");
 
-    if (sessionPedidosId && token) {
-        const data = {
-            sessionPedidosId: sessionPedidosId,
-            token: token
-        };
-
-        // Enviar la solicitud POST a /verificar-pagos
-        fetch('/verificar-pagos', {
-            method: 'POST',
-            headers: {
-                'Content-Type': 'application/json'
-            },
-            body: JSON.stringify(data)
-        })
-            .then(response => {
-                if (response.ok) {
-                    // Redirigir a http://localhost:8080/index.html después de 6 segundos
-                    setTimeout(() => {
-                        window.location.href = 'http://localhost:8080/index.html';
-                    }, 6000);
-                } else {
-                    // Recargar la página
-					console.log("no fue ok");
-					 setTimeout(() => {
-                    	//location.reload(); 
-                    }, 6000);
-					
-                }
+        if (sessionPedidosId && token) {
+            const url = `/verificar-pagos?sessionId=${sessionPedidosId}&token=${token}`;
+            const response = await fetch(url, {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                    "Access-Control-Allow-Origin": "*",
+                    "Authorization": `Bearer: ${verifySession().acessToken}`,
+                },
             })
-            .catch(error => {
-                console.log(error);
-                // Recargar la página en caso de error
+            if (response.ok) {
+                setTimeout(function () {
+                    // Limpiar un elemento del LocalStorage
+                    localStorage.removeItem('carrito');
+                    window.location.href = "./../../perfilusuario.html";
+                }, 5000);
+            } else {
                 location.reload();
-            });
+            }
+        }
     }
 }
+
+window.addEventListener("load", async () => {
+    await verificacionCompra()
+})

@@ -1,12 +1,124 @@
 <!DOCTYPE html>
 <html>
 <head>
-<meta charset="ISO-8859-1">
-<title>Gracias por su compra</title>
+    <meta charset="UTF-8">
+    <title>Confirmación de compra</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Poppins:400,700" rel="stylesheet">
+    <style>
+        body {
+            background-color: #f8f8f8;
+            font-family: 'Poppins', Arial, sans-serif;
+            color: #333;
+            text-align: center;
+            padding-top: 50px;
+        }
+
+        .container {
+            max-width: 400px;
+            margin: 0 auto;
+            background-color: #f2f2f2;
+            border-radius: 5px;
+            padding: 40px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .logo {
+            width: 100px;
+            margin-bottom: 20px;
+        }
+
+        h1 {
+            font-size: 32px;
+            margin-bottom: 20px;
+        }
+
+        p {
+            font-size: 20px;
+            margin-bottom: 10px;
+        }
+
+        .redirect-message {
+            font-size: 16px;
+            margin-top: 30px;
+            color: #888;
+        }
+
+        .loader {
+            position: relative;
+            width: 80px;
+            height: 80px;
+            margin: 0 auto;
+        }
+
+        .loader:before,
+        .loader:after {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border-radius: 50%;
+            opacity: 0.6;
+            background-color: #333;
+            animation: loader-animation 1.8s ease-in-out infinite;
+        }
+
+        .loader:before {
+            animation-delay: 0.3s;
+        }
+
+        .loader:after {
+            animation-delay: 0.9s;
+        }
+
+        @keyframes loader-animation {
+            0% {
+                transform: scale(0);
+            }
+            50% {
+                opacity: 1;
+                transform: scale(1);
+            }
+            100% {
+                opacity: 0;
+                transform: scale(0);
+            }
+        }
+
+        /* Estilos para dispositivos móviles */
+        @media only screen and (max-width: 480px) {
+            .container {
+                padding: 20px;
+            }
+
+            h1 {
+                font-size: 24px;
+            }
+
+            p {
+                font-size: 16px;
+            }
+
+            .redirect-message {
+                font-size: 14px;
+            }
+        }
+    </style>
+    <script src="./assets/js/gracias-compra.js"></script>
 </head>
 <body>
-
-<h1>Gracias por su compra</h1>
+<div class="container">
+    <img class="logo" src="./assets/img/logo2.webp" alt="Logo">
+    <h1>¡Compra confirmada!</h1>
+    <p>Gracias por tu compra.</p>
+    <p>Pronto recibirás una confirmación por correo electrónico.</p>
+    <div class="redirect-message">
+        Serás redirigido automáticamente en unos segundos.
+    </div>
+    <div class="loader"></div>
+</div>
 </body>
-<script src="./assets/js/gracias-compra.js"></script>
 </html>
+
