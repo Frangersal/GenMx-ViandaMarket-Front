@@ -1,10 +1,11 @@
+
 let productoCarne = document.getElementsByClassName("productoCarne")
   if (localStorage.getItem("productoSeleccionado") == null) {
     let error = `<h1> No se pudo cargar la página correctamente por favor
         vuelve a intentarlo </h1>`
     productoCarne[0].innerHTML = error;
   }
-
+  
 
 const URL = "/api/cortes/"
 const obternerUsuarios = async () => {
@@ -16,7 +17,16 @@ const obternerUsuarios = async () => {
     if (!resp.ok) return console.log('La peticion fue rechazada')
     return await resp.json();
 }
-
+const URLgramos = "/api/gramos/"
+const obternerGramos = async () => {
+  const resp = await fetch(URLgramos, {
+    method: 'GET',
+    headers: new Headers({'Content-type': 'application/json'}),
+    mode: 'cors'
+})
+if (!resp.ok) return console.log('La peticion fue rechazada')
+return await resp.json();
+}
 
 const URLcalidad = "/api/calidad/"
 const token = 'eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJDYXJvIzEzMTAiLCJyb2xlIjoidXNlciIsImlhdCI6MTY4NDQ2NDc4NywiZXhwIjoxNjg1Njc0Mzg3fQ.8AS2m1E_VRYGlpNKlR_qt6sLd2HYt5HTD4QlFYFkeOQ'
@@ -34,15 +44,22 @@ let carrito = [];
 
 const pintarcorte = async () => {
   const producto = await obternerUsuarios()
-  console.log(producto);
-
-  
   const calidad = await obtenerCalidad()
-  console.log(calidad);
-
+  const gramos = await obternerGramos()
+  console.log({gramos});
+ let liGramos= "";
 
   if (localStorage.getItem("productoSeleccionado") != null) {
-    console.log(producto.find(id => id.id == (parseInt(localStorage.getItem("productoSeleccionado")))));
+    gramos.forEach(gramoIndividual => {
+      if (gramoIndividual.idcortes == (parseInt(localStorage.getItem("productoSeleccionado")))){
+        liGramos += `<option class="hoverable">${gramoIndividual.cantidad} gramos</option> 
+       `
+
+      }
+
+    }
+  
+    )
     let selProd = producto.find(id => id.id == (parseInt(localStorage.getItem("productoSeleccionado"))));
     selProd = `
     
@@ -57,16 +74,20 @@ const pintarcorte = async () => {
                   <h4 class="existencia" style="color:rgb(20, 179, 20)">En existencia</h4>
                   
                   <div class="botones">
-                    <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-                      Seleccionar
+                  
+                  
+                  <select class= "hoverable form-select form-select-lg mb-3" aria-label=".form-select-lg example">
+                  <option selected>Seleccionar</option>
+                  ${liGramos} 
+                  </select>
+
+                    
+
+                
                     </button>                   
                     <button type="button" class="btnCarrito" id="btnCarrito">Añadir al carrito</button>   
                     </div>
-                    <ul class="dropdown-menu">
-                      <li><a class="dropdown-item" href="#"></a></li>
-                      <li><a class="dropdown-item" href="#"></a></li>
-                      <li><a class="dropdown-item" href="#"></a></li>
-                    </ul>   
+                   
                   <div class="precio">
                     <h2 class="marca" style="color:rgba(184, 28, 0, 1)">$${selProd.precio}</h2> 
                   </div>
@@ -78,7 +99,7 @@ const pintarcorte = async () => {
                 
                 `;
     productoCarne[0].insertAdjacentHTML("beforeend", selProd);
-
+    
 
     let btnCarrito = document.getElementById(`btnCarrito`);
     btnCarrito.addEventListener(`click`, function(e) {
@@ -107,7 +128,7 @@ const pintarcorte = async () => {
     
       carrito.push(productoSeleccionado);
       localStorage.setItem(`carrito`, JSON.stringify(carrito));
-    
+      
       console.log("Producto agregado al carrito:", productoSeleccionado);
       try {
         // Perform the cart update here
@@ -210,11 +231,12 @@ const pintarcorte = async () => {
     
   } 
 }
-   
+
 //window  // <button type="button" class="btnCompra">Añadir al carrito</button>   
 window.addEventListener("load", function (event) {
   pintarcorte();
   
 
 });
+
 
