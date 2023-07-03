@@ -58,6 +58,7 @@ const pintarcorte = async () => {
       }
 
     }
+    
   
     )
     let selProd = producto.find(id => id.id == (parseInt(localStorage.getItem("productoSeleccionado"))));
@@ -73,9 +74,7 @@ const pintarcorte = async () => {
                   <h3 class="origen">${calidad[selProd.idcalidades-1].pais}</h3>
                   <h4 class="existencia" style="color:rgb(20, 179, 20)">En existencia</h4>
                   
-                  <div class="botones">
-                  
-                  
+                  <div class="botones">                  
                   <select class= "hoverable form-select form-select-lg mb-3" aria-label=".form-select-lg example">
                   <option selected>Seleccionar</option>
                   ${liGramos} 
@@ -115,11 +114,15 @@ const pintarcorte = async () => {
         return; // Salir de la función si el producto ya existe
       }
     
+      let selectGramos = document.querySelector(".form-select-lg");
+      let gramajeSeleccionado = selectGramos.options[selectGramos.selectedIndex].text;
+
       let productoSeleccionado = {
         idProducto: selProd.id,
         imagen: selProd.imagen,
         nombre: selProd.nombre,
         precio: selProd.precio, 
+        gramaje: gramajeSeleccionado, 
         idCalidades: calidad[selProd.idcalidades-1].id,
         marca: calidad[selProd.idcalidades-1].marca,
         calidad: calidad[selProd.idcalidades-1].calidad,

@@ -32,6 +32,7 @@ if (productos) {
         console.log(productosObject.marca);
         console.log(productosObject.nombre);
         console.log(productosObject.precio);
+        console.log(productosObject.gramaje);
         console.log(productosObject.cantidad);
 
         ubicacionCarritoDeCompras.innerHTML += `
@@ -46,7 +47,7 @@ if (productos) {
           <ul>
             <li class="li-producto">${productosObject.nombre} </li>
             <li class="li-marca">${productosObject.marca}</li>
-            <li class="li-gramos"><strong>Gramos</strong> </li>
+            <li class="li-gramos"><strong>${productosObject.gramaje}</strong> gramos </li>
           </ul>
         </div>
       </div>
@@ -86,12 +87,12 @@ function changeQuantity(idProducto, operation) {
     quantityElement.value = quantity;
     updateTotalPrice(idProducto);
 }
-
 function updateTotalPrice(idProducto) {
     let quantityElement = document.getElementById(`quantity-${idProducto}`);
     let precioElement = document.getElementById(`precio-${idProducto}`);
     let producto = jsonArray.find(item => item.idProducto === idProducto);
     let precio = +producto.precio;
+    let gramaje = producto.gramaje;
     let quantity = +quantityElement.value;
     let totalPrice = precio * quantity;
 
@@ -138,6 +139,7 @@ btnPagarPedido.addEventListener(`click`, async function (e) {
         let producto = jsonArray[i];
         let productoNombre = producto.nombre;
         let productoPrecio = producto.precio;
+        let productoGramaje = producto.gramaje;
         let productoCantidad = document.getElementById("quantity-" + producto.idProducto).value;
         let productoToPasarelaPago = {
             nombre: `${productoNombre}`,
