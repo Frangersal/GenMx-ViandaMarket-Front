@@ -7,7 +7,7 @@
   align-items: center;
   justify-content: center;
   text-align: center;
-  margin: auto;
+  margin: 0;
 }
 
 .principales {
@@ -45,13 +45,13 @@
 .arrow-icon {
   font-size: 2vw;
   line-height: 1;
-  margin-top: -0.2vw;
+  margin-top: 0vw;
   color: white;
 }
 
 .slider-container {
   position: relative;
-  margin: 0 auto;
+  margin: 0 0;
   width: 80%;
   /* cambiar el ancho al 100% */
   overflow: hidden;
@@ -65,7 +65,7 @@
 }
 
 .slider-card {
-  margin: 3vw;
+  margin: 0vw;
   background-color: #eee;
   text-align: center;
   font-size: 2vw;
@@ -94,7 +94,7 @@
 
 .slider {
   height: 195px;
-  margin: auto;
+  margin: 0;
   position: relative;
   width: 100%;
   overflow: hidden;
@@ -198,8 +198,8 @@
 
 .container {
   max-width: 1200px;
-  margin: 0 auto;
-  padding: 3rem 2rem;
+  margin: 0 0;
+  padding: 0rem 0rem;
 }
 
 
@@ -213,7 +213,7 @@
 /*---Se repite para .product y .product-g----*/
 .container .products-container .product {
   text-align: center;
-  padding: 3rem 2rem;
+  padding: 0rem 0rem;
   background: #fff;
   box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .1);
   cursor: pointer;
@@ -224,7 +224,7 @@
 /*1*/
 .container .products-container .product-g {
   text-align: center;
-  padding: 3rem 2rem;
+  padding: 0rem 0rem;
   background: #fff;
   box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .1);
   cursor: pointer;
@@ -285,11 +285,11 @@
 
 .products-preview .preview {
   display: none;
-  padding: 2rem;
+  padding: 0rem;
   text-align: center;
   background: #fff;
   position: relative;
-  margin: 2rem;
+  margin: 0rem;
   width: 40rem;
   border-radius: 3%;
 }
@@ -324,7 +324,7 @@
   line-height: 1.5;
   font-size: 1rem;
   text-align: center;
-  padding: 5%;
+  padding: 0%;
   color: whitesmoke;
   background-color: #B81C00;
   border-radius: 3%;
@@ -341,11 +341,11 @@
 
   .arrow-icon {
     font-size: 2vw;
-    margin-top: -0.2vw;
+    margin-top: 0vw;
   }
 
   .slider-card {
-    margin: 3vw;
+    margin: 0vw;
     font-size: 2vw;
     width: 20vw;
   }
@@ -370,11 +370,11 @@
 
   .arrow-icon {
     font-size: 3.5vw;
-    margin-top: -0.3vw;
+    margin-top: 0vw;
   }
 
   .slider-card {
-    margin: 4vw;
+    margin: 0vw;
     font-size: 2.5vw;
     width: 25vw;
   }
@@ -397,11 +397,11 @@
 
   .arrow-icon {
     font-size: 6vw;
-    margin-top: -0.4vw;
+    margin-top: 0vw;
   }
 
   .slider-card {
-    margin: 6vw;
+    margin: 0vw;
     font-size: 4vw;
     width: 40vw;
   }
