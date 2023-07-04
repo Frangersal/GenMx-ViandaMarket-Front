@@ -11,13 +11,13 @@
 @import url('https://fonts.cdnfonts.com/css/josefin-sans%27');
 
 
-.title{
+.title {
     margin-top: 5vw;
     height: 16vw;
     background-color: rgba(184, 28, 0, 1);
 }
 
-.title h1{
+.title h1 {
     font-family: 'MADE Mirage';
     src: url(./fonts/MADE\ MIRAGE/);
     color: rgba(252, 247, 241, 1);
@@ -27,7 +27,7 @@
     font-weight: 400;
 }
 
-.text1{
+.text1 {
     font-size: 1vw;
     margin-right: 15%;
     margin-left: 15%;
@@ -37,75 +37,69 @@
     font-family: 'Josefin Sans', sans-serif;
 }
 
-.text1 h3{
+.text1 h3 {
     font-size: 1.5rem;
     font-family: 'Josefin Sans', sans-serif;
     font-weight: 400;
 }
-@media (max-width: 768px) {
-    .text1 h3 {
-        font-size: 1rem;
-    }
-}
 
-
-.faq{
+.faq {
     list-style: none;
     max-width: 97vw;
     margin-left: 15%;
     margin-right: 20%;
 }
 
-.faq li{
+.faq li {
     /* background-color: rgba(252, 247, 241, 1); */
     border-bottom: 2px rgba(132, 163, 183, 1) solid;
 }
 
-.faq li:first-child{
+.faq li:first-child {
     border-top: 2px rgba(132, 163, 183, 1) solid;
 }
 
-.faq img{
-   margin-left: 15%;
+.faq img {
+    margin-left: 15%;
     width: 35vw;
 }
 
-.question{
-    color:  rgba(132, 163, 183, 1);
+.question {
+    color: rgba(132, 163, 183, 1);
     font-size: 2.2rem;
     font-family: Mademirage;
     text-decoration: solid;
     padding: 1vw 0;
     cursor: pointer;
-    border-left:1vw transparent solid;
-    
+    border-left: 1vw transparent solid;
+
 }
 
 .question:hover,
-.question:hover .arrow{
+.question:hover .arrow {
     border-left-color: rgba(42, 46, 58, 1);
 
 }
 
-.arrow{
+.arrow {
     display: inline-block;
     margin: 0 0.5em;
-    width:0;
+    width: 0;
     height: 0;
     border-top: 1vw solid transparent;
-    border-left: 1vw solid  rgba(132, 163, 183, 1);
+    border-left: 1vw solid rgba(132, 163, 183, 1);
     border-bottom: 1vw solid transparent;
     transition: 0.3s;
 }
 
 
 
-.faq p{
+.faq p {
     font-family: 'Josefin Sans', sans-serif;
     font-size: 1.5rem;
 }
 
-.answer{
+.answer {
     font-family: 'Josefin Sans', sans-serif;
     overflow: hidden;
     height: 0;
@@ -113,25 +107,39 @@
     font-size: 1.5rem;
 }
 
-.answer-opened{
+.answer-opened {
     padding: 1em 1em 2em 3.3em;
     height: initial;
     font-size: 1.5rem;
 
 }
 
-.arrow-rotated{
+.arrow-rotated {
     transform: rotate(90deg);
 }
-@media (min-width:800px){
-    .title{
+@media (max-width: 424px) {
+    .faq {
+        list-style: none;
+        max-width: 80vw;
+        margin-left: 0%;
+        margin-right: 50%;
+    }
+    .answer,
+    .answer-opened {
+            padding: 0 0em 0 2em;
+            text-align: justify;
+    }
+}
+
+@media (min-width:800px) {
+    .title {
         height: 8vw;
     }
 
-    .title h1{
+    .title h1 {
         padding-top: 3%;
     }
-   
+
 }
 
 @media (max-width: 768px) {
@@ -139,9 +147,11 @@
         margin-left: 5%;
         margin-right: 5%;
     }
-    .faq p{
-        font-size:1rem;
+
+    .faq p {
+        font-size: 1rem;
     }
+
     .faq img {
         margin-left: 5%;
         width: 50vw;
@@ -154,6 +164,9 @@
     .answer,
     .answer-opened {
         font-size: 1.2rem;
+    }
+    .text1 h3 {
+        font-size: 1rem;
     }
 }
 
@@ -178,8 +191,3 @@
         font-size: 1.2rem;
     }
 }
-
-
-
-
-
