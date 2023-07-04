@@ -99,9 +99,9 @@ input.form-control {
 }
 
 .fondoform {
-    background-image: url(/assets/img/Carnes/fondo\ inicio.jpg);
+    background-image: url(/assets/img/Carnes/fondo\ inicio.webp);
     background-size: cover;
-    background-position: left center;
+    background-position: center;
 
 }
 
