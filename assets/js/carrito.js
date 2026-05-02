@@ -1,3 +1,5 @@
+import { API_URL } from "./config.js";
+
 // INICIO DE SESION UNICO - VERIFICAR SI LA INFORMACION DE LOGIN FUE GUARDADA
 const verifySession = () => {
     const data = JSON.parse(localStorage.getItem('SessionId'));
@@ -152,7 +154,7 @@ btnPagarPedido.addEventListener(`click`, async function (e) {
     console.log(pasarelaProductos)
     try {
         // Enviar pasarelaProductos al backend utilizando una solicitud HTTP
-        const response = await fetch('/api/pasarela-pagos/', {
+        const response = await fetch(`${API_URL}/api/pasarela-pagos/`, {
             method: 'POST',
             headers: {
                 "Content-Type": "application/json",

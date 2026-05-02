@@ -1,3 +1,5 @@
+import { API_URL } from "./config.js";
+
 const saveProd = () => {
 
     let addProductos = {
@@ -24,7 +26,7 @@ const saveProd = () => {
 
     // saveProd(addProductos);  setTimeout();
     const token = "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJDYXJvIzEzMTAiLCJyb2xlIjoidXNlciIsImlhdCI6MTY4NDQ2NDc4NywiZXhwIjoxNjg1Njc0Mzg3fQ.8AS2m1E_VRYGlpNKlR_qt6sLd2HYt5HTD4QlFYFkeOQ"
-    fetch("/api/cortes/", {
+    fetch(`${API_URL}/api/cortes/`, {
         method: "POST",
         headers: {
             "Content-Type": "application/json",

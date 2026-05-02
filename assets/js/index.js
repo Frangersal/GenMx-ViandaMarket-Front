@@ -1,7 +1,9 @@
+import { API_URL } from "./config.js";
+
 let cuerpoRows = document.getElementById("slider-container");
 
-const URL = "http://localhost:8080/api/cortes/";
-const URLcalidad = "http://localhost:8080/api/calidad/";
+const URL = `${API_URL}/api/cortes/`;
+const URLcalidad = `${API_URL}/api/calidad/`;
 
 const obtenerProductos = async () => {
   const resp = await fetch(URL, {

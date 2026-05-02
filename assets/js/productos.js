@@ -1,5 +1,7 @@
+import { API_URL } from "./config.js";
+
 let cuerpoRows = document.getElementById("row");
-const URL = "/api/cortes/"
+const URL = `${API_URL}/api/cortes/`
 const obternerUsuarios = async () => {
     const resp = await fetch(URL, {
         method: 'GET',
@@ -11,7 +13,7 @@ const obternerUsuarios = async () => {
 }
 
 
-const URLcalidad = "/api/calidad/"
+const URLcalidad = `${API_URL}/api/calidad/`
 const token = 'eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJDYXJvIzEzMTAiLCJyb2xlIjoidXNlciIsImlhdCI6MTY4NDQ2NDc4NywiZXhwIjoxNjg1Njc0Mzg3fQ.8AS2m1E_VRYGlpNKlR_qt6sLd2HYt5HTD4QlFYFkeOQ'
 const obtenerCalidad = async () => {
     const resp = await fetch(URLcalidad, {

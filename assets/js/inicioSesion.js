@@ -1,3 +1,4 @@
+import { API_URL } from "./config.js";
 
   if(localStorage.getItem("SessionId")!= null){
     window.location.assign("./perfilusuario.html");
@@ -132,7 +133,7 @@ btnAgregar.addEventListener('click', async (e) => {
 
 
     try {
-        const resp = await fetch(`/api/login/`, {
+        const resp = await fetch(`${API_URL}/api/login/`, {
             method: 'POST',
             headers: new Headers({'Content-type': 'application/json'}),
             mode: 'cors',

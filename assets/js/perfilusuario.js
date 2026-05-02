@@ -1,3 +1,5 @@
+import { API_URL } from "./config.js";
+
 let sessionId = JSON.parse(localStorage.getItem("SessionId")).acessToken
 let userId = JSON.parse(localStorage.getItem("SessionId")).idUsuario
 const userInfo = document.getElementById("userInfo");
@@ -12,6 +14,11 @@ let editarPerfil = document.getElementById("editarPerfil");
 const nombreModal =document.getElementById("nombreModal");
 const apellidoModal =document.getElementById("apellidoModal");
 let cerrarSesion = document.getElementById("cerrarSesion");
+if (cerrarSesion) {
+  cerrarSesion.addEventListener("click", (e) => {
+    localStorage.removeItem("SessionId");
+  });
+}
 //let telefonoModal = document.getElementById("telefonoModal");
 let edadModal = document.getElementById("edadModal");
 let direccionModal = document.getElementById("direccionModal");
@@ -33,35 +40,41 @@ let divAlertPass = document.getElementById("divAlertPass");
   let campoPass2= document.getElementById("newCambioPass");
   let campoPass3= document.getElementById("newCambioPass2");
   
-  eyeicon1.onclick = function(){
-      if(campoPass.type == "password"){
-        campoPass.type = "text";
-          eyeicon1.className="bi bi-eye-fill"
-      }else{
-          eyeicon1.className="bi bi-eye-slash-fill"
-          campoPass.type="password";
-      }
-  }
-
-  eyeicon2.onclick = function(){
-    if(campoPass2.type == "password"){
-      campoPass2.type = "text";
-        eyeicon2.className="bi bi-eye-fill"
-    }else{
-        eyeicon2.className="bi bi-eye-slash-fill"
-        campoPass2.type="password";
+  if (eyeicon1 && campoPass) {
+    eyeicon1.onclick = function(){
+        if(campoPass.type == "password"){
+          campoPass.type = "text";
+            eyeicon1.className="bi bi-eye-fill"
+        }else{
+            eyeicon1.className="bi bi-eye-slash-fill"
+            campoPass.type="password";
+        }
     }
-}
-
-eyeicon3.onclick = function(){
-  if(campoPass3.type == "password"){
-    campoPass3.type = "text";
-      eyeicon3.className="bi bi-eye-fill"
-  }else{
-      eyeicon3.className="bi bi-eye-slash-fill"
-      campoPass3.type="password";
   }
-}
+
+  if (eyeicon2 && campoPass2) {
+    eyeicon2.onclick = function(){
+      if(campoPass2.type == "password"){
+        campoPass2.type = "text";
+          eyeicon2.className="bi bi-eye-fill"
+      }else{
+          eyeicon2.className="bi bi-eye-slash-fill"
+          campoPass2.type="password";
+      }
+    }
+  }
+
+if (eyeicon3 && campoPass3) {
+    eyeicon3.onclick = function(){
+      if(campoPass3.type == "password"){
+        campoPass3.type = "text";
+          eyeicon3.className="bi bi-eye-fill"
+      }else{
+          eyeicon3.className="bi bi-eye-slash-fill"
+          campoPass3.type="password";
+      }
+    }
+  }
 
 
 
@@ -145,7 +158,7 @@ const cambioContrasena = () =>{
   };
   
   // const cambioContrasena = () =>{
-    fetch(`/api/login/${userId}`, requestOptions)
+    fetch(`${API_URL}/api/login/${userId}`, requestOptions)
   
     .then(response => response.text())
     .then(result = (respuesta) =>{
@@ -180,37 +193,35 @@ const cambioContrasena = () =>{
 
 
 
-btnCambioPass.addEventListener("click", (e) => {
-  e.preventDefault();
-  console.log(newCambioPass.value);
-  divAlertPass.innerHTML = "";
-  (regexPassword.exec(cambioPass.value.trim())) ? isValid(0) : isInvalid(0,`Contraseña, inválido, por favor vuelva a intentarlo.`);
-  (regexPassword.exec(newCambioPass.value.trim())) ? isValid(1) : isInvalid(1,`La nueva contraseña es inválido, por favor vuelva a intentarlo.`);
-  (cambioPass.value.trim() !== newCambioPass.value.trim()) ? isValid(2) : isInvalid( 2,`Lo sentimos la nueva contrasña debe de ser diferente a la nueva contraseña.`);
-  (newCambioPass.value.trim() === newCambioPass2.value.trim()) ? isValid(3) : isInvalid( 3,`Las contraseñas no coincide por favor vuelva a intentarlo.`);
+if (btnCambioPass) {
+  btnCambioPass.addEventListener("click", (e) => {
+    e.preventDefault();
+    console.log(newCambioPass.value);
+    divAlertPass.innerHTML = "";
+    (regexPassword.exec(cambioPass.value.trim())) ? isValid(0) : isInvalid(0,`Contraseña, inválido, por favor vuelva a intentarlo.`);
+    (regexPassword.exec(newCambioPass.value.trim())) ? isValid(1) : isInvalid(1,`La nueva contraseña es inválido, por favor vuelva a intentarlo.`);
+    (cambioPass.value.trim() !== newCambioPass.value.trim()) ? isValid(2) : isInvalid( 2,`Lo sentimos la nueva contrasña debe de ser diferente a la nueva contraseña.`);
+    (newCambioPass.value.trim() === newCambioPass2.value.trim()) ? isValid(3) : isInvalid( 3,`Las contraseñas no coincide por favor vuelva a intentarlo.`);
 
-  console.log(isComplete);
+    console.log(isComplete);
 
-  let isActive = false;
-  for (const temp of isComplete) {
-      if (temp) {
-          isActive = true;
-      } else {
-          isActive = false
-          break;
-      }
-  }
-  if (isActive === true ){
-    cambioContrasena();
-   
-  }
-});
+    let isActive = false;
+    for (const temp of isComplete) {
+        if (temp) {
+            isActive = true;
+        } else {
+            isActive = false
+            break;
+        }
+    }
+    if (isActive === true ){
+      cambioContrasena();
+    
+    }
+  });
+}
 
  //? Funcion para cerrar sesion**************************************************************
-
- cerrarSesion.addEventListener("click", (e)=>{
-  localStorage.removeItem("SessionId")
- });
 
 //? Pintar informacion de usuario en el perfil
 var myHeaders = new Headers();
@@ -222,7 +233,7 @@ var requestOptions = {
   redirect: 'follow'
 };
 
- fetch("/api/usuarios/", requestOptions)
+ fetch(`${API_URL}/api/usuarios/`, requestOptions)
   .then(response => response.json())
   .then(users =>showUser(users))
   .catch(error => console.log('error', error));
@@ -269,7 +280,7 @@ var requestOptions = {
 };
 
   btnCambiosPerfil.addEventListener("click", (e)=>{
-    fetch(`/api/usuarios/${userId}?edad=${edadModal.value}&domicilio=${direccionModal.value}`, requestOptions)
+    fetch(`${API_URL}/api/usuarios/${userId}?edad=${edadModal.value}&domicilio=${direccionModal.value}`, requestOptions)
   .then(response => response.text())
   .then(result => console.log(result))
   .catch(error => console.log('error', error));
