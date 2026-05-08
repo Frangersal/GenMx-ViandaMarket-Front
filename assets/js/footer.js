@@ -51,7 +51,8 @@ document.addEventListener("DOMContentLoaded", () => {
             if (consentBanner) consentBanner.style.display = "none";
             // Si estamos en contacto.html, reemplazar placeholder e inyectar srci
             if (mapIframe && mapPlaceholder) {
-                mapPlaceholder.style.display = "none";
+                mapPlaceholder.classList.remove("d-flex");
+                mapPlaceholder.classList.add("d-none");
                 mapIframe.src = mapIframe.getAttribute("data-src");
                 mapIframe.style.display = "block";
             }
