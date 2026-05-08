@@ -54,36 +54,38 @@
     display: none; /* Si no lo uso, ocultarlo para no descolocar botones */
 }
     
-#miCuenta,
-#shoppingCart {
-    background-color: #2A2E3A;
-    color: #FCF7F1;
-    font-family: 'Josefin Sans', sans-serif; /* Recuperamos la tipografía del botón */
-    font-size: 1.1rem; /* Un poco más legible para emparejar con el menú */
-    border-radius: 30px;
-    box-sizing: border-box; /* Previene que el padding deforme un botón respecto al otro */
-    padding: 0; /* Removemos el padding global para usar dimensiones estrictas */
-    width: 140px; /* Ancho fijo e idéntico para AMBOS botones */
-    height: 46px; /* Alto fijo e idéntico para AMBOS botones */
+.btn-header {
+    background: #2A2E3A;
+    color: white;
+    font-family: 'Josefin Sans', sans-serif;
+    font-style: normal;
+    font-weight: 600; /* Igualando el grosor pesado de botonindex */
+    font-size: 1rem; /* Igualando el tamaño de botonindex */
+    border-radius: 8px;
+    box-sizing: border-box; 
+    padding: 0; 
+    width: 140px; 
+    height: 46px; 
     border: none;
     cursor: pointer;
-    transition: background-color 0.2s ease, transform 0.2s ease;
-    display: flex; /* Cambiado de inline-flex a flex puro para evitar desalineación de ejes */
+    transition: all 0.3s ease; /* Igualando la transición de sombra de botonindex */
+    display: flex; 
     align-items: center;
     justify-content: center;
     text-decoration: none;
 }
 
-#miCuenta:hover,
-#shoppingCart:hover {
-    background-color: #15171d;
+.btn-header:hover {
+    background: #B81C00;
     transform: translateY(-2px);
+    box-shadow: 0 4px 10px rgba(184, 28, 0, 0.3); /* Agregada la sombra premium que tiene botonindex */
+    color: white;
 }
 
-/* Ajuste específico para centrar visualmente la tipografía dentro del botón Mi Cuenta */
+/* Ajuste específico para centrar visualmente la tipografía dentro del botón Mi Cuenta (opcional ahora que no tiene nav-link) */
 #miCuenta {
-    top: 0 !important; /* Evitamos que se mueva todo el botón por la clase nav-link */
-    padding-top: 4px; /* Solo empujamos el texto hacia abajo dentro de su caja redonda */
+    top: 0 !important; 
+    padding-top: 4px; 
 }
     
 .headerBar{
@@ -125,7 +127,7 @@
 }
 
 .headerDestok .barraMenu li a:hover {
-    color: #f3a847 !important; /* Resalte en dorado/naranja al pasar el ratón */
+    color: #B81C00 !important; /* Resalte en rojo Vianda al pasar el ratón */
 }
 
 header nav ol li{
