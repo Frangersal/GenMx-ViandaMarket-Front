@@ -2,10 +2,6 @@
 
 @import url('https://fonts.cdnfonts.com/css/josefin-sans');
 
-body {
-  padding-top: 177px /* Compensate for the new premium fixed header size */
-}
-
 .center {
   display: flex;
   align-items: center;
@@ -394,12 +390,6 @@ body {
 }
 
 /* Media queries */
-
-@media (max-width: 992px) {
-  body {
-    padding-top: 65px /* Header móvil es mucho más delgado */
-  }
-}
 
 @media (min-width: 1024px) {
   .slider-arrow {

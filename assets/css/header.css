@@ -8,6 +8,10 @@
 ----Barra de navegación e intro
 */
 
+body {
+    padding-top: 177px; /* Compensación universal para el header fijo en todas las vistas */
+}
+
 .header {
     background-color: #FCF7F1;
     display:flex;
@@ -210,6 +214,10 @@ header nav ol li{
 }
 
 @media (max-width: 992px) { /* Breakpoint para Tablets hacia abajo */
+    body {
+        padding-top: 65px; /* En dispositivos móviles el header es más delgado */
+    }
+
     .header, .headerDestok {
         display: none !important; /* Oculta todo el header ppremium de desktop */
     }

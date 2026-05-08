@@ -76,70 +76,8 @@ color: white;
 border-radius: .5rem;
 }
 
-.title {
-    margin-top: 5vw;
-    height: 16vw;
-    background-color: rgba(184, 28, 0, 1);
-  }
+/* Título movido a style.css */
   
-  .title h1 {
-    font-family: 'MADE Mirage';
-    src: url(./fonts/MADE\ MIRAGE/);
-    color: rgba(252, 247, 241, 1);
-    padding-top: 11%;
-    text-align: center;
-    font-size: 4vw;
-    font-weight: 400;
-  }
-
-
-  @media (min-width:800px) {
-    .title {
-      height: 8vw;
-    }
-  
-    .contenedor {
-      flex-direction: row;
-      padding: 0 120px;
-    }
-  
-    .title h1 {
-      padding-top: 3%;
-    }
-  }
-  
-@media (max-width: 768px) {
-    .title {
-      height: 8vw;
-    }
-  
-    .title h1 {
-      font-size: 3vw;
-      padding-top: 8%;
-    }
-  }
-  @media (max-width: 768px) {
-  .title {
-    height: 8vw;
-    padding: 10%;
-  }
-
-  .title h1 {
-    font-size: 5vw;
-    padding: 4%;
-  }
-}
-
-  @media (max-width: 480px) {
-    .title {
-      height: 10vw;
-    }
-  
-    .title h1 {
-      font-size: 5vw;
-      padding-top: 6%;
-    }
-  }
 
 .bg-azuloscuro{
     background-color: #232222;
