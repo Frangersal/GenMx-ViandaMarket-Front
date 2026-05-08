@@ -32,39 +32,11 @@
 
 .bg-degradado { 
     background-color: black;
-   background-image: url("https://res.cloudinary.com/dw1mig7ts/image/upload/b_rgb:000000,co_rgb:000000,dn_50,e_auto_saturation,o_39/v1684035406/filetes-ternera-crudos-especias-romero-vista-plana-vista-superior_rm1kri.jpg");
+    /* La imagen se maneja desde el HTML para políticas de privacidad CORS estricto */
 }
 
 
-.title {
-    margin-top: 5vw;
-    height: 16vw;
-    background-color: rgba(184, 28, 0, 1);
-  }
-  
-  .title h1 {
-    font-family: 'MADE Mirage';
-    src: url(./fonts/MADE\ MIRAGE/);
-    color: rgba(252, 247, 241, 1);
-    padding-top: 11%;
-    text-align: center;
-    font-size: 4vw;
-    font-weight: 400;
-  }
-  @media (min-width:800px) {
-    .title {
-      height: 8vw;
-    }
-  
-    .contenedor {
-      flex-direction: row;
-      padding: 0 120px;
-    }
-  
-    .title h1 {
-      padding-top: 3%;
-    }
-  }
+/* Título movido a style.css */
 
 .intro {
     font-style: normal;
@@ -136,7 +108,9 @@
 /* FIN CSS de la seccion [header] hecha por [caro] */
 /* Inicio CSS de la seccion [cards] hecha por [angel] */
 .img-foto{
-    max-height: 30vw;
+    max-height: 22vw;
+    aspect-ratio: 1 / 1;    /* Fuerza proporciones perfectamente cuadradas */
+    object-fit: cover;      /* Evita distorsiones en la imagen */
 }
 .textCardNombre {
    
@@ -165,6 +139,12 @@
     
     background-color: #ffffff00!important;
     border-color: #ffffff00!important;
+    height: 100%; /* Obliga a la tarjeta a usar toda la altura de la columna */
+}
+
+/* Propaga la altura a la cuadrícula interior para alinear horizontalmente con exactitud matemática */
+.bg-card > .row.g-0 {
+    height: 100%;
 }
 .bi-linkedin, .bi-github {
     font-size: 5vw;
@@ -244,7 +224,7 @@ a{
 
 @media (min-width:992px){
     .img-foto{
-        max-height: 20vw;
+        max-height: 15vw;
     }
     .textCardNombre {
         font-size: 2vw;
@@ -443,6 +423,16 @@ a{
         height: 8vw;
     }
 
+}
+
+/* --- ORDENANDO LOS TEXTOS COMO SE SOLICITÓ (1.2rem) --- */
+.textCardDescription, 
+.textofooter, 
+.text-reset, 
+#sedetexto, 
+.encabezadofooter,
+.encabezadofooter + p.textofooter > a {
+    font-size: 1.2rem !important;
 }
 
 

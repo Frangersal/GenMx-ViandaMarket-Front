@@ -5,12 +5,14 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Descubre en Vianda Market la mejor selección de cortes de carne y productos de alta calidad para tu hogar o negocio.">
     <link rel="icon" type="image/x-icon" href="./assets/img/favicon.ico" />
     <link rel="stylesheet" type="text/css" href="./assets/css/perfilusuario.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        crossorigin="anonymous" referrerpolicy="no-referrer">
     <link rel="stylesheet" type="text/css"
-        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css">
-    <link rel="stylesheet" type="text/css"
-        href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.4/font/bootstrap-icons.css">
+        href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.4/font/bootstrap-icons.css" crossorigin="anonymous">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
     <title>Perfil - Vianda Market</title>
@@ -22,20 +24,20 @@
         <div class="ajusteHeader"></div>
     </header>
 
-    <main class="container-fluid">
-        <div class="row box_bg-rojo">
+    <main class="container-fluid p-0">
+        <div class="row box_bg-rojo mx-0">
             <h1 class="box_bg-rojo_titulo">PERFIL</h1>
         </div><!-- row -->
-        <div class="row">
+        <div class="row mx-0">
             <div class="col-md-3">
                 <div class="card my-3 bg-perfil-oscuro">
                     <div class="card-body ">
                         <div class="d-flex flex-column align-items-center text-center">
-                          <!--
+                            <!--
                           <img src="https://i.pinimg.com/474x/c9/bc/a5/c9bca57cf02ef46be89630414a89b5f5.webp" alt="avatar" class="rounded-circle"  width="150"/>
-                          -->  
-                          <div class="mt-3" id="userInfo">
-                                <!-- <h4 class="txt-blanco">Juan Pérez</h4>
+                          -->
+                            <div class="mt-3" id="userInfo">
+                                <!-- <h2 class="txt-blanco fs-4">Juan Pérez</h2>
                                 <p class=" mb-1 txt-blanco">Correo electrónico: juanperez@gmail.com</p>
                                 <p class="  mb-1 txt-blanco">Teléfono: 555-1234</p> -->
                                 <!-- <button class="btn btn-light">Editar Perfil</button> -->
@@ -44,63 +46,70 @@
                     </div>
                     <div class="card-body">
                         <nav class="nav flex-column navbar-dark nav-pills">
-                
-                            <a class="btnPerfil" id="editarPerfil" data-bs-toggle="modal" data-bs-target="#exampleModal">Editar Perfil</a>
+
+                            <a class="btnPerfil" id="editarPerfil" data-bs-toggle="modal"
+                                data-bs-target="#exampleModal">Editar Perfil</a>
 
                             <!-- Modal editar usario -->
 
-                            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                                aria-hidden="true">
                                 <div class="modal-dialog">
-                                  <div class="modal-content">
-                                    <div class="modal-header">
-                                      <h1 class="modal-title fs-5" id="exampleModalLabel">Editar perfil usuario</h1>
-                                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                                    </div>
-                                    <div class="modal-body">
-                                      <form>
-                                        <div class="mb-3">
-                                          <label for="recipient-name" class="col-form-label">Nombre</label>
-                                          <input type="text" class="form-control" id="nombreModal" disabled>
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h1 class="modal-title fs-5" id="exampleModalLabel">Editar perfil usuario
+                                            </h1>
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                aria-label="Close"></button>
                                         </div>
-                
-                                        <div class="mb-3">
-                                            <label for="recipient-name" class="col-form-label">Apellidos</label>
-                                            <input type="text" class="form-control" id="apellidoModal" disabled>
-                                          </div>
-                <!--
+                                        <div class="modal-body">
+                                            <form>
+                                                <div class="mb-3">
+                                                    <label for="recipient-name" class="col-form-label">Nombre</label>
+                                                    <input type="text" class="form-control" id="nombreModal" disabled>
+                                                </div>
+
+                                                <div class="mb-3">
+                                                    <label for="recipient-name" class="col-form-label">Apellidos</label>
+                                                    <input type="text" class="form-control" id="apellidoModal" disabled>
+                                                </div>
+                                                <!--
                                           <div class="mb-3">
                                             <label for="recipient-name" class="col-form-label">Teléfono</label>
                                             <input type="text" class="form-control" id="telefonoModal">
                                           </div>
                 -->
-                                          
-                
-                                          <div class="mb-3">
-                                            <label for="recipient-name" class="col-form-label">Edad</label>
-                                            <input type="text" class="form-control" id="edadModal">
-                                          </div>
-                
-                                          <div class="mb-3">
-                                            <label for="recipient-name" class="col-form-label">Dirección</label>
-                                            <input type="text" class="form-control" id="direccionModal">
-                                          </div>
-                                        
-                                      </form>
-                                    </div>      
-                                    <div class="modal-footer">
-                                      <div class="position-fixed bottom-0 end-0 p-3 form-dash" id="divAlert" style="z-index: 11">
-                                      </div>
-                                      <div class="alert alert-danger fade show" style="display:none;" role="alert" id="alertValidaciones">
-                                          <p id="alertValidacionesTexto"></p>
-                                      </div>
 
-                                      <button type="button" class="btn btn-secondary" id="btnCambiosPerfil">Guardar Cambios</button>
+
+                                                <div class="mb-3">
+                                                    <label for="recipient-name" class="col-form-label">Edad</label>
+                                                    <input type="text" class="form-control" id="edadModal">
+                                                </div>
+
+                                                <div class="mb-3">
+                                                    <label for="recipient-name" class="col-form-label">Dirección</label>
+                                                    <input type="text" class="form-control" id="direccionModal">
+                                                </div>
+
+                                            </form>
+                                        </div>
+                                        <div class="modal-footer">
+                                            <div class="position-fixed bottom-0 end-0 p-3 form-dash" id="divAlert"
+                                                style="z-index: 11">
+                                            </div>
+                                            <div class="alert alert-danger fade show" style="display:none;" role="alert"
+                                                id="alertValidaciones">
+                                                <p id="alertValidacionesTexto"></p>
+                                            </div>
+
+                                            <button type="button" class="btn btn-secondary"
+                                                id="btnCambiosPerfil">Guardar Cambios</button>
+                                        </div>
                                     </div>
-                                  </div>
                                 </div>
-                              </div>
+                            </div>
 
-                            
+
                             <!-- <a class="btnPerfil" id="cambiarPass" data-bs-toggle="modal" data-bs-target="#exampleModalPass">Cambiar contraseña</a> -->
 
                             <!-- Modal cambiar contraseña -->
@@ -160,22 +169,24 @@
 
 
 
-                  
-                            <a class="btnPerfil" href="./contacto.html">Contáctanos</a>
-                            <a class="btnPerfil" href="./index.html" id="cerrarSesion">Cerrar Sesión</a>
+
+                            <a class="btnPerfil" href="./contacto.html"><i class="bi bi-envelope-fill me-2"></i>
+                                Contáctanos</a>
+                            <a class="btnPerfil text-white opacity-75" href="./index.html" id="cerrarSesion"><i
+                                    class="bi bi-box-arrow-right me-2"></i> Cerrar Sesión</a>
                         </nav>
                     </div>
                 </div>
             </div>
 
-           
 
 
 
 
 
-            
-           <!--
+
+
+            <!--
             <div class="card my-3">
               <div class="card-header">
                 <h5 class="card-title">Compras Realizadas</h5>
@@ -215,43 +226,43 @@
 
 
                 <div class="card my-3">
-                  <div class="card-header">
-                      <h5 class="card-title" id="historialCompras">Historial de Compras</h5>
-                  </div>
-                  <div class="card-body">
-                      <table class="table">
-                          <thead>
-                              <tr>
-                                  <th scope="col">ID de Compra</th>
-                                  <th scope="col">Fecha</th>
-                                  <th scope="col">Total</th>
-                              </tr>
-                          </thead>
-                          <tbody>
-                              <tr>
-                                  <th scope="row">1</th>
-                                  <td>10/05/2023</td>
-                                  <td>$50.00</td>
-                              </tr>
-                              <tr>
-                                  <th scope="row">2</th>
-                                  <td>08/05/2023</td>
-                                  <td>$75.00</td>
-                              </tr>
-                              <tr>
-                                  <th scope="row">3</th>
-                                  <td>06/05/2023</td>
-                                  <td>$20.00</td>
-                              </tr>
-                          </tbody>
-                      </table>
-                  </div>
-              </div>
+                    <div class="card-header">
+                        <h2 class="card-title fs-5" id="historialCompras">Historial de Compras</h2>
+                    </div>
+                    <div class="card-body">
+                        <table class="table">
+                            <thead>
+                                <tr>
+                                    <th scope="col">ID de Compra</th>
+                                    <th scope="col">Fecha</th>
+                                    <th scope="col">Total</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <th scope="row">1</th>
+                                    <td>10/05/2023</td>
+                                    <td>$50.00</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">2</th>
+                                    <td>08/05/2023</td>
+                                    <td>$75.00</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">3</th>
+                                    <td>06/05/2023</td>
+                                    <td>$20.00</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
 
 
                 <div class="card my-3">
                     <div class="card-header">
-                        <h5 class="card-title">Datos del usuario</h5>
+                        <h2 class="card-title fs-5">Datos del usuario</h2>
                     </div>
                     <div class="card-body">
                         <form>
@@ -280,8 +291,8 @@
                                     </div>
                                 </div>
                             </div>
-                                <div class="row">
-                                  <!--
+                            <div class="row">
+                                <!--
                                     div class="col">
                                     <div class="form-group">
                                         <label for="telefono">Teléfono</label>
@@ -293,19 +304,19 @@
                                 <div class="col">
                                     <div class="form-group">
                                         <label for="edad">Edad</label>
-                                        <input type="tel" class="form-control" id="edad" placeholder="Edad"
-                                            disabled>
+                                        <input type="tel" class="form-control" id="edad" placeholder="Edad" disabled>
                                     </div>
                                 </div>
-                                    <div class="row">
-                                <div class="col">
-                                    <div class="form-group">
-                                    <label for="direccion">Domicilio</label>
-                                    <input type="text" class="form-control" id="direccion" placeholder="Domicilio" disabled>
+                                <div class="row">
+                                    <div class="col">
+                                        <div class="form-group">
+                                            <label for="direccion">Domicilio</label>
+                                            <input type="text" class="form-control" id="direccion"
+                                                placeholder="Domicilio" disabled>
+                                        </div>
                                     </div>
                                 </div>
-                                </div>
-                            </div>                  
+                            </div>
                         </form>
                     </div>
                 </div>
@@ -466,8 +477,7 @@
         </div>
         </div>
     </footer>
-    <script src="./assets/js/perfilusuario.js"></script>
-    <script src="https://kit.fontawesome.com/eb496ab1a0.js" crossorigin="anonymous"></script>
+    <script type="module" src="./assets/js/perfilusuario.js"></script>
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
         integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
         crossorigin="anonymous"></script>
@@ -478,13 +488,13 @@
         integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
         crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
-        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"
         crossorigin="anonymous"></script>
     <script src="./assets/js/footer.js"></script>
     <script src="./assets/js/header.js"></script>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+        integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"
         crossorigin="anonymous"></script>
 </body>
 

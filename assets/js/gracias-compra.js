@@ -1,3 +1,5 @@
+import { API_URL } from "./config.js";
+
 const verifySession = () => {
     return JSON.parse(localStorage.getItem('SessionId'));
 };
@@ -13,7 +15,7 @@ async function verificacionCompra() {
         sessionPedidosId = sessionPedidosId.replace("idosId=", "");
 
         if (sessionPedidosId && token) {
-            const url = `/verificar-pagos?sessionId=${sessionPedidosId}&token=${token}`;
+            const url = `${API_URL}/verificar-pagos?sessionId=${sessionPedidosId}&token=${token}`;
             const response = await fetch(url, {
                 method: 'POST',
                 headers: {

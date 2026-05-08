@@ -1,5 +1,7 @@
+import { API_URL } from "./config.js";
+
 let cuerpoRows = document.getElementById("row");
-const URL = "/api/cortes/"
+const URL = `${API_URL}/api/cortes/`
 const obternerUsuarios = async () => {
     const resp = await fetch(URL, {
         method: 'GET',
@@ -11,7 +13,7 @@ const obternerUsuarios = async () => {
 }
 
 
-const URLcalidad = "/api/calidad/"
+const URLcalidad = `${API_URL}/api/calidad/`
 const token = 'eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJDYXJvIzEzMTAiLCJyb2xlIjoidXNlciIsImlhdCI6MTY4NDQ2NDc4NywiZXhwIjoxNjg1Njc0Mzg3fQ.8AS2m1E_VRYGlpNKlR_qt6sLd2HYt5HTD4QlFYFkeOQ'
 const obtenerCalidad = async () => {
     const resp = await fetch(URLcalidad, {
@@ -29,30 +31,30 @@ const obtenerCalidad = async () => {
 // Aqui ingresamos los usiar
 const pintarUsuarios = async () => {
     const producto = await obternerUsuarios()
-    console.log(producto);
+    // console.log(producto);
 
     const calidad = await obtenerCalidad()
-    console.log(calidad);
+    // console.log(calidad);
 
 
     
     
     //  producto = JSON.parse(usuarios);
 // function foreachProductos(producto) {
-    producto.forEach(r => {
+    producto.forEach((r, index) => {
+      let priorityAttrs = index === 0 ? 'fetchpriority="high"' : 'loading="lazy"';
       let row =
         `
         
-                <div class="col-6 col-xl-4 col-xxl-4 col-lg-4" >
-                <div class="card" style="border: none;">
-                  <img src="${r.imagen}" class="card-img-top">
-                  <div class="card-body" style="text-align: left;">
-                    <h4 class="card-1">${r.nombre}</h4>
-                    <h6 class="card-2">${calidad[r.idcalidades-1].marca}</h6>
-                    <h6 class="card-2">${calidad[r.idcalidades-1].pais}</h6>
-                    <h6 class="card-2">${calidad[r.idcalidades-1].calidad}</h6>
-                        <a href="./ProductoIndividual.html">
-                        <button  id="btnProducto_${r.id} "type="button" class="btnProducto text-center" style="background-color: #2A2E3A; color: white;">Ver producto</button> </a>
+                <div class="vianda-card-wrapper mb-5" >
+                <div class="card premium-card">
+                  <img src="${r.imagen}" class="card-img-top" alt="Foto de ${r.nombre} marca ${calidad[r.idcalidades-1].marca}" crossorigin="anonymous" ${priorityAttrs}>
+                  <div class="card-body">
+                    <p class="card-1 mb-2">${r.nombre}</p>
+                    <p class="card-2 mb-1">${calidad[r.idcalidades-1].marca}</p>
+                    <p class="card-2 mb-1">${calidad[r.idcalidades-1].pais}</p>
+                    <p class="card-2 mb-1">${calidad[r.idcalidades-1].calidad}</p>
+                        <button id="btnProducto_${r.id}" type="button" class="btnProducto btn-primary" onclick="location.href='./ProductoIndividual.html'">Más info</button>
                     </div>
                 </div>
             </div>`
@@ -62,7 +64,7 @@ const pintarUsuarios = async () => {
     //?Esto srive para mandar la seleccion a la pagina de producto invidual
     //==========================================================
     let botones = document.getElementsByClassName("btnProducto");
-    console.log(botones.length);
+    // console.log(botones.length);
     
 
     for (let index = 0; index < botones.length; index++) {

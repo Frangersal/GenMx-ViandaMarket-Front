@@ -23,7 +23,10 @@ previewBox.forEach(close =>{
 
 var slider = document.querySelector(".slider-track");
 var cards = slider.querySelectorAll(".slider-card");
-var cardWidth = cards[0].offsetWidth;
+// Obtener el ancho de la tarjeta más su margen para que el slider se mueva correctamente
+var cardStyle = window.getComputedStyle(cards[0]);
+var cardMargin = parseFloat(cardStyle.marginLeft) + parseFloat(cardStyle.marginRight);
+var cardWidth = cards[0].offsetWidth + cardMargin;
 var prevBtn = document.querySelector(".slider-arrow-left");
 var nextBtn = document.querySelector(".slider-arrow-right");
 var position = 0;

@@ -7,22 +7,20 @@
   align-items: center;
   justify-content: center;
   text-align: center;
-  margin: 0;
+  margin: 3rem 0 2rem 0; /* Changed from 0 to provide natural spacing instead of <br> tags */
 }
 
 .principales {
-  width: 582px;
-  height: 41px;
-  font-family: 'MADE Mirage';
-  src: url(./fonts/MADE\ MIRAGE/);
-  font-style: normal;
+  font-family: 'MADE Mirage', 'Josefin Sans', sans-serif;
   font-weight: 500;
-  font-size: 32px;
-  line-height: 100%;
-  letter-spacing: -0.32px;
+  font-size: 2rem;
+  line-height: 1.2;
+  letter-spacing: 2px; /* Premium letter spacing */
   color: #B81C00;
   text-align: center;
-  position: absolute;
+  text-transform: uppercase;
+  margin: 0;
+  /* Removed absolute positioning and fixed sizes for better flow and responsiveness */
 }
 
 /*cards lo mas vendido*/
@@ -30,23 +28,47 @@
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
-  width: 3vw;
-  height: 3vw;
+  width: 48px;
+  height: 48px;
   border-radius: 50%;
-  background-color: rgba(42, 46, 58, 1);
+  background-color: #2A2E3A; /* Cambiado a oscuro para máxima visibilidad */
   cursor: pointer;
   display: flex;
   justify-content: center;
   align-items: center;
-  font-size: 1vw;
-  filter: drop-shadow(0px 4px 6px rgba(0, 0, 0, 0.5));
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  transition: all 0.3s ease;
+  z-index: 10;
+}
+
+.slider-arrow:hover {
+  background-color: #B81C00;
+  transform: translateY(-50%) scale(1.1);
+  box-shadow: 0 6px 16px rgba(184, 28, 0, 0.3);
+}
+
+.slider-arrow:hover .arrow-icon {
+  color: #ffffff;
 }
 
 .arrow-icon {
-  font-size: 2vw;
-  line-height: 1;
-  margin-top: 0vw;
-  color: white;
+  font-size: 28px;
+  font-weight: normal;
+  line-height: 0;
+  color: #ffffff; /* Icono blanco por defecto */
+  transition: color 0.3s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: -3px; /* Corrección óptica vertical precisa del texto */
+}
+
+.slider-arrow-left .arrow-icon {
+  margin-left: -2px; /* Compensa la asimetría del caracter < */
+}
+
+.slider-arrow-right .arrow-icon {
+  margin-left: 2px; /* Compensa la asimetría del caracter > */
 }
 
 .slider-container {
@@ -62,15 +84,17 @@
   transition: transform .5s ease-in-out;
   transform: translateX(0);
   justify-content: flex-start;
+  padding: 1rem 0; /* Espacio para las sombras */
 }
 
+/* Premium Card wrapper for slider */
 .slider-card {
-  margin: 0vw;
-  background-color: #eee;
+  margin: 0 1vw; /* 1vw separation on each side = 2vw total gap */
+  background-color: transparent !important; /* Move background to inner card */
   text-align: center;
-  font-size: 2vw;
   flex: 0 0 auto;
-  width: 20vw;
+  width: 22vw;
+  box-shadow: none !important; /* Quitar sombra externa */
 }
 
 .slider-arrow-left {
@@ -88,22 +112,24 @@
   }
 
   100% {
-    transform: translateX(calc(-250px * 7));
+    transform: translateX(calc(-250px * 5));
   }
 }
 
 .slider {
-  height: 195px;
+  height: 260px; /* Aumentado para dar espacio al hover */
   margin: 0;
   position: relative;
   width: 100%;
   overflow: hidden;
+  display: flex;
+  align-items: center; /* Centrar verticalmente */
 }
 
 .slider::before,
 .slider::after {
   content: "";
-  height: 100px;
+  height: 100%; /* Ajustado para que cubra todo el alto */
   position: absolute;
   width: 200px;
   z-index: 2;
@@ -121,14 +147,23 @@
 }
 
 .slider .slide-track {
-  animation: scroll 16s linear infinite;
+  animation: scroll 20s linear infinite;
   display: flex;
-
+  align-items: center; /* Alinea los elementos al medio de la caja */
+  width: calc(250px * 15);
 }
 
 .slider .slide {
-  height: 100px;
+  height: auto;
   width: 250px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.3s ease;
+}
+
+.slider .slide:hover {
+  transform: scale(1.1);
 }
 
 /* Segundo Carrusel */
@@ -138,50 +173,15 @@
 
 .carousel-inner img {
   width: 100%;
-  height: auto;
+  height: 60vh;
+  min-height: 450px;
+  object-fit: cover;
 }
 
-.card-1 {
-  font-family: 'Josefin Sans', sans-serif;
-  font-style: normal;
-  font-weight: 700;
-  font-size: 32px;
-  line-height: 32px;
-  color: #000000;
+/* Tipografias y colores de las text-cards .card-1 y .card-2 ahora en style.css */
 
-}
 
-.card-2 {
-  font-family: 'Josefin Sans', sans-serif;
-  font-style: normal;
-  font-weight: 500;
-  font-size: 20px;
-  line-height: 20px;
-  color: #000000;
-}
 
-#botonindex {
-  width: 121px;
-  height: 41px;
-  background: #20465F;
-  color: white;
-  font-family: 'Josefin Sans';
-  font-style: normal;
-  font-size: 16px;
-  border-radius: 10px;
-}
-
-.btn-primary {
-
-  width: 121px;
-  height: 41px;
-  background: #20465F;
-  color: white;
-  font-family: 'Josefin Sans';
-  font-style: normal;
-  font-size: 16px;
-  border-radius: 10px;
-}
 
 .card_bandera {
   filter: drop-shadow(0px 4px 6px rgba(0, 0, 0, 0.5));
@@ -334,28 +334,25 @@
 
 @media (min-width: 1024px) {
   .slider-arrow {
-    width: 3vw;
-    height: 3vw;
-    font-size: 1vw;
+    width: 50px;
+    height: 50px;
   }
 
   .arrow-icon {
-    font-size: 2vw;
-    margin-top: 0vw;
+    font-size: 24px;
   }
 
   .slider-card {
-    margin: 0vw;
-    font-size: 2vw;
-    width: 20vw;
+    margin: 0 1vw;
+    width: 22vw;
   }
 
   .slider-arrow-left {
-    left: 1vw;
+    left: 10px; /* Posicionamiento seguro hacia adentro para que no se corte por el overflow: hidden */
   }
 
   .slider-arrow-right {
-    right: 1vw;
+    right: 10px;
   }
 
 }
@@ -363,55 +360,49 @@
 
 @media (min-width: 768px) and (max-width: 1023px) {
   .slider-arrow {
-    width: 4vw;
-    height: 4vw;
-    font-size: 2.5vw;
+    width: 44px;
+    height: 44px;
   }
 
   .arrow-icon {
-    font-size: 3.5vw;
-    margin-top: 0vw;
+    font-size: 20px;
   }
 
   .slider-card {
-    margin: 0vw;
-    font-size: 2.5vw;
+    margin: 0 1.5vw;
     width: 25vw;
   }
 
   .slider-arrow-left {
-    left: 1.5vw;
+    left: 10px; /* Posición interior */
   }
 
   .slider-arrow-right {
-    right: 1.5vw;
+    right: 10px; /* Posición interior */
   }
 }
 
 @media (max-width: 767px) {
   .slider-arrow {
-    width: 6vw;
-    height: 6vw;
-    font-size: 4vw;
+    width: 40px;
+    height: 40px;
   }
 
   .arrow-icon {
-    font-size: 6vw;
-    margin-top: 0vw;
+    font-size: 18px;
   }
 
   .slider-card {
-    margin: 0vw;
-    font-size: 4vw;
+    margin: 0 2vw;
     width: 40vw;
   }
 
   .slider-arrow-left {
-    left: 2vw;
+    left: 5px; /* En móviles ligeramente más al borde */
   }
 
   .slider-arrow-right {
-    right: 2vw;
+    right: 5px;
   }
 }
 

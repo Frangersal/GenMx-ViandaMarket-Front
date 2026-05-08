@@ -1,34 +1,8 @@
-.title {
-    margin-top: 5vw;
-    height: 16vw;
-    background-color: rgba(184, 28, 0, 1);
-  }
-  
-  .title h1 {
-    font-family: 'MADE Mirage';
-    src: url(./fonts/MADE\ MIRAGE/);
-    color: rgba(252, 247, 241, 1);
-    padding-top: 11%;
-    text-align: center;
-    font-size: 4vw;
-    font-weight: 400;
-  }
-  
-  @media (min-width: 800px) {
-    .title {
-      height: 8vw;
-    }
-   
-    .title h1 {
-      padding-top: 3%;
-      }
-  }
-  
- 
+/* Título movido a style.css */
+
 #filtro1{
     color: white;
     font-family: 'Josefin Sans', sans-serif;
-
 }
 
 #filtro {
@@ -37,107 +11,28 @@
     font-family: 'Josefin Sans', sans-serif;
 }
 
-
-.card-img-top {
-
-    width: auto;
-    grid-template-rows: max-content;
-    height: 24vw;
-}
-
-.card-1 {
-    font-family: 'Josefin Sans';
-    src: url(./Josefin_Sans/JosefinSans-Bold.ttf);
-    font-style: normal;
-    font-weight: bolder;
-    font-size: 32px;
-    line-height: 32px;
-    color: #000000;
-}
-
-.card-2 {
-    font-family: 'Josefin Sans';
-    src: url(./Josefin_Sans/JosefinSans-Medium.ttf);
-    font-style: normal;
-    font-weight: bolder;
-    font-size: 20px;
-    line-height: 20px;
-    color: #000000;
-}
-
-.btnProducto {
-    width: 131px;
-    height: 36px;
-    font-family: 'Josefin Sans';
-    font-style: normal;
-    font-size: 16px;
-    border-radius: 0px;
-    text-align: left;
-}
-
-#btnProducto:hover {
-    background-color: #B81C00;
-}
-
-
-
 @media (max-width:768px) {
- 
-    .card-1 {
-        font-family: 'Josefin Sans';
-        src: url(./Josefin_Sans/JosefinSans-Bold.ttf);
-        font-style: normal;
-        font-weight: bolder;
-        font-size: 18px;
-        line-height: 32px;
-        color: #000000;
-    }
-
     #filtro1,
     #filtro {
         color: white;
         background-color: #2A2E3A;
         font-size: 0.7rem;
     }
-
-   
- 
 }
 
 @media (max-width:425px) {
-    .card-1 {
-        font-family: 'Josefin Sans';
-        src: url(./Josefin_Sans/JosefinSans-Bold.ttf);
-        font-style: normal;
-        font-weight: bolder;
-        font-size: 18px;
-        line-height: 32px;
-        color: #000000;
-    }
-
     #filtro1,
     #filtro {
         color: white;
         background-color: #2A2E3A;
         font-size: 0.7rem;
     }
-
-   
-}
-
-#btnProducto_2 {
-    display: flex;
-    justify-content: center;
-
 }
 
 @media (max-width:1440px) {
-
     #filtro1,
     #filtro {
         color: white;
         background-color: #2A2E3A;
-
     }
-
 }

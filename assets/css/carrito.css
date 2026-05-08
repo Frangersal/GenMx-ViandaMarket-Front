@@ -22,35 +22,7 @@
 .bg-mayoreo-oscuro{ background-color: #232222; }
 
 .txt-blanco{ color: #fff; }
-.title {
-    margin-top: 5vw;
-    height: 16vw;
-    background-color: rgba(184, 28, 0, 1); 
-  }
-  
-  .title h1 {
-    font-family: 'MADE Mirage';
-    src: url(./fonts/MADE\ MIRAGE/);
-    color: rgba(252, 247, 241, 1);
-    padding-top: 11%;
-    text-align: center;
-    font-size: 4vw;
-    font-weight: 400;
-  }
-  @media (min-width:800px) {
-    .title {
-      height: 8vw;
-    }
-  
-    .contenedor {
-      flex-direction: row;
-      padding: 0 120px;
-    }
-  
-    .title h1 {
-      padding-top: 3%;
-    }
-  }
+/* Título movido a style.css */
   .message-section {
     font-size: 1.5rem;
     margin-right: 15%;
@@ -153,6 +125,7 @@
   height: 100px!important; 
   width: 100px!important; 
   padding: 10px;
+  object-fit: cover;
 }
 ul {
   list-style-type: none;
@@ -179,4 +152,15 @@ ul {
 .text-right{
 
   text-align: right!important;
+}
+/* ----- PAY BUTTON SPECIFIC TWEAKS ----- */
+#btnPagarPedido {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  font-size: 1.1rem;
+  width: auto;
+  padding: 0.8rem 1.5rem;
+  margin-top: 1rem;
 }

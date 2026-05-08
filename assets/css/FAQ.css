@@ -10,22 +10,7 @@
 
 @import url('https://fonts.cdnfonts.com/css/josefin-sans%27');
 
-
-.title {
-    margin-top: 5vw;
-    height: 16vw;
-    background-color: rgba(184, 28, 0, 1);
-}
-
-.title h1 {
-    font-family: 'MADE Mirage';
-    src: url(./fonts/MADE\ MIRAGE/);
-    color: rgba(252, 247, 241, 1);
-    padding-top: 11%;
-    text-align: center;
-    font-size: 4vw;
-    font-weight: 400;
-}
+/* Título movido a style.css */
 
 .text1 {
     font-size: 1vw;
@@ -38,7 +23,9 @@
 }
 
 .text1 h3 {
-    font-size: 1.5rem;
+    color: #333;
+    line-height: 1.5;
+    font-size: 1.2rem;
     font-family: 'Josefin Sans', sans-serif;
     font-weight: 400;
 }
@@ -65,13 +52,14 @@
 }
 
 .question {
-    color: rgba(132, 163, 183, 1);
-    font-size: 2.2rem;
-    font-family: Mademirage;
+    color: #2A2E3A;
+    font-size: 1.2rem;
+    font-weight: 600;
+    font-family: 'Josefin Sans', sans-serif;
     text-decoration: solid;
     padding: 1vw 0;
     cursor: pointer;
-    border-left: 1vw transparent solid;
+    border-left: 0.6rem transparent solid;
 
 }
 
@@ -86,17 +74,19 @@
     margin: 0 0.5em;
     width: 0;
     height: 0;
-    border-top: 1vw solid transparent;
-    border-left: 1vw solid rgba(132, 163, 183, 1);
-    border-bottom: 1vw solid transparent;
+    border-top: 0.6rem solid transparent;
+    border-left: 0.6rem solid rgba(132, 163, 183, 1);
+    border-bottom: 0.6rem solid transparent;
     transition: 0.3s;
 }
 
 
 
 .faq p {
+    color: #4a4a4a;
+    line-height: 1.6;
     font-family: 'Josefin Sans', sans-serif;
-    font-size: 1.5rem;
+    font-size: 1.2rem;
 }
 
 .answer {
@@ -104,13 +94,13 @@
     overflow: hidden;
     height: 0;
     padding: 0 1em 0 3.3em;
-    font-size: 1.5rem;
+    font-size: 1.2rem;
 }
 
 .answer-opened {
     padding: 1em 1em 2em 3.3em;
     height: initial;
-    font-size: 1.5rem;
+    font-size: 1.2rem;
 
 }
 
@@ -132,14 +122,7 @@
 }
 
 @media (min-width:800px) {
-    .title {
-        height: 8vw;
-    }
-
-    .title h1 {
-        padding-top: 3%;
-    }
-
+    /* title en style.css */
 }
 
 @media (max-width: 768px) {
@@ -149,6 +132,8 @@
     }
 
     .faq p {
+    color: #4a4a4a;
+    line-height: 1.6;
         font-size: 1rem;
     }
 
@@ -166,6 +151,8 @@
         font-size: 1.2rem;
     }
     .text1 h3 {
+    color: #333;
+    line-height: 1.5;
         font-size: 1rem;
     }
 }

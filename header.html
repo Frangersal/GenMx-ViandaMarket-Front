@@ -1,39 +1,29 @@
 <html>
-  <body>
-    
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@600&display=swap" rel="stylesheet">
-<!-- Inicio de header -->
 
-<header class="fixed-top 
-">
+<body>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./assets/css/header.css">
+  <!-- Inicio de header -->
+
+  <header class="fixed-top">
     <div class="header">
-        <img src="./assets/img/Screenshot 2023-04-10 135520.webp" alt="logo" id="VMlogo" href="./index.html">
-    <div class = "iconos">
-        <div class="dropdownBuscador">  </div>
-    
-        <!-- <div class="blockSearch">
-          <form action="" class="searchBox">
-            
-            <input type="search" placeholder="" class="searchBar">
-            <span class="bi bi-search" id="lupa"></span>
-          </form>
-        </div>
-         -->
-    
-            <a class="nav-link active" href="./iniciosesion.html" id="miCuenta">Mi cuenta</a>
-            <a id="shoppingCart" href="./carrito.html" ><i class="bi bi-cart-fill"></i></a>
-          
+      <img src="./assets/img/Screenshot 2023-04-10 135520.webp" alt="Logotipo de Vianda Market" id="VMlogo" href="./index.html">
+      <div class="iconos">
+        <a class="btn-header" href="./iniciosesion.html" id="miCuenta">Mi Cuenta</a>
+        <!-- En lugar de solo el ícono sin padding, lo envuelvo en una estructura uniforme -->
+        <a class="btn-header" href="./carrito.html" id="shoppingCart"> Mi Carrito </a>
       </div>
     </div>
-    
+
     <nav class="headerDestok">
       <div class="navbar">
-      <ul class="barraMenu">
-              <li><a class="nav-link active"  href="./index.html">Inicio</a></li>
-              <li><a class="nav-link active" href="./productos.html" >Productos</a></li>
-                  <!-- <ul class="dropdown-menu">
+        <ul class="barraMenu">
+          <li><a class="nav-link active" href="./index.html">Inicio</a></li>
+          <li><a class="nav-link active" href="./productos.html">Productos</a></li>
+          <!-- <ul class="dropdown-menu">
                     <li><a class="dropdown-item" href="./productos.html">Ribeye</a></li>
                     <li><a class="dropdown-item" href="./productos.html">Picaña</a></li>
                     <li><a class="dropdown-item" href="./productos.html">T-Bone</a></li>
@@ -42,38 +32,46 @@
                     <li><a class="dropdown-item" href="./productos.html">Artículos para asar</a></li>
                     <li><a class="dropdown-item" href="./productos.html">Otros</a></li>
                   </ul> -->
-              
-            <li><a class="nav-link active" aria-current="page" href="./acercadevianda.html">Acerca de</a></li>
 
-           <li><a class="nav-link active" href="./calidades.html">Calidades</a></li>
-            <li><a class="nav-link active" href="./contacto.html">Contacto</a></li>
-            <li><a class="nav-link active" href="./FAQ.html">FAQ´s</a></li>
-            <li><a class="nav-link active" href="./mayoreo.html">Mayoreo</a></li> 
-      </ul>    
-  </div>
+          <li><a class="nav-link active" aria-current="page" href="./acercadevianda.html">Nosotros</a></li>
+
+          <li><a class="nav-link active" href="./calidades.html">Calidades</a></li>
+          <li><a class="nav-link active" href="./contacto.html">Contacto</a></li>
+          <li><a class="nav-link active" href="./FAQ.html">FAQ´s</a></li>
+          <li><a class="nav-link active" href="./mayoreo.html">Mayoreo</a></li>
+        </ul>
+      </div>
     </nav>
 
 
-      <div class="headerCel">
-        <nav class="navbar headerCel fixed-top">
-          <div class="headerCel">
-            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" id="menuHambu">
-              <span class="bi bi-list" id="menuHambuLinea"></span></button>
-          
-            <img src="./assets/img/Screenshot 2023-04-10 135520.webp" href="./index.html" alt="logo" id="VMlogo2">
-            <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
-              <div class="offcanvas-header">
-                <img src="./assets/img/Screenshot 2023-04-10 135520.webp" alt="logo" id="VMCelDesp">
+    <div class="headerCel">
+      <nav class="navbar fixed-top">
+        <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
+          aria-controls="offcanvasNavbar" id="menuHambu">
+          <span class="bi bi-list" id="menuHambuLinea"></span>
+        </button>
 
-                <!--<h5 class="offcanvas-title" id="offcanvasNavbarLabel" style="color: rgba(184, 28, 0, 1)" id="ViandaMarketCel">Vianda Market</h5>-->
-                <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-              </div>
-              <div class="offcanvas-body">
-                <ul class="navbar-nav">
-                  <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="./index.html">Inicio</a>
-                  </li>
-                  <!-- <li class="nav-item dropdown">
+        <img src="./assets/img/Screenshot 2023-04-10 135520.webp" href="./index.html" alt="Logotipo de Vianda Market" id="VMlogo2">
+        
+        <div class="iconosCel">
+          <a id="login" href="./iniciosesion.html"><i class="bi bi-person-circle"></i></a>
+          <a id="shoppingCart2" href="./carrito.html"><i class="bi bi-cart-fill"></i></a>
+        </div>
+
+        <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasNavbar"
+          aria-labelledby="offcanvasNavbarLabel">
+            <div class="offcanvas-header">
+              <img src="./assets/img/Screenshot 2023-04-10 135520.webp" alt="Logotipo de Vianda Market" id="VMCelDesp">
+
+              <!--<h5 class="offcanvas-title" id="offcanvasNavbarLabel" style="color: rgba(184, 28, 0, 1)" id="ViandaMarketCel">Vianda Market</h5>-->
+              <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+              <ul class="navbar-nav">
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="./index.html">Inicio</a>
+                </li>
+                <!-- <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" href="./productos.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                       Productos
                     </a>
@@ -94,304 +92,31 @@
 
                 <li><a class="nav-link active" href="./calidades.html">Calidades</a></li>
                 <li><a class="nav-link active" href="./contacto.html">Contacto</a></li>
-                <li><a class="nav-link active" href="./FAQ.html">FAQ´s</a></li> 
+                <li><a class="nav-link active" href="./FAQ.html">FAQ´s</a></li>
                 <li><a class="nav-link active" href="./mayoreo.html">Mayoreo</a></li>
-                </ul>
-                <!-- <form class="d-flex" role="search">
+              </ul>
+              <!-- <form class="d-flex" role="search">
                   <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
                   <button class="btn btn-outline-secondary" type="submit">Search</button>
                 </form> -->
-              </div>
             </div>
-
-            <a id="login" href="./iniciosesion.html"><i class="bi bi-person-circle"></i></a>
-            <a id="shoppingCart2" href="./carrito.html" ><i class="bi bi-cart-fill"></i></a>
-          
           </div>
-          <script src="./assets/js/header.js"></script>
-          <!-- <img src="/assets/img/Screenshot 2023-04-10 135520.webp" alt="logo" id="VMlogo2"> -->
-       
-          <style>
-            @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@600&display=swap');
-          </style>
-        </nav>
-  
-  
+
+        </div>
+        <script src="./assets/js/header.js"></script>
+        <!-- <img src="/assets/img/Screenshot 2023-04-10 135520.webp" alt="logo" id="VMlogo2"> -->
+
+        <style>
+          @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@600&display=swap');
+        </style>
+      </nav>
+
+
     </div>
-       <!-- Fin de header -->
-       
-    </header>
     <!-- Fin de header -->
-  </body>
-  </html>
 
+  </header>
+  <!-- Fin de header -->
+</body>
 
-
-    <!-- CSS -->
-    <style>
-    /*
-----Barra de navegación e intro
-*/
-
-
-/* @import url('https://fonts.cdnfonts.com/css/josefin-sans%27'); */
-
-
-.header {
-    background-color: #FCF7F1;
-    display:grid;
-    grid-auto-flow: column;
-    grid-template-columns: 2fr 1fr;
-    align-content: center;
-    height: 4vw;
-    /* display: none; */
-    
-    }
-   
-   
-   
-    .headerDestok .barraMenu{
-        font-size: 1.3vw;
-        cursor: pointer;
-        margin-left: 10%;
-        font-family: 'Josefin Sans', sans-serif;
-
-    }
-
- .iconos{
-    display:grid;
-    grid-auto-flow: column;
-    
-    
- }
-
- #lupa{
-    margin-bottom: 15%;
-    font-size: 1.2vw;
-    color:  rgba(42, 46, 58, 1);
-    
- }
-    
-    #VMlogo{
-        margin-left: 20%;
-        margin-top: 2%;
-        width: 15vw;
-    }
-    
-
-.dropdownBuscador{
-    margin-top: 1.2vw;
-    margin-left: 115%;
-    margin-right: 20%;
-    font-family: 'Josefin Sans', sans-serif;
-}
-    
-    #miCuenta{
-        background-color: rgba(42, 46, 58, 1);
-        color: rgba(252, 247, 241, 1);
-        margin-top: 15%;
-       margin-bottom: 18%;
-       margin-left: 50%;
-        font-size:.900vw;
-        text-decoration: solid;
-        text-align: center;
-       border-radius: 30px;
-       font-family: 'Josefin Sans', sans-serif;
-       cursor: pointer;
-       display: flex;
-       align-items: center;
-       justify-content: center;
-
-    }
-    
-    
-
-    
-    #shoppingCart{
-        background-color: rgba(42, 46, 58, 1) ;
-        padding: 2px;
-        margin-top: 20%;
-        margin-left: 5%;
-        margin-right: 50%;
-        margin-bottom: 25%;
-       text-align: center;
-        font-size: 1vw;
-     color:rgba(252, 247, 241, 1);
-     position:right;
-     border-radius: 30px;
-     display: flex;
-     justify-content: center;
-     align-items: center;
-    
-    }
-
-    #shoppingCart:hover, #miCuenta:hover{
-        background-color: #B81C00;
-    }
-    
-    .headerBar{
-        display: grid;
-          
-    }
-    .navbar{
-        background-color: rgba(42, 46, 58, 1);
-        display: grid;
-        text-align: center;
-        height: 3.15vw;
-        align-items: center;
-        
-    }
-    
-    
-    header nav ul{
-        background-color:  rgba(42, 46, 58, 1);
-        /* margin-top: 1%; */
-        margin-right: 0vw;
-        margin-left: 5vw ;
-        list-style: none;
-        cursor: pointer;
-        font-size: 1.5vw;
-        color: rgba(252, 247, 241, 1);
-        display: grid;
-        grid-auto-flow: column;
-        grid-auto-columns: max-content;
-        gap:8vw;
-        text-align: justify;
-        margin-bottom: 10%;
-
-    }
-    .barraMenu{
-        margin-bottom: 2vw;
-    }
-
-    .headerDestok .barraMenu{
-        height: 1vw;
-        font-size: 1.5vw;
-        cursor: pointer;
-        margin-left: 3%;
-        
-
-    }
-
-    
-   header nav ol li{
-    text-align:center; 
-    }
-
-
-    .headerCel{
-        display: none;
-        background-color: #FCF7F1;
-        list-style: none;
-        height: 13vw;
-
-    }
-
-    .navbar-nav{ 
-      font-family: 'Josefin Sans', sans-serif;
-        background-color: transparent;
-        font-size: 4vw;
-        gap:0.1vw;
-    }
-
-    .offcanvas-header{
-        background-color: #FCF7F1;
-    }
-    
-    #VMlogo2{
-      /* margin-bottom: 20%; */
-        margin-left:25%;
-        width: 35vw;
-        margin-top: 2vw;
-    }
-
-    #menuHambu{
-      padding-bottom: 1vw;
-        /* margin-top:4vw; */
-        position: fixed;
-        /* margin-left: 40%; */
-        color: rgba(42, 46, 58, 1);
-    }
-
-    #menuHambuLinea{
-        font-size: 5vw;
-        color: rgba(42, 46, 58, 1);
-    }
-
-    #VMCelDesp{
-      width:45vw;
-      
-    }
-
-  
-
-    .navbar-toggler{
-      margin-top: 2%;
-        border-radius: 25px;
-    }
-
-    .btn-close{
-        font-size: 3vw;
-    }
-
-    #login{
-      font-size: 4vw;
-      color: rgba(42, 46, 58, 1);
-      margin-left:8%;
-
-      
-    }
-    #shoppingCart2{
-      margin-top: 1%;
-        margin-right: 10%;
-        margin-left: 3%;
-        font-size: 4vw;
-        color: rgba(42, 46, 58, 1);
-        border-radius: 30px;
-    }
-
-    #menuHambuLinea:hover, #shoppingCart2:hover, #login:hover{
-      color:rgba(184, 28, 0, 1);
-    }
-
-    .copytexto{
-        font-size: 0.7rem;
-    }
-
- @media (max-width:800px){
-    .headerCel{
-        display:block;
-    }
-    .header{
-      display: none;
-    }
-    
-    .headerDestok{
-        display:none;
-    }
-
- }
-
-   /* @media (min-width:800px){
-    .header{
-      display: block;
-    }
-    
-    .headerDestok{
-        display:block;
-    }
-
-     /* header nav ul{
-        display: none;
-    }
-
-    .navbar{
-        display: none;
-    }  
- ]*/   
-  
-    
-/*
-----Barra de navegación e intro
-*/
-</style>
+</html>

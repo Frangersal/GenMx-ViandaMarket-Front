@@ -8,204 +8,225 @@
 ----Barra de navegación e intro
 */
 
+body {
+    padding-top: 177px; /* Compensación universal para el header fijo en todas las vistas */
+}
+
 .header {
     background-color: #FCF7F1;
-    display:grid;
-    grid-auto-flow: column;
-    grid-template-columns: 2fr 1fr;
-    align-content: center;
-    height: 4vw;
-    
-    
-    }
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.5rem 12%; /* Mayor margen a los lados para alinearlos con el menú inferior */
+    box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+}
 
-    .headerDestok .barraMenu{
-        font-size: 1.3vw;
-        cursor: pointer;
-        margin-left: 10%;
-    }
+.headerDestok .barraMenu{
+    font-size: 1.5rem; /* Forzamos tamaño grande para las letras del menú */
+    cursor: pointer;
+    margin-left: 0;
+    color: #2A2E3A;
+    transition: color 0.2s ease;
+}
+.headerDestok .barraMenu:hover {
+    color: #B81C00;
+}
 
- .iconos{
-    display:grid;
-    grid-auto-flow: column;   
- }
+.iconos{
+    display:flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 1rem; /* Espaciado uniforme entre los iconos */
+}
 
- #lupa{
-    margin-top: 7%;
-    font-size: 1.2vw;
+#lupa{
+    font-size: 1.2rem;
     color: rgba(42, 46, 58, 1);    
- }
-    
-    #VMlogo{
-        margin-left: 20%;
-        margin-top: 2%;
-        width: 15vw;
-    }
-    
-
-.dropdownBuscador{
-    margin-top: 1.4vw;
-    margin-left: 115%;
-    margin-right: 20%;
+    cursor: pointer;
+    transition: transform 0.2s ease;
+}
+#lupa:hover {
+    transform: scale(1.1);
 }
     
-    #miCuenta{
-        background-color: rgba(42, 46, 58, 1);
-        color: rgba(252, 247, 241, 1);
-       margin-top: 15%;
-       margin-bottom: 18%;
-       margin-left: 50%;
-        font-size:1.1vw;
-        text-decoration: solid;
-        text-align: center;
-       border-radius: 30px;
-    }
+#VMlogo{
+    width: 250px; /* Logotipo notablemente más grande */
+    margin: 0;
+}
     
+.dropdownBuscador{
+    display: none; /* Si no lo uso, ocultarlo para no descolocar botones */
+}
     
+.btn-header {
+    background: #2A2E3A;
+    color: white;
+    font-family: 'Josefin Sans', sans-serif;
+    font-style: normal;
+    font-weight: 600; /* Igualando el grosor pesado de botonindex */
+    font-size: 1rem; /* Igualando el tamaño de botonindex */
+    border-radius: 8px;
+    box-sizing: border-box; 
+    padding: 0; 
+    width: 140px; 
+    height: 46px; 
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s ease; /* Igualando la transición de sombra de botonindex */
+    display: flex; 
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+}
 
-    
-    #shoppingCart{
-        background-color:rgba(42, 46, 58, 1) ;
-        margin-top: 20%;
-        margin-left: 5%;
-        margin-right: 50%;
-        margin-bottom: 25%;
-       text-align: center;
-        font-size: 1vw;
-     color:rgba(252, 247, 241, 1);
-     position:right;
-     border-radius: 30px;
-    
-    }
-    
-    .headerBar{
-        display: grid;
-          
-    }
-    .navbar{
-        background-color:rgba(42, 46, 58, 1);
-        display: grid;
-        text-align: center;
-        height: 3.5vw;
-    }
-    
-    
-    header nav ul{
-        background-color:rgba(42, 46, 58, 1);
-        /* margin-top: 1%; */
-        margin-right: 0vw;
-        margin-left: 5vw ;
-        list-style: none;
-        cursor: pointer;
-        font-size: 1.5vw;
-        color: rgba(252, 247, 241, 1);
-        display: grid;
-        grid-auto-flow: column;
-        grid-auto-columns: max-content;
-        gap:8vw;
-        text-align: justify;
-        margin-bottom: 10%;
+.btn-header:hover {
+    background: #B81C00;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 10px rgba(184, 28, 0, 0.3); /* Agregada la sombra premium que tiene botonindex */
+    color: white;
+}
 
-    }
-    .barraMenu{
-        margin-bottom: 2vw;
-    }
-
-    .headerDestok .barraMenu{
-        height: 1vw;
-        font-size: 1.5vw;
-        cursor: pointer;
-        margin-left: 3%;
-        
-
-    }
-
+/* Ajuste específico para centrar visualmente la tipografía dentro del botón Mi Cuenta (opcional ahora que no tiene nav-link) */
+#miCuenta {
+    top: 0 !important; 
+    padding-top: 4px; 
+}
     
-   header nav ol li{
+.headerBar{
+    display: block;   
+}
+
+/* Exclusivo para el menú Desktop */
+.headerDestok .navbar {
+    background-color:rgba(42, 46, 58, 1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+    padding: 1rem 0;
+}
+    
+.headerDestok .barraMenu {
+    background-color:rgba(42, 46, 58, 1);
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    cursor: pointer;
+    font-size: 1.5rem; /* Letras un poco más grandes */
+    color: rgba(252, 247, 241, 1);
+    display: flex;
+    justify-content: center; /* Centrado exacto alineado a la pantalla */
+    gap: clamp(10px, 4vw, 5rem); /* Separación dinámica que evita que se rompa en pantallas medianas */
+    width: 100%; /* Se asegura de tomar todo el contenedor para centrar bien */
+    flex-wrap: wrap; /* Permitimos que se adapte si la pantalla es muy estrecha */
+}
+
+/* Restauramos el comportamiento para que los enlaces se vean blancos normalmente y sean visibles siempre en DEKSTOP */
+.headerDestok .barraMenu li a {
+    font-family: 'Josefin Sans', sans-serif; /* Recuperamos la fuente original */
+    font-size: 1.2rem !important; /* Forzamos tamaño de letra más grande directamente en los enlaces */
+    color: rgba(252, 247, 241, 1) !important; /* Siempre visibles y legibles en color blanco/hueso */
+    text-decoration: none;
+    position: relative;
+    top: 4px; /* Empujamos las letras visualmente hacia abajo para compensar la fuente */
+}
+
+.headerDestok .barraMenu li a:hover {
+    color: #B81C00 !important; /* Resalte en rojo Vianda al pasar el ratón */
+}
+
+header nav ol li{
     text-align:center; 
+}
+
+.headerCel {
+    display: none; /* Se oculta por defecto en PC */
+    background-color: #FCF7F1;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+}
+
+/* Configuramos el contenedor principal de la vista móvil */
+.headerCel .navbar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 0.5rem 5%;
+    background-color: #FCF7F1;
+}
+
+#VMlogo2 {
+    width: 180px; /* Tamaño del logo apropiado para tablet/móvil */
+    object-fit: contain;
+}
+
+#menuHambu {
+    border: none;
+    background: transparent;
+    padding: 0;
+}
+
+#menuHambuLinea {
+    font-size: 2rem;
+    color: rgba(42, 46, 58, 1);
+}
+
+.iconosCel {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+}
+
+#login, #shoppingCart2 {
+    font-size: 1.5rem;
+    color: rgba(42, 46, 58, 1);
+    transition: transform 0.2s ease;
+}
+
+.offcanvas-header {
+    background-color: #FCF7F1;
+    border-bottom: 1px solid #ddd;
+}
+
+#VMCelDesp {
+    width: 150px;
+}
+
+/* Enlaces del menú lateral desplegable */
+.offcanvas-body .navbar-nav {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    padding-top: 1rem;
+    background-color: transparent !important;
+    width: 100% !important;
+}
+
+.offcanvas-body .nav-link {
+    color: rgba(42, 46, 58, 1) !important;
+    font-size: 1.3rem !important;
+    font-family: 'Josefin Sans', sans-serif;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 0.5rem;
+    text-align: left;
+    position: relative;
+    top: 0;
+}
+
+@media (max-width: 992px) { /* Breakpoint para Tablets hacia abajo */
+    body {
+        padding-top: 65px; /* En dispositivos móviles el header es más delgado */
     }
 
-
-    .headerCel{
-        display: none;
-        background-color: #FCF7F1;
-        list-style: none;
-        height: 13vw;
-
+    .header, .headerDestok {
+        display: none !important; /* Oculta todo el header ppremium de desktop */
     }
 
-    .navbar-nav{ 
-        background-color: transparent;
-        font-size: 3vw;
-        gap:0.1vw;
+    .headerCel {
+        display: block !important;
     }
-
-    .offcanvas-header{
-        background-color: #FCF7F1;
-    }
-    
-    #VMlogo2{
-        margin-left:8%;
-        margin-top: 2%;
-        margin-right: 1%;
-        width: 35vw;
-        
-    }
-
-    #menuHambu{
-        margin-top:4vw;
-        margin-bottom: 1vw;
-        margin-left: 40%;
-        color:rgba(42, 46, 58, 1);
-    }
-
-    #menuHambuLinea{
-        font-size: 4vw;
-        color: rgba(42, 46, 58, 1);
-    }
-
-    .navbar-toggler{
-        margin-top: 25%;
-    }
-
-    .btn-close{
-        font-size: 3vw;
-    }
-
-
-    #shoppingCart2{
-        margin-right: 10%;
-        /* margin-bottom: 3vw; */
-        margin-right: 10%;
-        margin-left: 3%;
-        font-size: 4vw;
-        color: rgba(42, 46, 58, 1);
-        border-radius: 30px;
-    }
-
-    .copytexto{
-        font-size: 0.7rem;
-    }
-
- @media (max-width:800px){
-    .headerCel{
-        display:block;
-    }
- }
-
- @media (max-width:800px){
-    .header{
-        display:none;
-    }
-
-    header nav ul{
-        display: none;
-    }
-
-    .navbar{
-        display: none;
-    }
- }  
+}  
     
 /*
 ----Barra de navegación e intro

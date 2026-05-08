@@ -1,3 +1,4 @@
+import { API_URL } from "./config.js";
 
 let productoCarne = document.getElementsByClassName("productoCarne")
   if (localStorage.getItem("productoSeleccionado") == null) {
@@ -7,7 +8,7 @@ let productoCarne = document.getElementsByClassName("productoCarne")
   }
   
 
-const URL = "/api/cortes/"
+const URL = `${API_URL}/api/cortes/`
 const obternerUsuarios = async () => {
     const resp = await fetch(URL, {
         method: 'GET',
@@ -17,7 +18,7 @@ const obternerUsuarios = async () => {
     if (!resp.ok) return console.log('La peticion fue rechazada')
     return await resp.json();
 }
-const URLgramos = "/api/gramos/"
+const URLgramos = `${API_URL}/api/gramos/`
 const obternerGramos = async () => {
   const resp = await fetch(URLgramos, {
     method: 'GET',
@@ -28,7 +29,7 @@ if (!resp.ok) return console.log('La peticion fue rechazada')
 return await resp.json();
 }
 
-const URLcalidad = "/api/calidad/"
+const URLcalidad = `${API_URL}/api/calidad/`
 const token = 'eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJDYXJvIzEzMTAiLCJyb2xlIjoidXNlciIsImlhdCI6MTY4NDQ2NDc4NywiZXhwIjoxNjg1Njc0Mzg3fQ.8AS2m1E_VRYGlpNKlR_qt6sLd2HYt5HTD4QlFYFkeOQ'
 const obtenerCalidad = async () => {
     const resp = await fetch(URLcalidad, {
@@ -46,7 +47,6 @@ const pintarcorte = async () => {
   const producto = await obternerUsuarios()
   const calidad = await obtenerCalidad()
   const gramos = await obternerGramos()
-  console.log({gramos});
  let liGramos= "";
 
   if (localStorage.getItem("productoSeleccionado") != null) {
@@ -65,14 +65,14 @@ const pintarcorte = async () => {
     selProd = `
     
                 <div class="imagenContenedor">
-                  <img src=${selProd.imagen} alt="" class="imagen" width="2vw">
+                  <img src="${selProd.imagen}" alt="Foto de ${selProd.nombre} ${calidad[selProd.idcalidades-1].marca}" class="imagen" width="2vw">
                 </div>
                 <div class="productoTexto">
                   <h1 class="corte">${selProd.nombre}</h1>
                   <h2 class="marca">${calidad[selProd.idcalidades-1].marca}</h2>
                   <h3 class="calidad">${calidad[selProd.idcalidades-1].calidad}</h3>
                   <h3 class="origen">${calidad[selProd.idcalidades-1].pais}</h3>
-                  <h4 class="existencia" style="color:rgb(20, 179, 20)">En existencia</h4>
+                  <h4 class="existencia" style="color: #0d680d; font-weight: bold;">En existencia</h4>
                   
                   <div class="botones">                  
                   <select class= "hoverable form-select form-select-lg mb-3" aria-label=".form-select-lg example">
@@ -88,7 +88,7 @@ const pintarcorte = async () => {
                     </div>
                    
                   <div class="precio">
-                    <h2 class="marca" style="color:rgba(184, 28, 0, 1)">$${selProd.precio}</h2> 
+                    <h2 class="marca" style="color:rgba(184, 28, 0, 1); display: flex; align-items: center;"><span style="font-size: 0.7em; margin-right: 2px;">$</span>${Number(selProd.precio).toLocaleString('es-MX', { minimumFractionDigits: 2, maximumFractionDigits: 2 }).split('.')[0]}<span style="font-size: 0.7em; margin-left: 2px;">.${Number(selProd.precio).toLocaleString('es-MX', { minimumFractionDigits: 2, maximumFractionDigits: 2 }).split('.')[1]}</span></h2> 
                   </div>
                   <p class="descripcion"> <h3>Descripción del corte:</h3> <span> ${selProd.descripcion_corte} </span><br>
                     <h3>Descripción de la marca:</h3>
@@ -132,7 +132,6 @@ const pintarcorte = async () => {
       carrito.push(productoSeleccionado);
       localStorage.setItem(`carrito`, JSON.stringify(carrito));
       
-      console.log("Producto agregado al carrito:", productoSeleccionado);
       try {
         // Perform the cart update here
     
@@ -197,7 +196,6 @@ const pintarcorte = async () => {
     // Función para mostrar un toast
     function mostrarToast(mensaje) {
       // Aquí puedes implementar tu lógica para mostrar el toast en la interfaz de usuario
-      console.log(mensaje); // Ejemplo: Mostrar mensaje en la consola
       
         // Create the error toast notification
         let toast = document.createElement("div");
