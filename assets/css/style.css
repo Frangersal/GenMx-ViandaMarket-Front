@@ -154,3 +154,27 @@
         width: 40vw;
     }
 }
+/* ====== Footer Styles ====== */
+
+.productosDes ul,
+.acercadeDes ul,
+.contactoDes ul,
+.colapsadoFooter {
+    list-style: none;
+    padding: 0;
+}
+
+.productosDes ul li a,
+.acercadeDes ul li a,
+.contactoDes ul li a {
+    text-decoration: none;
+    display: block;
+    padding: 8px 0;
+}
+
+.colapsadoFooter li a {
+    text-decoration: none;
+    color: black;
+    display: block;
+    padding: 12px 0;
+}

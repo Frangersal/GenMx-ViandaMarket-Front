@@ -31,28 +31,29 @@ const obtenerCalidad = async () => {
 // Aqui ingresamos los usiar
 const pintarUsuarios = async () => {
     const producto = await obternerUsuarios()
-    console.log(producto);
+    // console.log(producto);
 
     const calidad = await obtenerCalidad()
-    console.log(calidad);
+    // console.log(calidad);
 
 
     
     
     //  producto = JSON.parse(usuarios);
 // function foreachProductos(producto) {
-    producto.forEach(r => {
+    producto.forEach((r, index) => {
+      let priorityAttrs = index === 0 ? 'fetchpriority="high"' : 'loading="lazy"';
       let row =
         `
         
                 <div class="vianda-card-wrapper mb-5" >
                 <div class="card premium-card">
-                  <img src="${r.imagen}" class="card-img-top">
+                  <img src="${r.imagen}" class="card-img-top" alt="Foto de ${r.nombre} marca ${calidad[r.idcalidades-1].marca}" crossorigin="anonymous" ${priorityAttrs}>
                   <div class="card-body">
-                    <h4 class="card-1">${r.nombre}</h4>
-                    <h6 class="card-2">${calidad[r.idcalidades-1].marca}</h6>
-                    <h6 class="card-2">${calidad[r.idcalidades-1].pais}</h6>
-                    <h6 class="card-2">${calidad[r.idcalidades-1].calidad}</h6>
+                    <p class="card-1 mb-2">${r.nombre}</p>
+                    <p class="card-2 mb-1">${calidad[r.idcalidades-1].marca}</p>
+                    <p class="card-2 mb-1">${calidad[r.idcalidades-1].pais}</p>
+                    <p class="card-2 mb-1">${calidad[r.idcalidades-1].calidad}</p>
                         <button id="btnProducto_${r.id}" type="button" class="btnProducto btn-primary" onclick="location.href='./ProductoIndividual.html'">Más info</button>
                     </div>
                 </div>
@@ -63,7 +64,7 @@ const pintarUsuarios = async () => {
     //?Esto srive para mandar la seleccion a la pagina de producto invidual
     //==========================================================
     let botones = document.getElementsByClassName("btnProducto");
-    console.log(botones.length);
+    // console.log(botones.length);
     
 
     for (let index = 0; index < botones.length; index++) {

@@ -183,7 +183,9 @@
 
 .carousel-inner img {
   width: 100%;
-  height: auto;
+  height: 60vh;
+  min-height: 450px;
+  object-fit: cover;
 }
 
 /* Tipografias y colores de las text-cards .card-1 y .card-2 ahora en style.css */
