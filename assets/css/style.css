@@ -31,3 +31,126 @@
         padding: 0 120px;
     }
 }
+
+/* ====== Estilos Unificados de Tarjetas (Premium) ====== */
+.premium-card {
+    background-color: #ffffff;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.06);
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border: none !important;
+}
+
+.premium-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.12);
+}
+
+.premium-card .card-body {
+    text-align: left;
+    padding: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    flex-grow: 1;
+}
+
+.premium-card .card-img-top {
+    width: 100%;
+    aspect-ratio: 4/3;
+    object-fit: cover;
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+}
+
+.premium-card .card-1 {
+    font-family: 'Josefin Sans', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 1.6rem;
+    line-height: 1.2;
+    color: #2e2e2e;
+}
+
+.premium-card .card-2 {
+    font-family: 'Open Sans', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.1rem;
+    line-height: 1.5;
+    color: #6c757d;
+    margin-top: 0.3rem;
+}
+
+.btn-primary {
+    padding: 0 1.8rem;
+    height: 46px;
+    /* Altura forzada idéntica a la de los botones del header */
+    background: #2A2E3A;
+    /* Actualizado al tono azul oscuro */
+    color: white;
+    font-family: 'Josefin Sans', sans-serif;
+    font-style: normal;
+    font-size: 1rem;
+    font-weight: 600;
+    border: none;
+    border-radius: 8px;
+    /* Slightly squarer for a premium look */
+    cursor: pointer;
+    transition: all 0.3s ease;
+    /* Smooth hover transition */
+    margin-top: auto;
+    display: inline-flex;
+    /* Copiada la propiedad flex del header para centrar perfecto */
+    align-items: center;
+    /* Centrado vertical absoluto */
+    justify-content: center;
+    /* Centrado horizontal absoluto */
+    text-decoration: none;
+}
+
+#botonindex:hover,
+.btn-primary:hover {
+    background: #B81C00;
+    /* Actualizado al rojo Vianda al pasar el ratón */
+    transform: translateY(-2px);
+    box-shadow: 0 4px 10px rgba(184, 28, 0, 0.3);
+    /* Sombra coordinada con el rojo */
+}
+
+/* Grid layout idéntico para tarjetas en Productos y Carrusel */
+.vianda-card-wrapper {
+    margin: 0 1vw;
+    text-align: center;
+    flex: 0 0 auto;
+    width: 22vw;
+    display: flex;
+    flex-direction: column;
+}
+
+@media (max-width: 1024px) {
+    .vianda-card-wrapper {
+        margin: 0 1vw;
+        width: 22vw;
+    }
+}
+
+@media (max-width: 768px) {
+    .vianda-card-wrapper {
+        margin: 0 1.5vw;
+        width: 25vw;
+    }
+}
+
+@media (max-width: 480px) {
+    .vianda-card-wrapper {
+        margin: 0 2vw;
+        width: 40vw;
+    }
+}

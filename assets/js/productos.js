@@ -45,16 +45,15 @@ const pintarUsuarios = async () => {
       let row =
         `
         
-                <div class="col-6 col-xl-4 col-xxl-4 col-lg-4" >
-                <div class="card" style="border: none;">
+                <div class="vianda-card-wrapper mb-5" >
+                <div class="card premium-card">
                   <img src="${r.imagen}" class="card-img-top">
-                  <div class="card-body" style="text-align: left;">
+                  <div class="card-body">
                     <h4 class="card-1">${r.nombre}</h4>
                     <h6 class="card-2">${calidad[r.idcalidades-1].marca}</h6>
                     <h6 class="card-2">${calidad[r.idcalidades-1].pais}</h6>
                     <h6 class="card-2">${calidad[r.idcalidades-1].calidad}</h6>
-                        <a href="./ProductoIndividual.html">
-                        <button  id="btnProducto_${r.id} "type="button" class="btnProducto text-center" style="background-color: #2A2E3A; color: white;">Ver producto</button> </a>
+                        <button id="btnProducto_${r.id}" type="button" class="btnProducto btn-primary" onclick="location.href='./ProductoIndividual.html'">Más info</button>
                     </div>
                 </div>
             </div>`

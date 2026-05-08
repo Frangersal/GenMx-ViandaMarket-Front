@@ -2,240 +2,87 @@
 .main{
   overflow-x: hidden;
 }
-/* Título movido a style.css */
   
-  .text1 {
-    font-size: 1vw;
-    margin-right: 15%;
-    margin-left: 15%;
-    padding: 3%;
-    justify-content: center;
-    text-align: justify;
-    font-family: 'Josefin Sans', sans-serif;
-    padding: 2%;
-  }
-  
-  .contenedor {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    max-width: 100rem;
-    margin: 0 auto;
-    padding: 0 120px;
-  }
-  
-  .parrafo {
-    margin-top: 2rem;
-    font-size: 1.5rem;
-    font-family: 'Josefin Sans';
-    font-style: normal;
-    font-weight: 400;
-    line-height: 1.8rem;
-    text-align: justify;
-    width: calc(50% - 60px);
-    transition: width 0.5s ease-in-out, height 0.5s ease-in-out;
-  
+/* Contenedores ahora utilizan Bootstrap (.container, .row, .col) para alinear perfectamente */
 
+.parrafo p, .parrafo {
+  font-size: 1.6rem;
+  font-family: 'Josefin Sans';
+  font-style: normal;
+  font-weight: 400;
+  line-height: 2rem;
+  text-align: justify;
+}
 
-  }
-  
-  .imagen {
-    margin-top: 5rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: calc(50% - 60px);
-   
-  }
-  
-  .imagen img {
-   width: 26rem;
-   height: 26rem;
-   transition: width 0.5s ease-in-out, height 0.5s ease-in-out;
-  }
-  @media (min-width: 768px) and (max-width: 1280px) {
-    .contenedor {
-      max-width: 60rem;
-      margin: 0 auto;
-      padding: 0 2rem;
-    }
-  }
-  
+.imagen img {
+  width: 100%;
+  max-width: 500px;
+  aspect-ratio: 5 / 4; /* Proporción más horizontal para reducir la altura */
+  border-radius: 10px;
+  object-fit: cover;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
 
-  @media (max-width: 440px) {
-    .imagen img {
-      width: 150%;
-      height: auto;
-    }
-  }
-
-
-    @media (max-width: 768px) {
-    .contenedor {
-      flex-direction: column;
-      padding: 0;
-      margin: 0rem 6rem 0rem 6rem;
-    }
-  
-    .parrafo {
-        font-size: 1.2rem;
-        margin-bottom: 3rem;
-        width: 100%;
-        margin-top: 3rem;
-        margin-left: 0;
-      }
-  
-      .imagen {
-        width: 100%;
-        margin: 0 auto;
-        margin-top: 3rem;
-        margin-bottom: 6rem;
-      }
-  }
-  
-  
-  @media (max-width: 768px) {
-    .imagen {
-      width: 100%;
-      margin-top: 3rem;
-      margin-bottom: 3rem;
-    }
-  
-    .contenedor {
-      flex-direction: column;
-      padding: 0;
-    }
-  
-    .parrafo {
-      font-size: 1.2rem;
-      margin-bottom: 3rem;
-    }
-  
-    .imagen-container {
-      margin-top: 3rem;
-      margin-bottom: 3rem;
-    }
-  }
-  /*Segunda sección*/
-  .mitad {
-   border-top: .5rem solid rgb(0, 0, 0);
-    margin-left: 4rem ;
-    margin-right: 4rem;
-  }
-
- 
-  
-  .column {
-    flex: 1;
-    padding: 0 1em;
-    text-align: center;
-    margin: 0px 2rem 2rem 2rem;
-  }
-  
-  .column h2 {
-    font-family: 'MADE Mirage';
-    src: url(./fonts/MADE\ MIRAGE/);
-    color: rgba(184, 28, 0, 1);
-    padding-top: 11%;
-    text-align: center;
-    font-size: 3rem;
-    font-weight: 400;
-  }
-  
-  .column p {
-    font-size: 1.5rem;
-    font-family: 'Josefin Sans';
-    font-style: normal;
-    font-weight: 400;
-    line-height: 1.8rem;
-    text-align: justify;
-  }
-  
-  .column ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-  }
-  
-  .column li {
-    font-size: 1.5rem;
-    font-family: 'Josefin Sans';
-    font-style: normal;
-    font-weight: 400;
-    line-height: 1.8rem;
-    text-align: justify;
-  }
-  @media (max-width: 768px) {
-  .column p,
-  .column li {
-    font-size: 1rem;
-  }
+/* Segunda sección */
+.mitad {
+  border-top: .5rem solid rgb(0, 0, 0);
+  opacity: 1; /* Bootstrap hr ajusta opacidad por defeto */
 }
   
-  /*Tercera Sección*/
+.column {
+  text-align: center;
+}
 
-  .tercera {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  
-  .video  {
-    width: 26rem;
-    height: 36rem;
-    margin-right: 4rem;
-  }
-  
-  .fachada {
-    width: 26rem;
-    height: 36rem;
-    margin-left: 4rem;
-  }
-  
-  @media screen and (max-width: 1280px) {
-    .tercera {
-      margin: 0 10%;
-      padding: 0 40px;
-    }
-  }
+.column h2 {
+  font-family: 'MADE Mirage';
+  color: rgba(184, 28, 0, 1);
+  padding-top: 1rem;
+  text-align: center;
+  font-size: 3rem;
+  font-weight: 400;
+}
 
-  
-  @media screen and (max-width: 980px) {
-    .tercera {
-      flex-direction: column;
-      margin: 0 5%;
-    }
-    
-    .video,
-    .fachada {
-      max-width:400px;
-      width: 100%;
-      height: auto;
-      margin:0;
-      
-    }
-  }
-  @media (max-width: 658px) {
-    .row {
-      flex-direction: column;
-      padding: 5rem;
-    }
-  
-    .column {
-      margin: 0;
-    }
-  }
+.column p, .column li {
+  font-size: 1.6rem;
+  font-family: 'Josefin Sans';
+  font-style: normal;
+  font-weight: 400;
+  line-height: 2rem;
+  text-align: justify;
+}
 
-  @media (max-width: 360px) {
-    .parrafo {
-      margin-top: 2rem;
-      font-size: 1rem;
-      font-weight: 400;
-      line-height: 1.1rem;
-    }
-      .imagen img {
-        width: 150%;
-        height: auto;
-    }
-  
+.column ul, .column ol {
+  padding-left: 1.5rem;
+  margin: 0 auto;
+  display: inline-block;
+  text-align: left;
+}
+
+@media (max-width: 768px) {
+  .column p, .column li, .parrafo p, .parrafo {
+    font-size: 1.2rem;
+    line-height: 1.6rem;
+  }
+  .column h2 {
+    font-size: 2.2rem;
+  }
+}
+
+/* Tercera Sección */
+.video, .fachada {
+  display: block;
+  width: 100%;
+  max-width: 400px;
+  aspect-ratio: 3 / 4; /* Fuerza a que video e imagen tengan exactamente las mismas medidas */
+  border-radius: 10px;
+  object-fit: cover;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  margin: 0;
+  padding: 0;
+}
+
+@media screen and (max-width: 980px) {
+  .video, .fachada {
+    margin-bottom: 2rem;
+  }
 }
