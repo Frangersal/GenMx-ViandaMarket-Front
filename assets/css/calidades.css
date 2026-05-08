@@ -1,83 +1,49 @@
+@import url('https://fonts.cdnfonts.com/css/josefin-sans');
 
- @import url('https://fonts.cdnfonts.com/css/josefin-sans');
-
-/* Título movido a style.css */
-
-#descripcion {
-    font-family: 'Josefin Sans';
-    
-}
-
-
+/* General */
 #tablaInter {
     width: 100%;
 }
 
-.imagenContenedor {
-    display: grid;
-    grid-template-rows: min-content;
-    margin-left: 8%;
-
-}
-
-
-
-
-
-#imagenCox {
-    width: 100%;
-    padding-right: 5%;
-
-}
-
-.card-img-top {
-       
-    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
-}
-
-.card-text {
+/* Tarjetas de Calidades */
+.card-desc-custom {
     text-align: justify;
-   
+    font-size: 1.1rem;
+    line-height: 1.6;
 }
 
-.card-title {
-    text-align: center;
-    font-family: 'MADE Mirage';
+/* Términos de Cocción */
+.descripcion-text {
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 1.2rem;
+    text-align: justify;
+    line-height: 1.6rem;
+}
+
+.terminos-img {
+    max-height: 600px;
+    object-fit: cover;
+    width: 100%;
+}
+
+.terminos-title {
+    font-family: 'MADE Mirage', serif;
     color: rgba(184, 28, 0, 1);
-}
-
-h4 {
-    text-align: center;
-    font-family: 'MADE Mirage';
-    font-style: normal;
-    font-weight: 500;
     font-size: 3rem;
-    letter-spacing: -0.32px;
+    margin-bottom: 0;
 }
 
-.card-text-custom {
-    width: 290px;
-}
-
-#t12 {
-    text-align: center;
-    font-family: 'MADE Mirage';
-    font-style: normal;
+.terminos-subtitle {
+    font-family: 'MADE Mirage', serif;
     font-weight: 500;
-    font-size: 1.5rem;
-    letter-spacing: -0.32px;
-
+    font-size: 1.8rem;
+    color: #333;
 }
 
-@media (min-width:800px) {
- 
-
-    .terminoCox {
-        margin: 5%;
-        align-items: center;
-        display: grid;
-        grid-template-columns: 0.8fr 1fr;
-        gap: 1vw;
-
-    }
+.terminos-heading {
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 1.4rem;
+    font-weight: bold;
+    text-align: left;
+    color: rgba(184, 28, 0, 1);
 }
