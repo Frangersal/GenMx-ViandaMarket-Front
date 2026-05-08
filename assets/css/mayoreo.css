@@ -1,26 +1,36 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Oxygen&display=swap');
 @import url('https://fonts.cdnfonts.com/css/avenir');
 @import url('https://fonts.cdnfonts.com/css/josefin-sans');
+
+@font-face {
+    font-family: Josefine;
+    src: url(../font/Josefin_Sans/JosefinSans-Regular.ttf);
+}
 .center {
     display: flex;
     justify-content: center;
     align-items: center;
 }
-  
 
-.bg-mayoreo-oscuro{ background-color: #232222; }
 
-.txt-blanco{ color: #fff; }
+.bg-mayoreo-oscuro {
+    background-color: #232222;
+}
+
+.txt-blanco {
+    color: #fff;
+}
+
 /* Título movido a style.css */
-  .message-section {
-    font-size: 1.5rem;
+.message-section {
+    font-size: 1.2rem !important;
     margin-right: 15%;
     margin-left: 15%;
     padding: 3%;
     justify-content: center;
     text-align: justify;
     font-family: 'Josefin Sans', sans-serif;
-   }
+}
 
 
 /*---- Seccion mensaje ----*/
@@ -28,75 +38,153 @@
 
 /*---- Seccion formulario ----*/
 
-.form-section{
-    /*background-color: rgba(0, 255, 64, 0.575);*/
-    width: 35vw;
-    height: 420px;
-  font-family: 'Josefin Sans', sans-serif;       
+.form-section {
+    width: 100%;
+    max-width: 550px;
+    height: auto;
+    padding-bottom: 30px;
+    font-family: 'Josefin Sans', sans-serif;
     font-size: 16px;
     text-align: center;
     letter-spacing: 1px;
-  
 }
 
-@media (max-width:860px){
-    .form-section{
-        width: 50vw; 
-        font-size: 20px;  
-    }
+@media (max-width:860px) {
+.form-section {
+    width: 100%;
+    max-width: 550px;
+    height: auto;
+    padding-bottom: 30px;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 16px;
+    text-align: center;
+    letter-spacing: 1px;
 }
-@media (max-width:760px){
-    .form-section{
-        width: 70vw; 
-        font-size: 20px;  
-    }
 }
-@media (max-width:560px){
-    .form-section{
-        width: 100vw; 
-        font-size: 20px;  
-    }
+
+@media (max-width:760px) {
+.form-section {
+    width: 100%;
+    max-width: 550px;
+    height: auto;
+    padding-bottom: 30px;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 16px;
+    text-align: center;
+    letter-spacing: 1px;
+}
+}
+
+@media (max-width:560px) {
+.form-section {
+    width: 100%;
+    max-width: 550px;
+    height: auto;
+    padding-bottom: 30px;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 16px;
+    text-align: center;
+    letter-spacing: 1px;
+}
+
     .message-section {
-      font-size: 1rem;
-      margin-top: 5%;
-    
-      
-      
+        font-size: 1.2rem !important;
+        margin-top: 5%;
 
-     }
+
+
+
+    }
 }
 
-.form-section_input{
-    width: 100%; 
-    margin: 0;
-    padding: 0;
-    border-radius: 1em!important;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15)!important;
-}
 
-.form-section_textarea{
+
+.form-section_box-btn {
     width: 100%;
-    height: 86px; 
-    border-radius: 1em!important;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15)!important;
-}
-
-.form-section_box-btn{
-    width: 100%;
-    height: 60px; 
+    height: 60px;
     display: flex;
-    justify-content:left;
+    justify-content: center;
     align-items: center;
 
     margin-top: 1rem;
 
 }
-.btn-celeste{ 
-    background-color: #84A3B7!important;
-    border-color: #84A3B7!important;
-    margin-bottom: 10px;
-    width: 191.83px;
-    height: 55px;
-    font-size: 24px!important;
-    font-family: dreamyEyes;
+
+
+.form-section_input {
+    width: 100% !important;
+    max-width: 550px !important;
+    border-radius: 12px !important;
+    border: 1px solid #ddd !important;
+    padding: 10px 15px !important;
+    font-family: Josefine, 'Josefin Sans', sans-serif;
+    font-size: 1.2rem !important;
+    margin-bottom: 20px;
+    background-color: #fcfcfc !important;
+    color: #212529 !important;
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
 }
+
+.form-section_textarea {
+    width: 100% !important;
+    max-width: 550px !important;
+    height: 86px !important;
+    border-radius: 12px !important;
+    border: 1px solid #ddd !important;
+    padding: 10px 15px !important;
+    font-family: Josefine, 'Josefin Sans', sans-serif;
+    font-size: 1.2rem !important;
+    margin-bottom: 20px;
+    background-color: #fcfcfc !important;
+    color: #212529 !important;
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+}
+
+.form-section_input:focus, .form-section_textarea:focus {
+    border-color: #84A3B7 !important;
+    box-shadow: 0 0 0 3px rgba(132, 163, 183, 0.25) !important;
+    outline: none !important;
+}
+
+.btn-celeste {
+    background-color: #84A3B7 !important;
+    color: #232222;
+    font-family: 'Josefin Sans', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 1.2rem !important;
+    border-radius: 8px;
+    box-sizing: border-box;
+    width: 100%;
+    max-width: 550px;
+    height: 46px; 
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    display: inline-flex; gap: 15px;
+    align-items: center;
+    justify-content: center;
+}
+
+.btn-celeste:hover {
+    background: #6d8a9e !important;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 10px rgba(132, 163, 183, 0.4);
+    color: #232222;
+}
+
+.form-section {
+    width: 100%;
+    max-width: 550px;
+    height: auto;
+    padding-bottom: 30px;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 16px;
+    text-align: center;
+    letter-spacing: 1px;
+}
+.form-section { display: flex; flex-direction: column; align-items: center; margin: 0 auto; }

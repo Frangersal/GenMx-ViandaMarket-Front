@@ -60,7 +60,7 @@ body {
     margin: 0!important;
     padding: 0!important; 
     max-height: 41px!important;
-    font-size: 1rem;
+    font-size: 1.2rem !important;
 } */
 
 
@@ -228,7 +228,7 @@ form {
     border: 1px solid #ddd !important;
     padding: 10px 15px !important;
     font-family: Josefine, sans-serif;
-    font-size: 1rem;
+    font-size: 1.2rem !important;
     
 }
 
@@ -240,7 +240,7 @@ form {
     border: 1px solid #ddd !important;
     padding: 10px 15px !important;
     font-family: Josefine, sans-serif;
-    font-size: 1rem;
+    font-size: 1.2rem !important;
     
 
 }

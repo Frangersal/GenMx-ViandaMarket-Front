@@ -1,0 +1,23 @@
+.inputs-VM {
+    /*height: 25px!important;*/
+    width: 100% !important;
+    max-width: 550px !important;
+    border-radius: 12px !important;
+    border: 1px solid #ddd !important;
+    padding: 10px 15px !important;
+    font-family: Josefine, sans-serif;
+    font-size: 1rem;
+    
+}
+--
+    .inputs-VM {
+        /*height: 25px!important;*/
+        width: 15rem !important;
+        max-width: 15rem !important;
+    }
+
+    .text-VM {
+        width: 15rem !important;
+        height: 6rem !important;
+        max-width: 15rem !important;
+    }
