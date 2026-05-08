@@ -97,16 +97,6 @@
   box-shadow: none !important; /* Quitar sombra externa */
 }
 
-.slider-card .card {
-  /* Los estilos de tarjeta ahora están unificados en style.css (.premium-card) */
-}
-
-.slider-card .card-body {
-}
-
-.slider-card .card:hover {
-}
-
 .slider-arrow-left {
   left: 1vw;
 }

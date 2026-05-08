@@ -1,7 +1,3 @@
-.fixheader {
-    height: 6.4vw;
-}
-
 @font-face {
     font-family: MADEmirage;
     src: url(../font/MADE\ Mirage\ Regular.otf);
@@ -53,33 +49,68 @@
 }
 
 #btnAgregar {
-    background: linear-gradient(180deg, #B81C00 40.88%, #7A1212 96.49%);
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    border-radius: 10px;
+    /* Mismo estilo exacto que .btn-header del header.css */
+    background: #2A2E3A;
+    color: white;
     font-family: 'Josefin Sans', sans-serif;
     font-style: normal;
+    font-weight: 600;
+    font-size: 1rem;
+    border-radius: 8px;
+    height: 46px;
     width: 100%;
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#btnAgregar:hover {
+    background: #B81C00;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 10px rgba(184, 28, 0, 0.3);
     color: white;
-
 }
 
-input.form-control {
-    border-radius: 1em;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 
-}
 
 .contenedorform {
-    max-width: 30rem;
-    width: 30rem;
-    height: 30rem;
-    background: rgba(217, 217, 217, 0.69);
-    backdrop-filter: blur(3px);
+    max-width: 24rem; /* <-- Reducimos drásticamente el largo máximo del contenedor para los inputs */
+    width: 100%;
+    /* height: 30rem; <-- Se elimina para que sea dinámico y no corte elementos */
+    background: rgba(217, 217, 217, 0.85); /* Un poco menos transparente para mejor contraste */
+    backdrop-filter: blur(8px); /* Mayor desenfoque estilo glassmorphism */
     border-radius: 16px;
-    margin: 1rem;
-    justify-content: center;
-    align-items: center;
-    justify-items: center;
+    margin: 3rem 1rem;
+    padding: 2.5rem;
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37); /* Sombra elegante */
+}
+
+/* Modificamos los inputs para que guarden el estándar de mayoreo y contacto */
+input.form-control {
+    border-radius: 12px !important;
+    border: 1px solid #ddd !important;
+    padding: 10px 15px !important;
+    background-color: #fcfcfc !important;
+    font-family: system-ui, -apple-system, "Segoe UI", Roboto, Arial, sans-serif;
+    font-size: 1.2rem !important;
+    appearance: none;
+    -webkit-appearance: none;
+}
+input.form-control:focus {
+    border-color: #84A3B7 !important;
+    box-shadow: 0 0 0 3px rgba(132, 163, 183, 0.25) !important;
+    outline: none !important;
+}
+
+.p1 strong {
+    cursor: pointer;
+    transition: color 0.3s;
+}
+.p1 strong:hover {
+    color: #B81C00;
 }
 
 .ayudaInicioSesion {

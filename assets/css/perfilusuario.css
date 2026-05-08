@@ -35,12 +35,8 @@
     border: 1px!important;
     margin-top: 1rem!important;
 }
-input {
-    border-radius: 1em!important;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15); 
-}
 textarea {
-    border-radius: 1em!important;
+    border-radius: 12px!important;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15); 
 }
 .card{
@@ -88,21 +84,20 @@ textarea {
 .txt-blanco{ color: #fff!important; }
 
 .box_bg-rojo{
-    margin-top: 1rem!important;
     display: grid;
     width: auto;
     grid-template-rows: max-content;
     text-align: center;
     background-color: #B81C00;
     height:7vw;  
-    margin-top: 7.5vw!important;
+    align-items: center; /* Alineado verticalmente */
 }
 
 .box_bg-rojo_titulo{ 
     font-family: MADEmirage;
     font-size: 5VW; 
     color: #fff;
-    margin-top: 1%!important;
+    margin: 0 !important;
 }
 
 /*---- Seccion mensaje ----*/
@@ -303,9 +298,21 @@ textarea {
   }
 
 input.form-control {
-    border-radius: 1em;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 12px !important;
+    border: 1px solid #ddd !important;
+    padding: 10px 15px !important;
+    background-color: #fcfcfc !important;
+    font-family: system-ui, -apple-system, "Segoe UI", Roboto, Arial, sans-serif;
+    font-size: 1.1rem !important;
+    appearance: none;
+    -webkit-appearance: none;
+    box-shadow: none !important;
+}
 
+input.form-control:focus {
+    border-color: #84A3B7 !important;
+    box-shadow: 0 0 0 3px rgba(132, 163, 183, 0.25) !important;
+    outline: none !important;
 }
 
 .contenedorform {

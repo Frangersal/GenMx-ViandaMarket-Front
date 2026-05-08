@@ -259,7 +259,7 @@ var requestOptions = {
   
 
     let e =
-    `<h4 class="txt-blanco">${userSession.nombres} ${userSession.apellidos}</h4>
+    `<h2 class="txt-blanco fs-4">${userSession.nombres} ${userSession.apellidos}</h2>
     <p class=" mb-1 txt-blanco">Correo electrónico: ${userSession.correo} </p>
     <p class="  mb-1 txt-blanco">Teléfono: 555-1234</p>`;
 

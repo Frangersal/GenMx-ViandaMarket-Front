@@ -116,8 +116,9 @@ body {
     color: rgba(252, 247, 241, 1);
     display: flex;
     justify-content: center; /* Centrado exacto alineado a la pantalla */
-    gap: 7vw; /* Separación proporcional amplia para abarcar el largo del slider */
+    gap: clamp(10px, 4vw, 5rem); /* Separación dinámica que evita que se rompa en pantallas medianas */
     width: 100%; /* Se asegura de tomar todo el contenedor para centrar bien */
+    flex-wrap: wrap; /* Permitimos que se adapte si la pantalla es muy estrecha */
 }
 
 /* Restauramos el comportamiento para que los enlaces se vean blancos normalmente y sean visibles siempre en DEKSTOP */

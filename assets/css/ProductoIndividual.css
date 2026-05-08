@@ -30,11 +30,20 @@
 
 .btnCarrito {
     color: white;
-    background-color: rgba(42, 46, 58, 1);
+    background-color: #2A2E3A;
     width: auto;
     align-self: right;
-    border-radius: 10px;
-    padding: 1%;
+    border-radius: 8px;
+    padding: 10px 20px;
+    border: none;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+.btnCarrito:hover {
+    background-color: #B81C00;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 10px rgba(184, 28, 0, 0.3);
 }
 
 .imagenContenedor {
@@ -46,6 +55,8 @@
     width: 35vw;
     height: 35vw;
     display: block;
+    border-radius: 16px;
+    object-fit: cover;
 }
 
 /* h1,h2{
@@ -93,7 +104,7 @@
         background-color: rgba(42, 46, 58, 1);
         width: 100%;
         align-self: right;
-        border-radius: 10px;
+        border-radius: 8px;
     }
     .corte {
         font-size: 6vw;
@@ -158,6 +169,8 @@
 
     .imagen {
         width: 50vw;
+        border-radius: 16px;
+        object-fit: cover;
         height: 50vw;
         display: block;
         justify-self: center;

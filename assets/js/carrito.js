@@ -24,18 +24,18 @@ let precioTotalAcumulado = 0;
 
 var productos = localStorage.getItem('carrito');
 
-console.log("hola");
+// console.log("hola");
 if (productos) {
     var jsonArray = JSON.parse(productos);
     for (var i = 0; i < jsonArray.length; i++) {
         var productosObject = jsonArray[i];
-        console.log(productosObject.idProducto);
-        console.log(productosObject.imagen);
-        console.log(productosObject.marca);
-        console.log(productosObject.nombre);
-        console.log(productosObject.precio);
-        console.log(productosObject.gramaje);
-        console.log(productosObject.cantidad);
+        // console.log(productosObject.idProducto);
+        // console.log(productosObject.imagen);
+        // console.log(productosObject.marca);
+        // console.log(productosObject.nombre);
+        // console.log(productosObject.precio);
+        // console.log(productosObject.gramaje);
+        // console.log(productosObject.cantidad);
 
         ubicacionCarritoDeCompras.innerHTML += `
   <!-- Row para cada articulo del carrito -->
@@ -43,7 +43,7 @@ if (productos) {
     <div class="col-sm-12 col-md-4 box-center">
       <div class="row">
         <div class="col-6">
-          <img src="${productosObject.imagen}" class="productoImg" alt="Foto de un producto ${productosObject.nombre} de la marca ">
+          <img src="${productosObject.imagen}" class="productoImg" alt="Foto de un producto ${productosObject.nombre} de la marca" crossorigin="anonymous" referrerpolicy="no-referrer">
         </div>
         <div class="col-6">
           <ul>
@@ -56,14 +56,14 @@ if (productos) {
     </div>
     <div class="col-6 box-center">
       <div class="number-input">
-        <button onclick="changeQuantity(${productosObject.idProducto}, 'decrement')" class="minus"></button>
-        <input class="quantity" min="1" max="50" name="quantity" value="1" type="number" id="quantity-${productosObject.idProducto}" onchange="updateTotalPrice(${productosObject.id})">
-        <button onclick="changeQuantity(${productosObject.idProducto}, 'increment')" class="plus"></button>
+        <button onclick="changeQuantity(${productosObject.idProducto}, 'decrement')" class="minus" aria-label="Disminuir cantidad"></button>
+        <input class="quantity" min="1" max="50" name="quantity" value="1" type="number" id="quantity-${productosObject.idProducto}" aria-label="Cantidad de ${productosObject.nombre}" onchange="updateTotalPrice(${productosObject.idProducto})">
+        <button onclick="changeQuantity(${productosObject.idProducto}, 'increment')" class="plus" aria-label="Aumentar cantidad"></button>
       </div>
-      <button class="btn btn-sm btn-delete" onclick="eliminarDelCarrito(${productosObject.idProducto}); updateTotalPrice(${productosObject.idProducto})"><i class="fas fa-trash"></i></button>
+      <button class="btn btn-sm btn-delete" aria-label="Eliminar producto" onclick="eliminarDelCarrito(${productosObject.idProducto}); updateTotalPrice(${productosObject.idProducto})"><i class="fas fa-trash"></i></button>
     </div>
     <div class="col col-md-2 box-center">
-      <h4 id="precio-${productosObject.idProducto}">Subtotal: $${(productosObject.precio * 1).toLocaleString()}</h4>
+      <p class="h5 fw-bold mb-0" id="precio-${productosObject.idProducto}">Subtotal: $${(productosObject.precio * 1).toLocaleString()}</p>
     </div>
   </div>`;
 
@@ -74,7 +74,7 @@ if (productos) {
     console.log('No se encontró el array en el localStorage.');
 }
 
-function changeQuantity(idProducto, operation) {
+window.changeQuantity = function(idProducto, operation) {
     let quantityElement = document.getElementById(`quantity-${idProducto}`);
     let quantity = parseInt(quantityElement.value);
 
@@ -89,7 +89,7 @@ function changeQuantity(idProducto, operation) {
     quantityElement.value = quantity;
     updateTotalPrice(idProducto);
 }
-function updateTotalPrice(idProducto) {
+window.updateTotalPrice = function(idProducto) {
     let quantityElement = document.getElementById(`quantity-${idProducto}`);
     let precioElement = document.getElementById(`precio-${idProducto}`);
     let producto = jsonArray.find(item => item.idProducto === idProducto);
@@ -111,7 +111,7 @@ function updateTotalPrice(idProducto) {
 }
 
 
-function eliminarDelCarrito(idProducto) {
+window.eliminarDelCarrito = function(idProducto) {
     // Buscar el objeto con el ID proporcionado en el carrito
     const index = contentCart.findIndex(item => item.idProducto === idProducto);
 

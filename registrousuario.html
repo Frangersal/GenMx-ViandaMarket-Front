@@ -24,82 +24,59 @@
 <header>
     <div class="headerQuick">
     </div>
-    <div class="fixheader"></div>
 </header>
 
-
-<section class="fondoform">
-    <div class="container contenedorform1 d-flex align-items-center justify-content-center">
+<section class="fondoform py-5">
+    <div class="container d-flex align-items-center justify-content-center">
         <div class="contenedorform">
-            <div class="row justify-content-center">
-                <div class="col-md-8">
-                    <h4 class="  text-center" id="Titulo1">REGÍSTRATE</h4>
-                    <h5 class=" text-center" id="Titulo2">Ingresa tus datos</h5>
-                    <!--*Campos del form-->
-                    <!-- Este div manda la alerta -->
-                    <div class="container row d-flex justify-content-center">
-                        <form class="">
-                            <div class="row mb-3 justify-content-center" id="inputs">
-                                <div class="col-md-6">
-                                    <label for="validationServer01" class="form-label"></label>
-                                    <input type="text" class="form-control register" placeholder="Nombre(s)">
-                                    <div class="alert alert-danger fade show" style="display:none;" role="alert" id="alertValidaciones">
-                                        <p id="alertValidacionesTexto"></p>
-                                    </div>
-                                </div>
-                                <div class="col-md-6">
-                                    <label for="validationServer01" class="form-label"></label>
-                                    <input type="text" class="form-control register" placeholder="Apellidos">
-                                    <div class="alert alert-danger fade show" style="display:none;" role="alert" id="alertValidaciones">
-                                        <p id="alertValidacionesTexto"></p>
-                                    </div>
-                                </div>
-                            </div>
-                                <div class="mb-3 justify-content-center" id="inputs">
-                                    <label for="validationServer01" class="form-label"></label>
-                                    <input type="text" class="form-control register" placeholder="Correo electrónico">
-                                    <div class="alert alert-danger fade show" style="display:none;" role="alert" id="alertValidaciones">
-                                        <p id="alertValidacionesTexto"></p>
-                                    </div>
-                                    <div class="mb-3 justify-content-center" id="inputs">
-                            <label for="validationServer01" class="form-label"></label>
-
-                            <div class="wrapperPass">
-                            <input type="password" class="form-control register"
-                                    placeholder="Contraseña" id="campoPass1">
-                                    <i id="eyeicon1" class="bi bi-eye-slash-fill"></i>
-                                </div> 
-                                    
-
-
-                            <div class="alert alert-danger fade show" style="display:none;" role="alert"
-                                    id="alertValidaciones">
-                                <p id="alertValidacionesTexto"></p>
-                            </div>
-                            <div class="mb-3 justify-content-center" id="inputs">
-                                <label for="validationServer01" class="form-label"></label>
-                                <div class="wrapperPass">
-                                <input type="password" class="form-control register"
-                                        placeholder="Confirmar contraseña" id="campoPass2">
-                                        <i id="eyeicon2" class="bi bi-eye-slash-fill"></i>
-                                    </div>     
-                                <div class="alert alert-danger fade show" style="display:none;"
-                                        role="alert"
-                                        id="alertValidaciones">
-                                    <p id="alertValidacionesTexto"></p>
-                                </div>
-                                <p class="contraseña">Tu contraseña debe contener al menos un dígito, una mayúscula, una minúscula y un caracter especial. </p>
-                            </div>
-                            <div class="text-center">
-                                <p class="p2">¿Tienes una cuenta? Inicia sesión 
-                                    <a href="./iniciosesion.html" class="h6"><strong>aquí</strong></p></a>
-                                    <button id="btnAgregar" class="btn btn-lg form-dash register" type="button">Registrarse</button>
-                                    <br>
-                                    <button id="btnClear" class="btn btn-lg form-dash register" type="button">Limpiar</button>
-                            </div>  
-                        </form>
+            <h2 class="text-center fw-bold mt-2" id="Titulo1">REGÍSTRATE</h2>
+            <h5 class="text-center mb-4 text-muted" id="Titulo2">Ingresa tus datos</h5>
+            
+            <form class="w-100">
+                <div class="row mb-3">
+                    <div class="col-md-6 mb-3 mb-md-0">
+                        <input type="text" class="form-control register" placeholder="Nombre(s)">
                     </div>
-            </div>
+                    <div class="col-md-6">
+                        <input type="text" class="form-control register" placeholder="Apellidos">
+                    </div>
+                </div>
+
+                <div class="mb-3">
+                    <input type="email" class="form-control register" placeholder="Correo electrónico">
+                </div>
+
+                <div class="mb-3 wrapperPass">
+                    <input type="password" class="form-control register" placeholder="Contraseña" id="campoPass1">
+                    <i id="eyeicon1" class="bi bi-eye-slash-fill fs-5"></i>
+                </div> 
+
+                <div class="mb-3 wrapperPass">
+                    <input type="password" class="form-control register" placeholder="Confirmar contraseña" id="campoPass2">
+                    <i id="eyeicon2" class="bi bi-eye-slash-fill fs-5"></i>
+                </div>   
+                
+                <p class="contraseña text-muted mb-4">Tu contraseña debe contener al menos un dígito, una mayúscula, una minúscula y un caracter especial.</p>
+                
+                <!-- Alerts (Moved entirely outside of inputs structure) -->
+                <div class="alert alert-danger fade show mb-4" style="display:none;" role="alert" id="alertValidaciones">
+                    <p id="alertValidacionesTexto" class="mb-0"></p>
+                </div>
+                
+                <div class="d-grid mb-3">
+                    <button id="btnAgregar" class="btn btn-lg fw-bold form-dash register text-white" type="button">Registrarse</button>
+                    <!-- Botón Limpiar condicionado a estilos compartidos si es necesario mostrarse después mediante JS -->
+                    <button id="btnClear" class="btn btn-lg fw-bold form-dash register text-white mt-2" type="button">Limpiar</button>
+                </div>  
+                
+                <div class="text-center mt-4">
+                    <p class="p2 mb-0">¿Tienes una cuenta? <br> Inicia sesión 
+                        <a href="./iniciosesion.html" class="text-decoration-none text-danger fw-bold h6">aquí</a>
+                    </p>
+                </div>  
+            </form>
+        </div>
+    </div>
 </section>
 <!--Toast-->
 <div>

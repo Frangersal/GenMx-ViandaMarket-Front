@@ -22,61 +22,47 @@
 <header>
     <div class="headerQuick">
     </div>
-    <div class="fixheader"></div>
 </header>
 
 
-<section class="fondoform">
-    <div class="container contenedorform1 d-flex align-items-center justify-content-center">
+<section class="fondoform py-5">
+    <div class="container d-flex align-items-center justify-content-center">
         <div class="contenedorform">
-            <div class="row justify-content-center">
-                <div class="col-md-8">
+            <h2 class="text-center fw-bold mt-2" id="Titulo1">Iniciar Sesión</h2>
+            <h5 class="text-center mb-4 text-muted" id="Titulo2">Ingresa tus datos</h5>
 
+            <form class="w-100">
+                <div class="mb-4">
+                    <input type="email" class="form-control" id="correoFormulario" placeholder="Correo electrónico">
+                </div>
 
-                    <!--*Campos del form-->
+                <div class="mb-3 wrapperPass">
+                    <input type="password" class="form-control" id="contraFormulario" placeholder="Contraseña">
+                    <i id="eyeicon" class="bi bi-eye-slash-fill fs-5"></i>
+                </div>  
 
-                    <!-- Este div manda la alerta -->
+                <div class="text-end mb-4">
+                    <p class="p1 mb-0"><strong class="text-dark">¿Olvidaste tu contraseña?</strong></p>
+                </div>
 
-                    <div class="container row d-flex justify-content-center">
-                        <form class="g-3">
-                            <div class="mb-3 justify-content-center" id="inputs">
-                                <h4 class=" mb-3 text-center" id="Titulo1">Iniciar Sesión</h4>
-                                <h5 class=" mb-3 text-center" id="Titulo2">Ingresa tus datos</h5>
-                                <label for="validationServer01" class="form-label"></label>
+                <div class="alert alert-danger fade show" style="display:none;" role="alert" id="alertValidaciones">
+                    <p id="alertValidacionesTexto" class="mb-0"></p>
+                </div>
 
-                                <input type="text" class="form-control" id="correoFormulario"
-                                       placeholder="Correo electrónico">
+                <div class="d-grid mb-4 mt-2">
+                    <button id="btnAgregar" class="btn" type="button">
+                        Entrar
+                    </button>
+                </div>
 
-                                <div class="alert alert-danger fade show" style="display:none;" role="alert"
-                                     id="alertValidaciones">
-                                    <p id="alertValidacionesTexto"></p>
-                                </div>
-                                <div class="mb-3 justify-content-center" id="inputs">
-                                    <label for="validationServer01" class="form-label"></label>
-
-                                    <div class="wrapperPass">
-                                    <input type="password" class="form-control" id="contraFormulario"
-                                           placeholder="Contraseña">
-                                           <i id="eyeicon" class="bi bi-eye-slash-fill"></i>
-                                        </div>  
-
-
-                                    <br>
-                                    <p class="p1"><strong>Recuperar contraseña</strong></p>
-
-                                    <div class="col-12">
-                                        <p class="p2">¿No tienes una cuenta?<br>Regístrate
-                                            <a href="./registrousuario.html" class="h6"><strong>aquí</strong></p></a>
-                                        <button id="btnAgregar" class="btn btn-lg btn-block form-dash" type="button">
-                                            Entrar
-                                        </button>
-
-                                    </div>
-
-                                </div>
-
-                        </form>
-                    </div>
+                <div class="text-center">
+                    <p class="p2 mb-0">¿No tienes una cuenta? <br>
+                        Regístrate <a href="./registrousuario.html" class="text-decoration-none text-danger fw-bold h6">aquí</a>
+                    </p>
+                </div>
+            </form>
+        </div>
+    </div>
 </section>
 <div class="position-fixed bottom-0 end-0 p-3 form-dash" id="divAlert" style="z-index: 11">
 </div>
