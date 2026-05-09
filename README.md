@@ -1,67 +1,34 @@
-# GenMx-ViandaMarket-Front
+# Vianda Market 🥩
 
-Generation México - Equipo 1: Los Commiteros Seriales - Proyecto Integrador Vianda Market, Parte del Frontend
+Vianda Market es una plataforma de e-commerce dedicada a la venta de cortes de carne y productos de alta calidad. Este repositorio contiene el desarrollo del **Frontend** y el panel de administración (Dashboard) del proyecto.
 
-## Como agregar header a las páginas HTML
+🔗 **[Visita el proyecto en vivo aquí](https://viandamarket-front-production.up.railway.app/)**
 
->Nota: es IMPORTANTE agregar PRIMERO EL HEADER antes de realizar la página ya que puede afectar en el acomodo de esta.
+## 📸 Vista Previa
 
-Instrucciones:
+![Vista previa del proyecto](assets/img/capturavm.png)
 
-1. Agregar
-```html
+## ✨ Características Principales
 
-<script src="./assets/js/header.js"></script> 
-```
+El proyecto está diseñado para ofrecer una experiencia de compra completa y una gestión amigable:
 
-al final de la página. Para ligar la hoja de JavaScript que trae el header.
+- **🛍️ Catálogo y Tienda**: Exploración de productos, vistas de calidades de carne y página de detalles por producto.
+- **🛒 Carrito de Compras y Checkout**: Gestión del carrito y pasarela de pago simulada (PayPal).
+- **👤 Gestión de Usuarios**: Interfaz para registro, inicio de sesión y perfil del usuario.
+- **📊 Dashboard de Administración**: Panel privado que incluye métricas de ventas, tráfico y un sistema CRUD para la gestión de productos y clientes.
+- **📞 Páginas Informativas**: Preguntas Frecuentes (FAQ), formularios de contacto, sección de "Acerca de" y ventas por mayoreo.
 
-2. Despues de la etiqueta body agregar:
+## 🛠️ Tecnologías Utilizadas
 
-```html
+- HTML5
+- CSS3 (Estilos custom y diseño responsivo)
+- JavaScript Vanilla (Manejo del DOM, peticiones, carrito de compras)
 
-<header>
-    <div class="headerQuick">
-    </div>
-</header>
+## 🚀 Ejecución Local
 
-```
+> **⚠️ Importante:** Para que la aplicación funcione correctamente en tu entorno local, primero debes configurar y ejecutar el código del backend. Puedes encontrarlo en el siguiente repositorio: **[GenMx-ViandaMarket-Back](https://github.com/Frangersal/GenMx-ViandaMarket-Back)**.
 
-Para definir el lugar que ocupara el header
-
-3. Tomar en cuenta que lo primero que se agregue despues de esto puede irse detras del header, por lo que es importante
-   ajustar
-   ese primer cuadro para que respete el header
-
----
-
-## Cualquier duda preguntar a Caro.
-
-# Como agregar footer a las páginas HTML
-
-Instrucciones:
-
-1. Agregar <script src="./assets/js/footer.js"></script> antes del cierre del body. Para ligar la hoja de JavaScript que
-   trae el footer.
-
-Agregar los siguientes scripts para el correcto funcionamiento del footer antes del cierre del body
-
-```html
-        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
-        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
-        crossorigin="anonymous"></script>
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
-        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
-        crossorigin="anonymous"></script>
-        <script src="https://kit.fontawesome.com/eb496ab1a0.js" crossorigin="anonymous"></script>
-
-```
-
-
-2. Despues antes del cierre del body que es donde se pone el footer semanticamente:
-    <footer>
-        <div class="footer">
-        </div>
-    </footer>
-
-   Para definir el lugar que ocupara el footer
+1. Clona este repositorio en tu máquina local.
+2. Abre el proyecto en tu editor de código (como VS Code).
+3. Configura el entorno local editando `assets/js/config.js`: comenta la línea 9 y descomenta la línea 6.
+4. Inicia la aplicación abriendo el archivo `index.html` con un servidor local, como la extensión **Live Server**.
